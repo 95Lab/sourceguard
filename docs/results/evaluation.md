@@ -185,7 +185,28 @@ Limits of this check: 15 projects, all built with Go 1.26.11; the constant sampl
 
 ## Cost (RQ4)
 
-Generating one variant of a whole tree took a median of 0.17 s per project (maximum 4.4 s), a median of 2.5% of the project's cold build time. The dominant cost of the scheme is the `k` builds themselves, which run in parallel in separate cells; that cost was not measured end to end on the corpus.
+Generating one variant of a whole tree took a median of 0.17 s per project (maximum 4.4 s), a median of 2.5% of the project's cold build time. The dominant cost of the scheme is the `k` builds themselves, which run in parallel in separate cells; the end-to-end cost is measured below.
+
+### End to end: push to signed artifact
+
+Time from the arrival of a push at the pipeline to a signed artifact, in seconds, on one host (18 cores, Ubuntu 24.04, Forgejo 11, Firecracker 1.18; 4 GB of memory per cell). Median of three runs; in parentheses the ratio to a conventional build of the same tree with the same image, flags and a cold cache. All 72 runs were accepted.
+
+| Project | Conventional | Containers, k=2 | k=3 | k=4 | MicroVMs, k=2 | k=3 | k=4 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| fzf | 2.7 | 4.7 (1.7) | 6.3 (2.3) | 7.2 (2.7) | 7.3 (2.7) | 9.4 (3.5) | 10.3 (3.8) |
+| yq | 5.9 | 10.2 (1.7) | 13.5 (2.3) | 16.9 (2.9) | 14.7 (2.5) | 17.5 (3.0) | 20.5 (3.5) |
+| restic | 10.4 | 20.4 (2.0) | 28.5 (2.7) | 37.5 (3.6) | 30.5 (2.9) | 38.8 (3.7) | 45.3 (4.3) |
+| caddy | 13.8 | 27.2 (2.0) | 37.9 (2.7) | 48.7 (3.5) | 39.9 (2.9) | 50.9 (3.7) | 58.2 (4.2) |
+
+- The time grows with `k` although cells run in parallel: all cells share the cores of one host, and each build already uses every core. Separate hosts were not measured.
+- A microVM cell adds 2.5 to 13 s over a container cell.
+- Key release, variant generation, comparison and signing together took a median of 2.7 s (1.2 to 8.8).
+- Sealing and pushing on the developer's machine is not included.
+- Dependencies are vendored, since cells have no network.
+
+Data: [pipeline runs](eval-endtoend-linux-amd64.tsv), [conventional builds](eval-endtoend-baseline-linux-amd64.tsv).
+
+The first attempt failed for restic and caddy in every configuration. The Go compiler writes scratch files to `/tmp`, which a cell limits to 256 MB. The cell reports only an error class, so the cause had to be found by reproducing the build outside the pipeline; after five failures the gateway's rate limit rejected every further build. The cell now sets `GOTMPDIR` to its workspace.
 
 ## Limitations
 
