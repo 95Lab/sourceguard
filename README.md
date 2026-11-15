@@ -75,7 +75,7 @@ A working **prototype for Go** implements the full pipeline and runs locally in 
 | Phase | Scope | Status |
 |---|---|---|
 | 0 | `sg seal`, signed manifest, Key Broker; the store holds ciphertext only | Prototype |
-| 1 | Invariance validation of the transformations | T1–T3 bit-identical on the sample project; **corpus study outstanding** |
+| 1 | Invariance validation of the transformations | **Done for Go:** T1–T3 bit-identical on 54 / 54 real projects, linux/arm64 and linux/amd64 ([results](docs/results/phase1-invariance.md)) |
 | 2 | Full pipeline: Variant Generator, build cells, gateway, release signer | Prototype (containers, not microVMs) |
 | 3 | Adversarial evaluation | Suite of 7 attacks implemented; leakage measurement (RQ2) outstanding |
 | 4 | C/C++/Rust, SEV-SNP/TDX attestation, diverse toolchains | Not started |
@@ -106,7 +106,8 @@ make attacks      # malicious compiler in the build cells
 | `cmd/sg-sign` | Release Signer (TCB) |
 | `internal/variants/golang` | Transformations T1 (comments), T2 (whitespace), T3/T5 (local names) |
 | `attacks/evilgo` | Malicious compiler wrapper for the adversarial suite |
-| `eval/invariance` | Bit-identity measurement (RQ1) |
+| `eval/invariance` | Bit-identity check on the sample project |
+| `eval/corpusrun`, `eval/modal` | Phase 1 corpus study (RQ1): runner, report, divergence bisection, Modal app |
 | `examples/hello` | Sample project with planted secrets |
 | `compose.yaml`, `deploy/docker`, `scripts` | Local test bed |
 
@@ -116,6 +117,7 @@ make attacks      # malicious compiler in the build cells
 |---|---|
 | [Architecture (English)](docs/architecture.md) | Full design: threat model, components, DSV, leakage analysis, roadmap |
 | [Local Testing with Docker](docs/local-testing.md) | Running the prototype, the attack suite, results and limitations |
+| [Phase 1 Results](docs/results/phase1-invariance.md) | Invariance study on 54 open-source Go projects: method, findings, limitations |
 | [Kiến trúc (Tiếng Việt)](docs/architecture.vi.md) | Original Vietnamese version |
 
 Key sections: [Threat Model](docs/architecture.md#2-threat-model) · [DSV Transformations](docs/architecture.md#5-differential-source-variants-dsv) · [Residual Leakage](docs/architecture.md#7-residual-leakage-channels-and-mitigations) · [Attack Suite](docs/architecture.md#10-adversarial-attack-suite-attacks) · [Research Questions](docs/architecture.md#11-research-questions)

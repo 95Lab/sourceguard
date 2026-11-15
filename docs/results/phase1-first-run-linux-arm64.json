@@ -1,0 +1,5132 @@
+[
+ {
+  "repo": "antonmedv/fx",
+  "package": ".",
+  "ref": "40.0.1",
+  "commit": "5d57637b00f4329b3cd563330e159d181e4ead85",
+  "status": "ok",
+  "features": {
+   "go_files": 130,
+   "lines": 28031,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c",
+  "baseline_seconds": 6.526341292,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "04895834f83cfdaf96f3b33ac964656f043c197dcdacc8d310fdd4a867e11a77",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 130,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529",
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529",
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529",
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529",
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "c48476a9546c714a7853be64451752a3862f87179a7099217aa8222d18d59822",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 130,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c",
+     "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c",
+     "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "7d9791a812f7d315f42debe77265d40147e8896bd3e95d7a859589a2a4e21a57",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 130,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c",
+     "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c",
+     "501f3c56b6320ac940ab9bd44453b6ab1a947ee94d02b23465d828d0d41c436c"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "4df334853423f5046e5d73f268eeb5aadddb49ee6c6d257a2c92a974df75d0a2",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 130,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529",
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529",
+     "5cedaebd47066eb9169cab5661428f8f72f60e2b1cefb138607028d6b4cd8529"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 21.728001125
+ },
+ {
+  "repo": "BurntSushi/toml",
+  "package": "./cmd/tomlv",
+  "ref": "v1.6.0",
+  "commit": "52534926c55b4cd85b05aee90569dd0668b8cf30",
+  "status": "ok",
+  "features": {
+   "go_files": 30,
+   "lines": 10165,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f",
+  "baseline_seconds": 0.395503792,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "fc35512c5b200ad0098c1b9b430e2d3a594953c75d5ea1017d8b0d3cae1a97bd",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 30,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105",
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105",
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105",
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105",
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "161286a8231f2ede0bee6f5b2639f8086485f2ab2bf677a930b4988f22288c92",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 30,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f",
+     "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f",
+     "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "8cd82302445d476803d53c174caaf039feea28748472c6bbf371a43c52b582ec",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 30,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f",
+     "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f",
+     "65a5b8dd3458e1eff3a5ab3d35489f5cabbd6bb5ec6684a854fcc7099ba8127f"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "20e4f7458eb1451cfdcd754eb8759d64031f5ceafbd335377d6e7872f54de88e",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 30,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105",
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105",
+     "22a280e563c5b9b72f4c32f448af885bb9223ebf79f7ba06521b373c86281105"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 7.537865708
+ },
+ {
+  "repo": "caddyserver/caddy",
+  "package": "./cmd/caddy",
+  "ref": "v2.11.9",
+  "commit": "0d98caea58f794f88e709b1bef2880996a471bca",
+  "status": "ok",
+  "features": {
+   "go_files": 389,
+   "lines": 122475,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642",
+  "baseline_seconds": 5.581175083,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "c35853baa820413ec40a8eb5363f0ab18a670a365bf086ef9b8772f6c77404d2",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 389,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e",
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e",
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e",
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e",
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "54ac713be57036fe7e4ebfe1d007e360be8078b4581588fab2836e731f6ffc34",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 389,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642",
+     "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642",
+     "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "da16e44a366ad918af02057838434d6070f70f410b9abf9230a4d2605d2f4b5e",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 389,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642",
+     "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642",
+     "f81d1bc6b49d67e03a87728aaa0f43a90c1436adb1ab0a03b9609c5be3678642"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "274480f0dfc8d67fca60e759e6341dd4a9484013903fad6bd88903d6f5185aca",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 389,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e",
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e",
+     "425a0019151b82b06fb06a8eeacbf865a6ef86eb5c107b1e63528c111dba446e"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 134.74952075
+ },
+ {
+  "repo": "charmbracelet/glow",
+  "package": ".",
+  "ref": "v3.0.0",
+  "commit": "add5e7a1f63cf0b1de4dfb457c147986e1b1d1fb",
+  "status": "ok",
+  "features": {
+   "go_files": 25,
+   "lines": 3593,
+   "embed": false,
+   "cgo": false,
+   "reflect": false,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a",
+  "baseline_seconds": 5.367400083,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "d76f15c4b5d5dbc6aa6b47a2601c764ab1c08d90bd668d45898cbf375a3197bd",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 25,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204",
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204",
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204",
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204",
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "cbaa9017aad755caa52a4a6540832a2342126d383f99e78d7a2a93e24b16421b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 25,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a",
+     "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a",
+     "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "86f6d930db2fce663ff0bac29be9f15e4a657eb255a754b52b9542b8eea38cfa",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 25,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a",
+     "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a",
+     "5a4f3baab952e39250ed70b382dfd84b797808cce4b49150cbcdd0d85417b47a"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "118aac2ab27833cc35d597dc3b4ee891f51437b08feb513a0d144fadf849336f",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 25,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204",
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204",
+     "0cd6ae9e19a9d49b5bf624e3825e6dd357e8125fe7f01fccb8611b86acd12204"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 14.36937675
+ },
+ {
+  "repo": "charmbracelet/gum",
+  "package": ".",
+  "ref": "v2.0.2",
+  "commit": "879f048103adf0214b85943b52d8d65b08d772c5",
+  "status": "ok",
+  "features": {
+   "go_files": 59,
+   "lines": 5758,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0",
+  "baseline_seconds": 11.189199584,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "24adb7133f169b70f828a9eace150064891e925f34271c53bec91d2f60cdbf8e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 59,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7",
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7",
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7",
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7",
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "b4d7ebe40c9486977c155218c31b85917a2b30f046add3d1920bea18a7bddd5d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 59,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0",
+     "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0",
+     "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "98e3f8188acb6a1d70e08d5610de49b485e3108ae99d18dcaead218884cb3327",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 59,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0",
+     "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0",
+     "b23d1963d18c7b037078eeb45da71ceba5914ad59bab7bb4e5ddf4c87c233bd0"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "d70f4f96bc12789246c6b84f5d07c3817a8c6e2b00d0545ca12dcc8198f32e42",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 59,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7",
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7",
+     "81f35e1da0cc70b5320d7f9bc17fd296b0904720773e1e32193f7e952520a8b7"
+    ]
+   }
+  ],
+  "go_version": "go1.26.7",
+  "target": "linux/arm64",
+  "total_seconds": 32.17913175
+ },
+ {
+  "repo": "cheat/cheat",
+  "package": "./cmd/cheat",
+  "ref": "5.1.0",
+  "commit": "e2aa2d3611a02593a71cbf645050424228c0e8b0",
+  "status": "ok",
+  "features": {
+   "go_files": 102,
+   "lines": 8867,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d",
+  "baseline_seconds": 1.946406583,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "f63dd02fe91eb8494ac9f8ccc2c4b77cd5d6c8a49a17d5503a0bb70d81760365",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 102,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06",
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06",
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06",
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06",
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "0ad2f7a958dfce0c736b77d97631c5e19f8a8ff5605040fe96ed9bc1261e2fea",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 102,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d",
+     "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d",
+     "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "c381b33c388300cceac6aa9ff47bfaa452cf3c5cbf4f17523d22c008e7fdff87",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 102,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d",
+     "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d",
+     "b7ca029a7424b02cba79b4b8e6a27b3ee564e65b666314fa7b06d0f7fe36846d"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "59a63260aa6230754abaa887aaa278cc348bb930c0c65cc385277e62b4fd6b78",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 102,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06",
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06",
+     "41b318d96f85b35d9f68cd3a9ddafeeebc29f7ae8d1206af49b2240559920b06"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 12.539330416
+ },
+ {
+  "repo": "cli/cli",
+  "package": "./cmd/gh",
+  "ref": "v2.104.0",
+  "commit": "3d5a9e355a837f2f5ee78d7484c118cc1342ad1a",
+  "status": "ok",
+  "features": {
+   "go_files": 1098,
+   "lines": 336032,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e",
+  "baseline_seconds": 29.97023575,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "97b5a7db78e96aa752e9490247ba29ef23f16187abf26afcd1f54fbcb134d0e1",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1098,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e",
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e",
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e",
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e",
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "7abcc88d0863377ae1138b6c6c704af9e481df4ea204b4c0a6389e8e6b388bb7",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1098,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e",
+     "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e",
+     "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "1ee52d936c234cf80bcee1ca6ce736a8d704cb148ac309adfdca5d54f8653ab1",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1098,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e",
+     "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e",
+     "6e50a43e40d1860e8ecf718f4afd61b78daf66badcd6f23da46abb95c721081e"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e76bc494c2e5fa3a1961bbb7720cd21c3292f4ee457df229dbe7a036a44628b7",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1098,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e",
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e",
+     "b4e8fb2aa515b9bb8c6e8e46f8139453e363e9685b924efa418c7ac49122e52e"
+    ]
+   }
+  ],
+  "go_version": "go1.27.4",
+  "target": "linux/arm64",
+  "total_seconds": 121.419681291
+ },
+ {
+  "repo": "cloudflare/cfssl",
+  "package": "./cmd/cfssl",
+  "ref": "v1.7.1",
+  "commit": "ab47f0d984778865b3f5b5adf6ba336a15b96c31",
+  "status": "ok",
+  "features": {
+   "go_files": 254,
+   "lines": 59144,
+   "embed": true,
+   "cgo": true,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": true,
+   "vendor": true
+  },
+  "baseline_sha256": "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8",
+  "baseline_seconds": 3.209057667,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "e3ecd9ceec1e533f06c670bfcf1d66bb87c17875487587dd671eb961dd2d8bc8",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 254,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b",
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b",
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b",
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b",
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "5ecccc2ba8fe113f55b334b1cf48749857f516968a93d8d2c2a8c827c028432f",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 254,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8",
+     "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8",
+     "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "1a1ba0093b8d885c65f5900501b22220f549f4cf8bfb89e5ccb78e23a9a6246d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 254,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8",
+     "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8",
+     "d19782b46580ca293eda5988031c7da2b66312a85ee2b95f0b1a91412710bbb8"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "5f793250025a38fa0d9ffea112f466e36f02c8b0c201410f89c0a669eaee74b1",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 254,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b",
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b",
+     "cb1cd77ca1568ffea1f4d3a9a9f76903832c0a7ce8d5c21a2f131dc9f232133b"
+    ]
+   }
+  ],
+  "go_version": "go1.27.0",
+  "target": "linux/arm64",
+  "total_seconds": 27.772211042
+ },
+ {
+  "repo": "coredns/coredns",
+  "package": ".",
+  "ref": "v1.15.0",
+  "commit": "a6fde3fe339c6ec848447e11cc9796be8c97b4e0",
+  "status": "ok",
+  "features": {
+   "go_files": 763,
+   "lines": 117725,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437",
+  "baseline_seconds": 44.453414042,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "590021948eb3a0302d7e53180e86b380f401e3be086ba7c6d6a512d4422eb795",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 763,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357",
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357",
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357",
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357",
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "c7deba8dfe0ded5cbdba1b84155779aa193199bf4b2fc88e5d754a01c5271d51",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 763,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437",
+     "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437",
+     "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "5c5e48afa8df1d6b4702775f6c2d13ebf11b1dd6ccf04fd587fa5f0b8f91a3d1",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 763,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437",
+     "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437",
+     "24a02fe9e8c92ae2e3d251fd79e7db793598e21088253a46d90498442ab0e437"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "93125a27fd65ee3abbbdf91b16c549cfcca6c32e7111f9abfe95eae2157fc47d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 763,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357",
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357",
+     "561f25226d507043860a0efa643e5c7ca4bab87a468089e93e9ae7a4ffb1d357"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 117.187983375
+ },
+ {
+  "repo": "direnv/direnv",
+  "package": ".",
+  "ref": "v2.38.2",
+  "commit": "28a73d1df3f387e16f3c7fa888c2a049e0059e7a",
+  "status": "ok",
+  "features": {
+   "go_files": 69,
+   "lines": 6381,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac",
+  "baseline_seconds": 0.78032875,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "5d56e47f7ac1e467ba056932f8c7f2cc05080bd687d241afff874845c0c318f1",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 69,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8",
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8",
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8",
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8",
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "14c35218640925b1202343906f9d50ffc8452b5697e2575e32127fcd1dfcc580",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 69,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac",
+     "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac",
+     "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "1d9afa5daae073c8172fde7d45e24ce7d8ee820998cc3ed17d0b870f3d99eae4",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 69,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac",
+     "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac",
+     "85de6144dde157e6d86bf2ab0a2896ec662317dc4787d65ea47656688cf7e6ac"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "7cac79d781a33cc81937a5f678690cdfca1aa561661bfe5f97a0edd87256a527",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 69,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8",
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8",
+     "25d726b09e2b7503e65195f0053d94b9c848c3d41cda6f16463541d8410c45c8"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 7.1609395
+ },
+ {
+  "repo": "dominikh/go-tools",
+  "package": "./cmd/staticcheck",
+  "ref": "2026.2.2",
+  "commit": "54455593555daf6bfcf3c480faaada7de3145357",
+  "status": "ok",
+  "features": {
+   "go_files": 1013,
+   "lines": 90289,
+   "embed": false,
+   "cgo": true,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": true,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb",
+  "baseline_seconds": 5.188156958,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "31bfc4f23f0e860ab87bfc0c45edec1da59ef7278e032b7f0e873b01452bc1ab",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 598,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd",
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd",
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd",
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd",
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "e201686c9e1b6d6a8903205369b50fde46c81d478eb7427b01d424a8e6856b42",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 598,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb",
+     "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb",
+     "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "ee9f64b58cb32332a32ed72656ed1acab4d5aeb39c22c9f002b9698cfacb5979",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 598,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb",
+     "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb",
+     "12bb1b9315d0b2a137d63899121266a5f40f8c4b112d2d839a671517b52b12eb"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "15f632b93506b0270d8416f2840ac9d6411f6ee2f88d967162655f2e376b1aa4",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 598,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd",
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd",
+     "5aba02aa9637e8023bf36a38cbfc5a3ffbfe8db17a81e9b8bf06c5b6b98a3efd"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 42.888407583
+ },
+ {
+  "repo": "dundee/gdu",
+  "package": "./cmd/gdu",
+  "ref": "v5.39.0",
+  "commit": "e09ee9a20d1d9351e90e84ec3f86ab7bbcddbeea",
+  "status": "ok",
+  "features": {
+   "go_files": 218,
+   "lines": 44032,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648",
+  "baseline_seconds": 17.893239708,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "456a0afe242961e0f78c42d5c28d97e3358264655484048ff3606dc6ffff602e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 218,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb",
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb",
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb",
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb",
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "32fc4dfe7b5872b3702b56a545327e5d0184ae9577982c2ce658530a959a9e36",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 218,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648",
+     "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648",
+     "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "ecad354eb886277e37119650c1ef823fec160504ff6af9e2e57265f2a99e5c34",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 218,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648",
+     "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648",
+     "59da59143386727d3e914157953ae2568a26a5cfe937ba41edba4310bc2c5648"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "43d2fb98e536462941b24bba24b2cd7355140aaea26d3db8fa79987234bfd4df",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 218,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb",
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb",
+     "a73054f517e66dc3bb4d50882115aa193a4baafbe5fdc2757008b4d76b413dcb"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 38.890831083
+ },
+ {
+  "repo": "etcd-io/bbolt",
+  "package": "./cmd/bbolt",
+  "ref": "v1.5.0",
+  "commit": "e7a8b2dd498494a3766ba24dd94d3509e5588485",
+  "status": "ok",
+  "features": {
+   "go_files": 121,
+   "lines": 25045,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1",
+  "baseline_seconds": 0.702679166,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "f280dc33447ac77fdf4ab6de5abba6f03e953caa0a9e9e8f9eecd7bc6a412811",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 121,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e",
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e",
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e",
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e",
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "a513e997db2e10d33f529db0156d3fde80c15997ed480993a154c31864846275",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 121,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1",
+     "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1",
+     "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "057e2ec28e765c03a5260ec70a6d29f006ab1a6207672907385245fbed254aec",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 121,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1",
+     "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1",
+     "87a32a7ffe3da5910f9b397d53dc39f08a83b756abbb28e841ccb6f5063a73e1"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "944c60a30345fcd60539f66dab9b03b8b6ed30fc35b50c730fab647bc45c3b6d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 121,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e",
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e",
+     "fd3127736838ceb7ff75eef9a70e10f1e60bc4d90a4f4aa4b2d1cb27135cb50e"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 9.540395833
+ },
+ {
+  "repo": "ffuf/ffuf",
+  "package": ".",
+  "ref": "v2.3.0",
+  "commit": "256c1b02499f5f8672af965d4ad7a321d606bc65",
+  "status": "ok",
+  "features": {
+   "go_files": 96,
+   "lines": 12859,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be",
+  "baseline_seconds": 1.794174458,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "3e1452357f3ad8aca38124ecd546df01fb7d106573dc682e6cd8e985200bc34c",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d",
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d",
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d",
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d",
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "654693f8e77e3086d79c5e70027bb7420f42aafbcfd7649c32040a563fea6e5c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be",
+     "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be",
+     "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "4d60c9dcb8391db270f9081ae37b184d86c60d40f9208ffd71f2571411f61c08",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be",
+     "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be",
+     "85e2cc0e7c7cacc0f2bbbf1d373826d58b0e4e6e88f721e71d7717451f6b73be"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "8b585a23553702d86d3b37344977b29ce29668794bcaeec38db9c2ba95a56219",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d",
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d",
+     "9f98ef40dc107a6e1df595a6426684c5aba2361973cb4959483b47456785703d"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 10.871786
+ },
+ {
+  "repo": "FiloSottile/age",
+  "package": "./cmd/age",
+  "ref": "v1.3.2",
+  "commit": "b74dce4cdbe35b5e5f66c06d9612b72f89028758",
+  "status": "ok",
+  "features": {
+   "go_files": 47,
+   "lines": 11199,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651",
+  "baseline_seconds": 6.680273459,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "2951d7f61484a9dc1836739e22821656dafdc6e812a1136516446669b82faa56",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 47,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf",
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf",
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf",
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf",
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "b9af271c175f6a01579c88b8f828ac23ae585defb16883e6b3a4d16bde816d8c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 47,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651",
+     "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651",
+     "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "3a7fbe0036dfff6adb7691ca5d4b5f8361c0f95ef2f5c6ea972077fc3fadb111",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 47,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651",
+     "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651",
+     "6ae1b966a5001f4ff1672f3de6090f698ea4a055715ec42017f601afb9ab7651"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "31d740bcbfb3d2e90279d8db6a9b97dfaba9d3c95b8d6c586f40b00e98527245",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 47,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf",
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf",
+     "132ac38c6853d3c81a7e8c0e1bff366ad9e4a3baea510a31019e279d3e7c11cf"
+    ]
+   }
+  ],
+  "go_version": "go1.27.0",
+  "target": "linux/arm64",
+  "total_seconds": 27.565663791
+ },
+ {
+  "repo": "FiloSottile/mkcert",
+  "package": ".",
+  "ref": "v1.4.4",
+  "commit": "2a46726cebac0ff4e1f133d90b4e4c42f1edf44a",
+  "status": "ok",
+  "features": {
+   "go_files": 7,
+   "lines": 1381,
+   "embed": false,
+   "cgo": false,
+   "reflect": false,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf",
+  "baseline_seconds": 1.81080525,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "0e869531bdd9c1796274f9065b189ef7548ab431e09a6e56a94dd3845b6f266a",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 7,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf",
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf",
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf",
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf",
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "2e623f2901236cb8b26ef88b02346187bb57686ef562bb63a18f00e487daa73c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 7,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf",
+     "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf",
+     "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "3dcfd3402235b9def930c204452d98558afc2adb5ad41f8957f01edc9973337b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 7,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf",
+     "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf",
+     "eaf83f7828a3f0d734d9f44962852f306ba7ed0873fa9cbc656c18af954a68cf"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "71aab6070ac94296204960a0b149104e4fac84cf488ffd70f81488730ace1e24",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 7,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf",
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf",
+     "667cdfd188c7aa507bebc31abab80c8cd8b84f1c70873faa4ea084ca51ba9ccf"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 10.134154416
+ },
+ {
+  "repo": "gitleaks/gitleaks",
+  "package": ".",
+  "ref": "v8.30.1",
+  "commit": "83d9cd684c87d95d656c1458ef04895a7f1cbd8e",
+  "status": "ok",
+  "features": {
+   "go_files": 214,
+   "lines": 21579,
+   "embed": true,
+   "cgo": false,
+   "reflect": false,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f",
+  "baseline_seconds": 13.782485625,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "07f89e98af78b8b7f0fa8aa253c80b2d132e17142203d766aa36db13cc68ea64",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 204,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450",
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450",
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450",
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450",
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "5af7ec3855e0119166b83c0501138c0c67d8cf0a18dc1610a74679e697cbf562",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 204,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f",
+     "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f",
+     "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "8e85f0aa39be2862d6932ffae188f2f6609e914fbb0fbd19469822f62360b835",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 204,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f",
+     "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f",
+     "cf739d29794d71adfb78b70af4f356ca248a067c3158c813b0944cea26cbde6f"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "a6c66c828996b68b4d0a4b2a27158fa7941ca82489bbc4c691733724aaca3d44",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 204,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450",
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450",
+     "861ee8efb6f2bb3e75283501b3585a5d2b796e398b9db0de1edb1f61916fc450"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 28.175314291
+ },
+ {
+  "repo": "go-delve/delve",
+  "package": "./cmd/dlv",
+  "ref": "v1.27.2",
+  "commit": "d116177dd925e085ba5dd340f8c644f4a1501a3b",
+  "status": "ok",
+  "features": {
+   "go_files": 515,
+   "lines": 123741,
+   "embed": true,
+   "cgo": true,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": true,
+   "vendor": true
+  },
+  "baseline_sha256": "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e",
+  "baseline_seconds": 2.092560083,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "e307db1a21cc078e13bb3bb31157a04a7729e6b938689c4116b2eafb2e140d2e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 515,
+    "files_passed_through": 0,
+    "bit_identical": false,
+    "hashes": [
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682",
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682",
+     "8c0ecb0ab41b3135c5db0ca39b5fa8f9b0e45c94ae5c14e2bc8bc70a549d7b2a",
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682",
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "5c5d5e4180ff1e18d64ee6a727eb57aa023e1ec183073be8329202b1e0f47436",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 515,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e",
+     "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e",
+     "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "70b013e1e3f0594378c91ec61845476c4e9394cc6731db4d1ace3c7882af1041",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 515,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e",
+     "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e",
+     "5db7caa000bd014109f34fafcc72cf2ea0e582933ada8ff947bc2a224822aa3e"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "44801705e1fc259ff10826c4818a0ec6df09605224f07ee726b5c970a2a9641e",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 515,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682",
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682",
+     "d6caebb1d6a12cfa57484a36391f32e906e73013e7dddbc88179eb63d3761682"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 34.538177041
+ },
+ {
+  "repo": "go-task/task",
+  "package": "./cmd/task",
+  "ref": "v3.54.0",
+  "commit": "b5aef1c287a9be8038347a17646bdf4bc7185bce",
+  "status": "ok",
+  "features": {
+   "go_files": 158,
+   "lines": 25309,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7",
+  "baseline_seconds": 25.662800875,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "4611be63195f19440ece731df8e59b06ae8a1f709418285bf3085f0176f63d7e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 156,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed",
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed",
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed",
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed",
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "a4a8ddd33e1859ff058b4e5dd54cdf4307f0dc8a5167ecc4e7c61f17576e7f57",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 156,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7",
+     "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7",
+     "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "06c9bf3dd7be55f0d7193927287e1e116c88d8f3a473a6f5fffb3aab6446aa68",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 156,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7",
+     "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7",
+     "000c716f41aa131909fae56b540f2bce7b63b2194a7762283daf607252fd60d7"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "919e17c271ce68bb6c940b748d54fabba76f8f71865756e18cfcc03acf1eea9c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 156,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed",
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed",
+     "fbfd6caf332c9092de28916f6bf61925fba88301ba69c9fff5f91a4284592fed"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 62.883528709
+ },
+ {
+  "repo": "gohugoio/hugo",
+  "package": ".",
+  "ref": "v0.170.0",
+  "commit": "f7aa05f0f521611aa960b2da56e1870ea04f57b2",
+  "status": "ok",
+  "features": {
+   "go_files": 914,
+   "lines": 234182,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f",
+  "baseline_seconds": 26.695746208,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "16e906be6a6c3bfe14cee9cb4e411621d6c438c92a24fcd23575be0776ed07d7",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 914,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae",
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae",
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae",
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae",
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "c08e7e217ca1d5241a4916b0bf3693dad16fecf1146a775eb570e44f57ca3761",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 914,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f",
+     "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f",
+     "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "012aece58393806ac02531b9de648503b660b8f12f7afee49340d537ddcd29eb",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 914,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f",
+     "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f",
+     "58abcb104a08f5e274f8ff55e29a2738c57d624c7d2dd2d29aee7ed654167d6f"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "fde84065ac78378205deb7b08102e61d6c6580cd1005231fb10cc3ce42966140",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 914,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae",
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae",
+     "3abcc58609453115f20998aab55b33ce91313a231431c2ab22563e8f014475ae"
+    ]
+   }
+  ],
+  "go_version": "go1.27.0",
+  "target": "linux/arm64",
+  "total_seconds": 239.675398166
+ },
+ {
+  "repo": "gokcehan/lf",
+  "package": ".",
+  "ref": "r42",
+  "commit": "5b6c393d547970a264bd4f0a78fd6513227f8e10",
+  "status": "ok",
+  "features": {
+   "go_files": 34,
+   "lines": 14031,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748",
+  "baseline_seconds": 4.118617333,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "63f6564d910112e644d4e9afcb55a09184d7da26f68798e9390bce2ef6446aae",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 34,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682",
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682",
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682",
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682",
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "ba16db966f04636ea56e6f596a16476d8392c0a51a36c247328b52171dbc46e7",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 34,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748",
+     "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748",
+     "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "55bb6e6301f24a46279a0a4a8a1543aa3a4639a48768f707a66422fac665eddc",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 34,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748",
+     "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748",
+     "629b7d6b9940da6ddb368b7dd32756983597c68daab6a2232d57f5ba5b86e748"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "89265264747b2b82534e4e6074651d961cc253e8e345247dd10b09b0b5718a11",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 34,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682",
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682",
+     "a5bdc1728a16a0e7fdb42703821632908a56085559fd8180ab7ce92f80370682"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 17.18642125
+ },
+ {
+  "repo": "golang-migrate/migrate",
+  "package": "./cmd/migrate",
+  "ref": "v4.20.1",
+  "commit": "504568a3cbd23b8754760f55a3d89aec1b0c4963",
+  "status": "ok",
+  "features": {
+   "go_files": 142,
+   "lines": 23328,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b",
+  "baseline_seconds": 0.175741917,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "f2730b65c28eb713825021695d7aa621249659114a800c396c93b54a344746ad",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 141,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20",
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20",
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20",
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20",
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "39f8a78884fec884bab2e0ca6f60ce92fba934a3ce9a6c7ec88b580df1837815",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 141,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b",
+     "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b",
+     "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "aaec4c1a9d6ff6d4dfe11fa7691a7a211b3c1cbd8a7655bf7a6bf5e30f269ff5",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 141,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b",
+     "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b",
+     "fbfcb3e84fb58c2a4bad7a3f1dcc47a53c0fdd6ec7bc8017c89319cc8118a05b"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "856422354720fd93f73d18bdd188ad9a3da1f374f5170060059375dcbda44f3a",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 141,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20",
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20",
+     "45a7d292e4762bdf496a2d80be016454c42c3c6b18c10bae2763f29a48fc3a20"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 6.9566240409999995
+ },
+ {
+  "repo": "google/go-containerregistry",
+  "package": "./cmd/crane",
+  "ref": "v0.22.1",
+  "commit": "8a72a424fdecb4caa14f2d525e5d2503331442b5",
+  "status": "ok",
+  "features": {
+   "go_files": 323,
+   "lines": 54072,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d",
+  "baseline_seconds": 13.575343458,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "4101bc1d5ee978b2d85a4c95c9907e48e0b174ecdf66e4bb733cfb3022170179",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 323,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14",
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14",
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14",
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14",
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "6e527d0c32b4becb4c5e4e5a791f64afe5d4a4c71090e93e05eeaf1c25eab472",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 323,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d",
+     "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d",
+     "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "95a3a769cc78e8b615f49a8dd101bc89ca99d34c4188e821cc15526009a28211",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 323,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d",
+     "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d",
+     "3be2bc9da123a27f6685a04a9b14618712ca90e6ba1ca1b32e06893bc4c8ec9d"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e65fbd8a217a7039f2d9dd8dde90614d1ad76c52ee3326a3475985b0fae55df8",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 323,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14",
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14",
+     "a3fa2475507fe0a28ed7424ab198c672e4cf25efc1cc69130f744b482e9d2a14"
+    ]
+   }
+  ],
+  "go_version": "go1.26.6",
+  "target": "linux/arm64",
+  "total_seconds": 46.871499834
+ },
+ {
+  "repo": "google/gops",
+  "package": ".",
+  "ref": "v0.3.29",
+  "commit": "a2d8f7790eac63a6668583a060cb45903410a91b",
+  "status": "ok",
+  "features": {
+   "go_files": 22,
+   "lines": 1692,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0",
+  "baseline_seconds": 1.2996283339999999,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "ccd019c9567ad30c5fbd9c2c60a12809672f9c1ff0d58f2847dd0e98a43bf0cd",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 22,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe",
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe",
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe",
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe",
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "149564febc449d6ebe968fbb764feeb817ce36771cd224f2ee81aecaacb629bb",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 22,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0",
+     "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0",
+     "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "ffe124f2b0abe02f3802186fa774097bea5810096044f2132d8ce09df88ae5c6",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 22,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0",
+     "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0",
+     "f5cdfb013cba67e89a98ccd38e80da337a30c7e5c68fde20cc42204a232b88e0"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e281e8027285df3c311d59adb87c3dd833a5f2761908cc99279085d090bb9b40",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 22,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe",
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe",
+     "09d27c1c2775128657ebcd6e32be541bdaed34c60a0d7f2ac6b2d69a28a828fe"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 7.917460084
+ },
+ {
+  "repo": "google/pprof",
+  "package": ".",
+  "ref": "HEAD",
+  "commit": "fac431ef4d268f11b8c69f8d20bfe6416761339d",
+  "status": "ok",
+  "features": {
+   "go_files": 88,
+   "lines": 31547,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403",
+  "baseline_seconds": 1.275358375,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "9900c833072295720c098920ae138e7a066dade586fd7b2fc19c9ca585e99e98",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 86,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "aac7d8c3bf81c8c75abaf09ca447eee52d06af0448a268184f566494b507ba84",
+     "aac7d8c3bf81c8c75abaf09ca447eee52d06af0448a268184f566494b507ba84",
+     "aac7d8c3bf81c8c75abaf09ca447eee52d06af0448a268184f566494b507ba84",
+     "aac7d8c3bf81c8c75abaf09ca447eee52d06af0448a268184f566494b507ba84",
+     "aac7d8c3bf81c8c75abaf09ca447eee52d06af0448a268184f566494b507ba84"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "6acbc9b57aa4cc138a395914618bcdec60ab15923790e10333b1056f49d4c75e",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 86,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403",
+     "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403",
+     "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "cc98b0b404eeb653ccf196885f4b5f86993a4af9de7c6dc4de514471aa77fc49",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 86,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403",
+     "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403",
+     "68106601e4797778873643877b8ce436fe45b3f96de7f2a99495f86c95252403"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "6c2ae592254877611b5ae17495d143766f3a879bf018b01ba01bcde2c7e33039",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 86,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "beec51a25440031e90f28c88bc887209d6d7643668913e53ecc1d5cc1c1ffaf8",
+     "beec51a25440031e90f28c88bc887209d6d7643668913e53ecc1d5cc1c1ffaf8",
+     "beec51a25440031e90f28c88bc887209d6d7643668913e53ecc1d5cc1c1ffaf8"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 15.528302
+ },
+ {
+  "repo": "grafana/k6",
+  "package": ".",
+  "ref": "v2.4.0",
+  "commit": "dd9395906d48437a8d7ab53e309afa47ad8d67e0",
+  "status": "ok",
+  "features": {
+   "go_files": 911,
+   "lines": 229054,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": true,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922",
+  "baseline_seconds": 12.541041834,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "eb459fb89dcc89908ca1382f24a1c2ebce9e93b333503ad3045c2ef9f92f1a71",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 911,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa",
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa",
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa",
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa",
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "1545069c85789e529fba3b2d7d6920b92d7e4a1e1f2de7513ae00162512b94dc",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 911,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922",
+     "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922",
+     "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "44e30b8adbae6779b76729565e9d785a2df4b969da049599e00cfdec6a0ddc2d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 911,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922",
+     "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922",
+     "97a1b2236a01606dbb54ff9826b966fccbaf39e18564541badd28d5aae6b8922"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "9b642aebc8c46a41057b6c8940e28ecf1669eaf67bd6b0042146511e9d1e8ec1",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 911,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa",
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa",
+     "eb1d069d87abb4107b580d540a4f326e18ce237e9ce382481a0be8a8aacc18aa"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 108.3119945
+ },
+ {
+  "repo": "hairyhenderson/gomplate",
+  "package": "./cmd/gomplate",
+  "ref": "v5.3.1",
+  "commit": "6f33b7aa15255352e47771f535c6f258d266df24",
+  "status": "ok",
+  "features": {
+   "go_files": 219,
+   "lines": 30793,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319",
+  "baseline_seconds": 53.553878584,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "d76b3e0c343cdc0bf6d63abacddddfa1f284535953258e6c8dbb3efb1b9f6c89",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 219,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8",
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8",
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8",
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8",
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "35a456fdc9dfb310b33fb72c8be76d0015a360c85377cea5f2629adec407d905",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 219,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319",
+     "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319",
+     "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "56cbc5596ddc42e53c6706e67d3e41892b705f2c7f558bbd0a44224137904232",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 219,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319",
+     "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319",
+     "4dd35f418f2178de270f581f90fe468f31532b9447251d806b12d03ffb8d5319"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "5174547e9ae62ab82f4748e0901b864fe0013339d8a8e85089e3b40fefd761f5",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 219,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8",
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8",
+     "443d2c53e4d6ed66d308d5b3cd6193ec7641b49c711ede65ae97dde2ed19d8e8"
+    ]
+   }
+  ],
+  "go_version": "go1.27.3",
+  "target": "linux/arm64",
+  "total_seconds": 86.972012958
+ },
+ {
+  "repo": "helm/helm",
+  "package": "./cmd/helm",
+  "ref": "v4.3.2",
+  "commit": "8346aaa55e7161f7c547212d0a87f01367976727",
+  "status": "ok",
+  "features": {
+   "go_files": 542,
+   "lines": 106945,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "cff3c1b7c28ed003e09373d7f3facb814d3cf0b249b2aac9d7642c7cbc47a2c6",
+  "baseline_seconds": 31.338923791,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "2ae7dc61b8b73078f4591c91ece941532b6a67052305a51c5634aaa057c2f75e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 541,
+    "files_passed_through": 0,
+    "bit_identical": false,
+    "hashes": [
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7",
+     "334da173576660f3c08e22294b62e8341d76294fd4b7eb996b8e96dc7961e0a1",
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7",
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7",
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "eaec0924c86f10bea65126656c681c70ae4eca658d9cca02420156141ffabd8a",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 541,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cff3c1b7c28ed003e09373d7f3facb814d3cf0b249b2aac9d7642c7cbc47a2c6",
+     "cff3c1b7c28ed003e09373d7f3facb814d3cf0b249b2aac9d7642c7cbc47a2c6",
+     "cff3c1b7c28ed003e09373d7f3facb814d3cf0b249b2aac9d7642c7cbc47a2c6"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "4d8eaed776f79466149a3ead7ab848d5c173f7a86442c07335b7f42ab20cc98c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 541,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f1d6c4b0e9061d75663f0b2aeb2afbaaadc9fdd569869cdf2ca619018116cf44",
+     "f1d6c4b0e9061d75663f0b2aeb2afbaaadc9fdd569869cdf2ca619018116cf44",
+     "f1d6c4b0e9061d75663f0b2aeb2afbaaadc9fdd569869cdf2ca619018116cf44"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "ef8aa66992475d1b6df037c26ad1d61534041531f8f8bf505d64a763a818e408",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 541,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7",
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7",
+     "bdeabd1583675de3a70f54f851574fff77fcaf8b2907e7bfcc8e3fc99c519ea7"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 84.635546375
+ },
+ {
+  "repo": "jesseduffield/lazydocker",
+  "package": ".",
+  "ref": "v0.25.2",
+  "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "status": "ok",
+  "features": {
+   "go_files": 87,
+   "lines": 12548,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02",
+  "baseline_seconds": 2.490980333,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "1fa020b2bc7561c51d8f96c9afe895ba595740e6dbf6b52b2387f3f72f1d3ebe",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 87,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d",
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d",
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d",
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d",
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "b339e4379469c5e9eaa3d6115fdb872432f582274400164b18ae237e4abe6f4d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 87,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02",
+     "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02",
+     "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "90aa5039f74d7d34eecf3fe09e72dbebb560ca795deb6fe7131fe9a6877c5aa2",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 87,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02",
+     "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02",
+     "f6d1e80cd28fc5e868facfeb1e2d1ea157e4c79d48f762975d4fadcd688b1d02"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e96825d59b30ba6245111022250dd179d58d2f9d95d8f2e1c93efcc73952de3f",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 87,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d",
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d",
+     "e976c87935241c4381c63537efd3fa25abc838be2c85c27979022701ca806b3d"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 22.203882333
+ },
+ {
+  "repo": "jesseduffield/lazygit",
+  "package": ".",
+  "ref": "v0.66.3",
+  "commit": "e0fbfd50c36e1ef88c52297ca34750e640b4f5f4",
+  "status": "ok",
+  "features": {
+   "go_files": 1287,
+   "lines": 169847,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68",
+  "baseline_seconds": 7.6639993749999995,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "962b4a8b29f064a5093edb2298f17f70ca39f7abc8219efab5d83b6a2d3970fc",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1287,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944",
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944",
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944",
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944",
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "f5d12f9ca40b9815c839861031e25d5431917e1a4b39afb573ad025f395646d6",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1287,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68",
+     "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68",
+     "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "5ea34502cacdd99daca578af1e339ec5a953a40ac437d33dce2e357e0670c889",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1287,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68",
+     "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68",
+     "582461e1238e9bb20302ff9bc5d61b68184c08594c52dcbf5410c89d769ddb68"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e46e8b072a13718f5cd1b1de8574776ed2e454d0e375b89dc76ee134080575ad",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1287,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944",
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944",
+     "82f6f6ee3fb6df89c9d8a3680481f860c798a372f4b370684c02519527bfb944"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 112.68674875
+ },
+ {
+  "repo": "junegunn/fzf",
+  "package": ".",
+  "ref": "v0.75.0",
+  "commit": "c7bf2b8eea25952dd257a466c0afa72faae206fb",
+  "status": "ok",
+  "features": {
+   "go_files": 91,
+   "lines": 34388,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": true,
+   "vendor": false
+  },
+  "baseline_sha256": "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9",
+  "baseline_seconds": 0.181435334,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "24545f26790ee1c8dba27b6e53be548cce5d60f0088c5cd0500152ead63798d2",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca",
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca",
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca",
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca",
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "0b91c9924aa587dcd74a8cde34da513ce7acacde64bd0ad273db1af1677f9f6b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9",
+     "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9",
+     "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "959ed34ff9128acb1bb7b5e741d72350042d2ecfbcbfa894bdb95ac7c9b7b37a",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9",
+     "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9",
+     "d004390bc7f7dd07cfbb45f0ee9a2814dc86c21897e47fa8802f037ca1f05ed9"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "90db80e4b46d4e942649a564fd26d7a23a43e64f42b80c8105a1c129143e61b8",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca",
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca",
+     "0d806695938ba90cf19073b69898f062b2e75aadb5cbae930572d2123a3a71ca"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 13.639433708
+ },
+ {
+  "repo": "kubernetes-sigs/kind",
+  "package": ".",
+  "ref": "v0.33.0",
+  "commit": "407a9675e6d9af1200b5f57f9ca52ec6cdacce74",
+  "status": "ok",
+  "features": {
+   "go_files": 216,
+   "lines": 26328,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a",
+  "baseline_seconds": 2.919916208,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "1c0751dc2fa6870cb38bca94d443be9b6bfe67a4595c048790f86d321d9f6d84",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 216,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e",
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e",
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e",
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e",
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "5d9165b54f6658d0527d8b9cefd093f9ba588b0e68fd81a8a454f0af32d94414",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 216,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a",
+     "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a",
+     "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "107392acd654aa5bf339948de8f41e91c4ae08ab1ade45c7e2d406cdee1cf212",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 216,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a",
+     "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a",
+     "ee951d7af76ddf5496188da4f29b3eee5f7a0506f8827457f68cbadf7308e06a"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "1aa79ef3c655b82a573eafafde2ef0517fa6a6dbeea60b7f5ed67bc91672c941",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 216,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e",
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e",
+     "af640f47b80a3155f52a0a4eaa761057d20d9e089fbdf5904d50e9c1a530ce6e"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 19.753898709
+ },
+ {
+  "repo": "mikefarah/yq",
+  "package": ".",
+  "ref": "v4.54.3",
+  "commit": "f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+  "status": "ok",
+  "features": {
+   "go_files": 278,
+   "lines": 47033,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740",
+  "baseline_seconds": 0.514416292,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "8445b0e29a65523f33a4a4afb39129b0b8b94c9793839ea8e4f79ea4fd76e9f0",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 278,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5",
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5",
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5",
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5",
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "580d50701c239b76567e1bf5fb6ee610a1562f86473222580dff62988960ff8b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 278,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740",
+     "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740",
+     "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "1dacf2e5bc5c49f55329e6d7977f7676fd9b2f61aa6949ca4b4d55d15368fc0d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 278,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740",
+     "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740",
+     "30b76a3283862edf24b9b097f21c857ca7874561c99b906710f33ddf335d4740"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e16d9736f1ae29d48422cb3bb3439b0efc5490bab2e72a82b051e813174870c9",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 278,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5",
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5",
+     "1830b6331d1c9b062e9036f006146b0a8dad41bec5aef2cea069ddc2563bd1a5"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 13.580963875
+ },
+ {
+  "repo": "muesli/duf",
+  "package": ".",
+  "ref": "v0.9.1",
+  "commit": "b2f01a1ecbfd1af63015b83296c50a95260f97b1",
+  "status": "ok",
+  "features": {
+   "go_files": 19,
+   "lines": 2947,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f",
+  "baseline_seconds": 1.56328375,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "79dadffa2d4304a45d3b0e3a6dd91726206f0ed8da33bba1ec90aaa2c84dc85a",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 19,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450",
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450",
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450",
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450",
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "94ccb177edbb6aca7c039d1b0998b4c31cfa51e7895f4fc50b07d45aa26f0b42",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 19,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f",
+     "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f",
+     "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "aac2a46a504801c8de687e25701dacc2092a3246842f4893a7d0486f81d566f5",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 19,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f",
+     "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f",
+     "4ddc3acafe8586e06f8647a29a34e5e74be83763764416edf47960f34ad2e64f"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "90ffdb6712b092a14957bce2b0c9231a710a75c07f7f681d4e341c626d8bfce8",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 19,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450",
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450",
+     "4d422ba8b51c1ed73ec02f488fb2655f4b4a7e6abfa2966cd88073f94f8ef450"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 6.337789792
+ },
+ {
+  "repo": "mvdan/gofumpt",
+  "package": ".",
+  "ref": "v0.12.0",
+  "commit": "3e07e7e70ac93761d8e79ca0083a19e3d59f753d",
+  "status": "ok",
+  "features": {
+   "go_files": 28,
+   "lines": 9857,
+   "embed": false,
+   "cgo": true,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7",
+  "baseline_seconds": 0.975195917,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "265587936831f70da9ea2de72807502e5864fa09a26bd32afdbca7d4581ff79f",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 27,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5",
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5",
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5",
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5",
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "23615a03b36d6e1824c503068c699c26e0cceadcd60616ed57f3e2b751f7c403",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 27,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7",
+     "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7",
+     "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "676382689ec97549c68744c3486b27f40eccba6e945a70e041eb2c1c93e75ef8",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 27,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7",
+     "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7",
+     "108ec566a024dfefaf4eb57710f89fc5d4cf2c4b3fc900bddffb1127ec150ff7"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e7d4885a63f3904c63a0f52f863c8178dec6dc92db0eb443dded91275cadd0f3",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 27,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5",
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5",
+     "2b0e8ba49e8183749625de1cbb32e814f432fdc3bb4bbb7816aa49d048c10ad5"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 10.137736083
+ },
+ {
+  "repo": "mvdan/sh",
+  "package": "./cmd/shfmt",
+  "ref": "v3.14.1",
+  "commit": "a3f0c75d21d918756fa38de8b5d3429efde7948b",
+  "status": "ok",
+  "features": {
+   "go_files": 80,
+   "lines": 39926,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285",
+  "baseline_seconds": 1.8427138749999998,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "83b51a0a65f03846eba813fb63ed6ec8aca512e8a69453ef9df1f089f79b2c3e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 80,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc",
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc",
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc",
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc",
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "52bffab0d37cf8293d75dc10d6a6cb60a1981cfdad23ece72c999ab60fe08053",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 80,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285",
+     "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285",
+     "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "b0ac8a46efff068ef6a4555582cdaf4352f40e181a40dd060d9cc9b2f74c84ce",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 80,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285",
+     "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285",
+     "ed555b49dae1716d7829f0c3a6eafe68a80ba3ace931fdc63e1a5e350eac9285"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "ab6183378ca42c7bd44cf522e0f3e475dda0388db8ac42ed8c25aede987d55e8",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 80,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc",
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc",
+     "49c526b0fccbf6f43578c7adcd928b1cb2bcbf70ee590a22db15ba29309731fc"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 9.4311635
+ },
+ {
+  "repo": "nats-io/nats-server",
+  "package": ".",
+  "ref": "v2.15.3",
+  "commit": "2a9066eb57ff4aa50d8e6a979bdfbd6a8b9db251",
+  "status": "ok",
+  "features": {
+   "go_files": 258,
+   "lines": 489821,
+   "embed": false,
+   "cgo": true,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3",
+  "baseline_seconds": 15.606050625,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "dc481d57f4cfb8d8ad4a8ee0f1f74bc156677564ace282a3e98089893d1ff626",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 258,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de",
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de",
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de",
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de",
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "023c23c8ed00fcebf5283622dd044d0a63dadc12ffa589bcfb38d2f9429e69d2",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 258,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3",
+     "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3",
+     "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "76d6e25dc7798fbf2de4efedf01d90cda7aefb5e55d58d13a0dfc84449badb27",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 258,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3",
+     "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3",
+     "511bd247685a5662573e3df598ca84e616d26d5586a0511ecac8f3665a0707c3"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "7e9b8f41b3ce9c7be73d244b9f1b85a64578cfa36610bccd56a06606ceff20a5",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 258,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de",
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de",
+     "b32e683118d6f8bce5f0ff8102898b92d788d5eeec73b03d1b9e90aca692b5de"
+    ]
+   }
+  ],
+  "go_version": "go1.26.11",
+  "target": "linux/arm64",
+  "total_seconds": 150.346049042
+ },
+ {
+  "repo": "nektos/act",
+  "package": ".",
+  "ref": "v0.2.97",
+  "commit": "2540ba6c49dfbafe167d655e4044921cd2ed19e7",
+  "status": "ok",
+  "features": {
+   "go_files": 147,
+   "lines": 33315,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430",
+  "baseline_seconds": 20.513400666,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "0fa15059d7b652a34fe930486b8d527a653c790a00775719411332dc5fd282b1",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 147,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4",
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4",
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4",
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4",
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "71767f38dc4d9e3371aff98389ff1c9b5129df0651a326e571782a9a74aa3781",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 147,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430",
+     "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430",
+     "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "a5151abd73fb1bc6357971b33f664defab26cb97853d8752eb148c106909a519",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 147,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430",
+     "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430",
+     "1ccda9c4b3987840bba7e25f6086092dcb51a418f2e723c58b6061384081d430"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "8b098277d7eb337254eab64ebb9cae4cd8a1e18ad971e06417e4ad1307582e28",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 147,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4",
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4",
+     "1e1ac837a2a7752da4086224e6445af70903f8388eabf79094430f1333f8fbb4"
+    ]
+   }
+  ],
+  "go_version": "go1.26.10",
+  "target": "linux/arm64",
+  "total_seconds": 68.457850542
+ },
+ {
+  "repo": "OJ/gobuster",
+  "package": ".",
+  "ref": "v3.8.2",
+  "commit": "e8410cad6cacf08b82e2f610055f636f0be61c40",
+  "status": "ok",
+  "features": {
+   "go_files": 54,
+   "lines": 10450,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0",
+  "baseline_seconds": 2.038656084,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "eea3c9b7d0945612cf6791585a8d0a80153f2c155e9972117dc7731928364ac5",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 54,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f",
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f",
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f",
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f",
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "e38495a7fa1cb8522b215c8abcc1e52e0a60cfc467965b7182e758887f07c4ee",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 54,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0",
+     "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0",
+     "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "0196b471c6c94963b21d492fc364555dc8d7beccd92eaefc8ea25dd25c34e467",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 54,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0",
+     "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0",
+     "5fdb593e21a25048125848ca852a514c19ab5c78d8b3e11d6f1616891af50db0"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "6b28d0c4078a1be0a3f33288024b5af9754878c7e4764084dfd87785471879e9",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 54,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f",
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f",
+     "c5caab450e237a7b8c27c25c2a1734cb3f26b252b1b89a7bcc843d32045e8a8f"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 11.561981375
+ },
+ {
+  "repo": "open-policy-agent/opa",
+  "package": ".",
+  "ref": "v1.22.4",
+  "commit": "ba39415db4b3c90cd68942a74b3cc2223ec2b23c",
+  "status": "ok",
+  "features": {
+   "go_files": 1049,
+   "lines": 468034,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa",
+  "baseline_seconds": 12.519796917,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "c30f905ab64e5d90a2cf1d0df9c97b620377e0e3dac1c736ad9d8864bd78c140",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1047,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a",
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a",
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a",
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a",
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "2b6139de341dd64629228a7a1edff6427dbedd11304c4b99d32d4a3ced3d8555",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1047,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa",
+     "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa",
+     "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "b00de59d0802062170cf31ee28c44f7bac15fd57585085e2970a1a06eeb58aa9",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1047,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa",
+     "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa",
+     "06fa0086e793a3f8117e148b3f9afd0102369abd4bcf3314f9d73bf5ddafe5fa"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "d653aec84b90d254b1ca17ab62db9685b942b970b062fd1533232e42cfad8f89",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1047,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a",
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a",
+     "77a21532fadbcb451cc75de258e52ef2476d8d0ff403f592a79823596a356a5a"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 177.755798208
+ },
+ {
+  "repo": "peco/peco",
+  "package": "./cmd/peco",
+  "ref": "v0.6.0",
+  "commit": "6ab3ff6d5d3e8b50e7b7439142ae7b90a9d0786e",
+  "status": "ok",
+  "features": {
+   "go_files": 91,
+   "lines": 19391,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6",
+  "baseline_seconds": 2.942922375,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "37f658decba01c80004b00c7f9fdbc6d8512c537349e68341ac31b9c16da7101",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7",
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7",
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7",
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7",
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "edaa18e6b875fa526824da424fac70b7e0355b9686bdb160782ea6a4fa35244a",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6",
+     "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6",
+     "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "632ac7edefc1ad337e26ea0b5c3ee4457e85a77573533d39d805bfb476a718a5",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6",
+     "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6",
+     "e47755cd4155108d203b26bcc66a003e6a5804f6b57c1cbe51fe2d7b73177db6"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "35acc68a824f42cc1fad4e9ec387669a1a8b1156ebf56ee6c2b273d97bdc4cf6",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 91,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7",
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7",
+     "d44e56f41f24bb5060750b99eddeb8fc8320f625bed0f853ca64c575b59e01a7"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 14.269387042
+ },
+ {
+  "repo": "pressly/goose",
+  "package": "./cmd/goose",
+  "ref": "v3.30.1",
+  "commit": "ded3331f49ba36e8986082b8b74918571d420d0e",
+  "status": "ok",
+  "features": {
+   "go_files": 148,
+   "lines": 17490,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7",
+  "baseline_seconds": 19.827070416,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "cb81aeb576fc953b1fef623f5c4640751505f258edd2ea332b25fcd22f0e7f2f",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 123,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72",
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72",
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72",
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72",
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "5a7f1863aa50aea0f6727f39c59df16215f84294a69a2366a2963c68a8fe466d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 123,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7",
+     "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7",
+     "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "2d2c96e3962834bce3920f5b4bfc78ea916b890e27fa2a00900e999a3733df74",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 123,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7",
+     "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7",
+     "b0de3554175352333d5f35c855e8d63a4879537f015cd91935289ce15318eaa7"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "907044b02f0db72891b9023aac0be5689ba25d975f3a4b4a21bcc4a43d175b04",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 123,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72",
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72",
+     "df0ea0af3cd8946f7e210bd58b989075777ff996b79fcf26369f8ed793972a72"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 43.022668125
+ },
+ {
+  "repo": "projectdiscovery/httpx",
+  "package": "./cmd/httpx",
+  "ref": "v1.12.0",
+  "commit": "4b6a9a9d476f94a4f3a630f37051f5671ecfb1f8",
+  "status": "ok",
+  "features": {
+   "go_files": 96,
+   "lines": 17545,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea",
+  "baseline_seconds": 17.389892959,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "62b94c2776a342634ef3fd925bb2214164d1233650ea75142e50c89f12f20641",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41",
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41",
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41",
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41",
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "69c293324b64fae64ad9d36a9dc23fb82fbb452c882dcdbc03e7ee205f710475",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea",
+     "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea",
+     "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "0057eed9265283e4a1fb6a8fdc16786b6ad0f16fda325d97d585398fdbdf1d37",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea",
+     "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea",
+     "960235d8bf8462aab1a2eeadc6ac4a8380ca0f731e0d9c3172c6a0039012ddea"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e73c3bdd58d4fedecdc8b77a2fc3e4401bf90130c7ee86f1848099ddb8d191fd",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 96,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41",
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41",
+     "3af6779e6c564f1d2d0aeaa4e199e56e40ac974288c564b79682eaa838435e41"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 51.708359291
+ },
+ {
+  "repo": "prometheus/node_exporter",
+  "package": ".",
+  "ref": "v1.12.1",
+  "commit": "6044da783597cc3b57aef7580ddcdcff58a4ee99",
+  "status": "ok",
+  "features": {
+   "go_files": 193,
+   "lines": 31970,
+   "embed": false,
+   "cgo": true,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595",
+  "baseline_seconds": 4.704260625,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "c3a19f022c900080b79c6eeeeb8e0a36b2d9b06bbc4449c0d4a19bdceff6d176",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 193,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c",
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c",
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c",
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c",
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "3374c6d7f26397a30d5bc5e36064bd3fadbe7dc6dd141ee00cae176ea764509d",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 193,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595",
+     "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595",
+     "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "f0d2ae1f09c0509964177d6d7aa769d24e8fa7d15379e7c2848f7c43c4eb4fed",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 193,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595",
+     "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595",
+     "6452c8370f805bd9a74193ed93f457497200e0e18d0307f161efcefb5ff82595"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "2b613db2db8892301d54998922d0bebe91946a8ab694ef0def18b784079b6d84",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 193,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c",
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c",
+     "6d7635083a6299ff7508fa5c4a474dfa25cd56d8e58258567d8f0da29659634c"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 19.873536167
+ },
+ {
+  "repo": "rakyll/hey",
+  "package": ".",
+  "ref": "v0.1.5",
+  "commit": "e64ec7a3ad1ef8bc828fe61e1fb324cc2e74c604",
+  "status": "ok",
+  "features": {
+   "go_files": 8,
+   "lines": 1285,
+   "embed": false,
+   "cgo": false,
+   "reflect": false,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f",
+  "baseline_seconds": 1.5653981670000001,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "6b414fc1f88d6a55d7652481ed3673324cb827f72952dabcb0d6a7b027942c9b",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 8,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1",
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1",
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1",
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1",
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "a4d39df18fa3fff67feccfd868493d26fe21f73dfa6e92fe1df187157dad0308",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 8,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f",
+     "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f",
+     "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "6ceb73729580860d16ee676b5bdbba615ef32fc33942ac672dc9a5c03d63f749",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 8,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f",
+     "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f",
+     "2baed84163f359af70dc1f2f0624fdb516291f897c5d2294dc0bdb231b75132f"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "bb5d028230248060019f7175e13c0f742932ae1fcda3f622aaed089d0af49c4b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 8,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1",
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1",
+     "eaec9b9c2734c1f4f68f76bd67a197741cf1a42d487ecb923a30d01f76532dd1"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 6.978606958
+ },
+ {
+  "repo": "restic/restic",
+  "package": "./cmd/restic",
+  "ref": "v0.19.1",
+  "commit": "6aa3a516ce654808a1f28f9fa21e9b7c8e6e90bf",
+  "status": "ok",
+  "features": {
+   "go_files": 537,
+   "lines": 87262,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a",
+  "baseline_seconds": 14.167857167,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "db8aa3b0ecc70863658585ae6950865fd2ed1ec9950963dc214d3771b3c669db",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 537,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd",
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd",
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd",
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd",
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "015d5ad848006e6e7567c12ecc95e93011ba2e81bde0acc723ad18c5a9c75a94",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 537,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a",
+     "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a",
+     "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "43f8e9cae1dfcadc466d2597cb5ec199509febb5d98a9dabdfffb001be9682c8",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 537,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a",
+     "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a",
+     "1086f87253b872a88b9f04cacc3208da3c9062bd98429f7f7c0f6aab07fc7d3a"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "3973ceaea0c8ca991f36f6a2f780444c43c7287065a1bf4da00f81184b710a92",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 537,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd",
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd",
+     "0d284eebcd59c035804dfb4a36124896bff6e1584ad6162262d8c856b1d182bd"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 62.0229545
+ },
+ {
+  "repo": "schollz/croc",
+  "package": ".",
+  "ref": "v11.6.5",
+  "commit": "b97d50e03ed0afd54226052365fe9f5d4f96f5ad",
+  "status": "ok",
+  "features": {
+   "go_files": 232,
+   "lines": 58388,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e",
+  "baseline_seconds": 49.115097166,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "234d6f8724a017ed4b1c143f03beae60bd663836403b2dc890dcfb1a2b8b6fe1",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 229,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2",
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2",
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2",
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2",
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "ed6789ab687f37c6debae69b95b0e6ed776e07e404a82ed51036fc2bc9c08bf4",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 229,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e",
+     "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e",
+     "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "8bc33a70e6d407393f4a4cac130954fc2420be7267fb5bb88ce49c7812fe60a4",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 229,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e",
+     "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e",
+     "e6e0747bf2a02e41735d7987f7f986fd10fee8750f329f0e49b02613d95f9c8e"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "29e0d53068bc46113292b6eaae7e21ef8f735e667cc5361dab0d91fa9d967cfd",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 229,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2",
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2",
+     "e1327018deffae396520c0e9d692943cd3d6f5f29f899a541f477100c0875ff2"
+    ]
+   }
+  ],
+  "go_version": "go1.27.3",
+  "target": "linux/arm64",
+  "total_seconds": 141.825971375
+ },
+ {
+  "repo": "spf13/cobra-cli",
+  "package": ".",
+  "ref": "v1.3.0",
+  "commit": "74762ac083f2c4deffef229c887ffc15beb6ce0d",
+  "status": "ok",
+  "features": {
+   "go_files": 21,
+   "lines": 3405,
+   "embed": false,
+   "cgo": false,
+   "reflect": false,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4",
+  "baseline_seconds": 1.991083792,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "e0a78870c2d58363ffc86ed8bb0a844dd2163946ce4545e38148e4b875097b4f",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 21,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847",
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847",
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847",
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847",
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "a61d09a3c9f35e58ee9b2d9d8d8e1d3df794b17142d7f751c7ff596325d90744",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 21,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4",
+     "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4",
+     "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "3a9c9527e9710ad40ca4dd8bbf53f96d31faea71793344c5cc62246d18e78fb2",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 21,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4",
+     "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4",
+     "d516333e61af67851a17f8b4d70da6915deb621b9c4f5769e2c30278db0024b4"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "e49df640341a226067dc5e40ba72d6174d010022d5a485910251960d86d1ea3b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 21,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847",
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847",
+     "4166bd51cd0ca4918a7d8ca6ad7378c55598434b52130576a81c7393436ff847"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 7.88051325
+ },
+ {
+  "repo": "tomnomnom/gron",
+  "package": ".",
+  "ref": "v0.7.1",
+  "commit": "badf401da553eb41b7ffde4be6a64809ed0ed846",
+  "status": "ok",
+  "features": {
+   "go_files": 12,
+   "lines": 2725,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22",
+  "baseline_seconds": 0.226404625,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "2da17854483040e5af8d8196abaca9a0257dad4e0b2d993c322854bdc465f12e",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 12,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790",
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790",
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790",
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790",
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "6355cdc082a30df138d5ca8006d43975a3f8ab93047a593407855142d36b0530",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 12,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22",
+     "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22",
+     "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "43e8359768469e11559e8d59b2709162fecc8498cd8442f17574a4994421322b",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 12,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22",
+     "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22",
+     "a7553304f978c6132592871698b17f5418bdc1255ae7fd1ab261880e87338f22"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "cd7357d414fe272a59bd02a569a6cc95d919e8e22f267038c4c2d33fedb9c273",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 12,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790",
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790",
+     "40640d1195229829f29bd624037a7017b95fc5fc6c7c7337fe8f1bb3808d6790"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 7.115880125
+ },
+ {
+  "repo": "traefik/yaegi",
+  "package": "./cmd/yaegi",
+  "ref": "v0.16.3",
+  "commit": "e622b4e3a12c394e0e784e0447a8bbfefb56b782",
+  "status": "ok",
+  "features": {
+   "go_files": 1601,
+   "lines": 252435,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": true
+  },
+  "baseline_sha256": "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94",
+  "baseline_seconds": 2.07254075,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "2874d059d90f7f83d98da6657c291ad9b8aa8a207b92428624bf8c33d2e0b5e2",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1577,
+    "files_passed_through": 1,
+    "bit_identical": true,
+    "hashes": [
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683",
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683",
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683",
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683",
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "9d1130944944183c0e8365def837faeb34b7b959b0db4abcf1f558cd85c900c6",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1577,
+    "files_passed_through": 1,
+    "bit_identical": true,
+    "hashes": [
+     "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94",
+     "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94",
+     "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "9a32ece226e942589c4b7328a3bf9b15c42b4498499097f66afc4bb03bbfb28c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 1577,
+    "files_passed_through": 1,
+    "bit_identical": true,
+    "hashes": [
+     "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94",
+     "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94",
+     "0946e0958af1d2c07f04d7ef17fbba2e6ef036855fec6d79a5ad00571bc44a94"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "c3b43785a8759dfba53c98737fd997b13e11e65bdb725c75790420ce6b20d3cf",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 1577,
+    "files_passed_through": 1,
+    "bit_identical": true,
+    "hashes": [
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683",
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683",
+     "9002d9d17e2b808755677554fbbb05e8f592429218b5818c92cb271e3efa6683"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 48.167827292
+ },
+ {
+  "repo": "tsenart/vegeta",
+  "package": ".",
+  "ref": "v12.13.0",
+  "commit": "507c4f028fbad80168f3b734dab9530d3aabfefa",
+  "status": "ok",
+  "features": {
+   "go_files": 45,
+   "lines": 21707,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1",
+  "baseline_seconds": 4.65027325,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "1af16c6d6d240e53c05d07040e67457387131e9376a7f683c6a39b1ddbaa2ac6",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 45,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c",
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c",
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c",
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c",
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "34be83c08f866625d36dedfb57db9450aee4717685d170294241b55149737ced",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 45,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1",
+     "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1",
+     "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "790dd2fdef9d3d49ffb1f56b75f3f33a0a851683113743688fd425f0e62add95",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 45,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1",
+     "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1",
+     "f322d11131dde53cd77aa5748dc35099afbc099beff7a85e2a87993f9c40ffa1"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "a167daaed2f36807f43b5a3679774a463fe82a1f87fa035433fdebb7cae870ab",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 45,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c",
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c",
+     "c6d05402ee0bfa773499d8f0ac42c592e2b4913a25d92582ca21aeb0fcd17c3c"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 14.17268375
+ },
+ {
+  "repo": "wagoodman/dive",
+  "package": ".",
+  "ref": "v0.13.1",
+  "commit": "fe98c8a2eb08c443a36e3cc7568078909e298433",
+  "status": "ok",
+  "features": {
+   "go_files": 85,
+   "lines": 14197,
+   "embed": false,
+   "cgo": false,
+   "reflect": false,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09",
+  "baseline_seconds": 8.350816458,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "6271d372c5b2d2b437a21a551245419652e436633d1cddd4d22d635f1aa3594f",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 85,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652",
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652",
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652",
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652",
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "d65eae2889207c46daebf28db62e9e387fc25c8df41b55fd8f9b8489d54205c0",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 85,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09",
+     "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09",
+     "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "2708ce1322e1c608b5531aa7d9af201a6e186c2904a228cb78721d40be567481",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 85,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09",
+     "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09",
+     "c3c68461c9d92ee712953f753b1864f10e4950b20e7b33ec124965e335f16c09"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "44d7db87394b68dccf106e36c9ab2cbb7e23397a7ac2dd0cc315f45b82166021",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 85,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652",
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652",
+     "11d739e163395f609d2de06987f50535352a0406f106a8ada8e2cf0ef7f21652"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 21.389039958
+ },
+ {
+  "repo": "yuin/gopher-lua",
+  "package": "./cmd/glua",
+  "ref": "v1.1.2",
+  "commit": "b87eac29661715e48e1a2868d76b853e0e757c4c",
+  "status": "ok",
+  "features": {
+   "go_files": 42,
+   "lines": 20025,
+   "embed": false,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": true,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8",
+  "baseline_seconds": 0.761721625,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "f39cd8c68fc462cb5e9a44dd24fc777b183d76b9ba62764896f6906c108153c2",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 42,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba",
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba",
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba",
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba",
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "fd8e6fc846a28ca36bc4d35e24e9ac21567f3fc2457f2e7ec3b35d21c11f8a79",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 42,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8",
+     "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8",
+     "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "3a11ec29b93e3596f6b39cca287969c549ab220913536c4a7c194d32ef18d67a",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "files_transformed": 42,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8",
+     "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8",
+     "25e2da523c7c7d9b0590d20621175661117dfebcd71b90db8288cb17f042bcd8"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "d2885f9c55f4b6b43035ab08566392170f7fe3f0b05badd63521f9341ae16cd4",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 42,
+    "files_passed_through": 0,
+    "bit_identical": true,
+    "hashes": [
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba",
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba",
+     "cf159efbfc3913ab453a30c3c631cf0a526817df061a815d9ab836d85f10deba"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 24.045774833
+ },
+ {
+  "repo": "zyedidia/micro",
+  "package": "./cmd/micro",
+  "ref": "v2.0.15",
+  "commit": "6a62575bcfdf4965f187eedafceb3400316e612b",
+  "status": "ok",
+  "features": {
+   "go_files": 94,
+   "lines": 25053,
+   "embed": true,
+   "cgo": false,
+   "reflect": true,
+   "unsafe": false,
+   "linkname": false,
+   "asm": false,
+   "vendor": false
+  },
+  "baseline_sha256": "01ef1696627768404dcaec31cc53404d4f7b5a40807a79cd3d49ca476eb2f265",
+  "baseline_seconds": 3.44801175,
+  "sets": [
+   {
+    "set": "T1,T2,T3",
+    "seed": "63e39e07955affd6509b79239918383a1cf55a49b084d4710f30ce38af5b59c2",
+    "variants": 5,
+    "distinct_sources": 5,
+    "distinct_hashes": 5,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 94,
+    "files_passed_through": 0,
+    "bit_identical": false,
+    "hashes": [
+     "81a0136e8d18d7934793890365b615b3ef80757c1fb1e72cef1ca3c3fa1ab2a7",
+     "332bc5c6c7a07e7b1202e898b35565d4a53a12679ad1f39f33692f7be99a2546",
+     "f8090e8dc438fdaa88bd1fb92b1f5fbd385e68d0af000ff4fcf2f3970c1a74e4",
+     "cb075802b8dd25836217ea6af399fee82cd5e58b127857b40ac1c09474739119",
+     "f1802987239a375d8a7d3c41fa22b36b5e48f61184ff4a520466238da1926bdc"
+    ]
+   },
+   {
+    "set": "T1",
+    "seed": "c5d547158e3fb41a12e2c305ba3d23bdf8ed59ebdbd28e61856755f99c22090c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 3,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 94,
+    "files_passed_through": 0,
+    "bit_identical": false,
+    "hashes": [
+     "541db5ea084b0622c3aa571c7629f86aaf312763dd32738e0561e3a606bc4841",
+     "18ed628f325f8e610cf517bdec83601a065d3e487e40e91d717339bd43a5f7f6",
+     "60dfa14306d9f8de74e6942e881340ed3cb9687ccbae3fc0a7c1887e01a621e2"
+    ]
+   },
+   {
+    "set": "T2",
+    "seed": "f639f833618516512b9a8079ceacc9cdd727a03d3c4b8639920a1fcb8f50a7af",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 3,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 94,
+    "files_passed_through": 0,
+    "bit_identical": false,
+    "hashes": [
+     "5a1712ae5e4afcccf3721a1e0626d974e53200128aece854ea37910a06b5649b",
+     "14539dab62f34be5286b7c0a942bf1099c01a728b3a96490390cdd3c0cb0fa3e",
+     "a0b5d064dd67410d5c5532c54c1b4e916e8513bed9630b51dca97600ce1cf079"
+    ]
+   },
+   {
+    "set": "T3",
+    "seed": "7be22b02c870587dcd3cf3095bf5f11f800daf2161811e4c36a59ff81ce96e1c",
+    "variants": 3,
+    "distinct_sources": 3,
+    "distinct_hashes": 3,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "files_transformed": 94,
+    "files_passed_through": 0,
+    "bit_identical": false,
+    "hashes": [
+     "cd9e8eb57edf6f5c00322bac40147a2125a1151ad416ba35506d288e82788af0",
+     "49bb5ecbe91b6a539f1127ca72c787356410c3664081c37607781bbb21e1f487",
+     "b3aaddf29b33df002847b89325f3b0a0255cf8fd7ec2f27a24c85b7c6d8eaa3f"
+    ]
+   }
+  ],
+  "go_version": "go1.26.5",
+  "target": "linux/arm64",
+  "total_seconds": 27.957657042
+ }
+]
