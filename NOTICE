@@ -1,0 +1,24 @@
+SourceGuard
+Copyright 2026 95LAB
+
+This product includes software, designs, and documentation developed by
+95LAB.
+  Author / contact: Hieu Nguyen <hillnguyen528@gmail.com>
+  Repository:       https://github.com/hillnguyen528/sourceguard
+
+ATTRIBUTION REQUIREMENT
+Any use, redistribution, modification, or derivative work of this
+repository (including the Differential Source Variants (DSV) design,
+code, documentation, figures, or text), whether in software, products,
+services, research papers, talks, or teaching material, must:
+
+  1. Retain this NOTICE file (for code, as required by Section 4(d) of
+     the Apache License 2.0), and
+  2. Visibly credit:
+       "SourceGuard by Hieu Nguyen (hillnguyen528@gmail.com),
+        95LAB"
+  3. In academic or technical publications, cite the work as described
+     in CITATION.cff.
+
+Documentation is licensed under CC BY 4.0 (see LICENSE-docs), which
+likewise requires appropriate credit in the form above.

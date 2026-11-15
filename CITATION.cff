@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: >-
+  If you use SourceGuard, the Differential Source Variants (DSV) technique,
+  or any part of this repository, please cite it as below and credit
+  95LAB.
+type: software
+title: "SourceGuard: Differential Source Variants for Build Confidentiality under Compiler Compromise"
+abstract: >-
+  SourceGuard is a build architecture that keeps source code confidential
+  even when the compiler is compromised. Each isolated build cell compiles
+  a textually different but semantically equivalent source variant; an
+  honest compiler yields bit-identical artifacts, so any compiler that
+  embeds variant-dependent information causes divergence and is blocked
+  by a trusted artifact gateway.
+authors:
+  - family-names: Nguyen
+    given-names: Hieu
+    email: hillnguyen528@gmail.com
+    affiliation: "95LAB"
+  - name: "95LAB"
+    email: hillnguyen528@gmail.com
+repository-code: "https://github.com/hillnguyen528/sourceguard"
+url: "https://github.com/hillnguyen528/sourceguard"
+license: Apache-2.0
+version: "0.2"
+date-released: "2026-11-15"
+keywords:
+  - build security
+  - supply chain security
+  - reproducible builds
+  - source code confidentiality
+  - compiler security
+  - differential source variants
+  - n-variant systems

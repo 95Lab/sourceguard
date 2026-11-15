@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Go
+/bin/
+/dist/
+*.test
+*.out
+coverage.*
+go.work
+go.work.sum
+
+# Secrets and key material: never commit
+*.key
+*.pem
+*.age-key
+.env
+.env.*
+keys/
+secrets/
+
+# Evaluation outputs
+eval/**/results/
+eval/**/corpus/
