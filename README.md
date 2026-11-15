@@ -76,11 +76,11 @@ A prototype implements the full pipeline for Go, with lexical variants for C, C+
 |---|---|
 | Encrypted source store, signed manifest, Key Broker | Prototype |
 | Variant Generator | Go: five transformations. C, C++, Rust: comments and whitespace |
-| Build cells, Artifact Gateway, Release Signer | Prototype (containers) |
-| Invariance on real projects | Go: bit-identical on 54 / 54 projects, two architectures ([results](docs/results/phase1-invariance.md)). C/C++: 24–26 of 26 with GCC and Clang; Rust: 29 of 29 ([results](docs/results/c-rust-invariance.md)) |
-| What remains exposed | Measured ([results](docs/results/evaluation.md)) and stated formally ([security argument](docs/security-argument.md)) |
-| Integration with a self-hosted Git service (Forgejo) | In progress |
-| MicroVM build cells, multi-module builds | In progress |
+| Build cells, Artifact Gateway, Release Signer | Prototype; cells run as containers or Firecracker microVMs |
+| Invariance on real projects | Go: bit-identical on 54 / 54 projects, two architectures ([results](docs/results/phase1-invariance.md)). C/C++: 25–26 of 26 with GCC and Clang; Rust: 30 of 30 ([results](docs/results/c-rust-invariance.md)) |
+| What remains exposed | Measured, including against a decompiler ([results](docs/results/evaluation.md)), and stated formally ([security argument](docs/security-argument.md)) |
+| Self-hosting with Forgejo, multi-module builds, microVM cells | Working end to end on one host ([overview](docs/self-hosting.md)) |
+| Imports between modules of one project | Not started |
 | Hardware attestation (SEV-SNP/TDX), diverse toolchains | Not started |
 
 ## Availability
@@ -95,6 +95,7 @@ This repository publishes the architecture, the security argument and the experi
 | [Phase 1 Results](docs/results/phase1-invariance.md) | Invariance study on 54 open-source Go projects: method, findings, limitations |
 | [Evaluation Results](docs/results/evaluation.md) | Dead code (T4), package-level renaming (T7), cgo, invariant information and structure (RQ2), cost |
 | [C, C++ and Rust Results](docs/results/c-rust-invariance.md) | Invariance with GCC, Clang and rustc; language rules; findings |
+| [Self-Hosting Overview](docs/self-hosting.md) | What a deployment looks like, who sees what, comparison with an ordinary Git service |
 | [Security Argument](docs/security-argument.md) | Model, assumptions, two theorems, and what is not protected |
 | [Related Work and Positioning](docs/related-work.md) | TightLip, Secure Multi-Execution, N-variant systems, reproducible and attested builds |
 | [Kiến trúc (Tiếng Việt)](docs/architecture.vi.md) | Original Vietnamese version |

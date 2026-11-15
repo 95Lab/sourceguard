@@ -10,7 +10,7 @@ Date: 2026-11-15. This report extends the [Phase 1 invariance study](phase1-inva
 | T1+T2+T3 with cgo enabled | Bit-identical on **53 / 54**; the exception (`helm/helm`) exposed a new limitation, see [Finding 5](#finding-5-programs-that-link-plugin-embed-hashes-of-export-data) |
 | Invariant information (RQ2) | DSV hides **24.0%** of source bytes (comments) and **259,624** local names; of the names it cannot hide, about 95% of function, type and field names are already in the stripped binary, but package-level variable and constant names are not |
 | T7, package-level renaming (new) | Bit-identical on **54 / 54** projects, alone and with all other transformations; covers 94.5% of unexported package-level variables and constants |
-| Structure in the binary (RQ2) | Against a disassembly, the honest binary shows 43.5% of the call edges and 46.2% of the integer constants that the attacker's normal form contains |
+| Structure in the binary (RQ2) | The honest binary shows 43.5% of the call edges and 46.2% of the integer constants that the attacker's normal form contains (disassembly, 54 projects). Ghidra on stripped binaries confirms it: 41.3% of call edges on 15 projects |
 | Attacker normal form (X4) | Identical across variants for all **6,606** compiled files: the adaptive attack always passes the gateway |
 | Variant generation cost (RQ4) | Median **2.5%** of a cold build |
 
@@ -122,7 +122,23 @@ Reading these numbers:
 - **Strings survive, structure does not.** Nearly all string literals are in the binary. Fewer than half of the call edges and integer constants can be read off the disassembly at the place where the source has them, mainly because the compiler inlines calls and folds constants.
 - **So the normal form is worth considerably more than the binary.** A compromised compiler that embeds it (attack X4) hands over the pre-optimization structure: which function calls which, with every constant in place. This is the main residual risk of the design and it is not reduced by any transformation implemented here.
 
-Caveats. A disassembler was used, not a decompiler; a decompiler reads the same instructions, so it would not recover calls or constants that are no longer there, but this was not tested with one. The disassembler needs a symbol table, so it ran on a twin of each binary built without `-s -w`; the code is the same, and the function names it uses are in the stripped binary's pclntab. Names of inlined functions remain in that table, so a tool that decodes its inlining records could recover more call edges than counted here. Call edges are matched by callee name only.
+Caveats for the disassembly. The disassembler needs a symbol table, so it ran on a twin of each binary built without `-s -w`; the code is the same. Names of inlined functions remain in the pclntab, so a tool that decodes its inlining records could recover more call edges than counted here. Call edges are matched by callee name only.
+
+### Structure: normal form versus a decompiler
+
+The disassembly is a proxy for what a reverse engineer has. To check it, the comparison was repeated with Ghidra 12.2 on the **stripped** release binaries of 17 small and medium projects of the corpus. Ghidra's Go analyzer recovers function names from the pclntab; a script decompiles every first-party function and exports its call targets and constants from the decompiler's intermediate form.
+
+Two projects gave no usable result: for `FiloSottile/age` (built with Go 1.27.0) Ghidra recovered no first-party function names, and for `mikefarah/yq` the import failed. On the remaining 15 projects (3,893 source functions):
+
+| Feature (all present in the normal form) | In source | Ghidra, stripped binary | Disassembly with symbols |
+|---|---|---|---|
+| Functions and methods recovered as a function | 3,893 | 2,658 (68.3%) | 2,667 (68.5%) |
+| Call edges | 13,609 | 5,626 (41.3%) | 5,776 (42.4%) |
+| Integer constants ≥ 1000 | 50 | 30 (60.0%) | 33 (66.0%) |
+
+The decompiler recovers slightly less than the disassembly with symbols, never more. The proxy used for the whole corpus is therefore a fair, slightly generous, estimate of the reverse engineer's view, and the conclusion stands: more than half of the call structure in the attacker's normal form cannot be read off the binary.
+
+Limits of this check: 15 projects, all built with Go 1.26.11; the constant sample is small (50); Ghidra ran with default analysis options and a 60-second limit per function; only one decompiler was tried. Median analysis time was 135 seconds per binary.
 
 ## Cost (RQ4)
 
@@ -135,14 +151,14 @@ Generating one variant of a whole tree (all transformations) took a median of 0.
 - The `plugin` effect on T3 and T4 is inferred from how export data works; only T2 was measured.
 - The binary lookup is a substring match on names of 5 or more characters. String literals and constants were not looked up.
 - Information content is approximated by compressed size.
-- The structural comparison uses a disassembler and three features; it is not a similarity measure between source and decompiled code.
+- The structural comparison counts three features; it is not a similarity measure between source and decompiled code. The decompiler check covers 15 of the 54 projects.
 - Limitations of [Phase 1](phase1-invariance.md#limitations) apply as well (debug information stripped, Go 1.26.5 to 1.27.4).
 
 ## Data
 
 > The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here; see the [README](../../README.md#availability).
 
-Raw data: [`eval-t7-linux-amd64.json`](eval-t7-linux-amd64.json), [`eval-t4-linux-amd64.json`](eval-t4-linux-amd64.json), [`eval-cgo-linux-amd64.json`](eval-cgo-linux-amd64.json) (final), [`eval-cgo-first-run-linux-amd64.json`](eval-cgo-first-run-linux-amd64.json), [`eval-leakage-linux-amd64.json`](eval-leakage-linux-amd64.json).
+Raw data: [`eval-t7-linux-amd64.json`](eval-t7-linux-amd64.json), [`eval-t4-linux-amd64.json`](eval-t4-linux-amd64.json), [`eval-cgo-linux-amd64.json`](eval-cgo-linux-amd64.json) (final), [`eval-cgo-first-run-linux-amd64.json`](eval-cgo-first-run-linux-amd64.json), [`eval-leakage-linux-amd64.json`](eval-leakage-linux-amd64.json), [`eval-decompiler-linux-amd64.json`](eval-decompiler-linux-amd64.json).
 
 ## Leakage per project
 

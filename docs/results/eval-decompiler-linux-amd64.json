@@ -1,0 +1,1217 @@
+[
+ {
+  "repo": "BurntSushi/toml",
+  "package": "./cmd/tomlv",
+  "commit": "52534926c55b4cd85b05aee90569dd0668b8cf30",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 12,
+  "src_bytes": 117131,
+  "comment_bytes": 34666,
+  "binary_bytes": 2355326,
+  "gz_src": 33577,
+  "gz_no_comment": 20483,
+  "gz_normalized": 20592,
+  "local_decls": 688,
+  "local_unique": 168,
+  "names": {
+   "functions and methods": {
+    "unique": 188,
+    "checked": 167,
+    "in_binary": 140
+   },
+   "package-level variables and constants": {
+    "unique": 62,
+    "checked": 61,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 55,
+    "checked": 30,
+    "in_binary": 29
+   },
+   "types": {
+    "unique": 33,
+    "checked": 31,
+    "in_binary": 29
+   }
+  },
+  "control_local_names": {
+   "unique": 140,
+   "checked": 61,
+   "in_binary": 18
+  },
+  "package_names_renamed": 59,
+  "package_names_unexported": 59,
+  "structure": {
+   "functions": 217,
+   "functions_with_symbol": 126,
+   "call_edges": 833,
+   "call_edges_in_disassembly": 309,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 124,
+   "string_literals_in_binary": 114
+  },
+  "structure_decompiler": {
+   "functions": 217,
+   "functions_with_symbol": 126,
+   "call_edges": 833,
+   "call_edges_in_disassembly": 308,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 124,
+   "string_literals_in_binary": 114
+  },
+  "decompiler_seconds": 51.863813737,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.07409319,
+  "baseline_build_seconds": 0.379063052,
+  "total_seconds": 53.821888595
+ },
+ {
+  "repo": "direnv/direnv",
+  "package": ".",
+  "commit": "28a73d1df3f387e16f3c7fa888c2a049e0059e7a",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 55,
+  "src_bytes": 114993,
+  "comment_bytes": 20554,
+  "binary_bytes": 8560766,
+  "gz_src": 30681,
+  "gz_no_comment": 22462,
+  "gz_normalized": 22548,
+  "local_decls": 878,
+  "local_unique": 252,
+  "names": {
+   "functions and methods": {
+    "unique": 140,
+    "checked": 125,
+    "in_binary": 124
+   },
+   "package-level variables and constants": {
+    "unique": 102,
+    "checked": 85,
+    "in_binary": 19
+   },
+   "struct fields and interface methods": {
+    "unique": 50,
+    "checked": 34,
+    "in_binary": 34
+   },
+   "types": {
+    "unique": 34,
+    "checked": 22,
+    "in_binary": 22
+   }
+  },
+  "control_local_names": {
+   "unique": 236,
+   "checked": 172,
+   "in_binary": 59
+  },
+  "package_names_renamed": 20,
+  "package_names_unexported": 20,
+  "structure": {
+   "functions": 197,
+   "functions_with_symbol": 167,
+   "call_edges": 717,
+   "call_edges_in_disassembly": 300,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 154,
+   "string_literals_in_binary": 152
+  },
+  "structure_decompiler": {
+   "functions": 197,
+   "functions_with_symbol": 167,
+   "call_edges": 717,
+   "call_edges_in_disassembly": 300,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 154,
+   "string_literals_in_binary": 152
+  },
+  "decompiler_seconds": 194.446109054,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.041075314,
+  "baseline_build_seconds": 7.312151797,
+  "total_seconds": 203.614052305
+ },
+ {
+  "repo": "etcd-io/bbolt",
+  "package": "./cmd/bbolt",
+  "commit": "e7a8b2dd498494a3766ba24dd94d3509e5588485",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 52,
+  "src_bytes": 281458,
+  "comment_bytes": 83359,
+  "binary_bytes": 3846270,
+  "gz_src": 70862,
+  "gz_no_comment": 43569,
+  "gz_normalized": 44256,
+  "local_decls": 1970,
+  "local_unique": 370,
+  "names": {
+   "functions and methods": {
+    "unique": 426,
+    "checked": 372,
+    "in_binary": 360
+   },
+   "package-level variables and constants": {
+    "unique": 79,
+    "checked": 79,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 211,
+    "checked": 179,
+    "in_binary": 167
+   },
+   "types": {
+    "unique": 62,
+    "checked": 52,
+    "in_binary": 49
+   }
+  },
+  "control_local_names": {
+   "unique": 317,
+   "checked": 206,
+   "in_binary": 41
+  },
+  "package_names_renamed": 14,
+  "package_names_unexported": 18,
+  "structure": {
+   "functions": 519,
+   "functions_with_symbol": 295,
+   "call_edges": 1788,
+   "call_edges_in_disassembly": 684,
+   "int_constants": 12,
+   "int_constants_in_disassembly": 12,
+   "string_literals": 413,
+   "string_literals_in_binary": 394
+  },
+  "structure_decompiler": {
+   "functions": 519,
+   "functions_with_symbol": 295,
+   "call_edges": 1788,
+   "call_edges_in_disassembly": 684,
+   "int_constants": 12,
+   "int_constants_in_disassembly": 10,
+   "string_literals": 413,
+   "string_literals_in_binary": 394
+  },
+  "decompiler_seconds": 133.871345178,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.168016056,
+  "baseline_build_seconds": 1.921320387,
+  "total_seconds": 137.781022408
+ },
+ {
+  "repo": "ffuf/ffuf",
+  "package": ".",
+  "commit": "256c1b02499f5f8672af965d4ad7a321d606bc65",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 46,
+  "src_bytes": 230889,
+  "comment_bytes": 46051,
+  "binary_bytes": 9916542,
+  "gz_src": 60728,
+  "gz_no_comment": 42845,
+  "gz_normalized": 41982,
+  "local_decls": 1254,
+  "local_unique": 427,
+  "names": {
+   "functions and methods": {
+    "unique": 262,
+    "checked": 248,
+    "in_binary": 245
+   },
+   "package-level variables and constants": {
+    "unique": 31,
+    "checked": 31,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 258,
+    "checked": 218,
+    "in_binary": 218
+   },
+   "types": {
+    "unique": 66,
+    "checked": 65,
+    "in_binary": 64
+   }
+  },
+  "control_local_names": {
+   "unique": 410,
+   "checked": 275,
+   "in_binary": 103
+  },
+  "package_names_renamed": 6,
+  "package_names_unexported": 6,
+  "structure": {
+   "functions": 308,
+   "functions_with_symbol": 251,
+   "call_edges": 993,
+   "call_edges_in_disassembly": 482,
+   "int_constants": 5,
+   "int_constants_in_disassembly": 4,
+   "string_literals": 273,
+   "string_literals_in_binary": 270
+  },
+  "structure_decompiler": {
+   "functions": 308,
+   "functions_with_symbol": 249,
+   "call_edges": 993,
+   "call_edges_in_disassembly": 468,
+   "int_constants": 5,
+   "int_constants_in_disassembly": 3,
+   "string_literals": 273,
+   "string_literals_in_binary": 270
+  },
+  "decompiler_seconds": 218.186052169,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.109478921,
+  "baseline_build_seconds": 3.662623106,
+  "total_seconds": 223.968410257
+ },
+ {
+  "repo": "FiloSottile/age",
+  "package": "./cmd/age",
+  "commit": "b74dce4cdbe35b5e5f66c06d9612b72f89028758",
+  "go_version": "go1.27.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 23,
+  "src_bytes": 185503,
+  "comment_bytes": 42296,
+  "binary_bytes": 4661372,
+  "gz_src": 48395,
+  "gz_no_comment": 35179,
+  "gz_normalized": 36149,
+  "local_decls": 1090,
+  "local_unique": 238,
+  "names": {
+   "functions and methods": {
+    "unique": 180,
+    "checked": 171,
+    "in_binary": 131
+   },
+   "package-level variables and constants": {
+    "unique": 44,
+    "checked": 42,
+    "in_binary": 7
+   },
+   "struct fields and interface methods": {
+    "unique": 74,
+    "checked": 47,
+    "in_binary": 44
+   },
+   "types": {
+    "unique": 44,
+    "checked": 44,
+    "in_binary": 40
+   }
+  },
+  "control_local_names": {
+   "unique": 198,
+   "checked": 117,
+   "in_binary": 47
+  },
+  "package_names_renamed": 36,
+  "package_names_unexported": 36,
+  "structure": {
+   "functions": 248,
+   "functions_with_symbol": 163,
+   "call_edges": 900,
+   "call_edges_in_disassembly": 327,
+   "int_constants": 8,
+   "int_constants_in_disassembly": 4,
+   "string_literals": 351,
+   "string_literals_in_binary": 294
+  },
+  "structure_decompiler": {
+   "functions": 248,
+   "functions_with_symbol": 0,
+   "call_edges": 900,
+   "call_edges_in_disassembly": 0,
+   "int_constants": 8,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 351,
+   "string_literals_in_binary": 294
+  },
+  "decompiler_seconds": 52.306621641,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.093208029,
+  "baseline_build_seconds": 11.348997936,
+  "total_seconds": 81.931281262
+ },
+ {
+  "repo": "FiloSottile/mkcert",
+  "package": ".",
+  "commit": "2a46726cebac0ff4e1f133d90b4e4c42f1edf44a",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 5,
+  "src_bytes": 33206,
+  "comment_bytes": 2938,
+  "binary_bytes": 4518014,
+  "gz_src": 9181,
+  "gz_no_comment": 8124,
+  "gz_normalized": 8201,
+  "local_decls": 178,
+  "local_unique": 83,
+  "names": {
+   "functions and methods": {
+    "unique": 34,
+    "checked": 31,
+    "in_binary": 31
+   },
+   "package-level variables and constants": {
+    "unique": 23,
+    "checked": 23,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 15,
+    "checked": 15,
+    "in_binary": 6
+   },
+   "types": {
+    "unique": 1,
+    "checked": 1,
+    "in_binary": 1
+   }
+  },
+  "control_local_names": {
+   "unique": 80,
+   "checked": 48,
+   "in_binary": 9
+  },
+  "package_names_renamed": 17,
+  "package_names_unexported": 17,
+  "structure": {
+   "functions": 37,
+   "functions_with_symbol": 33,
+   "call_edges": 228,
+   "call_edges_in_disassembly": 129,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 2,
+   "string_literals": 136,
+   "string_literals_in_binary": 131
+  },
+  "structure_decompiler": {
+   "functions": 37,
+   "functions_with_symbol": 33,
+   "call_edges": 228,
+   "call_edges_in_disassembly": 129,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 2,
+   "string_literals": 136,
+   "string_literals_in_binary": 131
+  },
+  "decompiler_seconds": 138.809440839,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.014171119,
+  "baseline_build_seconds": 2.873314074,
+  "total_seconds": 143.067312639
+ },
+ {
+  "repo": "gokcehan/lf",
+  "package": ".",
+  "commit": "5b6c393d547970a264bd4f0a78fd6513227f8e10",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 23,
+  "src_bytes": 275613,
+  "comment_bytes": 24289,
+  "binary_bytes": 5832830,
+  "gz_src": 68639,
+  "gz_no_comment": 58089,
+  "gz_normalized": 58934,
+  "local_decls": 1726,
+  "local_unique": 447,
+  "names": {
+   "functions and methods": {
+    "unique": 306,
+    "checked": 271,
+    "in_binary": 270
+   },
+   "package-level variables and constants": {
+    "unique": 96,
+    "checked": 96,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 285,
+    "checked": 225,
+    "in_binary": 225
+   },
+   "types": {
+    "unique": 46,
+    "checked": 38,
+    "in_binary": 35
+   }
+  },
+  "control_local_names": {
+   "unique": 357,
+   "checked": 218,
+   "in_binary": 81
+  },
+  "package_names_renamed": 93,
+  "package_names_unexported": 93,
+  "structure": {
+   "functions": 339,
+   "functions_with_symbol": 289,
+   "call_edges": 1699,
+   "call_edges_in_disassembly": 895,
+   "int_constants": 11,
+   "int_constants_in_disassembly": 10,
+   "string_literals": 563,
+   "string_literals_in_binary": 517
+  },
+  "structure_decompiler": {
+   "functions": 339,
+   "functions_with_symbol": 287,
+   "call_edges": 1699,
+   "call_edges_in_disassembly": 782,
+   "int_constants": 11,
+   "int_constants_in_disassembly": 8,
+   "string_literals": 563,
+   "string_literals_in_binary": 517
+  },
+  "decompiler_seconds": 135.384861344,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.094559906,
+  "baseline_build_seconds": 3.73313775,
+  "total_seconds": 141.303678955
+ },
+ {
+  "repo": "google/gops",
+  "package": ".",
+  "commit": "a2d8f7790eac63a6668583a060cb45903410a91b",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 10,
+  "src_bytes": 22421,
+  "comment_bytes": 4925,
+  "binary_bytes": 3846270,
+  "gz_src": 6509,
+  "gz_no_comment": 5031,
+  "gz_normalized": 5016,
+  "local_decls": 173,
+  "local_unique": 72,
+  "names": {
+   "functions and methods": {
+    "unique": 39,
+    "checked": 32,
+    "in_binary": 32
+   },
+   "package-level variables and constants": {
+    "unique": 12,
+    "checked": 11,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 9,
+    "checked": 3,
+    "in_binary": 3
+   },
+   "types": {
+    "unique": 3,
+    "checked": 2,
+    "in_binary": 2
+   }
+  },
+  "control_local_names": {
+   "unique": 68,
+   "checked": 32,
+   "in_binary": 13
+  },
+  "package_names_renamed": 2,
+  "package_names_unexported": 2,
+  "structure": {
+   "functions": 39,
+   "functions_with_symbol": 32,
+   "call_edges": 147,
+   "call_edges_in_disassembly": 78,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 50,
+   "string_literals_in_binary": 50
+  },
+  "structure_decompiler": {
+   "functions": 39,
+   "functions_with_symbol": 32,
+   "call_edges": 147,
+   "call_edges_in_disassembly": 77,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 50,
+   "string_literals_in_binary": 50
+  },
+  "decompiler_seconds": 64.233011095,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.01420301,
+  "baseline_build_seconds": 2.464978658,
+  "total_seconds": 67.975930084
+ },
+ {
+  "repo": "junegunn/fzf",
+  "package": ".",
+  "commit": "c7bf2b8eea25952dd257a466c0afa72faae206fb",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 47,
+  "src_bytes": 694862,
+  "comment_bytes": 111465,
+  "binary_bytes": 4956286,
+  "gz_src": 184734,
+  "gz_no_comment": 141675,
+  "gz_normalized": 138940,
+  "local_decls": 3831,
+  "local_unique": 1297,
+  "names": {
+   "functions and methods": {
+    "unique": 643,
+    "checked": 588,
+    "in_binary": 567
+   },
+   "package-level variables and constants": {
+    "unique": 695,
+    "checked": 663,
+    "in_binary": 326
+   },
+   "struct fields and interface methods": {
+    "unique": 661,
+    "checked": 549,
+    "in_binary": 539
+   },
+   "types": {
+    "unique": 112,
+    "checked": 105,
+    "in_binary": 98
+   }
+  },
+  "control_local_names": {
+   "unique": 1052,
+   "checked": 807,
+   "in_binary": 180
+  },
+  "package_names_renamed": 391,
+  "package_names_unexported": 419,
+  "structure": {
+   "functions": 712,
+   "functions_with_symbol": 443,
+   "call_edges": 2384,
+   "call_edges_in_disassembly": 989,
+   "int_constants": 7,
+   "int_constants_in_disassembly": 3,
+   "string_literals": 814,
+   "string_literals_in_binary": 617
+  },
+  "structure_decompiler": {
+   "functions": 712,
+   "functions_with_symbol": 441,
+   "call_edges": 2384,
+   "call_edges_in_disassembly": 985,
+   "int_constants": 7,
+   "int_constants_in_disassembly": 5,
+   "string_literals": 814,
+   "string_literals_in_binary": 617
+  },
+  "decompiler_seconds": 314.384489869,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.279978096,
+  "baseline_build_seconds": 9.372343032,
+  "total_seconds": 335.939213685
+ },
+ {
+  "repo": "mikefarah/yq",
+  "package": ".",
+  "commit": "f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "error": "ghidra: exit status 1: ithImport(HeadlessAnalyzer.java:1795)\n\tat ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:464)\n\tat ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:211)\n\tat ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)\n\tat ghidra.Ghidra.main(Ghidra.java:41)\n \n",
+  "files": 145,
+  "src_bytes": 534681,
+  "comment_bytes": 48695,
+  "binary_bytes": 15126654,
+  "gz_src": 114865,
+  "gz_no_comment": 94389,
+  "gz_normalized": 93582,
+  "local_decls": 3874,
+  "local_unique": 894,
+  "names": {
+   "functions and methods": {
+    "unique": 654,
+    "checked": 640,
+    "in_binary": 618
+   },
+   "package-level variables and constants": {
+    "unique": 227,
+    "checked": 225,
+    "in_binary": 31
+   },
+   "struct fields and interface methods": {
+    "unique": 212,
+    "checked": 194,
+    "in_binary": 185
+   },
+   "types": {
+    "unique": 112,
+    "checked": 111,
+    "in_binary": 103
+   }
+  },
+  "control_local_names": {
+   "unique": 837,
+   "checked": 707,
+   "in_binary": 208
+  },
+  "package_names_renamed": 174,
+  "package_names_unexported": 174,
+  "structure": {
+   "functions": 761,
+   "functions_with_symbol": 606,
+   "call_edges": 3018,
+   "call_edges_in_disassembly": 1516,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 713,
+   "string_literals_in_binary": 712
+  },
+  "decompiler_seconds": 277.396032186,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.292601375,
+  "baseline_build_seconds": 26.657250784,
+  "total_seconds": 314.384710575
+ },
+ {
+  "repo": "muesli/duf",
+  "package": ".",
+  "commit": "b2f01a1ecbfd1af63015b83296c50a95260f97b1",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 9,
+  "src_bytes": 52927,
+  "comment_bytes": 9432,
+  "binary_bytes": 3391614,
+  "gz_src": 14503,
+  "gz_no_comment": 11241,
+  "gz_normalized": 10557,
+  "local_decls": 245,
+  "local_unique": 153,
+  "names": {
+   "functions and methods": {
+    "unique": 41,
+    "checked": 39,
+    "in_binary": 37
+   },
+   "package-level variables and constants": {
+    "unique": 143,
+    "checked": 141,
+    "in_binary": 9
+   },
+   "struct fields and interface methods": {
+    "unique": 39,
+    "checked": 33,
+    "in_binary": 27
+   },
+   "types": {
+    "unique": 5,
+    "checked": 5,
+    "in_binary": 4
+   }
+  },
+  "control_local_names": {
+   "unique": 147,
+   "checked": 95,
+   "in_binary": 28
+  },
+  "package_names_renamed": 38,
+  "package_names_unexported": 39,
+  "structure": {
+   "functions": 41,
+   "functions_with_symbol": 28,
+   "call_edges": 145,
+   "call_edges_in_disassembly": 68,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 29,
+   "string_literals_in_binary": 27
+  },
+  "structure_decompiler": {
+   "functions": 41,
+   "functions_with_symbol": 28,
+   "call_edges": 145,
+   "call_edges_in_disassembly": 68,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 29,
+   "string_literals_in_binary": 27
+  },
+  "decompiler_seconds": 58.083726368,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.018444251,
+  "baseline_build_seconds": 3.338438163,
+  "total_seconds": 62.892845963
+ },
+ {
+  "repo": "mvdan/gofumpt",
+  "package": ".",
+  "commit": "3e07e7e70ac93761d8e79ca0083a19e3d59f753d",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 22,
+  "src_bytes": 269287,
+  "comment_bytes": 119732,
+  "binary_bytes": 3260542,
+  "gz_src": 81830,
+  "gz_no_comment": 38852,
+  "gz_normalized": 38414,
+  "local_decls": 1346,
+  "local_unique": 392,
+  "names": {
+   "functions and methods": {
+    "unique": 224,
+    "checked": 201,
+    "in_binary": 193
+   },
+   "package-level variables and constants": {
+    "unique": 67,
+    "checked": 65,
+    "in_binary": 11
+   },
+   "struct fields and interface methods": {
+    "unique": 95,
+    "checked": 68,
+    "in_binary": 56
+   },
+   "types": {
+    "unique": 43,
+    "checked": 35,
+    "in_binary": 30
+   }
+  },
+  "control_local_names": {
+   "unique": 348,
+   "checked": 195,
+   "in_binary": 44
+  },
+  "package_names_renamed": 63,
+  "package_names_unexported": 63,
+  "structure": {
+   "functions": 253,
+   "functions_with_symbol": 149,
+   "call_edges": 899,
+   "call_edges_in_disassembly": 376,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 66,
+   "string_literals_in_binary": 55
+  },
+  "structure_decompiler": {
+   "functions": 253,
+   "functions_with_symbol": 149,
+   "call_edges": 899,
+   "call_edges_in_disassembly": 374,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 66,
+   "string_literals_in_binary": 55
+  },
+  "decompiler_seconds": 83.090151971,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.066873566,
+  "baseline_build_seconds": 9.914923809,
+  "total_seconds": 102.470520811
+ },
+ {
+  "repo": "mvdan/sh",
+  "package": "./cmd/shfmt",
+  "commit": "a3f0c75d21d918756fa38de8b5d3429efde7948b",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 16,
+  "src_bytes": 268722,
+  "comment_bytes": 65473,
+  "binary_bytes": 3166334,
+  "gz_src": 75210,
+  "gz_no_comment": 49685,
+  "gz_normalized": 50268,
+  "local_decls": 1242,
+  "local_unique": 271,
+  "names": {
+   "functions and methods": {
+    "unique": 287,
+    "checked": 265,
+    "in_binary": 258
+   },
+   "package-level variables and constants": {
+    "unique": 398,
+    "checked": 360,
+    "in_binary": 36
+   },
+   "struct fields and interface methods": {
+    "unique": 213,
+    "checked": 153,
+    "in_binary": 150
+   },
+   "types": {
+    "unique": 92,
+    "checked": 85,
+    "in_binary": 77
+   }
+  },
+  "control_local_names": {
+   "unique": 232,
+   "checked": 112,
+   "in_binary": 37
+  },
+  "package_names_renamed": 245,
+  "package_names_unexported": 245,
+  "structure": {
+   "functions": 446,
+   "functions_with_symbol": 290,
+   "call_edges": 1360,
+   "call_edges_in_disassembly": 594,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 174,
+   "string_literals_in_binary": 163
+  },
+  "structure_decompiler": {
+   "functions": 446,
+   "functions_with_symbol": 289,
+   "call_edges": 1360,
+   "call_edges_in_disassembly": 586,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 174,
+   "string_literals_in_binary": 163
+  },
+  "decompiler_seconds": 78.479175296,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.234287345,
+  "baseline_build_seconds": 1.636123393,
+  "total_seconds": 82.161856886
+ },
+ {
+  "repo": "peco/peco",
+  "package": "./cmd/peco",
+  "commit": "6ab3ff6d5d3e8b50e7b7439142ae7b90a9d0786e",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 49,
+  "src_bytes": 266204,
+  "comment_bytes": 76640,
+  "binary_bytes": 4698238,
+  "gz_src": 74241,
+  "gz_no_comment": 45809,
+  "gz_normalized": 45705,
+  "local_decls": 1815,
+  "local_unique": 426,
+  "names": {
+   "functions and methods": {
+    "unique": 411,
+    "checked": 368,
+    "in_binary": 360
+   },
+   "package-level variables and constants": {
+    "unique": 158,
+    "checked": 158,
+    "in_binary": 15
+   },
+   "struct fields and interface methods": {
+    "unique": 318,
+    "checked": 260,
+    "in_binary": 256
+   },
+   "types": {
+    "unique": 126,
+    "checked": 115,
+    "in_binary": 113
+   }
+  },
+  "control_local_names": {
+   "unique": 354,
+   "checked": 194,
+   "in_binary": 53
+  },
+  "package_names_renamed": 31,
+  "package_names_unexported": 31,
+  "structure": {
+   "functions": 519,
+   "functions_with_symbol": 387,
+   "call_edges": 1609,
+   "call_edges_in_disassembly": 541,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 272,
+   "string_literals_in_binary": 192
+  },
+  "structure_decompiler": {
+   "functions": 519,
+   "functions_with_symbol": 385,
+   "call_edges": 1609,
+   "call_edges_in_disassembly": 534,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 272,
+   "string_literals_in_binary": 192
+  },
+  "decompiler_seconds": 106.307183247,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.125812778,
+  "baseline_build_seconds": 5.859768663,
+  "total_seconds": 114.095062357
+ },
+ {
+  "repo": "rakyll/hey",
+  "package": ".",
+  "commit": "e64ec7a3ad1ef8bc828fe61e1fb324cc2e74c604",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 5,
+  "src_bytes": 27584,
+  "comment_bytes": 6099,
+  "binary_bytes": 8302718,
+  "gz_src": 8451,
+  "gz_no_comment": 6892,
+  "gz_normalized": 6809,
+  "local_decls": 117,
+  "local_unique": 76,
+  "names": {
+   "functions and methods": {
+    "unique": 28,
+    "checked": 22,
+    "in_binary": 22
+   },
+   "package-level variables and constants": {
+    "unique": 33,
+    "checked": 24,
+    "in_binary": 7
+   },
+   "struct fields and interface methods": {
+    "unique": 95,
+    "checked": 83,
+    "in_binary": 83
+   },
+   "types": {
+    "unique": 7,
+    "checked": 6,
+    "in_binary": 6
+   }
+  },
+  "control_local_names": {
+   "unique": 64,
+   "checked": 30,
+   "in_binary": 16
+  },
+  "package_names_renamed": 33,
+  "package_names_unexported": 33,
+  "structure": {
+   "functions": 29,
+   "functions_with_symbol": 24,
+   "call_edges": 93,
+   "call_edges_in_disassembly": 50,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 8,
+   "string_literals_in_binary": 8
+  },
+  "structure_decompiler": {
+   "functions": 29,
+   "functions_with_symbol": 24,
+   "call_edges": 93,
+   "call_edges_in_disassembly": 50,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 8,
+   "string_literals_in_binary": 8
+  },
+  "decompiler_seconds": 186.902266794,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.006341359,
+  "baseline_build_seconds": 2.363908541,
+  "total_seconds": 190.699619474
+ },
+ {
+  "repo": "tomnomnom/gron",
+  "package": ".",
+  "commit": "badf401da553eb41b7ffde4be6a64809ed0ed846",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 6,
+  "src_bytes": 39910,
+  "comment_bytes": 11987,
+  "binary_bytes": 6557822,
+  "gz_src": 11873,
+  "gz_no_comment": 7436,
+  "gz_normalized": 7463,
+  "local_decls": 235,
+  "local_unique": 88,
+  "names": {
+   "functions and methods": {
+    "unique": 64,
+    "checked": 52,
+    "in_binary": 52
+   },
+   "package-level variables and constants": {
+    "unique": 36,
+    "checked": 36,
+    "in_binary": 0
+   },
+   "struct fields and interface methods": {
+    "unique": 9,
+    "checked": 3,
+    "in_binary": 3
+   },
+   "types": {
+    "unique": 12,
+    "checked": 12,
+    "in_binary": 7
+   }
+  },
+  "control_local_names": {
+   "unique": 87,
+   "checked": 33,
+   "in_binary": 12
+  },
+  "package_names_renamed": 24,
+  "package_names_unexported": 36,
+  "structure": {
+   "functions": 64,
+   "functions_with_symbol": 51,
+   "call_edges": 188,
+   "call_edges_in_disassembly": 91,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 54,
+   "string_literals_in_binary": 54
+  },
+  "structure_decompiler": {
+   "functions": 64,
+   "functions_with_symbol": 51,
+   "call_edges": 188,
+   "call_edges_in_disassembly": 91,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 54,
+   "string_literals_in_binary": 54
+  },
+  "decompiler_seconds": 171.973535299,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.024750266,
+  "baseline_build_seconds": 12.530216432,
+  "total_seconds": 193.937910159
+ },
+ {
+  "repo": "tsenart/vegeta",
+  "package": ".",
+  "commit": "507c4f028fbad80168f3b734dab9530d3aabfefa",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 25,
+  "src_bytes": 109555,
+  "comment_bytes": 25205,
+  "binary_bytes": 12554366,
+  "gz_src": 32220,
+  "gz_no_comment": 23665,
+  "gz_normalized": 23731,
+  "local_decls": 736,
+  "local_unique": 235,
+  "names": {
+   "functions and methods": {
+    "unique": 131,
+    "checked": 102,
+    "in_binary": 99
+   },
+   "package-level variables and constants": {
+    "unique": 44,
+    "checked": 42,
+    "in_binary": 3
+   },
+   "struct fields and interface methods": {
+    "unique": 127,
+    "checked": 81,
+    "in_binary": 79
+   },
+   "types": {
+    "unique": 54,
+    "checked": 49,
+    "in_binary": 43
+   }
+  },
+  "control_local_names": {
+   "unique": 200,
+   "checked": 82,
+   "in_binary": 53
+  },
+  "package_names_renamed": 19,
+  "package_names_unexported": 19,
+  "structure": {
+   "functions": 173,
+   "functions_with_symbol": 102,
+   "call_edges": 526,
+   "call_edges_in_disassembly": 190,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 145,
+   "string_literals_in_binary": 143
+  },
+  "structure_decompiler": {
+   "functions": 173,
+   "functions_with_symbol": 102,
+   "call_edges": 526,
+   "call_edges_in_disassembly": 190,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 145,
+   "string_literals_in_binary": 143
+  },
+  "decompiler_seconds": 258.668590131,
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.100941692,
+  "baseline_build_seconds": 15.220517153,
+  "total_seconds": 276.063276595
+ }
+]

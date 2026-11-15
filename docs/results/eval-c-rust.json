@@ -1,2629 +1,4656 @@
 [
  {
+  "lang": "c",
   "repo": "antirez/kilo",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 5,
-  "generator": "second",
   "commit": "323d93b29bd89a2cb446de90c4ed4fea1764176e",
-  "files": 1,
-  "lines": 1308,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 1,
+  "source_lines": 1308,
+  "baseline_sha256": "5799f6d662f0214d7fb431d53bb47e58181ab72c3b736bcf3e78d55a9f955eec",
+  "baseline_seconds": 0.155566115,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "f36dc7473c6abb9e6dac8ffc3c8a81e58f1dc39f260b789c08c6895f2c52b928",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   },
+   {
+    "set": "T1",
+    "seed": "6b53d7911c4c3bab92082d4bea724db5f2f9c25ee0a7e3d2f35ff2b28c418a6a",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   },
+   {
+    "set": "T2",
+    "seed": "8dbd5218c81ef19d15939a6f416111dc597841422e0953c74aae886455aab34e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   },
+   {
+    "set": "T2X",
+    "seed": "268c4c5c3b55514f42f103bcc9fadc407859cc4f6c969cb189b5988fe00d5123",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   }
+  ],
+  "total_seconds": 3.81883624
  },
  {
+  "lang": "c",
   "repo": "curl/curl",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 481,
-  "generator": "first",
   "commit": "9637d6b8444ce4fdd8d58eb2cf7ec9a5770a82ac",
-  "files": 1073,
-  "lines": 301211,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 1073,
+  "source_lines": 301211,
+  "baseline_sha256": "3cc0e1768f7c954e1491cca0e9229041dffad491d6c1ca08cf5513dd852de99e",
+  "baseline_seconds": 14.304363316,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "655b8b8b6f463bc78eb97b3e6014fb8c964954f38ee75fd46856a110056be626",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   },
+   {
+    "set": "T1",
+    "seed": "5a6b5868b1e9eee7c30156ce2c9162b924030a08ca2756eb7c25074723fcd9a1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   },
+   {
+    "set": "T2",
+    "seed": "7184183b04eb8d56b852ffe1022cb4e1d01747de2ecd729b70fc57cc42ff7f23",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   },
+   {
+    "set": "T2X",
+    "seed": "1aedf1cc9b5a0aea0a63f7caf4418acaf50373e358c3053e97012e33cccb5498",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   }
+  ],
+  "total_seconds": 277.928806732
  },
  {
+  "lang": "c",
   "repo": "DaveGamble/cJSON",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 55,
-  "generator": "second",
   "commit": "6d9f2443ab071f86e5d9b43025a40929ec41c46c",
-  "files": 99,
-  "lines": 22419,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 99,
+  "source_lines": 22419,
+  "baseline_sha256": "c7650305ae49efa6ae42931e45bfbf522821f584841022e5618a01626f73133b",
+  "baseline_seconds": 3.415367251,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "5dd9bcd694a9171e08581c96040918776f562fca4ca00ef66c8df682f60e2259",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   },
+   {
+    "set": "T1",
+    "seed": "53f505f8b1101de1e62ea6de801839e4397f2afc6413453d8a070f60d17af07b",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   },
+   {
+    "set": "T2",
+    "seed": "053499b0a96e91506f02b24f419fda8feac99edaec6972ecb752c530b8919419",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   },
+   {
+    "set": "T2X",
+    "seed": "eac1334350c457756663999a588b187f233ea86ad28329ed591a2db828699130",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   }
+  ],
+  "total_seconds": 59.764928903
  },
  {
+  "lang": "c",
   "repo": "facebook/zstd",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 26,
-  "generator": "second",
   "commit": "a599a71c4cf5d142ffce772c0d16a5a7b755d83c",
-  "files": 279,
-  "lines": 144631,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 279,
+  "source_lines": 144631,
+  "baseline_sha256": "365687a31e9d4965ad05669aa604c9983f089c823c2bb1d912624c79775a9acb",
+  "baseline_seconds": 3.26252677,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "e41ee6990f777e67640d1332c72319bbdb02b8dbef73cd84b63faf7dd942db93",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   },
+   {
+    "set": "T1",
+    "seed": "7e634b5514d09809e2939c7979a17655b3805b0d48e454acc78a78af0621320a",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   },
+   {
+    "set": "T2",
+    "seed": "d2464957465c92f22c127111ef25d42ff443cbd46ed92f1ba19e89055727b822",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   },
+   {
+    "set": "T2X",
+    "seed": "fcc38d2d129b3a9ee8b5ad05b4fda05154d8c94f8c8b2cf1f03bb10c90c8f599",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   }
+  ],
+  "total_seconds": 61.902463247
  },
  {
+  "lang": "c",
   "repo": "fmtlib/fmt",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 60,
-  "generator": "second",
   "commit": "dcdec038abe9d042cf8494c4e371bd73c04cb114",
-  "files": 75,
-  "lines": 70908,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 75,
+  "source_lines": 70908,
+  "baseline_sha256": "c0554e816974d6354ee317397bb452e01adb1979fb0c26b02b724886be4fb2e1",
+  "baseline_seconds": 2.185074272,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "a1599079c25f6eec221441da291b850ffd0ab46eb258f2c1c1ef79dc2e5b31d8",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   },
+   {
+    "set": "T1",
+    "seed": "a96fe40543ae0c2fea1dda3472d032d7b40406e635dace86af3f33b7c5b04dce",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   },
+   {
+    "set": "T2",
+    "seed": "a9b4bd643df57442f8b8c025950d4fbc3ec0cad55d6bda98279454f056efc2fb",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   },
+   {
+    "set": "T2X",
+    "seed": "2d01b47688fc384048e44172191eca27b8b947906a560af7e8ba8a6bb8bc7997",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   }
+  ],
+  "total_seconds": 38.829331832
  },
  {
+  "lang": "c",
   "repo": "gabime/spdlog",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 93,
-  "generator": "second",
   "commit": "6d9805df3f588402b17073dcd13eb569ceda864d",
-  "files": 153,
-  "lines": 33270,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 153,
+  "source_lines": 33270,
+  "baseline_sha256": "0f7fda97338af32360eb54facbb400e2bf26d218d187939e746408ae6bafe2a5",
+  "baseline_seconds": 3.7060775919999998,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "67a91aafbb5465ebf9b5bd3a473650e4e383a2426310ee8a585626fcdb81e7c8",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   },
+   {
+    "set": "T1",
+    "seed": "c945821ceef8b780d98c06461bd198c45eda2481343f2b3a15af403bceedb4f8",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   },
+   {
+    "set": "T2",
+    "seed": "c35323ec33ff008181410a704e7e0056debc243b51b3e90feabdcbfd1c17ff2f",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   },
+   {
+    "set": "T2X",
+    "seed": "49fb9c9c271456c242f5a61eee3a602aa14c91c1bdc3831b0df91e3ebc3601fe",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   }
+  ],
+  "total_seconds": 73.045833778
  },
  {
+  "lang": "c",
   "repo": "git/git",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 90,
-  "generator": "second",
   "commit": "7fb6055e678f800320d8ab8cd8f201d9493d1ba0",
-  "files": 990,
-  "lines": 447084,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 990,
+  "source_lines": 447084,
+  "baseline_sha256": "8951fc69439b0f06cd5d7b51699ad08d271b51996f636b1a55df0017c8f13a74",
+  "baseline_seconds": 10.566615616,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "d0d3d9889dee69b1d293034c4bea79d00705708b7f3f6820266ac0f33ca595ab",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   },
+   {
+    "set": "T1",
+    "seed": "084864647f9f9cf9a79c7212e3ebf545fdb6de44941479cdc7ff955c838630f4",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   },
+   {
+    "set": "T2",
+    "seed": "9397116ecd6e7cb06a81e71d16ae4c5e17ce27844a511ad3c914cb4777019801",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   },
+   {
+    "set": "T2X",
+    "seed": "23918937324e8373e92aa6b46aa9930127d574fa532f10926bd0bf1dd54c075e",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   }
+  ],
+  "total_seconds": 204.3814421
  },
  {
+  "lang": "c",
   "repo": "google/brotli",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 79,
-  "generator": "second",
   "commit": "6a14c0798233769cef147cf9bafaefe147b8ddc3",
-  "files": 131,
-  "lines": 47803,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 131,
+  "source_lines": 47803,
+  "baseline_sha256": "ebe6889dd766645bddb75b24061591d848b5b6117ca7731b4aeaed539d956114",
+  "baseline_seconds": 5.003406753,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "ba6741202e386697a27af43e5c36ff313f7c304d13c7c5798c5b7a75cdaa3a84",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   },
+   {
+    "set": "T1",
+    "seed": "2e5a942ef4c6b3510dc0341079253931b272f907afbdff5c2f435ca5fa72fe11",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   },
+   {
+    "set": "T2",
+    "seed": "3e587dbd61ee40ece7b3a1c2912f3c0a7647a1e963b3452174fc58a5e9332e78",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   },
+   {
+    "set": "T2X",
+    "seed": "3b01fa7e62da7ae9f2d1e7bca79d130524330b23a1da27468c1d8ed17883dc58",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   }
+  ],
+  "total_seconds": 94.428767086
  },
  {
+  "lang": "c",
   "repo": "google/leveldb",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 236,
-  "generator": "second",
   "commit": "29465588d3dfdc80fba5e198037582b8fdb5dd60",
-  "files": 133,
-  "lines": 28971,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 133,
+  "source_lines": 28971,
+  "baseline_sha256": "5bd420f05c70b6b57504338bbcefa6241fd5a775b3a62089ae930a3aaae3997d",
+  "baseline_seconds": 3.995731735,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "6a40b83936fbea0deb4f4ea3f469d24139875ba992d2e74d00742490be3afe39",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   },
+   {
+    "set": "T1",
+    "seed": "554b6ddc5d1113a62653224f4f92154c2ee8d7cec954daa60ecb2f1c485b7aeb",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   },
+   {
+    "set": "T2",
+    "seed": "5bd4f64bc4cc7e2245d2420d964141b34f3a9f153e3aa2ccfaee9221d5b49d1a",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   },
+   {
+    "set": "T2X",
+    "seed": "ab2be7e3643fc11f2d6c8e50d3003ec20e4fc7a2fb137d0c8888e0425734e099",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   }
+  ],
+  "total_seconds": 81.940373122
  },
  {
+  "lang": "c",
   "repo": "google/snappy",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 65,
-  "generator": "second",
   "commit": "946606459314e55d029c85f9a8c46f8809467f0f",
-  "files": 18,
-  "lines": 7945,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 18,
+  "source_lines": 7945,
+  "baseline_sha256": "2698c53e7ed62d795217cf586301b3f93fe73b7a668df82bb80f174bfac16258",
+  "baseline_seconds": 3.442954173,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "54cc9d12fca128415a375fd8cc9432f34d3d09805406cdc8a63ef3377a6dac85",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   },
+   {
+    "set": "T1",
+    "seed": "c8f833fc52170813ae61357c5c190eb623921dac8264afa3cff6b1c11a70f1f8",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   },
+   {
+    "set": "T2",
+    "seed": "ade4a06c3c24b474c171d2ebfe7f259cb2b1a272cc4d53a2cabb1d9461053a77",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   },
+   {
+    "set": "T2X",
+    "seed": "a3f9acf66bd6be4836f8110fb2fad64603d376b2ae360985905a59a1d6528848",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   }
+  ],
+  "total_seconds": 53.928891267
  },
  {
+  "lang": "c",
   "repo": "htop-dev/htop",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 236,
-  "generator": "second",
   "commit": "21bbc80c7811149ee33f449748addf23740c7b9f",
-  "files": 283,
-  "lines": 48950,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 283,
+  "source_lines": 48950,
+  "baseline_sha256": "818cd2eaeffc990590d01b82c8307bc553e679e2452e3efb17f3d5c7d0ed73cc",
+  "baseline_seconds": 6.897782039,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "dd239e0c6c30012029d639c62b930668a90da51baea3e63ba5470cd6e4c538b1",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   },
+   {
+    "set": "T1",
+    "seed": "f94238661eacbd749444dce0d095de70433e251b73a9d2a47a24b526ead8a7e1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   },
+   {
+    "set": "T2",
+    "seed": "b798b06f516cee90dcbe6dd2f92247ab98336f9f191ebda25b1aa25b4cefb492",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   },
+   {
+    "set": "T2X",
+    "seed": "967186fd08ce897fd49f40ffe4cfccfc301ad204a129b23c5dcb8407ca6177ca",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   }
+  ],
+  "total_seconds": 145.163469913
  },
  {
+  "lang": "c",
   "repo": "jbeder/yaml-cpp",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 38,
-  "generator": "second",
   "commit": "f473f3bdfed25271ebd3d268caedc1b0b7f5ff50",
-  "files": 274,
-  "lines": 122523,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 274,
+  "source_lines": 122523,
+  "baseline_sha256": "bf059fe01af920986a96da890e334922c42a76c9d7f89599ba36da1780d13526",
+  "baseline_seconds": 2.259958113,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "7482e114222d851ac1681d78af97208db285d8ad5ea2494932b93e020b4d834b",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   },
+   {
+    "set": "T1",
+    "seed": "6d4656f5c50c1e8240e02509b4ecc13b8227e5fec68bb9b019494802de2bc21e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   },
+   {
+    "set": "T2",
+    "seed": "cd90afa5b951943d7e47db5f5ed8f1df4f543e1978fd32926c6aa34c3d907e96",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   },
+   {
+    "set": "T2X",
+    "seed": "895f469323e29075e740a902899a6492835ae7b21a3d2bc2eb4743dddf067bbb",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   }
+  ],
+  "total_seconds": 42.60295643
  },
  {
+  "lang": "c",
   "repo": "jqlang/jq",
-  "compiler": "clang",
-  "status": "baseline_failed",
-  "sets": {},
-  "seconds": 5,
-  "generator": "second",
   "commit": "5c001b18d7237cce1fdba63608732163f978dd23",
-  "files": 81,
-  "lines": 48024,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "libuv/libuv",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 60,
-  "generator": "second",
-  "commit": "3febcb8561554927155923da335ac0549235b0b3",
-  "files": 379,
-  "lines": 119090,
-  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "lua/lua",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 10,
-  "generator": "second",
-  "commit": "c42d820bc0c3bc4f2ad536e19d2f05405af10387",
-  "files": 68,
-  "lines": 34216,
-  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "lz4/lz4",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 24,
-  "generator": "second",
-  "commit": "6b589e8053bd9c524138d78adec78fcaefa35cab",
-  "files": 80,
-  "lines": 38598,
-  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "madler/zlib",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 15,
-  "generator": "second",
-  "commit": "99623ef7097352da7993ba614161fd6a311e046e",
-  "files": 79,
-  "lines": 43250,
-  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "memcached/memcached",
-  "compiler": "clang",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
-  "commit": "2d51e364799bc9698bd4b11728ea978cea12da6e",
-  "files": 96,
-  "lines": 52357,
-  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "seconds": 29,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  }
- },
- {
-  "repo": "mirror/busybox",
-  "compiler": "clang",
   "status": "baseline_failed",
-  "sets": {},
-  "seconds": 35,
-  "generator": "second",
+  "error": "Makefile.am:213: error: required directory ./vendor/oniguruma does not exist | autoreconf: error: automake failed with exit status: 1",
+  "source_files": 81,
+  "source_lines": 48024,
+  "baseline_seconds": 3.850123569,
+  "total_seconds": 6.719765906
+ },
+ {
+  "lang": "c",
+  "repo": "libuv/libuv",
+  "commit": "3febcb8561554927155923da335ac0549235b0b3",
+  "compiler": "clang",
+  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 379,
+  "source_lines": 119090,
+  "baseline_sha256": "9006baae9b4b776ab7999c2fd665cbe495d1d5740ffd3891c3349fe576aa264a",
+  "baseline_seconds": 2.546256372,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "6a898839e5e6d7fef815b667639fca1d5054cad0463952c91b27c1adc2d4318b",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   },
+   {
+    "set": "T1",
+    "seed": "b0fdd907fa707dae3cf83df3254e675742a5f49b869eac189fcc22f71e7815e1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   },
+   {
+    "set": "T2",
+    "seed": "451d636a2a99c036f73ac15c669747cbc70b76a0ff879028ee3dcfdf59fe7798",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   },
+   {
+    "set": "T2X",
+    "seed": "cda4db38bb87ac56e94368753ca7cdb531d557d2f4fb80af27d7f5adb677bc5b",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   }
+  ],
+  "total_seconds": 46.400840308
+ },
+ {
+  "lang": "c",
+  "repo": "lua/lua",
+  "commit": "c42d820bc0c3bc4f2ad536e19d2f05405af10387",
+  "compiler": "clang",
+  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 68,
+  "source_lines": 34216,
+  "baseline_sha256": "26b37d29fb8f5f1e9b0b16e9687564bfc62ca573a8a3f2622cc383571e538fb6",
+  "baseline_seconds": 0.819373345,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "d7a797a2c9abad5f4a0d531834a04db071f945a09fc4897dd2e56849438c7553",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   },
+   {
+    "set": "T1",
+    "seed": "fcf1e62b16192b945089dde1feb5328940efe177d54d1401e79ac06f49994ca7",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   },
+   {
+    "set": "T2",
+    "seed": "5ca2ce2d8e56fe9f10e6bcbf36ce536f81ec62d45222416586dd76aa0e076ea2",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   },
+   {
+    "set": "T2X",
+    "seed": "450683bf394e05e6127e417c7043cdab13be901c0bc8bcba4a09f8a13a9ee5cf",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   }
+  ],
+  "total_seconds": 16.434644335
+ },
+ {
+  "lang": "c",
+  "repo": "lz4/lz4",
+  "commit": "6b589e8053bd9c524138d78adec78fcaefa35cab",
+  "compiler": "clang",
+  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 80,
+  "source_lines": 38598,
+  "baseline_sha256": "c26638a5bbcf53fb8631e1f55e88a343e1bc4afb0349d8d60783deb6dedd124f",
+  "baseline_seconds": 1.162121013,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "347005535e9f1c3eb7e1d8f82029d6f1a8ea2a80d23637349e306a0fa69e35cd",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   },
+   {
+    "set": "T1",
+    "seed": "c1d320649ebb61b968047ac77c6c3c7c57b51c4e31f341da3c006066b692f32e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   },
+   {
+    "set": "T2",
+    "seed": "36c39d26565db4d0a91beb4b2c8adba596a342d53d121e9a9dc32ead7b879b90",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   },
+   {
+    "set": "T2X",
+    "seed": "f93f8a5fc858842b7345503d9e597f37efaabdd5a625671d6c547bd47f632b14",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   }
+  ],
+  "total_seconds": 24.060445966
+ },
+ {
+  "lang": "c",
+  "repo": "madler/zlib",
+  "commit": "99623ef7097352da7993ba614161fd6a311e046e",
+  "compiler": "clang",
+  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 79,
+  "source_lines": 43250,
+  "baseline_sha256": "287d8f707c3f1c27977c4fe232bd811d0ea03286a3ec96866274c6e016c4db22",
+  "baseline_seconds": 0.589991405,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "e9a8b176522904d20780c6111626157ab243b1aa78c33eca2bd7af24dff38b7c",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   },
+   {
+    "set": "T1",
+    "seed": "58a7062a4eda8c6f8c3dc4792f0ecca2ed8557b0acb4f3b2fcad24eb00f3a35d",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   },
+   {
+    "set": "T2",
+    "seed": "e89b10e014d0337bb69fe7121bc3c08d1a821707cba831102a896c4bcf2ae380",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   },
+   {
+    "set": "T2X",
+    "seed": "21d2a749592ae4582dbee66e0ec9d9f77d272f1a0446761508f26099bc7ee79c",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   }
+  ],
+  "total_seconds": 15.547657413
+ },
+ {
+  "lang": "c",
+  "repo": "memcached/memcached",
+  "commit": "2d51e364799bc9698bd4b11728ea978cea12da6e",
+  "compiler": "clang",
+  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 96,
+  "source_lines": 52357,
+  "baseline_sha256": "59e9453821bd77d6d1881dfb1fb123a2b5336c152e44a518b7e358913edcfed6",
+  "baseline_seconds": 5.625419711,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "d1f7392daef76297cfc4944a1548fc015638cf19e252720592492a174976acea",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
+   },
+   {
+    "set": "T1",
+    "seed": "f545a013a7749c5d1ef13ce2896f918ad69879855bc2d8f761227edd7d4d3022",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
+   },
+   {
+    "set": "T2",
+    "seed": "5f6d5e161c27c49f0d729422f889f6333cf4cd507a22e889f1d2158f399c6687",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
+   },
+   {
+    "set": "T2X",
+    "seed": "4537b8e10aef25b0e833ccafe9f42208050ad9e125aaa181d4f2cc340b126abf",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
+   }
+  ],
+  "total_seconds": 101.343477031
+ },
+ {
+  "lang": "c",
+  "repo": "mirror/busybox",
   "commit": "371fe9f71d445d18be28c82a2a6d82115c8af19d",
-  "files": 751,
-  "lines": 285721,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "baseline_failed",
+  "error": "# | # using defaults found in .config | # | /tmp/w/build/mirror__busybox/scripts/mkconfigs: 36: bzip2: not found | bzip2 is not installed | make: *** [Makefile:859: include/config/MARKER] Error 1",
+  "source_files": 751,
+  "source_lines": 285721,
+  "baseline_seconds": 7.47754424,
+  "total_seconds": 9.207284168
  },
  {
+  "lang": "c",
   "repo": "nginx/nginx",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 206,
-  "generator": "second",
   "commit": "2a3a19c6fdcdc9bd618b81c4a6d9a80ed67d50da",
-  "files": 411,
-  "lines": 258031,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 411,
+  "source_lines": 258031,
+  "baseline_sha256": "d0eeffa9e782dbd2fda73fbd425ce97f953c886cd4a7fc7250076cc34ddb1fc3",
+  "baseline_seconds": 9.88486042,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "573ccb341e415859927ff5626597e6153b990b97dd72e711686ccf1dde131190",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 411
+   },
+   {
+    "set": "T1",
+    "seed": "0df0ea84be36da69eb65194364c5f0e4d1c43aa6483b8c35382427d564a1e780",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 411
+   },
+   {
+    "set": "T2",
+    "seed": "e1d017f289fb0da3fc7f209fe27eaebde2a026233a940de70a21ee41b1977e09",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 411
+   },
+   {
+    "set": "T2X",
+    "seed": "a7f1c4c0a3971ca6c897f2491a39c51013a35b2e3e31b3b81baa0239ee240f63",
+    "variants": 2,
+    "distinct_hashes": 0,
+    "build_errors": 2,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 411,
+    "error_sample": "src/core/ngx_resolver.c:641:66: error: for loop has empty body [-Werror,-Wempty-body]"
+   }
+  ],
+  "total_seconds": 174.158861401
  },
  {
+  "lang": "c",
   "repo": "ninja-build/ninja",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 109,
-  "generator": "second",
   "commit": "1a8fee23135e57cda12d47aedb19f795353fa13c",
-  "files": 127,
-  "lines": 35017,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 127,
+  "source_lines": 35017,
+  "baseline_sha256": "8febf6c86345d850a2dae30fde94ecd8b049a05fad616921fc5fa670281f8c86",
+  "baseline_seconds": 4.296490808,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "7bb486b9e154bf31db3052ade6a30edea02b80e39452f5211368d05fb0264022",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   },
+   {
+    "set": "T1",
+    "seed": "1b9460d9a6dca10bee1910806ade2786d4da4c7bf02a55b19da196acbbcd6734",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   },
+   {
+    "set": "T2",
+    "seed": "3799af4fea8b08d9c935436e0e1a579229d93ab54f3a3bad18608c385034c37a",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   },
+   {
+    "set": "T2X",
+    "seed": "417ac949c5a8d452786098c06560c8c3e135a51d5194e235f95375a2708adec2",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   }
+  ],
+  "total_seconds": 78.860820654
  },
  {
+  "lang": "c",
   "repo": "redis/redis",
-  "compiler": "clang",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
   "commit": "d92afbeb85aa02e245fe534946b7f69a6c0898c0",
-  "files": 856,
-  "lines": 430937,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "seconds": 183,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 856,
+  "source_lines": 430937,
+  "baseline_sha256": "7bdc7ab611703b36c6423beff2d3bce5ad5adcc4fff5bc2ecc22d4862890db38",
+  "baseline_seconds": 25.086546556,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "83ef74fde3b1a2cacd346ab07b7352a3890ae05a514c98f23faa1afa02c741c5",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 856
    },
-   "T1": {
-    "distinct": 1,
+   {
+    "set": "T1",
+    "seed": "9792433c2903ecf2b2d7dcf13cc0ee3e0c7d149fd3c4d9bdc3861cd4a8f5fcff",
     "variants": 4,
-    "errors": 0
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 856
    },
-   "T2": {
-    "distinct": 1,
+   {
+    "set": "T2",
+    "seed": "fc57662d30170a4bf9ef908d1eaa7ad62da9c77d8f690155c3a8a3fe9443407a",
+    "variants": 4,
+    "distinct_hashes": 3,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 856
+   },
+   {
+    "set": "T2X",
+    "seed": "cafbd288da4138430b1d4adb02c8054dd848b9c9c81e4e5467444234b1696183",
     "variants": 2,
-    "errors": 0
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 856
    }
-  }
+  ],
+  "total_seconds": 497.329911071
  },
  {
+  "lang": "c",
   "repo": "simdjson/simdjson",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 164,
-  "generator": "second",
   "commit": "a0d5ad9798f9e51706399b649929dafb91d9b714",
-  "files": 588,
-  "lines": 447674,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 588,
+  "source_lines": 447674,
+  "baseline_sha256": "61c0529defcade600ecc8115d24d84a26dce64486d8795ff5d795d4c360ce154",
+  "baseline_seconds": 6.3833428770000005,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "950f99b641611b2c016aabf961fff4ac75b55294390c62bd7be3c0d80af0891c",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   },
+   {
+    "set": "T1",
+    "seed": "3eba4d62d631b5ba65f8b22c3c278794bed914229bc8d49f153c87b66af7a099",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   },
+   {
+    "set": "T2",
+    "seed": "dd2a22a3def3d63e360ca596e39b8fc424ead372fb03d908e55946de09b811fb",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   },
+   {
+    "set": "T2X",
+    "seed": "4c877c7987bb30aaff52708bda9fe7abda509621c3d231750c28c46ea2ada7ea",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   }
+  ],
+  "total_seconds": 130.919583333
  },
  {
+  "lang": "c",
   "repo": "sqlite/sqlite",
-  "compiler": "clang",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
   "commit": "e5cb4b09573aeb53cbb28983be7234e42c48c07a",
-  "files": 359,
-  "lines": 464612,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "seconds": 135,
-  "sets": {
-   "T1,T2": {
-    "distinct": 0,
-    "variants": 4,
-    "errors": 4,
-    "error": "sqlite3.c:24503:66: error: use of undeclared identifier 'OP_Ne' | sqlite3.c:24504:82: error: use of undeclared identifier 'OP_Ne' | sqlite3.c:24505:72: error: use of undeclared identifier 'OP_Ne' | sqlite3.c:24784:6: error: non-static declaration of 'sqlite3WhereTrace' follows static declaration | s"
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 359,
+  "source_lines": 464612,
+  "baseline_sha256": "c635e325dfcf536d6dd25b33a2ca3ad0fdb31f21c935fe32b9c1b3dc640a5096",
+  "baseline_seconds": 21.19998274,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "6e9d851fd53f2c53e125aed861cb0f650be81706ac895fa1b5701653ab363906",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 359
    },
-   "T1": {
-    "distinct": 1,
+   {
+    "set": "T1",
+    "seed": "24458980b582d6e16aaa5d29879fca9548f0730a82ee5b5fd0d482025a61957e",
     "variants": 4,
-    "errors": 0
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 359
    },
-   "T2": {
-    "distinct": 0,
+   {
+    "set": "T2",
+    "seed": "44877c715460c17dc8cd6a732b4d17364009b6daf27a17f912090cf293475e6b",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 359
+   },
+   {
+    "set": "T2X",
+    "seed": "be48593861d82fa613dd1b4c0d9450d0482acb88d4b66d971d04e82fb7ca15ff",
     "variants": 2,
-    "errors": 2,
-    "error": "sqlite3.c:28289:23: error: static declaration of 'sqlite3OsDlSym' follows non-static declaration | sqlite3.c:88278:36: error: use of undeclared identifier 'OP_Int64' | sqlite3.c:88286:34: error: use of undeclared identifier 'OP_Real' | sqlite3.c:88299:32: error: use of undeclared identifier 'OP_Stri"
+    "distinct_hashes": 0,
+    "build_errors": 2,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 359,
+    "error_sample": "sqlite3.c:24557:69: error: use of undeclared identifier 'OP_Ne' | sqlite3.c:24558:66: error: use of undeclared identifier 'OP_Ne' | sqlite3.c:24559:66: error: use of undeclared identifier 'OP_Ne' | sqlite3.c:24838:5: error: non-static declaration of 'sqlite3WhereTrace' follows static declaration | sqlite3.c:28298:23: error: static declaration of 'sqlite3OsDlSym' follows non-static declaration | sqlite3.c:87963:25: error: use of undeclared identifier 'OP_Init'"
    }
-  }
+  ],
+  "total_seconds": 369.672898411
  },
  {
+  "lang": "c",
   "repo": "TinyCC/tinycc",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 29,
-  "generator": "second",
   "commit": "f830a1697e159056b75de40a60464bc43ee670a3",
-  "files": 352,
-  "lines": 130737,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 352,
+  "source_lines": 130737,
+  "baseline_sha256": "23f91f5df041dc24ea7ffa31b75395695508ffc1ce1d86631dfa0bd3ed963724",
+  "baseline_seconds": 1.197103039,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "dfebf8262b4caa5281278c3c26318d3f27ccdb26325245b10984603e4c47aede",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   },
+   {
+    "set": "T1",
+    "seed": "beabdd7565b1312d16a56886c05d121a41fab8647a085e1f01e5dbc63386e627",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   },
+   {
+    "set": "T2",
+    "seed": "b81088b0ee9e7a7eedcd0990e5f2efdcd7222abfec4d429acd08b32d379547be",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   },
+   {
+    "set": "T2X",
+    "seed": "90dbdd61f46875ba658d79989ef10ab9d6db7e6525cdc3c3ba0c06101476897d",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   }
+  ],
+  "total_seconds": 22.45759156
  },
  {
+  "lang": "c",
   "repo": "tmux/tmux",
-  "compiler": "clang",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 274,
-  "generator": "second",
   "commit": "75fac4a77bb40dc655f8b217071c224c0c819c7f",
-  "files": 217,
-  "lines": 122936,
+  "compiler": "clang",
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 217,
+  "source_lines": 122936,
+  "baseline_sha256": "315775bd647c62e11ae1993f04cd8ae58689314e5f8d705ee731672d9520e845",
+  "baseline_seconds": 14.590575506,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "2ff8a56a78e2bea60cd1aef369b79d49df931901ffeba472ac8fa9cd3b76aa14",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   },
+   {
+    "set": "T1",
+    "seed": "b6673e4845a984246e26a60583166690049a45b9d753742566916448903d1bf6",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   },
+   {
+    "set": "T2",
+    "seed": "c5eddd73cacdf5988e9472d82351f9a02e061339383f3d8e8fe0b44dd046e933",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   },
+   {
+    "set": "T2X",
+    "seed": "c65ebd236640c20cccc96dd012f16e1aab96cf780c6d6d02cbc7b1c11c47b531",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   }
+  ],
+  "total_seconds": 272.778849044
  },
  {
+  "lang": "c",
   "repo": "universal-ctags/ctags",
-  "compiler": "clang",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
   "commit": "394badef3b67abfab30841ec1ecc541b030fff13",
-  "files": 937,
-  "lines": 235130,
-  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "seconds": 121,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  }
- },
- {
-  "repo": "vim/vim",
   "compiler": "clang",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
-  "commit": "a4e0c637b9008b96a79ed17e41c5dbc225c044d6",
-  "files": 305,
-  "lines": 626187,
   "compiler_version": "Debian clang version 19.1.7 (3+b1)",
-  "seconds": 121,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 937,
+  "source_lines": 235130,
+  "baseline_sha256": "5634b463b03c1536c3112233ae2ff677df54a978c9065e490626b9640e406dee",
+  "baseline_seconds": 16.693540539,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "55ec11b7ab07095ec554c194bcf87b7120d80103786ef7d3e5a8685bbc65aee9",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
    },
-   "T1": {
-    "distinct": 1,
+   {
+    "set": "T1",
+    "seed": "11cb8c43bcc0bbf465480cccecccf5d8e7cb4d53a794c3d25a00f6da2997e2a5",
     "variants": 4,
-    "errors": 0
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
    },
-   "T2": {
-    "distinct": 1,
+   {
+    "set": "T2",
+    "seed": "da95097e0e86c7cf053ee8229bd72b71d99bad429cc01ed49e4785b7ac54af15",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
+   },
+   {
+    "set": "T2X",
+    "seed": "28a242f14a045e8b9820dfefe472ce75f091479cb0b5996ec0acc962fb6c6bbb",
     "variants": 2,
-    "errors": 0
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
    }
-  }
+  ],
+  "total_seconds": 312.769108185
  },
  {
+  "lang": "c",
+  "repo": "vim/vim",
+  "commit": "a4e0c637b9008b96a79ed17e41c5dbc225c044d6",
+  "compiler": "clang",
+  "compiler_version": "Debian clang version 19.1.7 (3+b1)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 305,
+  "source_lines": 626187,
+  "baseline_sha256": "e188f0390e4b38f03b7988f8cd645812a295bf568ab393d85d3e76c6b41049b8",
+  "baseline_seconds": 17.34991205,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "a25cebb8eb26b30a68a92291867e35f05ac55011ee7b06d4cad4945ffb3f288f",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   },
+   {
+    "set": "T1",
+    "seed": "f44e3c23092cd04fc8fa803a2a099e706d2f838cd837febef34b8c2967be1dd6",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   },
+   {
+    "set": "T2",
+    "seed": "88f1a9204bd0030f5a769c27f119064e4664adfb2103c3e21213e8b2f46c2fcc",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   },
+   {
+    "set": "T2X",
+    "seed": "cc265e1898ffc7a887bae67fa4aba27b88c8988c26fcc9f356b036545f6d678b",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   }
+  ],
+  "total_seconds": 317.033428109
+ },
+ {
+  "lang": "c",
   "repo": "antirez/kilo",
+  "commit": "323d93b29bd89a2cb446de90c4ed4fea1764176e",
   "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 5,
-  "generator": "second",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 1,
+  "source_lines": 1308,
+  "baseline_sha256": "0943044b683dfc9915889d636873c5267a833cf2b696ab880dc3dc5fe7ab8450",
+  "baseline_seconds": 0.240572526,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "cbb2be04f223e51f536226aeb7f622a0c60b9c19526d1a1f7fd81092215c937f",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   },
+   {
+    "set": "T1",
+    "seed": "e29047d2736891f0aae1171ef0610f76cd154fee0ed7e3733cc15749e796f0ee",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   },
+   {
+    "set": "T2",
+    "seed": "5de9ca1ceb92002e2df47a0f02f84a55138c0d32120539264ad41eb190807a65",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   },
+   {
+    "set": "T2X",
+    "seed": "b0220f137b315dac6aa0ade21cf66ee46ed12f4e5f875e5fdb108df376c5fb0d",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1
+   }
+  ],
+  "total_seconds": 5.567105171
  },
  {
+  "lang": "c",
   "repo": "curl/curl",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 427,
-  "generator": "first",
   "commit": "9637d6b8444ce4fdd8d58eb2cf7ec9a5770a82ac",
-  "files": 1073,
-  "lines": 301211,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 1073,
+  "source_lines": 301211,
+  "baseline_sha256": "aa88d23f4b10484bd0afeef70a0ba0a153385df2365e9e56a9d7953a78b4b7c9",
+  "baseline_seconds": 14.012995435,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "6593db0506c07b71ce4cd9d116d17620795208a455731216ef944ecb96d27752",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   },
+   {
+    "set": "T1",
+    "seed": "d5eeb290bb17e2eb8f1a3f4f704e7eb2c20b763d1a894a8dcc9f565ebf59ffa4",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   },
+   {
+    "set": "T2",
+    "seed": "f95956b2af63d542bc312b1d64d11bcbbbcdd2e4ca82b70a63de0c85d27047e0",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   },
+   {
+    "set": "T2X",
+    "seed": "ca7122387598227eb93b0c474f345199c01d736db67421b64b390fed32346bd8",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1073
+   }
+  ],
+  "total_seconds": 249.092801998
  },
  {
+  "lang": "c",
   "repo": "DaveGamble/cJSON",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 87,
-  "generator": "second",
   "commit": "6d9f2443ab071f86e5d9b43025a40929ec41c46c",
-  "files": 99,
-  "lines": 22419,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 99,
+  "source_lines": 22419,
+  "baseline_sha256": "5914449f71e7a9f7483bfa20bee6b49c4d6e6898b18192ce1bcb139bd0d2bb7f",
+  "baseline_seconds": 3.050293654,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "e4cb7d248108b9007fa3a8f46ae6b32e1a92d10564d7fb6f75bc805a09be201b",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   },
+   {
+    "set": "T1",
+    "seed": "e5e6b4f22d4c0ab9f1a9f7b99152137cb57b6b32ba191397c712bd13b8fbf59a",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   },
+   {
+    "set": "T2",
+    "seed": "1f276d49e4fde8fe2960c66832e0a560070553dfb6a66b7efa656cdc136baa23",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   },
+   {
+    "set": "T2X",
+    "seed": "0642cf87fca6a85ddbb8fbc3f9ebaa6fcfed8a7dd46a7e51953e576d88b4fcb6",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 92
+   }
+  ],
+  "total_seconds": 54.746770084
  },
  {
+  "lang": "c",
   "repo": "facebook/zstd",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 36,
-  "generator": "second",
   "commit": "a599a71c4cf5d142ffce772c0d16a5a7b755d83c",
-  "files": 279,
-  "lines": 144631,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 279,
+  "source_lines": 144631,
+  "baseline_sha256": "13fa9d3f60887bd086896bd108c83f477b8ad782e72d6df5ad95f4d55f03d45b",
+  "baseline_seconds": 5.231312606,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "dd03d2ad9c23726c4cf171d9f65fb9d77e9ccf7287037e2afd923f7e0a6ce2f1",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   },
+   {
+    "set": "T1",
+    "seed": "5f14937291c97221f70c877ed61774f89ec20b39603958768dc0d8cd9b042e37",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   },
+   {
+    "set": "T2",
+    "seed": "111749420cbb27a69588368c8bf102349a56c808ccc5cc97f7b2842b509d48bb",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   },
+   {
+    "set": "T2X",
+    "seed": "d87e5598c5f7915907befc38e6e338252646c200817d1ca9e28e9513dea77c13",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 279
+   }
+  ],
+  "total_seconds": 107.294205673
  },
  {
+  "lang": "c",
   "repo": "fmtlib/fmt",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 61,
-  "generator": "second",
   "commit": "dcdec038abe9d042cf8494c4e371bd73c04cb114",
-  "files": 75,
-  "lines": 70908,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 75,
+  "source_lines": 70908,
+  "baseline_sha256": "002d2c581e5df39acc5727ab988a097f078a5d3669dea4b7dacf4684cc3bcf0f",
+  "baseline_seconds": 2.375102233,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "4f3a39497e97a81cf6891e05f17ef0baa24d3234335720aaa0dde4308fa498ac",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   },
+   {
+    "set": "T1",
+    "seed": "979657ee29a6bbe4ea59c0fdd6acd2700505318cf547205cdcf7e57b601c548f",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   },
+   {
+    "set": "T2",
+    "seed": "9fbc5c8bae7842ccf13b7e9ed06a6db5220d10d1c7379a6de03647e435108306",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   },
+   {
+    "set": "T2X",
+    "seed": "ae5682939cb162f2daa1c62afc761225ee5f3560090bfd5bb565e58e2a5a66be",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 75
+   }
+  ],
+  "total_seconds": 46.575056668
  },
  {
+  "lang": "c",
   "repo": "gabime/spdlog",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 58,
-  "generator": "second",
   "commit": "6d9805df3f588402b17073dcd13eb569ceda864d",
-  "files": 153,
-  "lines": 33270,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 153,
+  "source_lines": 33270,
+  "baseline_sha256": "2f25f7f2073f3687bf6a91d31b69a084acb79e58e9ec32c8ee17c9897f5046c0",
+  "baseline_seconds": 3.61271314,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "6601869e053776d7dec6f7abedb616ad97fb3a00b470b8a588bef3065dc4674c",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   },
+   {
+    "set": "T1",
+    "seed": "af9bff79a6a0f9f2e1aaa9f607c41c46d1289bd436fedfd5ad5481c56dbf5098",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   },
+   {
+    "set": "T2",
+    "seed": "78e7bbbbf1fe7ecb8e02b989874a8067cb0d6fe72a05ce22dc90463c6d64ec96",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   },
+   {
+    "set": "T2X",
+    "seed": "0ed51b23ce451d63dc723146a755b4df3684bf447563929493b59ade2667b0d5",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 153
+   }
+  ],
+  "total_seconds": 68.002691698
  },
  {
+  "lang": "c",
   "repo": "git/git",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 69,
-  "generator": "second",
   "commit": "7fb6055e678f800320d8ab8cd8f201d9493d1ba0",
-  "files": 990,
-  "lines": 447084,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 990,
+  "source_lines": 447084,
+  "baseline_sha256": "26e5192c91e0dee676ebdd034d7444aad8cab27f2471c2dfee983ee4fbf085bb",
+  "baseline_seconds": 10.777081804,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "4c4d77e318e8eb2ceb4e07302902af6a1ab596ef9f8f3fdf2ab8c14a83ea084a",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   },
+   {
+    "set": "T1",
+    "seed": "891aa516795d4084fc3de330407a99d3eb322f2976326accebc316e62477d86e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   },
+   {
+    "set": "T2",
+    "seed": "7ff154c11ccd4d6e2374eb8cb81d34ddd372fd0dd43fa83f6603cb32f1097b26",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   },
+   {
+    "set": "T2X",
+    "seed": "3b28033ba3c960836fd6fea24fe42907bc857c0f3af2956f0e81cc2d9a60cd97",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 1001
+   }
+  ],
+  "total_seconds": 233.288303565
  },
  {
+  "lang": "c",
   "repo": "google/brotli",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 158,
-  "generator": "second",
   "commit": "6a14c0798233769cef147cf9bafaefe147b8ddc3",
-  "files": 131,
-  "lines": 47803,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 131,
+  "source_lines": 47803,
+  "baseline_sha256": "60e2ace619788746897ccf2ef04f37c1ce9bc36874f3862a690672a7228a653b",
+  "baseline_seconds": 10.067408848,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "752e82d639656de2b6f60f48618fa1d51bc1ff058c6f6499cce500ddc075eded",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   },
+   {
+    "set": "T1",
+    "seed": "a3f64918c101c99056a0cb62489c41d39bb35bd11cbf4a8b82d349f48e7c10af",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   },
+   {
+    "set": "T2",
+    "seed": "56715627cd9c194ff2c7dd500625f6daf55a64d2db5693cde2f357d5b7345794",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   },
+   {
+    "set": "T2X",
+    "seed": "1b59c181b6dcc4d44b72cc8135a52e284ce2c4414df99213ff4646dc77fad654",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 140
+   }
+  ],
+  "total_seconds": 163.794008658
  },
  {
+  "lang": "c",
   "repo": "google/leveldb",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 45,
-  "generator": "second",
   "commit": "29465588d3dfdc80fba5e198037582b8fdb5dd60",
-  "files": 133,
-  "lines": 28971,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 133,
+  "source_lines": 28971,
+  "baseline_sha256": "df2b9509b543fa8a325c4a5f5adc72f7d673e4f90ed3e1df78d6a0a5dfdd81e8",
+  "baseline_seconds": 3.8922667029999998,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "a4084a02af62eef31237dd4593960f9a396f4b3472f5388f51e98aebe3183d0f",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   },
+   {
+    "set": "T1",
+    "seed": "ab05d4be531f8f1e3f47c3a2a6c5247bec93eb680a5a324c8d654b7c6659192d",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   },
+   {
+    "set": "T2",
+    "seed": "2841ecb3bfc62ae0f66b4a81b12cb97c0514fddee04da8fc63e8eb504b309755",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   },
+   {
+    "set": "T2X",
+    "seed": "5e9130a52685623e0fd18c27865d4da12c7d80f3c6368df6a704cd1799515ade",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 133
+   }
+  ],
+  "total_seconds": 71.040032763
  },
  {
+  "lang": "c",
   "repo": "google/snappy",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 107,
-  "generator": "second",
   "commit": "946606459314e55d029c85f9a8c46f8809467f0f",
-  "files": 18,
-  "lines": 7945,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 18,
+  "source_lines": 7945,
+  "baseline_sha256": "2756b39034ec547edd64a283a85a28f05ce5760eca12f27345926e7f63a3c107",
+  "baseline_seconds": 3.028407809,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "a1a09ad828bd498e6ab1b5742f762e6d80e1dfed82814147e3928acf17641963",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   },
+   {
+    "set": "T1",
+    "seed": "94574277a90a09d6b1c755b561fa050319466d7ba4625660ebdcbd7f4cf773c9",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   },
+   {
+    "set": "T2",
+    "seed": "00d9a39ac829fff50c4cce2aa48951269ebb0a556368d3c5a64cd3850b5fa84d",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   },
+   {
+    "set": "T2X",
+    "seed": "b2d7cf00452c24d3889af6b5969e7044d3fbb1c10f07f3942e201e0c91b52dbd",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 18
+   }
+  ],
+  "total_seconds": 57.159633204
  },
  {
+  "lang": "c",
   "repo": "htop-dev/htop",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 109,
-  "generator": "second",
   "commit": "21bbc80c7811149ee33f449748addf23740c7b9f",
-  "files": 283,
-  "lines": 48950,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 283,
+  "source_lines": 48950,
+  "baseline_sha256": "6d555c4be5760929fb907911cbc739b0529c0cc292612f46647417bb3abf1f84",
+  "baseline_seconds": 5.715638049,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "0124a847e80f7ff171eed0779884dd2c71c1087cbb2100e075d7379e3a40d392",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   },
+   {
+    "set": "T1",
+    "seed": "ac2cbdf3539aa2eb19568db29d96c31722ef0cdb11d626ad63db95faa4dd3ac5",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   },
+   {
+    "set": "T2",
+    "seed": "0679283bb66702911eab48ec5224c61f93860dd6dee3a18588e5d0d0702f0721",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   },
+   {
+    "set": "T2X",
+    "seed": "952430441dc8d554628c1b18f2018e617cf7d8814fe4b059036e7063f2135ff4",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 283
+   }
+  ],
+  "total_seconds": 105.437157385
  },
  {
+  "lang": "c",
   "repo": "jbeder/yaml-cpp",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 58,
-  "generator": "second",
   "commit": "f473f3bdfed25271ebd3d268caedc1b0b7f5ff50",
-  "files": 274,
-  "lines": 122523,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 274,
+  "source_lines": 122523,
+  "baseline_sha256": "746e6d15282e46ba718d99495e61eff97ef7448ee0491dacea86af1db9a3696f",
+  "baseline_seconds": 3.190768544,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "1f3e9318b8489ebb1cd9fccde356bee3e65d8bb3c5ae89460951a8963458dadd",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   },
+   {
+    "set": "T1",
+    "seed": "0940f8819478f2899deb361a818308390f4375ed4f3a668c44cc19fe7376dd9c",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   },
+   {
+    "set": "T2",
+    "seed": "8914a3ecba0b982a7a7025268e23c3b8fa696d8ec80aad44a5684efd810d00bc",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   },
+   {
+    "set": "T2X",
+    "seed": "14b25222a1860eb7af34e22f750b1ec45b510d194b739de5544e578a34e6d3af",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 274
+   }
+  ],
+  "total_seconds": 64.53169723
  },
  {
+  "lang": "c",
   "repo": "jqlang/jq",
-  "compiler": "gcc",
-  "status": "baseline_failed",
-  "sets": {},
-  "seconds": 8,
-  "generator": "second",
   "commit": "5c001b18d7237cce1fdba63608732163f978dd23",
-  "files": 81,
-  "lines": 48024,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "baseline_failed",
+  "error": "Makefile.am:213: error: required directory ./vendor/oniguruma does not exist | autoreconf: error: automake failed with exit status: 1",
+  "source_files": 81,
+  "source_lines": 48024,
+  "baseline_seconds": 3.544125278,
+  "total_seconds": 4.743576622
  },
  {
+  "lang": "c",
   "repo": "libuv/libuv",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 33,
-  "generator": "second",
   "commit": "3febcb8561554927155923da335ac0549235b0b3",
-  "files": 379,
-  "lines": 119090,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 379,
+  "source_lines": 119090,
+  "baseline_sha256": "2c2b9307f34188f0e3071920e1224ea2fd6fe981a4421e648795406b6312fafc",
+  "baseline_seconds": 2.666649198,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "99ef6ab49c33a7dda3934f30554b7a53822e071659c23ff45d00f2e05f979d08",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   },
+   {
+    "set": "T1",
+    "seed": "13bdd3cb4d842ce3449366d5ab32b6ad8b743fbd7812d89877994e6ed830d2e1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   },
+   {
+    "set": "T2",
+    "seed": "f347aca1b2f465089aa7bf73be7919d43681c7ba298307cd4f10aee926fe3d28",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   },
+   {
+    "set": "T2X",
+    "seed": "045e7554a349184220930fb7b20d63fff605240cd55e927da8941105170cb25a",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 379
+   }
+  ],
+  "total_seconds": 55.464420376
  },
  {
+  "lang": "c",
   "repo": "lua/lua",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 13,
-  "generator": "second",
   "commit": "c42d820bc0c3bc4f2ad536e19d2f05405af10387",
-  "files": 68,
-  "lines": 34216,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 68,
+  "source_lines": 34216,
+  "baseline_sha256": "9b95c33fa67ccb87421ba5817223b524f67f4dfdb320c92d866aaa248ed7d0a7",
+  "baseline_seconds": 1.200915951,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "4a4cef5078a8f892b87765c88515edc5cc64ebab2c7798779f8da409aa57d578",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   },
+   {
+    "set": "T1",
+    "seed": "8c235c1c144f2632e730cdfbe548c5cee0b3792dc8c84da906c39f8c991bdb78",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   },
+   {
+    "set": "T2",
+    "seed": "a9865308ab304a64517d13cb489c9cdbdb046cb9ebd7fffc1120bb5c26307436",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   },
+   {
+    "set": "T2X",
+    "seed": "166232c642671c0c664ec7e71859383ed731fa604ebe951095b2ef3e316f620b",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 68
+   }
+  ],
+  "total_seconds": 21.030191377
  },
  {
+  "lang": "c",
   "repo": "lz4/lz4",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 28,
-  "generator": "second",
   "commit": "6b589e8053bd9c524138d78adec78fcaefa35cab",
-  "files": 80,
-  "lines": 38598,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 80,
+  "source_lines": 38598,
+  "baseline_sha256": "d52c75b7bbca5a654f6d5cfb85f4189f2e8b06b57b5bd38caac2b1a01ae799bb",
+  "baseline_seconds": 1.9309210380000001,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "ec30247c18d3f20bd563509fa327ec6ebb86d5af10f871227dc0d723d291059f",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   },
+   {
+    "set": "T1",
+    "seed": "4eda07430725c6e9057ff081c50701169d0280439600ae9bcdbf740636431d86",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   },
+   {
+    "set": "T2",
+    "seed": "42899ef6233903cb3afb89b265e4c391c27f7c183333b8cea71bb34561112abc",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   },
+   {
+    "set": "T2X",
+    "seed": "a54d67ba94bd713c4d8dbe32babec30e14a03c67948f6aa3090c0e4fa9f8fb2d",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 80
+   }
+  ],
+  "total_seconds": 49.592422669
  },
  {
+  "lang": "c",
   "repo": "madler/zlib",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 19,
-  "generator": "second",
   "commit": "99623ef7097352da7993ba614161fd6a311e046e",
-  "files": 79,
-  "lines": 43250,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 79,
+  "source_lines": 43250,
+  "baseline_sha256": "bd47cbde8856940bf66dfa6de31e5626e30dea6fb3ae3b5816044a7081132f37",
+  "baseline_seconds": 0.721407823,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "7688f3301c867d130b3c761b203e36416e52047b71f8b7ed0ef97bb7c97e5027",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   },
+   {
+    "set": "T1",
+    "seed": "3fb1d8bc74f72cc7f25ef17c621120c47807d79653f886219be194c6118f9c50",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   },
+   {
+    "set": "T2",
+    "seed": "d02e5e63604b1ff537f9248c40abe7af9798a54713868e43ea8d7e3b367f13dd",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   },
+   {
+    "set": "T2X",
+    "seed": "288c25a36c5304566c5540500161627e920aeb9ddcaf4792681ede1327587ada",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 79
+   }
+  ],
+  "total_seconds": 14.014770294
  },
  {
+  "lang": "c",
   "repo": "memcached/memcached",
-  "compiler": "gcc",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
   "commit": "2d51e364799bc9698bd4b11728ea978cea12da6e",
-  "files": 96,
-  "lines": 52357,
+  "compiler": "gcc",
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "seconds": 27,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 96,
+  "source_lines": 52357,
+  "baseline_sha256": "89114d1a9bc6b99b9bdf4b0af4ef7e3677dbe3cfa5e396a8aff48f3cac24d197",
+  "baseline_seconds": 4.240929489,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "c39d513e5634249c3c1cbf2db9b0b6dbb1d76e89e2213d1395804cec55cb3292",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
    },
-   "T1": {
-    "distinct": 1,
+   {
+    "set": "T1",
+    "seed": "738d76b43bcba6cbd58f142946c353f864d7376bcb0952680e3d2d1da4b38f7a",
     "variants": 4,
-    "errors": 0
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
    },
-   "T2": {
-    "distinct": 1,
+   {
+    "set": "T2",
+    "seed": "7e84cf5ab292c7b8372f77146154b774f6029d608cb8e5f5614eb815b16f1e3e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
+   },
+   {
+    "set": "T2X",
+    "seed": "997dd07e587ccc0ad42bc6afd4b05ca28324ee61903a5bc79a32ba280787eb80",
     "variants": 2,
-    "errors": 0
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 93
    }
-  }
+  ],
+  "total_seconds": 84.819654349
  },
  {
+  "lang": "c",
   "repo": "mirror/busybox",
-  "compiler": "gcc",
-  "status": "baseline_failed",
-  "sets": {},
-  "seconds": 37,
-  "generator": "second",
   "commit": "371fe9f71d445d18be28c82a2a6d82115c8af19d",
-  "files": 751,
-  "lines": 285721,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "nginx/nginx",
   "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 107,
-  "generator": "second",
-  "commit": "2a3a19c6fdcdc9bd618b81c4a6d9a80ed67d50da",
-  "files": 411,
-  "lines": 258031,
   "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
   "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "ninja-build/ninja",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 64,
-  "generator": "second",
-  "commit": "1a8fee23135e57cda12d47aedb19f795353fa13c",
-  "files": 127,
-  "lines": 35017,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "redis/redis",
-  "compiler": "gcc",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
-  "commit": "d92afbeb85aa02e245fe534946b7f69a6c0898c0",
-  "files": 856,
-  "lines": 430937,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "seconds": 103,
-  "sets": {
-   "T1,T2": {
-    "distinct": 0,
-    "variants": 4,
-    "errors": 4,
-    "error": "fmtargs.h:383:2: error: #endif without #if"
-   },
-   "T1": {
-    "distinct": 0,
-    "variants": 4,
-    "errors": 4,
-    "error": "fmtargs.h:383:2: error: #endif without #if"
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  }
- },
- {
-  "repo": "simdjson/simdjson",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 263,
-  "generator": "second",
-  "commit": "a0d5ad9798f9e51706399b649929dafb91d9b714",
-  "files": 588,
-  "lines": 447674,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "sqlite/sqlite",
-  "compiler": "gcc",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
-  "commit": "e5cb4b09573aeb53cbb28983be7234e42c48c07a",
-  "files": 359,
-  "lines": 464612,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "seconds": 246,
-  "sets": {
-   "T1,T2": {
-    "distinct": 0,
-    "variants": 4,
-    "errors": 4,
-    "error": "sqlite3.c:24777:5: error: non-static declaration of 'sqlite3WhereTrace' follows static declaration | sqlite3.c:87847:26: error: 'OP_Init' undeclared (first use in this function) | sqlite3.c:88174:33: error: 'OP_Int64' undeclared (first use in this function) | sqlite3.c:88217:42: error: 'OP_Null' und"
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 0,
-    "variants": 2,
-    "errors": 2,
-    "error": "sqlite3.c:24832:5: error: non-static declaration of 'sqlite3WhereTrace' follows static declaration | sqlite3.c:87957:27: error: 'OP_Init' undeclared (first use in this function) | sqlite3.c:88284:36: error: 'OP_Int64' undeclared (first use in this function) | sqlite3.c:88292:31: error: 'OP_Real' und"
-   }
-  }
- },
- {
-  "repo": "TinyCC/tinycc",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 35,
-  "generator": "second",
-  "commit": "f830a1697e159056b75de40a60464bc43ee670a3",
-  "files": 352,
-  "lines": 130737,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "tmux/tmux",
-  "compiler": "gcc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 238,
-  "generator": "second",
-  "commit": "75fac4a77bb40dc655f8b217071c224c0c819c7f",
-  "files": 217,
-  "lines": 122936,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "universal-ctags/ctags",
-  "compiler": "gcc",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
-  "commit": "394badef3b67abfab30841ec1ecc541b030fff13",
-  "files": 937,
-  "lines": 235130,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "seconds": 128,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  }
- },
- {
-  "repo": "vim/vim",
-  "compiler": "gcc",
-  "status": "ok",
-  "generator": "final",
-  "target": "linux/arm64",
-  "environment": "local Docker",
-  "commit": "a4e0c637b9008b96a79ed17e41c5dbc225c044d6",
-  "files": 305,
-  "lines": 626187,
-  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
-  "seconds": 132,
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   }
-  }
- },
- {
-  "repo": "ajeetdsouza/zoxide",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 115,
-  "generator": "first",
-  "commit": "1bb062057bef85aecb44e2e5c2a7983be4ebb710",
-  "files": 25,
-  "lines": 2803,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "bootandy/dust",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 276,
-  "generator": "first",
-  "commit": "079c55266917387e416e0f871c97c06da52df12d",
-  "files": 17,
-  "lines": 5043,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "BurntSushi/ripgrep",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 56,
-  "generator": "first",
-  "commit": "178cc027e283fd965cb72d0a7395b219eada170c",
-  "files": 102,
-  "lines": 55512,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "Byron/dua-cli",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 478,
-  "generator": "first",
-  "commit": "a6d1a98aeac25bd91b7fd77fab55081dddefccc1",
-  "files": 63,
-  "lines": 32886,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "Canop/broot",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 1242,
-  "generator": "first",
-  "commit": "deed4752b19d72fbbc4f9f59cb58b9061ab13709",
-  "files": 239,
-  "lines": 41505,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "casey/just",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 770,
-  "generator": "first",
-  "commit": "62784c2a6e169b8ca5f32bd69d5cfeb1d6b5e1fe",
-  "files": 277,
-  "lines": 66694,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "chmln/sd",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 207,
-  "generator": "first",
-  "commit": "44febdf86343c653255ae4f20f5e1882dad6be17",
-  "files": 13,
-  "lines": 2125,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "ClementTsang/bottom",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 557,
-  "generator": "first",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "dalance/procs",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 605,
-  "generator": "first",
-  "commit": "7ffb8c4f2ecb84b5cebc8ebffff243a007bf7bed",
-  "files": 105,
-  "lines": 16756,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "dandavison/delta",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 127,
-  "generator": "first",
-  "commit": "02ff175b7bf70a08d4a1b3c56612b9093852b794",
-  "files": 85,
-  "lines": 34484,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "ducaale/xh",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 111,
-  "generator": "first",
-  "commit": "8b21cc07a6deeff0ca50ba2a4bfa8d34daffd94f",
-  "files": 33,
-  "lines": 16612,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "extrawurst/gitui",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 658,
-  "generator": "first",
-  "commit": "d7214eccb3cac52ce3f8d9ca18f218671821eeee",
-  "files": 162,
-  "lines": 50369,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "eza-community/eza",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 476,
-  "generator": "first",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "lsd-rs/lsd",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 295,
-  "generator": "first",
-  "commit": "4b6c14a110fe0fd544ec0204501b5fd3a5d6218f",
-  "files": 54,
-  "lines": 14270,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "orf/gping",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 271,
-  "generator": "first",
-  "commit": "fad1ee3c02fdc45751271778814cec452a45f2ab",
-  "files": 15,
-  "lines": 2171,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "ouch-org/ouch",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 676,
-  "generator": "first",
-  "commit": "6df14b05ea6d1e600f1f3ff16bccd4a756c20c94",
-  "files": 38,
-  "lines": 9334,
-  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
-  "target": "linux/amd64",
-  "environment": "Modal"
- },
- {
-  "repo": "PaulJuliusMartinez/jless",
-  "compiler": "rustc",
   "status": "baseline_failed",
-  "sets": {},
-  "seconds": 10,
-  "generator": "first",
+  "error": "# | # using defaults found in .config | # | /tmp/w/build/mirror__busybox/scripts/mkconfigs: 36: bzip2: not found | bzip2 is not installed | make: *** [Makefile:859: include/config/MARKER] Error 1",
+  "source_files": 751,
+  "source_lines": 285721,
+  "baseline_seconds": 5.805631671,
+  "total_seconds": 7.445551623
+ },
+ {
+  "lang": "c",
+  "repo": "nginx/nginx",
+  "commit": "2a3a19c6fdcdc9bd618b81c4a6d9a80ed67d50da",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 411,
+  "source_lines": 258031,
+  "baseline_sha256": "90e7821d1aa58a8e2f6236b87e9b6f1b666ff5c744e520039bd342ca470c7a41",
+  "baseline_seconds": 4.396767662,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "e01081fd30c065e1d72e27da70dc958322f88f67f1661e333ee3cea50a4b2c19",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 411
+   },
+   {
+    "set": "T1",
+    "seed": "b2714e9ea39bcc24009e0ea68b6e46d18572a77de5f9b44aa56c32a314084f18",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 411
+   },
+   {
+    "set": "T2",
+    "seed": "592f7edbbfc519c373ab64d074afe87c152419bd23dd026f3c2747adf03b53f0",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 411
+   },
+   {
+    "set": "T2X",
+    "seed": "3866cabcb666fbcfdb0c6e74c34f08bee40790b174123458c363b2f4fe29ea68",
+    "variants": 2,
+    "distinct_hashes": 0,
+    "build_errors": 2,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 411,
+    "error_sample": "src/core/ngx_resolver.c:641:9: error: this 'for' clause does not guard... [-Werror=misleading-indentation]"
+   }
+  ],
+  "total_seconds": 92.008054065
+ },
+ {
+  "lang": "c",
+  "repo": "ninja-build/ninja",
+  "commit": "1a8fee23135e57cda12d47aedb19f795353fa13c",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 127,
+  "source_lines": 35017,
+  "baseline_sha256": "7c2cbd8a57ab4afa3a8a6772c1aaefdfd6f3d289a227b80e67a5d24e8cc575a9",
+  "baseline_seconds": 4.542146099,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "546c942eaee80b386871d7757b4f320394bb99a16d3f34685f6ebf6d12d3d061",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   },
+   {
+    "set": "T1",
+    "seed": "68d09963c1e12cf0d37d5dd620386a674f19e302beb30aa96c1d6e27e40b7147",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   },
+   {
+    "set": "T2",
+    "seed": "b71492afe0a00e293a5170072bc9c114e6efa47dea2e78c18e0b635770be3a60",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   },
+   {
+    "set": "T2X",
+    "seed": "cb614d63228284c339873441814860c1b97c0d91a4eb329915580b40ac2df88b",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 125
+   }
+  ],
+  "total_seconds": 86.575291841
+ },
+ {
+  "lang": "c",
+  "repo": "redis/redis",
+  "commit": "d92afbeb85aa02e245fe534946b7f69a6c0898c0",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 856,
+  "source_lines": 430937,
+  "baseline_sha256": "7587480dbae9a77e52791653490e6a911fd67b21011177a89060d00c4fd7aa9d",
+  "baseline_seconds": 27.163065155,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "d370114bacb03808bf182c99d4859350edce858e81f0dcad4a3b50cb16e458aa",
+    "variants": 6,
+    "distinct_hashes": 0,
+    "build_errors": 6,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 856,
+    "error_sample": "fmtargs.h:383:2: error: #endif without #if"
+   },
+   {
+    "set": "T1",
+    "seed": "daa04d98db3c1add2e9675fea3800ef6fed1aa7d10ea707c1acbaeccd9a53950",
+    "variants": 4,
+    "distinct_hashes": 0,
+    "build_errors": 4,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 856,
+    "error_sample": "fmtargs.h:383:2: error: #endif without #if"
+   },
+   {
+    "set": "T2",
+    "seed": "41edab7a80d6cfc6861e8ae70b3c7eb76f9960341a3329b486a159daf055fa21",
+    "variants": 4,
+    "distinct_hashes": 3,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 856
+   },
+   {
+    "set": "T2X",
+    "seed": "db02cd0ef20e865b71ba1a3283a0aa5e255edca784af182df031b4868a857d26",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 856
+   }
+  ],
+  "total_seconds": 291.795024134
+ },
+ {
+  "lang": "c",
+  "repo": "simdjson/simdjson",
+  "commit": "a0d5ad9798f9e51706399b649929dafb91d9b714",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 588,
+  "source_lines": 447674,
+  "baseline_sha256": "b69c84a871ae0e655a9ef24ada540a66e4b9b290db1e9db08472faed3dc47270",
+  "baseline_seconds": 11.779125692000001,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "c71c5881522868c129594f190ac20904f8c1f9243ca7bd5241f535df216692e9",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   },
+   {
+    "set": "T1",
+    "seed": "48fa8386a76d766804a4f6e9dbf84daabd72a3e19bb1010a695d6dfc92618c97",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   },
+   {
+    "set": "T2",
+    "seed": "bd16af81bbb34a48d0cd6830d22791d955f5e4e8f1afcece700bdeb25f807b17",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   },
+   {
+    "set": "T2X",
+    "seed": "d2bae95422d9d10bdc01e8480318a57b243b7329301dd0bc5fd0ca9e49474578",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 591
+   }
+  ],
+  "total_seconds": 229.28009374
+ },
+ {
+  "lang": "c",
+  "repo": "sqlite/sqlite",
+  "commit": "e5cb4b09573aeb53cbb28983be7234e42c48c07a",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 359,
+  "source_lines": 464612,
+  "baseline_sha256": "f37d5c6c5707a90d1d5f2d732783c3f7bc64693ffea1caab000d7904ef7d51ad",
+  "baseline_seconds": 29.891322294,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "f3e6aafb91ef72e68864c062f502c78e5addac0c45ab200c44b09fbc6e84085b",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 359
+   },
+   {
+    "set": "T1",
+    "seed": "ecf94db0bd9afccd6828261f8cf770d5e4694a92ceca7cd548e868d6b3d592df",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 359
+   },
+   {
+    "set": "T2",
+    "seed": "9c59ab416c0b0dabf4482b1aff88770e170ed33920d701d9f8170b3d4d6c1754",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": true,
+    "files_transformed": 359
+   },
+   {
+    "set": "T2X",
+    "seed": "d72cb6d1ef44c7e460b840241d5686e64513cb92a6c2bde308fcc5414ec086b9",
+    "variants": 2,
+    "distinct_hashes": 0,
+    "build_errors": 2,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 359,
+    "error_sample": "sqlite3.c:24551:80: error: 'OP_Ne' undeclared here (not in a function); did you mean 'OP_Le'? | sqlite3.c:24832:7: error: non-static declaration of 'sqlite3WhereTrace' follows static declaration | sqlite3.c:28292:23: error: static declaration of 'sqlite3OsDlSym' follows non-static declaration | sqlite3.c:87951:27: error: 'OP_Init' undeclared (first use in this function) | sqlite3.c:88286:34: error: 'OP_Real' undeclared (first use in this function) | sqlite3.c:88292:35: error: 'OP_Goto' undeclared (first use in this function)"
+   }
+  ],
+  "total_seconds": 462.475091067
+ },
+ {
+  "lang": "c",
+  "repo": "TinyCC/tinycc",
+  "commit": "f830a1697e159056b75de40a60464bc43ee670a3",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 352,
+  "source_lines": 130737,
+  "baseline_sha256": "ad0335f1676700fc6749c1e02054085509d19b2cbff0dc97e2c709b47f95aa16",
+  "baseline_seconds": 1.755969945,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "4dc25d4227fcc1f1b4bb25f0af6877a2c5c62f92aa9719efb8cdbd1f1b2b6380",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   },
+   {
+    "set": "T1",
+    "seed": "b6007188fb30c35889b1dc2340b197513b33b4e2f0d67812ca2f33e77bc56cb0",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   },
+   {
+    "set": "T2",
+    "seed": "8f4f317039dbc37e35e4d3ae632d25f4fb9d9f41f6d55e487777580d4408ff8f",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   },
+   {
+    "set": "T2X",
+    "seed": "d41920595d758de8cbf04c17d89c724577c28869eafdcff2cd144e9214c33146",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 352
+   }
+  ],
+  "total_seconds": 35.437189302
+ },
+ {
+  "lang": "c",
+  "repo": "tmux/tmux",
+  "commit": "75fac4a77bb40dc655f8b217071c224c0c819c7f",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 217,
+  "source_lines": 122936,
+  "baseline_sha256": "85e19b7294d79e7e0ba0eb6738b34b11bfe70fc6758b93d1a2ee3330c579e600",
+  "baseline_seconds": 12.223547349,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "10b0e2186d00c06ab3a41e41e0ca30423c9983f0263ebb7a966d7b9249bc282c",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   },
+   {
+    "set": "T1",
+    "seed": "5f1b6dd2d9152bf4ca1cebe6a08577a2ea0827eadac5ff0dfcad7d5173dcc30e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   },
+   {
+    "set": "T2",
+    "seed": "0fbd0237bdb20c027c9286804df087e5e2925220534df88ec4f29b070c6de9f3",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   },
+   {
+    "set": "T2X",
+    "seed": "65986b47463e27d688ffb162e3846558d40850c952ee0287d6548d7f0b432223",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 217
+   }
+  ],
+  "total_seconds": 226.602771814
+ },
+ {
+  "lang": "c",
+  "repo": "universal-ctags/ctags",
+  "commit": "394badef3b67abfab30841ec1ecc541b030fff13",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 937,
+  "source_lines": 235130,
+  "baseline_sha256": "ac858c12f318a328b332f790fd588bbdb6e361e80b332ab8ba01ff4473c4b97f",
+  "baseline_seconds": 16.462945011,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "640c0a7d0e0148e035067e3825f51988481c26744759e64febf49f73194c19cc",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
+   },
+   {
+    "set": "T1",
+    "seed": "517389d603ad5d28ca04f12290fafb920b0bf5703e9dc0202d0054a784f24aae",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
+   },
+   {
+    "set": "T2",
+    "seed": "5a246d6bc5871412d799939962f5585e150ed040ef695dc8d1c088e93f81370b",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
+   },
+   {
+    "set": "T2X",
+    "seed": "30536aad12fc0bb385d0a4f99327c9a09b8cba6a7a6abcbde3e0dbbd57f67e61",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 956
+   }
+  ],
+  "total_seconds": 303.869845341
+ },
+ {
+  "lang": "c",
+  "repo": "vim/vim",
+  "commit": "a4e0c637b9008b96a79ed17e41c5dbc225c044d6",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Debian 14.2.0-19) 14.2.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 305,
+  "source_lines": 626187,
+  "baseline_sha256": "9fd4c6ca8d2bfa92c41c6022a7164969d8d327bcb7b7982002e39370a8a14c17",
+  "baseline_seconds": 14.40060129,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "1495af068f57436d9f47de522013bec702a2b5876ea0bf8b2afb3982fb09cba6",
+    "variants": 6,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   },
+   {
+    "set": "T1",
+    "seed": "7e1a9a7b212b9e3117762c6219e2b8066bcb88e6064fd7f701cf69f49b771b9c",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   },
+   {
+    "set": "T2",
+    "seed": "6177887ad2875a0f2ae7fa84faef56aba38a4880f06710f6c800622b07aab52a",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   },
+   {
+    "set": "T2X",
+    "seed": "8a5545f1b80cb0a73c95de2ef80e05bc0548a7963d02116a83993e444adf5fa8",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 305
+   }
+  ],
+  "total_seconds": 283.875118692
+ },
+ {
+  "lang": "rust",
+  "repo": "ajeetdsouza/zoxide",
+  "commit": "1bb062057bef85aecb44e2e5c2a7983be4ebb710",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 25,
+  "source_lines": 2803,
+  "baseline_sha256": "539b8bd43748fec9f5998b0e3622571bbe9adb5f06e0ee0014aa63d3efed789f",
+  "baseline_seconds": 12.13552268,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "7fbfe220b03d9c47a8e2d6f8e0d0e178dc42462ac523ee96aed5aa6453a5cbaf",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 25
+   },
+   {
+    "set": "T1",
+    "seed": "58b28447560749ec6aab2f8ef918ac6827a943c090cb079fac8c91df8db67579",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 25
+   },
+   {
+    "set": "T2",
+    "seed": "72a3aca7e748545515992bdad3626d551b5a7150f282c795aa0d0a3774ef30f9",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 25
+   },
+   {
+    "set": "T2X",
+    "seed": "20cf78cd24adfc261c1532570bf51aa7aab688a518d62bb397953816f9cf1cf4",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 25
+   }
+  ],
+  "total_seconds": 94.404005298
+ },
+ {
+  "lang": "rust",
+  "repo": "bootandy/dust",
+  "commit": "079c55266917387e416e0f871c97c06da52df12d",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 17,
+  "source_lines": 5043,
+  "baseline_sha256": "86a01a80b0cd945559ff35dd64ffaec95b63cc67beeee4827d8f9d46e3567ced",
+  "baseline_seconds": 21.919580227,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "84be912dd68d2ea384e17fe608eb9c8e2f50e67ffa09f8999710b9203e1f8894",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 17
+   },
+   {
+    "set": "T1",
+    "seed": "48e5d53af2f1b123582a8a0cdbf83c7b54cd7c4d35e8578907f4c026edafdc22",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 17
+   },
+   {
+    "set": "T2",
+    "seed": "17cad5a7b640a24b0efac7b1461e2e4c20d00ff6653fe77237cdc6e4e2dfdafa",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 17
+   },
+   {
+    "set": "T2X",
+    "seed": "d9a3e52153cc35ec3a744cee0350902b05cb4a294e81944b95d78172c9ceb647",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 17
+   }
+  ],
+  "total_seconds": 162.039205386
+ },
+ {
+  "lang": "rust",
+  "repo": "BurntSushi/ripgrep",
+  "commit": "178cc027e283fd965cb72d0a7395b219eada170c",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 102,
+  "source_lines": 55512,
+  "baseline_sha256": "d5f670834da16440e37ea348237e5edde16a2fbc11007bf6974a7d0fb6cc8322",
+  "baseline_seconds": 12.464833874,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "760e21127169409c2e38faed917c244a97cb3890d43d0b9bfb9311a56e2d976f",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 102
+   },
+   {
+    "set": "T1",
+    "seed": "6d78feaf98cc2dc35bbab57b17ab4b0971ed28cea1489a1e1706b2b1f551f27a",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 102
+   },
+   {
+    "set": "T2",
+    "seed": "94524d15ba44b9ffb261db558c41df18cb9e1cfd4660bf8f507b3445b6f0f1b4",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 102
+   },
+   {
+    "set": "T2X",
+    "seed": "ecba7ff256c7de5f9a291acd664f26edb8e6d58428b13acb6aac4cc4217650da",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 102
+   }
+  ],
+  "total_seconds": 68.664746447
+ },
+ {
+  "lang": "rust",
+  "repo": "Byron/dua-cli",
+  "commit": "a6d1a98aeac25bd91b7fd77fab55081dddefccc1",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 63,
+  "source_lines": 32886,
+  "baseline_sha256": "40936651218feb33e9b05a09e65d229ce9a73fa0ce9378833da6ea8e35b89215",
+  "baseline_seconds": 55.580619905,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "4248cf748fb2f741bc9f2815c352607d0dc4b151e549e4a125298ca14f1244f7",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 63
+   },
+   {
+    "set": "T1",
+    "seed": "3fae1519c92abe064d3d8e73357e065076093bbad0d28031d60dfdd66b12be9d",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 63
+   },
+   {
+    "set": "T2",
+    "seed": "9c10af8da9c9460dd0ba95c3e6462f0bacd1775220b28579cfc882ae959da68e",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 63
+   },
+   {
+    "set": "T2X",
+    "seed": "b0a9e0c9412716975234f2b58f36c03dc4f08ba9973e60c07ce05dcf732015d9",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 63
+   }
+  ],
+  "total_seconds": 384.915542217
+ },
+ {
+  "lang": "rust",
+  "repo": "Canop/broot",
+  "commit": "deed4752b19d72fbbc4f9f59cb58b9061ab13709",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 239,
+  "source_lines": 41505,
+  "baseline_sha256": "92253c10202a3c5f26db4c24364adefab1636c9afb765ef3a23bcbabf13790ff",
+  "baseline_seconds": 110.905843604,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "97aa3908e101c21f96b110ddc326176bf3546c7a30eb63f77e61e2a2c3d5aba8",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 239
+   },
+   {
+    "set": "T1",
+    "seed": "b71da3e690aa3c1c16d06e88a73e28d62d02369161f57c2a2ae0e74cbea9caef",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 239
+   },
+   {
+    "set": "T2",
+    "seed": "2f8fb488a590b51f1dedc4ffb8ede81113b31825a0a5a05b8fe2f6a38342f9ee",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 239
+   },
+   {
+    "set": "T2X",
+    "seed": "32a7e0e045ec5324ff129700d4f71b79fd35b5ca97989f0cb1ec849fa03a0df3",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 239
+   }
+  ],
+  "total_seconds": 919.134418662
+ },
+ {
+  "lang": "rust",
+  "repo": "casey/just",
+  "commit": "62784c2a6e169b8ca5f32bd69d5cfeb1d6b5e1fe",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 277,
+  "source_lines": 66694,
+  "baseline_sha256": "dee89523e855b88b9143605102cf5250672049bdf61686acea792862bd13e68d",
+  "baseline_seconds": 44.24210045,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "ab32be8952ea39587b393a20171715bd5b95103446bd635d4edb48d38fdd5863",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 277
+   },
+   {
+    "set": "T1",
+    "seed": "979411660a5e164c1155e9c478a6039e4c720bdf2e48e84c5fb778038499a69f",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 277
+   },
+   {
+    "set": "T2",
+    "seed": "9bb5008280517c07f95a052ed563127e70e6714df80e607722a11dbc966d8e15",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 277
+   },
+   {
+    "set": "T2X",
+    "seed": "808862b550cea0408862e61a594facdb03798bc677cc8aba9e43acda5e7677be",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 277
+   }
+  ],
+  "total_seconds": 443.24521887
+ },
+ {
+  "lang": "rust",
+  "repo": "chmln/sd",
+  "commit": "44febdf86343c653255ae4f20f5e1882dad6be17",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 13,
+  "source_lines": 2125,
+  "baseline_sha256": "ebe6b7365a132f0f136efdf87feaad87df9355e29922dc97eb144219931f58f5",
+  "baseline_seconds": 16.51776138,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "224a5fc0fdf10a1d31a1a3ef01f4b526e7c6a3aae61c08db4c797ac672c906c9",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 13
+   },
+   {
+    "set": "T1",
+    "seed": "ad3442ace9fa92a2f57ecd2b1e8a4b36ce71a1837f0e565d104e5b0b51ab5bae",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 13
+   },
+   {
+    "set": "T2",
+    "seed": "581c5ce0ffd6d39dd0ecec3dfd2f5e6eb0fc6d39bbd08183b3b454ea46682029",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 13
+   },
+   {
+    "set": "T2X",
+    "seed": "1b582ea70318997a3f00523f3e6838360bf128e075fdb5b4a2e4bbd6c438611d",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 13
+   }
+  ],
+  "total_seconds": 127.554383405
+ },
+ {
+  "lang": "rust",
+  "repo": "ClementTsang/bottom",
+  "commit": "a5da65c6373167859188125133f6b6fcff547d7f",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 179,
+  "source_lines": 41004,
+  "baseline_sha256": "18ca12a7913d2fb97cf127ed03adea52a633cecab1ad2078bcf6fdd4cf21ef00",
+  "baseline_seconds": 52.120955899,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "2d8abcc4386be03964137084bcfed9be5ba2d883f077b026f1b9fe2aba99c081",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 179
+   },
+   {
+    "set": "T1",
+    "seed": "8346d908d43b896e1ee06912fb2d36ac5148ae85d806ee559acbf2029615fd8e",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 179
+   },
+   {
+    "set": "T2",
+    "seed": "19aa9a289ed7f29b318d1b8208ea3d2cfeeb2eacdd1efbdf07227e896ed9bda9",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 179
+   },
+   {
+    "set": "T2X",
+    "seed": "b6ffe372dd9cd79a8a911994b925af894966bf39717887d51a3989d8c341ed17",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 179
+   }
+  ],
+  "total_seconds": 410.315452535
+ },
+ {
+  "lang": "rust",
+  "repo": "dalance/procs",
+  "commit": "7ffb8c4f2ecb84b5cebc8ebffff243a007bf7bed",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 105,
+  "source_lines": 16756,
+  "baseline_sha256": "1f850e5baf0f6df940a0496ca2fecc7b1380403a91476ffde6e582aff619899f",
+  "baseline_seconds": 67.476515912,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "a2220992c876fad859d72d160f6a64afdebc0fe7fd36238aeee67dbe63fc1f3d",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 105
+   },
+   {
+    "set": "T1",
+    "seed": "d73ae186a647714167318bfff2221479fb435a587b5c131646b2e19dc973725c",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 105
+   },
+   {
+    "set": "T2",
+    "seed": "5c62642c27d7932d2551665c994605875279c8873f19bd59bbc5f29968722070",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 105
+   },
+   {
+    "set": "T2X",
+    "seed": "151370a10ccf5efe369d28f343b82ed071ed3bdc3d417c2868532a6c724598e7",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 105
+   }
+  ],
+  "total_seconds": 500.725664376
+ },
+ {
+  "lang": "rust",
+  "repo": "dandavison/delta",
+  "commit": "02ff175b7bf70a08d4a1b3c56612b9093852b794",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 85,
+  "source_lines": 34484,
+  "baseline_sha256": "e029e56103cd0df00bae456a5e3274bb075a7059bbec4251444f9590ed852066",
+  "baseline_seconds": 40.595222246,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "cdd8a0b0ef2af4b695152c483463832ea5641e0f60ebc9dc534dae568d76eda1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 85
+   },
+   {
+    "set": "T1",
+    "seed": "14ee75af6ebf1817da464245d483369503184e019c2c56366e54915e050fb46c",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 85
+   },
+   {
+    "set": "T2",
+    "seed": "3a5aee93e11788c0163126cd7bf31f5b7b663451beb75be150eb441a01732c85",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 85
+   },
+   {
+    "set": "T2X",
+    "seed": "8135a9cc81b94cc4b824dcfcc8e59c3779a2009c0bc963c7560ac30244fc75f8",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 85
+   }
+  ],
+  "total_seconds": 115.198680137
+ },
+ {
+  "lang": "rust",
+  "repo": "ducaale/xh",
+  "commit": "8b21cc07a6deeff0ca50ba2a4bfa8d34daffd94f",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 33,
+  "source_lines": 16612,
+  "baseline_sha256": "df22f983ce5e693f9aad7523ed56bd0a357c98c912ed3400fdad02374b27a2e9",
+  "baseline_seconds": 46.949858107,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "653ffeaad06db7d0a6a634a3a61d6474d0d0ec7e0fab62a1746e4a19715f7fcc",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 33
+   },
+   {
+    "set": "T1",
+    "seed": "9575989768111f80d590a8a9543cc34459038529d6aec389fd6167d2b172941f",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 33
+   },
+   {
+    "set": "T2",
+    "seed": "d62614984578a6b62a595e62c7854d0b161b510adf3cf30797d744409e888ed7",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 33
+   },
+   {
+    "set": "T2X",
+    "seed": "b77fb6b4bd0c6cc9782883677345b0b03fea09745cbbc8a2056dfb6576695c32",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 33
+   }
+  ],
+  "total_seconds": 98.267258259
+ },
+ {
+  "lang": "rust",
+  "repo": "extrawurst/gitui",
+  "commit": "d7214eccb3cac52ce3f8d9ca18f218671821eeee",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 162,
+  "source_lines": 50369,
+  "baseline_sha256": "b3efcf80ba2c7d04df14a1e603dbfb4542c498e55a7664be1335809b62fd7612",
+  "baseline_seconds": 81.720527963,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "c2e80a6183d4b6f87d66355b372db7b225f46ab8d15f9feef839f8d4ddee19df",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 162
+   },
+   {
+    "set": "T1",
+    "seed": "3352813c724e39f2cb7513ea91d092a944113fc4ea396910692d29190d34141a",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 162
+   },
+   {
+    "set": "T2",
+    "seed": "6902b62dab07ec0fa48d696c266488d1f76976976732f752b24b55934800c452",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 162
+   },
+   {
+    "set": "T2X",
+    "seed": "757f5ef94453bb6b15275970291c73879cfa1cb0384a4d840fa537c440f675d1",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 162
+   }
+  ],
+  "total_seconds": 503.371411434
+ },
+ {
+  "lang": "rust",
+  "repo": "eza-community/eza",
+  "commit": "471bfbc7b03cbac8c738e8d9050edb06ee79132a",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 72,
+  "source_lines": 18575,
+  "baseline_sha256": "8067ec5fbc0043e57cd46d14879f9ea4de21821c08bfe612c835b52f2b87258b",
+  "baseline_seconds": 64.600087757,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "d06e1120f17804301e848d8f906aa142703e2c24a3af436afb53e64726b6e413",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 72
+   },
+   {
+    "set": "T1",
+    "seed": "4b861e462f9a6ae814ec5d6f8309c1fd9e1159b87c7fa114d05a66aaaeed8e7a",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 72
+   },
+   {
+    "set": "T2",
+    "seed": "95011f188c6684efb0f1e496aa754225abbbe9c897281354c4f17c6b35356e11",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 72
+   },
+   {
+    "set": "T2X",
+    "seed": "93b1c04804e53597f0fd64204586cb559febe59be5f82807df083b7f5259f012",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 72
+   }
+  ],
+  "total_seconds": 311.896225401
+ },
+ {
+  "lang": "rust",
+  "repo": "lsd-rs/lsd",
+  "commit": "4b6c14a110fe0fd544ec0204501b5fd3a5d6218f",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 54,
+  "source_lines": 14270,
+  "baseline_sha256": "028daccd791cced1adde8faa81b799fd3bbb504b5cb346dc1d1a38501d9bea33",
+  "baseline_seconds": 43.081268843,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "01e7fcda16e719e061cb3377e39d0b2264855f30c8c3e9bf34952828c16c837b",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 54
+   },
+   {
+    "set": "T1",
+    "seed": "761cc28cf80b2cd3fcf1e26ffdea6ece5b1aeb68134e11af5a003b4aeb54f7a3",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 54
+   },
+   {
+    "set": "T2",
+    "seed": "19f194787df21e96f57c5e0ba33fd79f96cb1359db09cbf8b05d66d7fce69790",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 54
+   },
+   {
+    "set": "T2X",
+    "seed": "280d1f9784c9c248432ae636b42d031ee294be5c76b8de5eeee3df74981af8ac",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 54
+   }
+  ],
+  "total_seconds": 224.303811257
+ },
+ {
+  "lang": "rust",
+  "repo": "orf/gping",
+  "commit": "fad1ee3c02fdc45751271778814cec452a45f2ab",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 15,
+  "source_lines": 2171,
+  "baseline_sha256": "4f5f4f9b6b8db4a04b15c8578664a7b59b2df27dcd13856ecbc863ff385aa9ba",
+  "baseline_seconds": 26.486825731,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "578679d8fabf10fc190fe9d7a7521f5474a114687629e7ef5c7e596b8a210437",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 15
+   },
+   {
+    "set": "T1",
+    "seed": "e21f5c7e291f6162f74ea32d23db265369302c6a4eaf14a713824e6799a7f509",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 15
+   },
+   {
+    "set": "T2",
+    "seed": "c5021b6ff7e7504adf39c8ffb494d0c11599f9543f7a07553cda39ddc8c60722",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 15
+   },
+   {
+    "set": "T2X",
+    "seed": "1af6dd677ffbfa90467d1c39222eed04c3bde1fe08a65011628db67b198495c0",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 15
+   }
+  ],
+  "total_seconds": 172.131698005
+ },
+ {
+  "lang": "rust",
+  "repo": "ouch-org/ouch",
+  "commit": "6df14b05ea6d1e600f1f3ff16bccd4a756c20c94",
+  "compiler": "rustc",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
+  "target": "linux/amd64",
+  "status": "ok",
+  "source_files": 38,
+  "source_lines": 9334,
+  "baseline_sha256": "198d8bb04b9da4093f4cdc15727ac5019890b1111b1a915bd18b47774380cf8e",
+  "baseline_seconds": 71.599466748,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "849e83e572d06d54179d9868dd6353b134761b8c9745507bf27864ca511629ba",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 38
+   },
+   {
+    "set": "T1",
+    "seed": "626e76a75fbaac580ed4adbb95b84e9240c1a0f041aae74d0323347dbd613df0",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 38
+   },
+   {
+    "set": "T2",
+    "seed": "681f04286ad2705c95337d98dfeff14873d02da5e955bd7baf155469af171462",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 38
+   },
+   {
+    "set": "T2X",
+    "seed": "aa4c87462bf466ebed50a395f10b214bc4add449257f5289df9e21002f553aed",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 38
+   }
+  ],
+  "total_seconds": 430.771439749
+ },
+ {
+  "lang": "rust",
+  "repo": "PaulJuliusMartinez/jless",
   "commit": "e6cdef719c7319020391d6bbf838ab272ce44cf0",
-  "files": 17,
-  "lines": 11295,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 17,
+  "source_lines": 11295,
+  "baseline_sha256": "eeea23984f75ce4ce5bd3826a68cb6fe32a0adc537b0b9218fce406b1aa48641",
+  "baseline_seconds": 10.211097642,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "846846e5a040fde083458cb08375f5a05475b69ba37c93002b52df909ad15272",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 17
+   },
+   {
+    "set": "T1",
+    "seed": "abec1634e29e7d93bd22b7993fd87516076a473fd5e584c68d5610008dbd316a",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 17
+   },
+   {
+    "set": "T2",
+    "seed": "f7a35ae9ba502aa3ad5b661e23d9647630044e8efadc874da7bfcff1f702daf8",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 17
+   },
+   {
+    "set": "T2X",
+    "seed": "b5f5edcb08e6320181af469d18a0100be449e28242fd1593f6b343fe980668de",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 17
+   }
+  ],
+  "total_seconds": 26.301279693
  },
  {
+  "lang": "rust",
   "repo": "pemistahl/grex",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 29,
-  "generator": "first",
   "commit": "99cc347707375e00514f938b76d885a201dfc110",
-  "files": 27,
-  "lines": 12937,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 27,
+  "source_lines": 12937,
+  "baseline_sha256": "51c4796b501a8652717e72f5ee89fe3bbbf5eaae4791a6ee70f3181c97ba46d7",
+  "baseline_seconds": 11.702220957,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "f5017d75aa59c5aa33f8f83d2b19cb2b7f3863c4379bd3e55fce4a63205e0ad4",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 27
+   },
+   {
+    "set": "T1",
+    "seed": "bbdeb59ced7390d75fc0f04bc8875a89dcff4b8378e2ef6230c73665f7d9de43",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 27
+   },
+   {
+    "set": "T2",
+    "seed": "8996545a96f053cc68430aca31e1e8121f3e2343f18478bb7a752909bd3e1ac1",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 27
+   },
+   {
+    "set": "T2X",
+    "seed": "9b65fb711d7feb95b2a1de69ccef076d886a5e2222ad318d686f360a241037cd",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 27
+   }
+  ],
+  "total_seconds": 33.459820609
  },
  {
+  "lang": "rust",
   "repo": "rust-lang/mdBook",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 81,
-  "generator": "first",
   "commit": "b1535b78039519850b598913fd4d0dce082090a0",
-  "files": 102,
-  "lines": 18096,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 102,
+  "source_lines": 18096,
+  "baseline_sha256": "41cb037c5155220755e8d33071292ef9be980ee2a0ac7af1c2b0b121fe7289c5",
+  "baseline_seconds": 31.368504811,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "9c23a7ca32b700dc1566fddff34565b36c6375950e5afe30905461558c9fb3bd",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 102
+   },
+   {
+    "set": "T1",
+    "seed": "85329863d16b778f53ee19e2f8918b9c36cafb180c5cc6bfe61893eb5eae432e",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 102
+   },
+   {
+    "set": "T2",
+    "seed": "29608603dfa3ac6fbfba1963203fba2a5760f3be07eab103acd75a416fa6dd26",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 102
+   },
+   {
+    "set": "T2X",
+    "seed": "247932cbda333f06bdb0c08aaafe85c58a38b890e44aa59c2a4a2ce569a0bdeb",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 102
+   }
+  ],
+  "total_seconds": 104.638983596
  },
  {
+  "lang": "rust",
   "repo": "sharkdp/bat",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 599,
-  "generator": "first",
   "commit": "311969b1f1bd6b8d00ff325038a06c5967c34690",
-  "files": 67,
-  "lines": 19680,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 67,
+  "source_lines": 19680,
+  "baseline_sha256": "df5df19f75b9f7f9fc870db7876aec61074c569a8f851292ca6bfff64393f8c4",
+  "baseline_seconds": 54.07932065,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "2655a0a9d856b384e0a8908403628b33a7006a9046e8dbcb9bdb13830ca792b1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 73
+   },
+   {
+    "set": "T1",
+    "seed": "6f30cb96551739c02abcc5a392e8d27f5fc9a44912758e22cabd7801175aa8f1",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 73
+   },
+   {
+    "set": "T2",
+    "seed": "ed2043532916b4a71f9b06a30db98e0fd9b6dd9610499da077cc7ec4dcb0e93e",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 73
+   },
+   {
+    "set": "T2X",
+    "seed": "79b551bc98f6a244944cfa18ff8c2681631d689106dde5a6cd146379ca1f2e09",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 73
+   }
+  ],
+  "total_seconds": 372.769259679
  },
  {
+  "lang": "rust",
   "repo": "sharkdp/diskus",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 77,
-  "generator": "first",
   "commit": "90196e950017d25b2940e8e0fda51a321ca66e1a",
-  "files": 6,
-  "lines": 498,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 6,
+  "source_lines": 498,
+  "baseline_sha256": "569b8f0be620c5ea5ed1ed53f8b969dcd6c5726d2175613eaf0b0f03e61c2844",
+  "baseline_seconds": 9.570623583,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "ec177f24c656210adfc1a420241629b614b1c65d580ffdcfcf1011c05c5f4de8",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 6
+   },
+   {
+    "set": "T1",
+    "seed": "3d6f35fe3feea899a0dd9bc51e246bcbdc1ee24b375a12de80b1a79f08d8035f",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 6
+   },
+   {
+    "set": "T2",
+    "seed": "47d85f4e7db36e58550aca400e7c994dc96412196ca0218901c5b5b3247d4c39",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 6
+   },
+   {
+    "set": "T2X",
+    "seed": "222a63b5af9748b1ae93c30a91f7991c8998333ece3e7608d979d9c40a7b3b91",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 6
+   }
+  ],
+  "total_seconds": 67.368510447
  },
  {
+  "lang": "rust",
   "repo": "sharkdp/fd",
+  "commit": "6cf330283cfdcd1b8a6100beec7375bbb58975a3",
   "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 287,
-  "generator": "first",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 25,
+  "source_lines": 9253,
+  "baseline_sha256": "e71426c1e54b972a5a3dd5618da46bf4afd7d9e0940e24d210365b22f5ddf638",
+  "baseline_seconds": 35.600835224,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "807379f132f95e382895bd8ab14518978e94be47f116c84577f96f547cedf64f",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 25
+   },
+   {
+    "set": "T1",
+    "seed": "827606f601aa25ec76183e6a2bba605411c273d7af122222e4772ea9cb391b50",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 25
+   },
+   {
+    "set": "T2",
+    "seed": "09ae6acf96c3093399615600b4c54020f3f6751548430c67a5e501971f44fbef",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 25
+   },
+   {
+    "set": "T2X",
+    "seed": "21062c58713f29f118cb0d75796ad130c7c9d6a7f006bf7f657c2e4b1cc68a3e",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 25
+   }
+  ],
+  "total_seconds": 212.974361477
  },
  {
+  "lang": "rust",
   "repo": "sharkdp/hexyl",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 101,
-  "generator": "first",
   "commit": "6ecc29b9c8c84d08a7e860f7f69c22b113b480ea",
-  "files": 7,
-  "lines": 3380,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 7,
+  "source_lines": 3380,
+  "baseline_sha256": "f6e2dc8d9672219cd7c4e02861afd4f774e50f6df8bb1296a3ee02aa44f4c252",
+  "baseline_seconds": 11.508728892,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "6758d8b5048678a567d81697cce9e4dff35bf0eace9d14042c9aa869714e5fba",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 7
+   },
+   {
+    "set": "T1",
+    "seed": "565e73c50ed46ad3dabf302508b1894443ccc96a44cfcd1b752bf7564442f6b7",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 7
+   },
+   {
+    "set": "T2",
+    "seed": "b348f30114d3cb8f2d3056181522fe789d0056aa4902347d6c25014ab0444c2d",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 7
+   },
+   {
+    "set": "T2X",
+    "seed": "874054c182505f9c7eb37b0883d8f627a392056c4f7efeb322f839456b82e6d7",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 7
+   }
+  ],
+  "total_seconds": 84.919358638
  },
  {
+  "lang": "rust",
   "repo": "sharkdp/hyperfine",
+  "commit": "c5161524980522320c7d3425e714cc0965a869a5",
   "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 196,
-  "generator": "first",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 45,
+  "source_lines": 8802,
+  "baseline_sha256": "2f23e4fe17a8392701e5a5446fa350bb8f953938ca9934f83f5660ab72862dcc",
+  "baseline_seconds": 20.891400251,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "71bb6d0ba2f5f61eb8c690757c83b7044a5456edc7b4e6ebbd6bfb8a1a493405",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 45
+   },
+   {
+    "set": "T1",
+    "seed": "c983de9c05fd8a5d6d3b8813783b1b3b6be4976f714fee90c4de7ad4d87eb9b2",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 45
+   },
+   {
+    "set": "T2",
+    "seed": "d47306decb137fe9c0e217fe1c97d1ecfdbdc55d7bd59e9e67976020a7e5cdac",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 45
+   },
+   {
+    "set": "T2X",
+    "seed": "a08c02db561b41faeb5ed4c007db5d258632844f90ad4419fa4b43a1f50a7bc8",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 45
+   }
+  ],
+  "total_seconds": 128.919748637
  },
  {
+  "lang": "rust",
   "repo": "sharkdp/pastel",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 114,
-  "generator": "first",
   "commit": "01d4252aa794f1331834948f133e75c64532be46",
-  "files": 39,
-  "lines": 7275,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 39,
+  "source_lines": 7275,
+  "baseline_sha256": "02d18d6ef73b656423a510ca4192d69cbf39d4d2f5d9b2e79aeca5930a0053d0",
+  "baseline_seconds": 15.522719594,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "c1d1f0e1dddb0423d37b8e62ebe386f0e83a76a189c5e70d70bb7f5f02a1357e",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 39
+   },
+   {
+    "set": "T1",
+    "seed": "3e6a48ec2b0c6fe48eed7d9fefa1334e71858f2d702f1c8cf09572584eff0d48",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 39
+   },
+   {
+    "set": "T2",
+    "seed": "0dcb49c4228d41eac106ab1a26e331bbb49606bb026d0db59d41d894ce92c1e7",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 39
+   },
+   {
+    "set": "T2X",
+    "seed": "4e757b3eb568aa514e340a10b0782d575804a3d7c90b8e8352a250a58b74b46c",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 39
+   }
+  ],
+  "total_seconds": 107.489502243
  },
  {
+  "lang": "rust",
   "repo": "svenstaro/miniserve",
+  "commit": "68b6f063cd633578e6be329757f27432f53b0de3",
   "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 432,
-  "generator": "first",
+  "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 34,
+  "source_lines": 8640,
+  "baseline_sha256": "8e5c04bc1f3d282153b8c3a8cd18a1dc50c33517dbd21a6d5fc9c02d393942f4",
+  "baseline_seconds": 66.386042661,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "e827e18c44f1b65f86fb1683af41f33716692bb5ea96d236dcb67ed9ad2d9a00",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 34
+   },
+   {
+    "set": "T1",
+    "seed": "6753ab24a35cf492f01f71d317fd9a3dd00a657c02b70145efaaf27f5a010571",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 34
+   },
+   {
+    "set": "T2",
+    "seed": "9ef7408e581842800b832bedda036bb7ea36b08dd84386829c67e953e962f5c6",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 34
+   },
+   {
+    "set": "T2X",
+    "seed": "e8fa8702e50afd15bc6c8f8feda1b325fc04ea017978655e25c49e7f154fd5bc",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 34
+   }
+  ],
+  "total_seconds": 408.529804983
  },
  {
+  "lang": "rust",
   "repo": "tealdeer-rs/tealdeer",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 356,
-  "generator": "first",
   "commit": "993a8e0232ef42c4d9935ff5598796b6e98bf213",
-  "files": 11,
-  "lines": 4963,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 11,
+  "source_lines": 4963,
+  "baseline_sha256": "41c768d8b3538b7af1a4038e61890809fbfe699ed25eadaef8758cfadeaf7b39",
+  "baseline_seconds": 30.435229331,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "469324dc463d2604382579a10985a1652abf97f3976206d26920ffbf79967aae",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 11
+   },
+   {
+    "set": "T1",
+    "seed": "a900be3dfbb3abcf41ca3a92ef49035ccef94a98ea503c1f096f26042d3b2523",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 11
+   },
+   {
+    "set": "T2",
+    "seed": "b455418e2aed294ab9bbd2c7f1e5c2ff78159961105653ba73992208240c29de",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 11
+   },
+   {
+    "set": "T2X",
+    "seed": "cea92ec583dbc364f2cd735c47c39a799dc9d607b8a432872122d8174d0441c8",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 11
+   }
+  ],
+  "total_seconds": 280.305786487
  },
  {
+  "lang": "rust",
   "repo": "theryangeary/choose",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 16,
-  "generator": "first",
   "commit": "f1c53eef5706a767b7327889c2bf1c09a3c4006e",
-  "files": 15,
-  "lines": 2479,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 15,
+  "source_lines": 2479,
+  "baseline_sha256": "9e9b2e6c8bc98fe7e0a1201ef95cc25665ee8ec838f7592377d85a3f34cb3cef",
+  "baseline_seconds": 9.276183731,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "8d9d84b588c4d4ff28366e566711412fd05c79b146314021b3bededd45f861de",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 15
+   },
+   {
+    "set": "T1",
+    "seed": "223c6feb68d836f351d9297f2f5b17a9dbba76944b76d147940cf4d2d6a09652",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 15
+   },
+   {
+    "set": "T2",
+    "seed": "d77c72a3bd8a69dad79244ad48e21e5cba538af91d5e11a786e074ca0513992a",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 15
+   },
+   {
+    "set": "T2X",
+    "seed": "dc4819b13f7e2f446046d5760273a9e5a97a8e856061f45e7ddfd05c403ac42d",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 15
+   }
+  ],
+  "total_seconds": 17.531683661
  },
  {
+  "lang": "rust",
   "repo": "watchexec/watchexec",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 1240,
-  "generator": "first",
   "commit": "f71af3b18d571c82e1904bb573809e05769b4faf",
-  "files": 115,
-  "lines": 29089,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 115,
+  "source_lines": 29089,
+  "baseline_sha256": "c0e05c9c590f1d80c04ebca6229c9f19fbb819efb93425815590982b5bed6500",
+  "baseline_seconds": 74.763702915,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "7f48bf9fac1c9ea8c9afd5ae066bc4f34ad01bd555b663d60835ea19507652a1",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 115
+   },
+   {
+    "set": "T1",
+    "seed": "a40e8d1c05ce9fc52d470aef33f96f2c6ca698732c81de4f437c82042acf7848",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 115
+   },
+   {
+    "set": "T2",
+    "seed": "032b316b95dd551ccac199e2cab866a0e02e3a39c22f4b10161f6f75e6649e03",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 115
+   },
+   {
+    "set": "T2X",
+    "seed": "2fd9952ac23e460b8c16986ebeafb6182990e2cab988032bba86c2a0dde20b45",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 115
+   }
+  ],
+  "total_seconds": 630.22103714
  },
  {
+  "lang": "rust",
   "repo": "XAMPPRocky/tokei",
-  "compiler": "rustc",
-  "status": "ok",
-  "sets": {
-   "T1,T2": {
-    "distinct": 1,
-    "variants": 4,
-    "errors": 0
-   },
-   "T1": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2": {
-    "distinct": 1,
-    "variants": 2,
-    "errors": 0
-   },
-   "T2X": {
-    "distinct": 2,
-    "variants": 2,
-    "errors": 0
-   }
-  },
-  "seconds": 76,
-  "generator": "first",
   "commit": "c14f744716272fadeb27a74443cdffa0af35f82f",
-  "files": 25,
-  "lines": 5025,
+  "compiler": "rustc",
   "compiler_version": "rustc 1.100.0 (0ef1bc386 2026-11-09)",
   "target": "linux/amd64",
-  "environment": "Modal"
+  "status": "ok",
+  "source_files": 25,
+  "source_lines": 5025,
+  "baseline_sha256": "7a7b9344da02ae2c9708e37feace1aa701b3bd20caf4a4c30a66da343f071951",
+  "baseline_seconds": 18.151887368,
+  "sets": [
+   {
+    "set": "T1,T2",
+    "seed": "4531ab8ed9879307e7ebdc70bb018d55f36d64564fdf42f85731c8229e8afdf5",
+    "variants": 4,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 29
+   },
+   {
+    "set": "T1",
+    "seed": "454b8c6f83e279f1c70e34cf71455735a34410331bc52f6bfb8181c99f28c941",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 29
+   },
+   {
+    "set": "T2",
+    "seed": "2cbe96cd529251998cce9cf479199c7ff386bedd46f1c34197bc2bea66540a97",
+    "variants": 2,
+    "distinct_hashes": 1,
+    "build_errors": 0,
+    "equals_baseline": true,
+    "bit_identical": true,
+    "files_transformed": 29
+   },
+   {
+    "set": "T2X",
+    "seed": "1ed5b5d36d2c2ceaed184b0581f45449bccf4cd6cb8407927f830f61d7e1ceb8",
+    "variants": 2,
+    "distinct_hashes": 2,
+    "build_errors": 0,
+    "equals_baseline": false,
+    "bit_identical": false,
+    "files_transformed": 29
+   }
+  ],
+  "total_seconds": 91.876376178
  }
 ]

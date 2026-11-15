@@ -14,7 +14,7 @@ c   | nginx/nginx             | objs/nginx       | ./auto/configure --with-cc="$
 c   | jqlang/jq               | jq               | autoreconf -i && ./configure --without-oniguruma --disable-docs --disable-maintainer-mode CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
 c   | tmux/tmux               | tmux             | sh autogen.sh && ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
 c   | memcached/memcached     | memcached        | ./autogen.sh && ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N memcached
-c   | mirror/busybox          | busybox_unstripped | make defconfig && make -j$N CC="$CC" HOSTCC="$CC" EXTRA_CFLAGS="$SGFLAGS"
+c   | mirror/busybox          | busybox_unstripped | make defconfig && sed -i 's/^CONFIG_TC=y/# CONFIG_TC is not set/' .config && make -j$N CC="$CC" HOSTCC="$CC" EXTRA_CFLAGS="$SGFLAGS"
 c   | DaveGamble/cJSON        | b/libcjson.a     | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DBUILD_SHARED_LIBS=OFF -DENABLE_CJSON_TEST=OFF && cmake --build b -j$N
 c   | libuv/libuv             | b/libuv.a        | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DLIBUV_BUILD_TESTS=OFF -DLIBUV_BUILD_SHARED=OFF && cmake --build b -j$N
 c   | google/brotli           | b/brotli         | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF && cmake --build b -j$N
