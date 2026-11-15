@@ -1,6 +1,6 @@
 # Contributing to SourceGuard
 
-Thank you for your interest in SourceGuard, a project of **95LAB.
+Thank you for your interest in SourceGuard, a project of **95LAB**, an independent, non-profit research group.
 
 ## Ways to contribute
 

@@ -9,7 +9,7 @@
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey)](LICENSE-docs)
 [![Cite this work](https://img.shields.io/badge/cite-CITATION.cff-green)](CITATION.cff)
 
-A research project by **[95LAB](https://github.com/95Lab)**
+A research project by **[95LAB](https://github.com/95Lab)**, an independent, non-profit research group
 
 </div>
 
@@ -143,13 +143,13 @@ GitHub's **"Cite this repository"** button (generated from [CITATION.cff](CITATI
 
 ## About 95LAB
 
-**95LAB** is the research and development unit of, focused on new solutions and emerging technologies in:
+**95LAB** is an independent, non-profit research group. It is not affiliated with any company. It studies new solutions and emerging technologies in:
 
 - **Data Science**
 - **Artificial Intelligence**
 - **Security**
 
-The team is led and operated by **Dang-Hieu Nguyen**, Head of 95LAB.
+The group is led and operated by **Dang-Hieu Nguyen**.
 
 ## License
 
@@ -165,12 +165,11 @@ The team is led and operated by **Dang-Hieu Nguyen**, Head of 95LAB.
 
 ## Contact
 
-**Dang-Hieu Nguyen**, Head of 95LAB
-
+**Dang-Hieu Nguyen**, 95LAB
 hillnguyen528@gmail.com
 
 ---
 
 <div align="center">
-Copyright © 2026 95LAB.
+Copyright © 2026 Dang-Hieu Nguyen (95LAB).
 </div>
