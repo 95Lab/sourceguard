@@ -42,11 +42,23 @@
    "checked": 272,
    "in_binary": 109
   },
+  "package_names_renamed": 179,
+  "package_names_unexported": 187,
+  "structure": {
+   "functions": 603,
+   "functions_with_symbol": 409,
+   "call_edges": 1986,
+   "call_edges_in_disassembly": 908,
+   "int_constants": 16,
+   "int_constants_in_disassembly": 5,
+   "string_literals": 271,
+   "string_literals_in_binary": 267
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.19528503,
-  "baseline_build_seconds": 6.845984639,
-  "total_seconds": 8.38158271
+  "variant_generation_seconds": 0.19671954,
+  "baseline_build_seconds": 6.878188086,
+  "total_seconds": 12.468175199
  },
  {
   "repo": "BurntSushi/toml",
@@ -91,11 +103,23 @@
    "checked": 61,
    "in_binary": 18
   },
+  "package_names_renamed": 59,
+  "package_names_unexported": 59,
+  "structure": {
+   "functions": 217,
+   "functions_with_symbol": 126,
+   "call_edges": 833,
+   "call_edges_in_disassembly": 309,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 124,
+   "string_literals_in_binary": 114
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.13259503,
-  "baseline_build_seconds": 4.854474884,
-  "total_seconds": 6.554416651
+  "variant_generation_seconds": 0.068789805,
+  "baseline_build_seconds": 2.682076127,
+  "total_seconds": 6.748953928
  },
  {
   "repo": "caddyserver/caddy",
@@ -140,11 +164,23 @@
    "checked": 1855,
    "in_binary": 534
   },
+  "package_names_renamed": 251,
+  "package_names_unexported": 253,
+  "structure": {
+   "functions": 2072,
+   "functions_with_symbol": 1796,
+   "call_edges": 8109,
+   "call_edges_in_disassembly": 3496,
+   "int_constants": 22,
+   "int_constants_in_disassembly": 10,
+   "string_literals": 2826,
+   "string_literals_in_binary": 2757
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.84109607,
-  "baseline_build_seconds": 29.965988117,
-  "total_seconds": 35.387362502
+  "variant_generation_seconds": 0.947319383,
+  "baseline_build_seconds": 20.401640009,
+  "total_seconds": 40.159285258
  },
  {
   "repo": "charmbracelet/glow",
@@ -189,11 +225,23 @@
    "checked": 118,
    "in_binary": 52
   },
+  "package_names_renamed": 54,
+  "package_names_unexported": 58,
+  "structure": {
+   "functions": 111,
+   "functions_with_symbol": 86,
+   "call_edges": 587,
+   "call_edges_in_disassembly": 265,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 127,
+   "string_literals_in_binary": 127
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.035823545,
-  "baseline_build_seconds": 12.712140607,
-  "total_seconds": 14.327679819
+  "variant_generation_seconds": 0.040728977,
+  "baseline_build_seconds": 10.222167908,
+  "total_seconds": 18.046158526
  },
  {
   "repo": "charmbracelet/gum",
@@ -238,11 +286,23 @@
    "checked": 89,
    "in_binary": 48
   },
+  "package_names_renamed": 21,
+  "package_names_unexported": 21,
+  "structure": {
+   "functions": 149,
+   "functions_with_symbol": 127,
+   "call_edges": 794,
+   "call_edges_in_disassembly": 194,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 159,
+   "string_literals_in_binary": 155
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.053026016,
-  "baseline_build_seconds": 6.792887531,
-  "total_seconds": 13.475250184
+  "variant_generation_seconds": 0.064530422,
+  "baseline_build_seconds": 7.665476109,
+  "total_seconds": 23.003356437
  },
  {
   "repo": "cheat/cheat",
@@ -287,11 +347,23 @@
    "checked": 74,
    "in_binary": 38
   },
+  "package_names_renamed": 4,
+  "package_names_unexported": 4,
+  "structure": {
+   "functions": 58,
+   "functions_with_symbol": 52,
+   "call_edges": 309,
+   "call_edges_in_disassembly": 197,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 120,
+   "string_literals_in_binary": 119
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.082518907,
-  "baseline_build_seconds": 9.432455241,
-  "total_seconds": 14.92385695
+  "variant_generation_seconds": 0.081362658,
+  "baseline_build_seconds": 9.084048035,
+  "total_seconds": 18.068245907
  },
  {
   "repo": "cli/cli",
@@ -336,11 +408,23 @@
    "checked": 2413,
    "in_binary": 705
   },
+  "package_names_renamed": 459,
+  "package_names_unexported": 463,
+  "structure": {
+   "functions": 3764,
+   "functions_with_symbol": 2824,
+   "call_edges": 17798,
+   "call_edges_in_disassembly": 8628,
+   "int_constants": 19,
+   "int_constants_in_disassembly": 14,
+   "string_literals": 2009,
+   "string_literals_in_binary": 1920
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 2.941074139,
-  "baseline_build_seconds": 19.545884959,
-  "total_seconds": 37.986052568
+  "variant_generation_seconds": 3.347037257,
+  "baseline_build_seconds": 26.039048943,
+  "total_seconds": 62.271504596
  },
  {
   "repo": "cloudflare/cfssl",
@@ -385,11 +469,23 @@
    "checked": 550,
    "in_binary": 168
   },
+  "package_names_renamed": 185,
+  "package_names_unexported": 209,
+  "structure": {
+   "functions": 663,
+   "functions_with_symbol": 472,
+   "call_edges": 2179,
+   "call_edges_in_disassembly": 990,
+   "int_constants": 66,
+   "int_constants_in_disassembly": 19,
+   "string_literals": 796,
+   "string_literals_in_binary": 765
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.544311938,
-  "baseline_build_seconds": 8.906638865,
-  "total_seconds": 19.350508613
+  "variant_generation_seconds": 0.714052948,
+  "baseline_build_seconds": 14.586184977,
+  "total_seconds": 35.999656761
  },
  {
   "repo": "coredns/coredns",
@@ -434,11 +530,23 @@
    "checked": 754,
    "in_binary": 318
   },
+  "package_names_renamed": 242,
+  "package_names_unexported": 256,
+  "structure": {
+   "functions": 1837,
+   "functions_with_symbol": 1460,
+   "call_edges": 6062,
+   "call_edges_in_disassembly": 2780,
+   "int_constants": 36,
+   "int_constants_in_disassembly": 17,
+   "string_literals": 925,
+   "string_literals_in_binary": 849
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 1.157911081,
-  "baseline_build_seconds": 38.03147356,
-  "total_seconds": 45.301500642
+  "variant_generation_seconds": 1.233146069,
+  "baseline_build_seconds": 44.936077727,
+  "total_seconds": 66.60170065
  },
  {
   "repo": "direnv/direnv",
@@ -483,11 +591,23 @@
    "checked": 172,
    "in_binary": 59
   },
+  "package_names_renamed": 20,
+  "package_names_unexported": 20,
+  "structure": {
+   "functions": 197,
+   "functions_with_symbol": 167,
+   "call_edges": 717,
+   "call_edges_in_disassembly": 300,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 154,
+   "string_literals_in_binary": 152
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.039956926,
-  "baseline_build_seconds": 5.253966168,
-  "total_seconds": 6.233682752
+  "variant_generation_seconds": 0.060408977,
+  "baseline_build_seconds": 11.703867882,
+  "total_seconds": 19.824057322
  },
  {
   "repo": "dominikh/go-tools",
@@ -532,11 +652,23 @@
    "checked": 675,
    "in_binary": 241
   },
+  "package_names_renamed": 204,
+  "package_names_unexported": 242,
+  "structure": {
+   "functions": 1612,
+   "functions_with_symbol": 1093,
+   "call_edges": 5927,
+   "call_edges_in_disassembly": 2334,
+   "int_constants": 7,
+   "int_constants_in_disassembly": 4,
+   "string_literals": 1172,
+   "string_literals_in_binary": 1086
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.87311271,
-  "baseline_build_seconds": 11.126825396,
-  "total_seconds": 16.874253088
+  "variant_generation_seconds": 0.752614241,
+  "baseline_build_seconds": 11.390132916,
+  "total_seconds": 24.812640131
  },
  {
   "repo": "dundee/gdu",
@@ -581,11 +713,23 @@
    "checked": 379,
    "in_binary": 165
   },
+  "package_names_renamed": 95,
+  "package_names_unexported": 95,
+  "structure": {
+   "functions": 748,
+   "functions_with_symbol": 668,
+   "call_edges": 2824,
+   "call_edges_in_disassembly": 1242,
+   "int_constants": 8,
+   "int_constants_in_disassembly": 6,
+   "string_literals": 476,
+   "string_literals_in_binary": 463
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.307258383,
-  "baseline_build_seconds": 14.534923352,
-  "total_seconds": 16.857038343
+  "variant_generation_seconds": 0.640568553,
+  "baseline_build_seconds": 28.38383161,
+  "total_seconds": 41.022726715
  },
  {
   "repo": "etcd-io/bbolt",
@@ -630,11 +774,23 @@
    "checked": 206,
    "in_binary": 41
   },
+  "package_names_renamed": 14,
+  "package_names_unexported": 18,
+  "structure": {
+   "functions": 519,
+   "functions_with_symbol": 295,
+   "call_edges": 1788,
+   "call_edges_in_disassembly": 684,
+   "int_constants": 12,
+   "int_constants_in_disassembly": 12,
+   "string_literals": 413,
+   "string_literals_in_binary": 394
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.214237283,
-  "baseline_build_seconds": 4.457566791,
-  "total_seconds": 6.198009907
+  "variant_generation_seconds": 0.181262625,
+  "baseline_build_seconds": 3.676744474,
+  "total_seconds": 8.704780013
  },
  {
   "repo": "ffuf/ffuf",
@@ -679,11 +835,23 @@
    "checked": 275,
    "in_binary": 103
   },
+  "package_names_renamed": 6,
+  "package_names_unexported": 6,
+  "structure": {
+   "functions": 308,
+   "functions_with_symbol": 251,
+   "call_edges": 993,
+   "call_edges_in_disassembly": 482,
+   "int_constants": 5,
+   "int_constants_in_disassembly": 4,
+   "string_literals": 273,
+   "string_literals_in_binary": 270
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.09039269,
-  "baseline_build_seconds": 6.339700279,
-  "total_seconds": 7.477663576
+  "variant_generation_seconds": 0.091970765,
+  "baseline_build_seconds": 6.158752775,
+  "total_seconds": 11.212672321
  },
  {
   "repo": "FiloSottile/age",
@@ -728,11 +896,23 @@
    "checked": 117,
    "in_binary": 47
   },
+  "package_names_renamed": 36,
+  "package_names_unexported": 36,
+  "structure": {
+   "functions": 248,
+   "functions_with_symbol": 163,
+   "call_edges": 900,
+   "call_edges_in_disassembly": 327,
+   "int_constants": 8,
+   "int_constants_in_disassembly": 4,
+   "string_literals": 351,
+   "string_literals_in_binary": 294
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.097559461,
-  "baseline_build_seconds": 4.094541169,
-  "total_seconds": 9.493697269
+  "variant_generation_seconds": 0.127316644,
+  "baseline_build_seconds": 5.469616753,
+  "total_seconds": 17.312269184
  },
  {
   "repo": "FiloSottile/mkcert",
@@ -777,11 +957,23 @@
    "checked": 48,
    "in_binary": 9
   },
+  "package_names_renamed": 17,
+  "package_names_unexported": 17,
+  "structure": {
+   "functions": 37,
+   "functions_with_symbol": 33,
+   "call_edges": 228,
+   "call_edges_in_disassembly": 129,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 2,
+   "string_literals": 136,
+   "string_literals_in_binary": 131
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.01615954,
-  "baseline_build_seconds": 7.853597904,
-  "total_seconds": 9.331363035
+  "variant_generation_seconds": 0.014209839,
+  "baseline_build_seconds": 6.623812432,
+  "total_seconds": 12.972482338
  },
  {
   "repo": "gitleaks/gitleaks",
@@ -826,11 +1018,23 @@
    "checked": 241,
    "in_binary": 83
   },
+  "package_names_renamed": 39,
+  "package_names_unexported": 40,
+  "structure": {
+   "functions": 185,
+   "functions_with_symbol": 138,
+   "call_edges": 900,
+   "call_edges_in_disassembly": 446,
+   "int_constants": 7,
+   "int_constants_in_disassembly": 2,
+   "string_literals": 319,
+   "string_literals_in_binary": 312
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.115717023,
-  "baseline_build_seconds": 9.908847146,
-  "total_seconds": 11.479291539
+  "variant_generation_seconds": 0.145094592,
+  "baseline_build_seconds": 13.830022016000001,
+  "total_seconds": 20.688304313
  },
  {
   "repo": "go-delve/delve",
@@ -875,11 +1079,23 @@
    "checked": 1515,
    "in_binary": 360
   },
+  "package_names_renamed": 527,
+  "package_names_unexported": 559,
+  "structure": {
+   "functions": 2577,
+   "functions_with_symbol": 2013,
+   "call_edges": 8690,
+   "call_edges_in_disassembly": 4093,
+   "int_constants": 27,
+   "int_constants_in_disassembly": 9,
+   "string_literals": 2184,
+   "string_literals_in_binary": 2126
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 1.265290672,
-  "baseline_build_seconds": 9.104802282,
-  "total_seconds": 15.708688967
+  "variant_generation_seconds": 0.745856846,
+  "baseline_build_seconds": 12.688652987,
+  "total_seconds": 29.738026419
  },
  {
   "repo": "go-task/task",
@@ -924,11 +1140,23 @@
    "checked": 353,
    "in_binary": 150
   },
+  "package_names_renamed": 65,
+  "package_names_unexported": 65,
+  "structure": {
+   "functions": 733,
+   "functions_with_symbol": 547,
+   "call_edges": 1874,
+   "call_edges_in_disassembly": 864,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 347,
+   "string_literals_in_binary": 337
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.253495727,
-  "baseline_build_seconds": 25.47512909,
-  "total_seconds": 28.562738519
+  "variant_generation_seconds": 0.159443421,
+  "baseline_build_seconds": 27.484595733,
+  "total_seconds": 36.995876617
  },
  {
   "repo": "gohugoio/hugo",
@@ -973,11 +1201,23 @@
    "checked": 2110,
    "in_binary": 652
   },
+  "package_names_renamed": 668,
+  "package_names_unexported": 723,
+  "structure": {
+   "functions": 5406,
+   "functions_with_symbol": 4347,
+   "call_edges": 15705,
+   "call_edges_in_disassembly": 5644,
+   "int_constants": 48,
+   "int_constants_in_disassembly": 20,
+   "string_literals": 2696,
+   "string_literals_in_binary": 2594
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 1.886924757,
-  "baseline_build_seconds": 30.840130156,
-  "total_seconds": 49.192937931
+  "variant_generation_seconds": 2.036234285,
+  "baseline_build_seconds": 31.571487899,
+  "total_seconds": 68.436846799
  },
  {
   "repo": "gokcehan/lf",
@@ -1022,11 +1262,23 @@
    "checked": 218,
    "in_binary": 81
   },
+  "package_names_renamed": 93,
+  "package_names_unexported": 93,
+  "structure": {
+   "functions": 339,
+   "functions_with_symbol": 289,
+   "call_edges": 1699,
+   "call_edges_in_disassembly": 895,
+   "int_constants": 11,
+   "int_constants_in_disassembly": 10,
+   "string_literals": 563,
+   "string_literals_in_binary": 517
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.101761514,
-  "baseline_build_seconds": 4.303021065,
-  "total_seconds": 5.398959075
+  "variant_generation_seconds": 0.168580036,
+  "baseline_build_seconds": 6.773872666,
+  "total_seconds": 14.465500941
  },
  {
   "repo": "golang-migrate/migrate",
@@ -1071,11 +1323,23 @@
    "checked": 80,
    "in_binary": 24
   },
+  "package_names_renamed": 17,
+  "package_names_unexported": 17,
+  "structure": {
+   "functions": 105,
+   "functions_with_symbol": 74,
+   "call_edges": 304,
+   "call_edges_in_disassembly": 154,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 71,
+   "string_literals_in_binary": 67
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.295274302,
-  "baseline_build_seconds": 5.879829827,
-  "total_seconds": 8.064441008
+  "variant_generation_seconds": 0.163618954,
+  "baseline_build_seconds": 2.964635822,
+  "total_seconds": 7.455166613
  },
  {
   "repo": "google/go-containerregistry",
@@ -1120,11 +1384,23 @@
    "checked": 351,
    "in_binary": 111
   },
+  "package_names_renamed": 52,
+  "package_names_unexported": 52,
+  "structure": {
+   "functions": 922,
+   "functions_with_symbol": 694,
+   "call_edges": 3076,
+   "call_edges_in_disassembly": 1280,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 640,
+   "string_literals_in_binary": 627
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.664682338,
-  "baseline_build_seconds": 9.748666116,
-  "total_seconds": 20.929863136
+  "variant_generation_seconds": 0.559041035,
+  "baseline_build_seconds": 11.801696135,
+  "total_seconds": 31.481068734
  },
  {
   "repo": "google/gops",
@@ -1169,11 +1445,23 @@
    "checked": 32,
    "in_binary": 13
   },
+  "package_names_renamed": 2,
+  "package_names_unexported": 2,
+  "structure": {
+   "functions": 39,
+   "functions_with_symbol": 32,
+   "call_edges": 147,
+   "call_edges_in_disassembly": 78,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 50,
+   "string_literals_in_binary": 50
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.021528431,
-  "baseline_build_seconds": 5.49966017,
-  "total_seconds": 7.091116283
+  "variant_generation_seconds": 0.017580339,
+  "baseline_build_seconds": 5.083909385,
+  "total_seconds": 11.228599059
  },
  {
   "repo": "google/pprof",
@@ -1218,11 +1506,23 @@
    "checked": 528,
    "in_binary": 160
   },
+  "package_names_renamed": 106,
+  "package_names_unexported": 106,
+  "structure": {
+   "functions": 575,
+   "functions_with_symbol": 456,
+   "call_edges": 1734,
+   "call_edges_in_disassembly": 874,
+   "int_constants": 15,
+   "int_constants_in_disassembly": 5,
+   "string_literals": 509,
+   "string_literals_in_binary": 497
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.348604632,
-  "baseline_build_seconds": 8.491707283,
-  "total_seconds": 11.710568344
+  "variant_generation_seconds": 0.215982902,
+  "baseline_build_seconds": 5.083036438,
+  "total_seconds": 11.062406268
  },
  {
   "repo": "grafana/k6",
@@ -1267,11 +1567,23 @@
    "checked": 2244,
    "in_binary": 719
   },
+  "package_names_renamed": 532,
+  "package_names_unexported": 540,
+  "structure": {
+   "functions": 4619,
+   "functions_with_symbol": 3882,
+   "call_edges": 16072,
+   "call_edges_in_disassembly": 6761,
+   "int_constants": 35,
+   "int_constants_in_disassembly": 11,
+   "string_literals": 2213,
+   "string_literals_in_binary": 2170
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 1.474398754,
-  "baseline_build_seconds": 8.832628347,
-  "total_seconds": 18.167446199
+  "variant_generation_seconds": 2.1023699750000002,
+  "baseline_build_seconds": 18.992653181,
+  "total_seconds": 47.874677951
  },
  {
   "repo": "hairyhenderson/gomplate",
@@ -1316,11 +1628,23 @@
    "checked": 238,
    "in_binary": 145
   },
+  "package_names_renamed": 40,
+  "package_names_unexported": 40,
+  "structure": {
+   "functions": 709,
+   "functions_with_symbol": 594,
+   "call_edges": 1922,
+   "call_edges_in_disassembly": 832,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 2,
+   "string_literals": 406,
+   "string_literals_in_binary": 397
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.295632077,
-  "baseline_build_seconds": 57.994606351,
-  "total_seconds": 66.759086426
+  "variant_generation_seconds": 0.280424894,
+  "baseline_build_seconds": 51.088869447,
+  "total_seconds": 72.753222278
  },
  {
   "repo": "helm/helm",
@@ -1365,11 +1689,23 @@
    "checked": 956,
    "in_binary": 354
   },
+  "package_names_renamed": 173,
+  "package_names_unexported": 181,
+  "structure": {
+   "functions": 1519,
+   "functions_with_symbol": 1158,
+   "call_edges": 6076,
+   "call_edges_in_disassembly": 2545,
+   "int_constants": 5,
+   "int_constants_in_disassembly": 2,
+   "string_literals": 1836,
+   "string_literals_in_binary": 1808
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.973304562,
-  "baseline_build_seconds": 21.693593352,
-  "total_seconds": 26.304972916
+  "variant_generation_seconds": 0.837892935,
+  "baseline_build_seconds": 31.457639215,
+  "total_seconds": 54.650771718
  },
  {
   "repo": "jesseduffield/lazydocker",
@@ -1414,11 +1750,23 @@
    "checked": 333,
    "in_binary": 111
   },
+  "package_names_renamed": 14,
+  "package_names_unexported": 14,
+  "structure": {
+   "functions": 470,
+   "functions_with_symbol": 394,
+   "call_edges": 1519,
+   "call_edges_in_disassembly": 761,
+   "int_constants": 8,
+   "int_constants_in_disassembly": 6,
+   "string_literals": 876,
+   "string_literals_in_binary": 874
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.135623633,
-  "baseline_build_seconds": 10.729189933,
-  "total_seconds": 14.789854179
+  "variant_generation_seconds": 0.120276859,
+  "baseline_build_seconds": 11.624387216,
+  "total_seconds": 22.137620299
  },
  {
   "repo": "jesseduffield/lazygit",
@@ -1463,11 +1811,23 @@
    "checked": 2390,
    "in_binary": 492
   },
+  "package_names_renamed": 181,
+  "package_names_unexported": 181,
+  "structure": {
+   "functions": 4589,
+   "functions_with_symbol": 3388,
+   "call_edges": 15399,
+   "call_edges_in_disassembly": 4730,
+   "int_constants": 14,
+   "int_constants_in_disassembly": 10,
+   "string_literals": 2240,
+   "string_literals_in_binary": 2063
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 1.364457552,
-  "baseline_build_seconds": 13.838018998999999,
-  "total_seconds": 22.357845558
+  "variant_generation_seconds": 1.559518808,
+  "baseline_build_seconds": 17.08365392,
+  "total_seconds": 37.27228431
  },
  {
   "repo": "junegunn/fzf",
@@ -1512,11 +1872,23 @@
    "checked": 807,
    "in_binary": 180
   },
+  "package_names_renamed": 391,
+  "package_names_unexported": 419,
+  "structure": {
+   "functions": 712,
+   "functions_with_symbol": 443,
+   "call_edges": 2384,
+   "call_edges_in_disassembly": 989,
+   "int_constants": 7,
+   "int_constants_in_disassembly": 3,
+   "string_literals": 814,
+   "string_literals_in_binary": 617
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.262249766,
-  "baseline_build_seconds": 3.954571899,
-  "total_seconds": 5.631286635
+  "variant_generation_seconds": 0.429814575,
+  "baseline_build_seconds": 6.6297205219999995,
+  "total_seconds": 15.889362932000001
  },
  {
   "repo": "kubernetes-sigs/kind",
@@ -1561,11 +1933,23 @@
    "checked": 405,
    "in_binary": 130
   },
+  "package_names_renamed": 37,
+  "package_names_unexported": 37,
+  "structure": {
+   "functions": 619,
+   "functions_with_symbol": 484,
+   "call_edges": 2087,
+   "call_edges_in_disassembly": 1113,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 618,
+   "string_literals_in_binary": 608
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.254350885,
-  "baseline_build_seconds": 12.046451593,
-  "total_seconds": 15.122913456
+  "variant_generation_seconds": 0.194353358,
+  "baseline_build_seconds": 9.007178444,
+  "total_seconds": 17.597995659
  },
  {
   "repo": "mikefarah/yq",
@@ -1610,11 +1994,23 @@
    "checked": 707,
    "in_binary": 208
   },
+  "package_names_renamed": 174,
+  "package_names_unexported": 174,
+  "structure": {
+   "functions": 761,
+   "functions_with_symbol": 606,
+   "call_edges": 3018,
+   "call_edges_in_disassembly": 1516,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 713,
+   "string_literals_in_binary": 712
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.26532033,
-  "baseline_build_seconds": 5.609707209,
-  "total_seconds": 7.344365763
+  "variant_generation_seconds": 0.459818608,
+  "baseline_build_seconds": 12.410937569,
+  "total_seconds": 22.526479359
  },
  {
   "repo": "muesli/duf",
@@ -1659,11 +2055,23 @@
    "checked": 95,
    "in_binary": 28
   },
+  "package_names_renamed": 38,
+  "package_names_unexported": 39,
+  "structure": {
+   "functions": 41,
+   "functions_with_symbol": 28,
+   "call_edges": 145,
+   "call_edges_in_disassembly": 68,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 29,
+   "string_literals_in_binary": 27
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.034320932,
-  "baseline_build_seconds": 5.764661882,
-  "total_seconds": 7.429062118
+  "variant_generation_seconds": 0.03109515,
+  "baseline_build_seconds": 5.720930157,
+  "total_seconds": 13.819531507
  },
  {
   "repo": "mvdan/gofumpt",
@@ -1708,11 +2116,23 @@
    "checked": 195,
    "in_binary": 44
   },
+  "package_names_renamed": 63,
+  "package_names_unexported": 63,
+  "structure": {
+   "functions": 253,
+   "functions_with_symbol": 149,
+   "call_edges": 899,
+   "call_edges_in_disassembly": 376,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 66,
+   "string_literals_in_binary": 55
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.079290421,
-  "baseline_build_seconds": 1.618402125,
-  "total_seconds": 2.5262566829999997
+  "variant_generation_seconds": 0.103954455,
+  "baseline_build_seconds": 5.4831933379999995,
+  "total_seconds": 12.600200825
  },
  {
   "repo": "mvdan/sh",
@@ -1757,11 +2177,23 @@
    "checked": 112,
    "in_binary": 37
   },
+  "package_names_renamed": 245,
+  "package_names_unexported": 245,
+  "structure": {
+   "functions": 446,
+   "functions_with_symbol": 290,
+   "call_edges": 1360,
+   "call_edges_in_disassembly": 594,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 174,
+   "string_literals_in_binary": 163
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.339397478,
-  "baseline_build_seconds": 4.560308585,
-  "total_seconds": 6.316941725
+  "variant_generation_seconds": 0.381832415,
+  "baseline_build_seconds": 4.984169125,
+  "total_seconds": 12.183190013
  },
  {
   "repo": "nats-io/nats-server",
@@ -1806,11 +2238,23 @@
    "checked": 2395,
    "in_binary": 490
   },
+  "package_names_renamed": 1047,
+  "package_names_unexported": 1057,
+  "structure": {
+   "functions": 4300,
+   "functions_with_symbol": 3265,
+   "call_edges": 21089,
+   "call_edges_in_disassembly": 10984,
+   "int_constants": 59,
+   "int_constants_in_disassembly": 36,
+   "string_literals": 1548,
+   "string_literals_in_binary": 1481
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 3.420781049,
-  "baseline_build_seconds": 9.334713186,
-  "total_seconds": 24.137139119
+  "variant_generation_seconds": 5.642668288,
+  "baseline_build_seconds": 19.022347892,
+  "total_seconds": 55.243744161
  },
  {
   "repo": "nektos/act",
@@ -1855,11 +2299,23 @@
    "checked": 668,
    "in_binary": 225
   },
+  "package_names_renamed": 68,
+  "package_names_unexported": 68,
+  "structure": {
+   "functions": 797,
+   "functions_with_symbol": 680,
+   "call_edges": 3501,
+   "call_edges_in_disassembly": 1370,
+   "int_constants": 5,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 1129,
+   "string_literals_in_binary": 1119
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.242953562,
-  "baseline_build_seconds": 10.42381534,
-  "total_seconds": 18.617372881
+  "variant_generation_seconds": 0.395476914,
+  "baseline_build_seconds": 15.31407995,
+  "total_seconds": 32.852724924
  },
  {
   "repo": "OJ/gobuster",
@@ -1904,11 +2360,23 @@
    "checked": 108,
    "in_binary": 45
   },
+  "package_names_renamed": 11,
+  "package_names_unexported": 11,
+  "structure": {
+   "functions": 165,
+   "functions_with_symbol": 141,
+   "call_edges": 552,
+   "call_edges_in_disassembly": 294,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 298,
+   "string_literals_in_binary": 294
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.065119378,
-  "baseline_build_seconds": 5.475128149,
-  "total_seconds": 6.495607639
+  "variant_generation_seconds": 0.110205958,
+  "baseline_build_seconds": 9.300534007,
+  "total_seconds": 17.873148552
  },
  {
   "repo": "open-policy-agent/opa",
@@ -1953,11 +2421,23 @@
    "checked": 2269,
    "in_binary": 609
   },
+  "package_names_renamed": 743,
+  "package_names_unexported": 750,
+  "structure": {
+   "functions": 7107,
+   "functions_with_symbol": 5264,
+   "call_edges": 21695,
+   "call_edges_in_disassembly": 9055,
+   "int_constants": 18,
+   "int_constants_in_disassembly": 11,
+   "string_literals": 2786,
+   "string_literals_in_binary": 2699
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 2.6391139089999998,
-  "baseline_build_seconds": 11.630682932,
-  "total_seconds": 23.703400196
+  "variant_generation_seconds": 4.42946545,
+  "baseline_build_seconds": 27.770854967,
+  "total_seconds": 67.478264635
  },
  {
   "repo": "peco/peco",
@@ -2002,11 +2482,23 @@
    "checked": 194,
    "in_binary": 53
   },
+  "package_names_renamed": 31,
+  "package_names_unexported": 31,
+  "structure": {
+   "functions": 519,
+   "functions_with_symbol": 387,
+   "call_edges": 1609,
+   "call_edges_in_disassembly": 541,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 272,
+   "string_literals_in_binary": 192
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.208922426,
-  "baseline_build_seconds": 7.787118189,
-  "total_seconds": 9.951297174
+  "variant_generation_seconds": 0.189199746,
+  "baseline_build_seconds": 6.5332167850000005,
+  "total_seconds": 13.179835241
  },
  {
   "repo": "pressly/goose",
@@ -2051,11 +2543,23 @@
    "checked": 150,
    "in_binary": 80
   },
+  "package_names_renamed": 52,
+  "package_names_unexported": 62,
+  "structure": {
+   "functions": 373,
+   "functions_with_symbol": 164,
+   "call_edges": 1031,
+   "call_edges_in_disassembly": 253,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 360,
+   "string_literals_in_binary": 179
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.169704862,
-  "baseline_build_seconds": 25.53146225,
-  "total_seconds": 27.753007383
+  "variant_generation_seconds": 0.111154203,
+  "baseline_build_seconds": 16.473464944,
+  "total_seconds": 24.644677308
  },
  {
   "repo": "projectdiscovery/httpx",
@@ -2100,11 +2604,23 @@
    "checked": 493,
    "in_binary": 173
   },
+  "package_names_renamed": 52,
+  "package_names_unexported": 52,
+  "structure": {
+   "functions": 328,
+   "functions_with_symbol": 267,
+   "call_edges": 1521,
+   "call_edges_in_disassembly": 849,
+   "int_constants": 9,
+   "int_constants_in_disassembly": 6,
+   "string_literals": 713,
+   "string_literals_in_binary": 680
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.120050531,
-  "baseline_build_seconds": 13.204492498,
-  "total_seconds": 16.22730429
+  "variant_generation_seconds": 0.175784239,
+  "baseline_build_seconds": 25.779489889,
+  "total_seconds": 39.773610354
  },
  {
   "repo": "prometheus/node_exporter",
@@ -2149,11 +2665,23 @@
    "checked": 494,
    "in_binary": 167
   },
+  "package_names_renamed": 413,
+  "package_names_unexported": 418,
+  "structure": {
+   "functions": 476,
+   "functions_with_symbol": 437,
+   "call_edges": 1723,
+   "call_edges_in_disassembly": 913,
+   "int_constants": 23,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 1873,
+   "string_literals_in_binary": 1857
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.180467853,
-  "baseline_build_seconds": 4.8400480550000005,
-  "total_seconds": 6.446680124
+  "variant_generation_seconds": 0.306908371,
+  "baseline_build_seconds": 12.604278941,
+  "total_seconds": 24.502801287
  },
  {
   "repo": "rakyll/hey",
@@ -2198,11 +2726,23 @@
    "checked": 30,
    "in_binary": 16
   },
+  "package_names_renamed": 33,
+  "package_names_unexported": 33,
+  "structure": {
+   "functions": 29,
+   "functions_with_symbol": 24,
+   "call_edges": 93,
+   "call_edges_in_disassembly": 50,
+   "int_constants": 1,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 8,
+   "string_literals_in_binary": 8
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.013343724,
-  "baseline_build_seconds": 9.10552907,
-  "total_seconds": 10.203759275
+  "variant_generation_seconds": 0.009143602,
+  "baseline_build_seconds": 3.506012851,
+  "total_seconds": 5.01773547
  },
  {
   "repo": "restic/restic",
@@ -2247,11 +2787,23 @@
    "checked": 912,
    "in_binary": 283
   },
+  "package_names_renamed": 122,
+  "package_names_unexported": 122,
+  "structure": {
+   "functions": 1791,
+   "functions_with_symbol": 1401,
+   "call_edges": 6120,
+   "call_edges_in_disassembly": 2640,
+   "int_constants": 19,
+   "int_constants_in_disassembly": 10,
+   "string_literals": 2006,
+   "string_literals_in_binary": 1930
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.959644707,
-  "baseline_build_seconds": 27.363585568,
-  "total_seconds": 33.971370244
+  "variant_generation_seconds": 0.984049883,
+  "baseline_build_seconds": 26.389891317,
+  "total_seconds": 46.760637898
  },
  {
   "repo": "schollz/croc",
@@ -2296,11 +2848,23 @@
    "checked": 955,
    "in_binary": 371
   },
+  "package_names_renamed": 185,
+  "package_names_unexported": 185,
+  "structure": {
+   "functions": 1282,
+   "functions_with_symbol": 866,
+   "call_edges": 5816,
+   "call_edges_in_disassembly": 2647,
+   "int_constants": 14,
+   "int_constants_in_disassembly": 7,
+   "string_literals": 1386,
+   "string_literals_in_binary": 1297
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.497934226,
-  "baseline_build_seconds": 29.161694896,
-  "total_seconds": 37.446720403
+  "variant_generation_seconds": 0.64282659,
+  "baseline_build_seconds": 32.471323806,
+  "total_seconds": 50.027493296
  },
  {
   "repo": "spf13/cobra-cli",
@@ -2345,11 +2909,23 @@
    "checked": 21,
    "in_binary": 6
   },
+  "package_names_renamed": 8,
+  "package_names_unexported": 8,
+  "structure": {
+   "functions": 32,
+   "functions_with_symbol": 20,
+   "call_edges": 106,
+   "call_edges_in_disassembly": 62,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 75,
+   "string_literals_in_binary": 75
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.009583615,
-  "baseline_build_seconds": 6.119981711,
-  "total_seconds": 6.804571062
+  "variant_generation_seconds": 0.01447595,
+  "baseline_build_seconds": 12.771352543999999,
+  "total_seconds": 19.493672428
  },
  {
   "repo": "tomnomnom/gron",
@@ -2394,11 +2970,23 @@
    "checked": 33,
    "in_binary": 12
   },
+  "package_names_renamed": 24,
+  "package_names_unexported": 36,
+  "structure": {
+   "functions": 64,
+   "functions_with_symbol": 51,
+   "call_edges": 188,
+   "call_edges_in_disassembly": 91,
+   "int_constants": 2,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 54,
+   "string_literals_in_binary": 54
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.017910744,
-  "baseline_build_seconds": 5.780682774,
-  "total_seconds": 7.329405225
+  "variant_generation_seconds": 0.025305413,
+  "baseline_build_seconds": 8.613019328,
+  "total_seconds": 16.961568217
  },
  {
   "repo": "traefik/yaegi",
@@ -2443,11 +3031,23 @@
    "checked": 253,
    "in_binary": 118
   },
+  "package_names_renamed": 49,
+  "package_names_unexported": 256,
+  "structure": {
+   "functions": 1188,
+   "functions_with_symbol": 1087,
+   "call_edges": 4292,
+   "call_edges_in_disassembly": 2067,
+   "int_constants": 0,
+   "int_constants_in_disassembly": 0,
+   "string_literals": 2048,
+   "string_literals_in_binary": 2048
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 3.718781242,
-  "baseline_build_seconds": 9.250717493,
-  "total_seconds": 19.511777937
+  "variant_generation_seconds": 3.634998557,
+  "baseline_build_seconds": 8.005011886,
+  "total_seconds": 27.235378051
  },
  {
   "repo": "tsenart/vegeta",
@@ -2492,11 +3092,23 @@
    "checked": 82,
    "in_binary": 53
   },
+  "package_names_renamed": 19,
+  "package_names_unexported": 19,
+  "structure": {
+   "functions": 173,
+   "functions_with_symbol": 102,
+   "call_edges": 526,
+   "call_edges_in_disassembly": 190,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 1,
+   "string_literals": 145,
+   "string_literals_in_binary": 143
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.131664303,
-  "baseline_build_seconds": 6.94008045,
-  "total_seconds": 8.080495792
+  "variant_generation_seconds": 0.230777306,
+  "baseline_build_seconds": 10.576001817,
+  "total_seconds": 19.787985014
  },
  {
   "repo": "wagoodman/dive",
@@ -2541,11 +3153,23 @@
    "checked": 250,
    "in_binary": 82
   },
+  "package_names_renamed": 33,
+  "package_names_unexported": 33,
+  "structure": {
+   "functions": 329,
+   "functions_with_symbol": 242,
+   "call_edges": 925,
+   "call_edges_in_disassembly": 420,
+   "int_constants": 3,
+   "int_constants_in_disassembly": 3,
+   "string_literals": 261,
+   "string_literals_in_binary": 253
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.067248048,
-  "baseline_build_seconds": 5.302464051,
-  "total_seconds": 6.327267193
+  "variant_generation_seconds": 0.068218167,
+  "baseline_build_seconds": 5.465027534,
+  "total_seconds": 8.103917632
  },
  {
   "repo": "yuin/gopher-lua",
@@ -2590,11 +3214,23 @@
    "checked": 243,
    "in_binary": 69
   },
+  "package_names_renamed": 112,
+  "package_names_unexported": 112,
+  "structure": {
+   "functions": 669,
+   "functions_with_symbol": 437,
+   "call_edges": 2122,
+   "call_edges_in_disassembly": 1010,
+   "int_constants": 12,
+   "int_constants_in_disassembly": 3,
+   "string_literals": 217,
+   "string_literals_in_binary": 210
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.222077047,
-  "baseline_build_seconds": 4.6642501979999995,
-  "total_seconds": 6.5059045730000005
+  "variant_generation_seconds": 0.152295266,
+  "baseline_build_seconds": 3.446321261,
+  "total_seconds": 8.248627719
  },
  {
   "repo": "zyedidia/micro",
@@ -2639,10 +3275,22 @@
    "checked": 506,
    "in_binary": 170
   },
+  "package_names_renamed": 52,
+  "package_names_unexported": 53,
+  "structure": {
+   "functions": 998,
+   "functions_with_symbol": 879,
+   "call_edges": 3331,
+   "call_edges_in_disassembly": 1524,
+   "int_constants": 6,
+   "int_constants_in_disassembly": 5,
+   "string_literals": 643,
+   "string_literals_in_binary": 635
+  },
   "normalize_failed_files": 0,
   "x4_unstable_files": 0,
-  "variant_generation_seconds": 0.172143914,
-  "baseline_build_seconds": 7.216671613,
-  "total_seconds": 9.098237532
+  "variant_generation_seconds": 0.164576843,
+  "baseline_build_seconds": 4.10856014,
+  "total_seconds": 7.5733888050000004
  }
 ]

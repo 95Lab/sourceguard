@@ -37,6 +37,8 @@ Comparing hashes from multiple builds of **the same source** does not catch inpu
 
 Reproducibility, traditionally an **integrity** tool, is thereby repurposed as a **leak detector for confidentiality**.
 
+> **Correction (see [security-argument.md](security-argument.md)).** This sentence overstates the role of the comparison. What keeps comments and renamed identifiers confidential is that the variants never contain them. The comparison detects a toolchain that tampers with its output depending on its input, and certifies the release when at least one cell is honest.
+
 ---
 
 ## 2. Threat Model
@@ -217,6 +219,8 @@ Never touched: string literals, exported or public names, file paths, macros usi
 **Proposed MVP language: Go.** Go is reproducible almost by default with `-trimpath`, its toolchain is self-contained, and `go/scanner` makes a token-level VG straightforward.
 
 ### 5.3 Security property (hypothesis to be proven)
+
+> **Superseded.** The property was worked out in [security-argument.md](security-argument.md), and the result differs from the proposition below. The confidentiality of comments and renamed identifiers follows from the Variant Generator replacing them with fresh random values, so that no cell ever receives them; it holds without any comparison. Comparing artifacts provides integrity (one honest cell certifies the release) and detection of input-dependent tampering. It does not protect the remaining source. The original text is kept for the record.
 
 Let `V_1..V_k` be the variants and `I = ∩ info(V_i)` the information common to all variants.
 

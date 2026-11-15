@@ -37,13 +37,15 @@ Modern build pipelines assume the compiler is honest. SourceGuard addresses a ha
 
 > *If an attacker gains arbitrary code execution inside the compiler, for example through a malicious dependency that exploits a compiler bug, can they exfiltrate the source code being built?*
 
-SourceGuard introduces **Differential Source Variants (DSV)**, a technique that repurposes reproducible builds, traditionally an *integrity* mechanism, as a *confidentiality* leak detector.
+SourceGuard introduces **Differential Source Variants (DSV)**. A trusted generator removes what the binary does not depend on (comment text, local and package-level names) and replaces it with random values, differently for each build cell. The compiler therefore never receives that part of the source, and reproducibility across the differently scrubbed copies checks that the toolchain behaved honestly.
+
+What this does and does not guarantee is stated precisely in the [security argument](docs/security-argument.md). In short: comments and renamed identifiers are provably withheld from the compiler; the rest of the source is not protected against a toolchain that is compromised in every cell.
 
 **Security goals**
 
 | ID | Goal |
 |---|---|
-| G1 | Code execution inside the compiler cannot exfiltrate source information beyond what is invariant across all variants. |
+| G1 | Code execution inside the compiler learns nothing about the parts of the source that the Variant Generator replaces (comments, renamed identifiers). |
 | G2 | Full compromise of the Git server, CI orchestrator, database, or storage does not reveal plaintext. |
 | G3 | Every released artifact carries verifiable provenance and has passed a cross-cell divergence check. |
 
@@ -52,7 +54,7 @@ SourceGuard introduces **Differential Source Variants (DSV)**, a technique that 
 1. A small, trusted **Variant Generator** produces `k` source variants that are textually different but semantically equivalent (rewritten comments, whitespace changes, renamed local identifiers).
 2. Each variant is compiled in an isolated, single-use, network-less **build cell**.
 3. An honest compiler produces **bit-identical** artifacts from all variants.
-4. A trusted **Artifact Gateway** compares the artifacts byte for byte. A compromised compiler that embeds any information depending on the differing parts causes divergence, and the release is blocked.
+4. A trusted **Artifact Gateway** compares the artifacts byte for byte. A compiler whose output depends on the differing parts causes divergence, and the release is blocked. If at least one cell is honest, an accepted release is exactly the honest build.
 
 ```
 Developer ──► Forgejo (ciphertext only) ──► Orchestrator (untrusted)
@@ -104,7 +106,9 @@ make attacks      # malicious compiler in the build cells
 | `cmd/sg-cell` | Agent inside a build cell |
 | `cmd/sg-gateway` | Artifact Gateway (TCB) |
 | `cmd/sg-sign` | Release Signer (TCB) |
-| `internal/variants/golang` | Transformations T1 (comments), T2 (whitespace), T3/T5 (local names), T4 (dead code) |
+| `internal/variants/golang` | Go: T1 (comments), T2 (whitespace), T3/T5 (local names), T4 (dead code), T7 (package-level names) |
+| `internal/variants/textlang` | C, C++ and Rust: T1 and T2 at the lexical level |
+| `eval/polyrun` | Invariance runner for C/C++ (GCC, Clang) and Rust projects |
 | `attacks/evilgo` | Malicious compiler wrapper for the adversarial suite |
 | `eval/invariance` | Bit-identity check on the sample project |
 | `eval/corpusrun`, `eval/modal` | Phase 1 corpus study (RQ1): runner, report, divergence bisection, Modal app |
@@ -118,7 +122,9 @@ make attacks      # malicious compiler in the build cells
 | [Architecture (English)](docs/architecture.md) | Full design: threat model, components, DSV, leakage analysis, roadmap |
 | [Local Testing with Docker](docs/local-testing.md) | Running the prototype, the attack suite, results and limitations |
 | [Phase 1 Results](docs/results/phase1-invariance.md) | Invariance study on 54 open-source Go projects: method, findings, limitations |
-| [Evaluation Results](docs/results/evaluation.md) | Dead code (T4), cgo, invariant information (RQ2), cost |
+| [Evaluation Results](docs/results/evaluation.md) | Dead code (T4), package-level renaming (T7), cgo, invariant information and structure (RQ2), cost |
+| [Security Argument](docs/security-argument.md) | Model, assumptions, two theorems, and what is not protected |
+| [Related Work and Positioning](docs/related-work.md) | TightLip, Secure Multi-Execution, N-variant systems, reproducible and attested builds |
 | [Kiến trúc (Tiếng Việt)](docs/architecture.vi.md) | Original Vietnamese version |
 
 Key sections: [Threat Model](docs/architecture.md#2-threat-model) · [DSV Transformations](docs/architecture.md#5-differential-source-variants-dsv) · [Residual Leakage](docs/architecture.md#7-residual-leakage-channels-and-mitigations) · [Attack Suite](docs/architecture.md#10-adversarial-attack-suite-attacks) · [Research Questions](docs/architecture.md#11-research-questions)
