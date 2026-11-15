@@ -29,4 +29,4 @@ Out-of-scope items are listed in Section 1.2 of the architecture document. Novel
 The project is at the research-draft stage (v0.2). Only the latest `main` branch is supported.
 
 ---
-Maintained by 95LAB.
+Maintained by 95LAB. Security contact: Dang-Hieu Nguyen, Head of 95LAB.

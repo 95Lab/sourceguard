@@ -3,7 +3,7 @@ Copyright 2026 95LAB
 
 This product includes software, designs, and documentation developed by
 95LAB.
-  Author / contact: Hieu Nguyen <hillnguyen528@gmail.com>
+  Author / contact: Dang-Hieu Nguyen, Head of 95LAB <hillnguyen528@gmail.com>
   Repository:       https://github.com/95Lab/sourceguard
 
 ATTRIBUTION REQUIREMENT
@@ -15,7 +15,7 @@ services, research papers, talks, or teaching material, must:
   1. Retain this NOTICE file (for code, as required by Section 4(d) of
      the Apache License 2.0), and
   2. Visibly credit:
-       "SourceGuard by Hieu Nguyen (hillnguyen528@gmail.com),
+       "SourceGuard by Dang-Hieu Nguyen (hillnguyen528@gmail.com),
         95LAB"
   3. In academic or technical publications, cite the work as described
      in CITATION.cff.

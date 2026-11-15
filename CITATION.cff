@@ -14,9 +14,9 @@ abstract: >-
   by a trusted artifact gateway.
 authors:
   - family-names: Nguyen
-    given-names: Hieu
+    given-names: Dang-Hieu
     email: hillnguyen528@gmail.com
-    affiliation: "95LAB"
+    affiliation: "Head of 95LAB"
   - name: "95LAB"
     email: hillnguyen528@gmail.com
 repository-code: "https://github.com/95Lab/sourceguard"

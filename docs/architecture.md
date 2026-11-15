@@ -3,7 +3,7 @@
 > Version: 0.2 (draft, pre-implementation). Date: 2026-11-15
 > Status: design and research hypotheses. The "output invariance" properties in Section 5 are **not yet validated**. Phase 1 exists to validate them.
 >
-> Author: Hieu Nguyen (hillnguyen528@gmail.com), 95LAB.
+> Author: Dang-Hieu Nguyen, Head of 95LAB (hillnguyen528@gmail.com).
 > Vietnamese original: [architecture.vi.md](architecture.vi.md). See [CITATION.cff](../CITATION.cff) for how to cite this work.
 
 ---
