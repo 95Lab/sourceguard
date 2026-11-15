@@ -25,3 +25,6 @@ secrets/
 # Evaluation outputs
 eval/**/results/
 eval/**/corpus/
+
+# Local test bed state (keys, ciphertext, artifacts)
+/run/

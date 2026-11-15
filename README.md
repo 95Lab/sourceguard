@@ -4,7 +4,7 @@
 
 **Keeping source code confidential even when the compiler is compromised.**
 
-[![Status](https://img.shields.io/badge/status-research%20draft%20v0.2-orange)](docs/architecture.md)
+[![Status](https://img.shields.io/badge/status-research%20prototype-orange)](docs/architecture.md)
 [![Code License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey)](LICENSE-docs)
 [![Cite this work](https://img.shields.io/badge/cite-CITATION.cff-green)](CITATION.cff)
@@ -20,6 +20,8 @@ A research project by **[95LAB](https://github.com/95Lab)**
 - [Overview](#overview)
 - [How It Works](#how-it-works)
 - [Project Status](#project-status)
+- [Quick Start](#quick-start)
+- [Repository Layout](#repository-layout)
 - [Documentation](#documentation)
 - [Citation](#citation)
 - [About 95LAB](#about-95lab)
@@ -68,21 +70,52 @@ Developer ──► Forgejo (ciphertext only) ──► Orchestrator (untrusted)
 
 ## Project Status
 
-This repository currently contains the **architecture and research design (v0.2)**. The invariance hypotheses are **not yet validated**; Phase 1 of the roadmap exists to test them.
+A working **prototype for Go** implements the full pipeline and runs locally in Docker. It is a research test bed, not a secure deployment; see the [prototype limitations](docs/local-testing.md#prototype-limitations).
 
 | Phase | Scope | Status |
 |---|---|---|
-| 0 | Skeleton: `sg seal/push`, signed manifest, minimal Key Broker | Planned |
-| 1 | Invariance validation of transformations T1–T6 on a Go corpus | Planned |
-| 2 | Full pipeline: Variant Generator, build cells, gateway, release signer | Planned |
-| 3 | Adversarial evaluation (attack suite X1–X11) | Planned |
-| 4 | C/C++/Rust, SEV-SNP/TDX attestation, diverse toolchains | Optional |
+| 0 | `sg seal`, signed manifest, Key Broker; the store holds ciphertext only | Prototype |
+| 1 | Invariance validation of the transformations | T1–T3 bit-identical on the sample project; **corpus study outstanding** |
+| 2 | Full pipeline: Variant Generator, build cells, gateway, release signer | Prototype (containers, not microVMs) |
+| 3 | Adversarial evaluation | Suite of 7 attacks implemented; leakage measurement (RQ2) outstanding |
+| 4 | C/C++/Rust, SEV-SNP/TDX attestation, diverse toolchains | Not started |
+
+## Quick Start
+
+Requires Docker with Compose v2, and Go 1.26+ for the unit tests.
+
+```sh
+git clone https://github.com/95Lab/sourceguard.git && cd sourceguard
+make test         # unit tests
+make invariance   # are variants bit-identical after compilation?
+make demo         # honest build: ACCEPT + verified provenance
+make attacks      # malicious compiler in the build cells
+```
+
+`make attacks` shows the mechanism at work: a compiler that embeds source in the artifact is rejected, while the documented limit (embedding fully normalized source, attack X4) passes. Details: [Local Testing with Docker](docs/local-testing.md).
+
+## Repository Layout
+
+| Path | Content |
+|---|---|
+| `cmd/sg` | Developer CLI: `init`, `seal`, `verify`, `open` |
+| `cmd/sg-broker` | Key Broker (TCB) |
+| `cmd/sg-variant` | Variant Generator (TCB) |
+| `cmd/sg-cell` | Agent inside a build cell |
+| `cmd/sg-gateway` | Artifact Gateway (TCB) |
+| `cmd/sg-sign` | Release Signer (TCB) |
+| `internal/variants/golang` | Transformations T1 (comments), T2 (whitespace), T3/T5 (local names) |
+| `attacks/evilgo` | Malicious compiler wrapper for the adversarial suite |
+| `eval/invariance` | Bit-identity measurement (RQ1) |
+| `examples/hello` | Sample project with planted secrets |
+| `compose.yaml`, `deploy/docker`, `scripts` | Local test bed |
 
 ## Documentation
 
 | Document | Description |
 |---|---|
 | [Architecture (English)](docs/architecture.md) | Full design: threat model, components, DSV, leakage analysis, roadmap |
+| [Local Testing with Docker](docs/local-testing.md) | Running the prototype, the attack suite, results and limitations |
 | [Kiến trúc (Tiếng Việt)](docs/architecture.vi.md) | Original Vietnamese version |
 
 Key sections: [Threat Model](docs/architecture.md#2-threat-model) · [DSV Transformations](docs/architecture.md#5-differential-source-variants-dsv) · [Residual Leakage](docs/architecture.md#7-residual-leakage-channels-and-mitigations) · [Attack Suite](docs/architecture.md#10-adversarial-attack-suite-attacks) · [Research Questions](docs/architecture.md#11-research-questions)
