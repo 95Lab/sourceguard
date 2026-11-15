@@ -63,27 +63,27 @@ Verification: replaying the seeds that had diverged, with the fixed generator, g
 
 ## Limitations
 
-- **cgo was disabled.** The six projects with cgo files were built with `CGO_ENABLED=0`, so no C code was compiled. Invariance with cgo enabled is untested.
+- **cgo was disabled.** The six projects with cgo files were built with `CGO_ENABLED=0`, so no C code was compiled. cgo is covered by the [follow-up evaluation](evaluation.md), which found one further limitation.
 - **Only one main package per project was compiled**, for one OS and two architectures. Files outside its dependency closure, files for other platforms and test files were transformed but not compiled.
 - **Sample size.** Zero divergences in 540 combined variants per target bounds the per-variant divergence rate at roughly 0.6% with 95% confidence, assuming independent variants. Defects that trigger more rarely would not have been seen; finding 4 appeared at a rate of 1 in 5 for two projects.
 - **Debug information is stripped.** Results apply to builds with `-s -w`. With DWARF, local names are in the binary and T3 cannot be invariant.
 - **Toolchains.** Go 1.26.5 to 1.27.4 only. Other versions and compilers (gccgo, TinyGo) were not tested.
 - **T3 coverage was not measured.** Names used as composite-literal keys, struct fields, package-level and exported names are deliberately not renamed. One file of 15,302 (in `traefik/yaegi`) could not be transformed and was passed through unchanged.
-- **T4 (dead code) and T6 (declaration order) are not implemented.**
+- **T4 (dead code) is measured in the [follow-up evaluation](evaluation.md).** T6 (declaration order) is not implemented.
 - **This is invariance, not leakage.** Bit-identity shows that an honest compiler does not cause false alarms. How much invariant information a compromised compiler can still embed is RQ2 and remains open.
 
 ## Reproducing
 
 ```sh
 # local, linux/arm64 or linux/amd64 depending on the host
-go run ./eval/corpusrun -corpus eval/corpusrun/corpus.lock -work run/corpus -j 3 -n 10 -n-single 5
+go run ./eval/corpusrun -corpus eval/corpusrun/corpus.lock -work run/corpus -j 3
 go run ./eval/corpusrun -report run/corpus
 
 # diagnose a non-identical result
 go run ./eval/corpusrun -work run/corpus -diag owner/repo -set T1,T2,T3
 
 # on Modal, linux/amd64 (requires a Modal account)
-modal run eval/modal/corpus_app.py
+modal run eval/modal/corpus_app.py --out run/modal
 go run ./eval/corpusrun -report run/modal
 ```
 

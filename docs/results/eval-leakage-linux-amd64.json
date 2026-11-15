@@ -1,0 +1,2648 @@
+[
+ {
+  "repo": "antonmedv/fx",
+  "package": ".",
+  "commit": "5d57637b00f4329b3cd563330e159d181e4ead85",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 68,
+  "src_bytes": 376985,
+  "comment_bytes": 76388,
+  "binary_bytes": 15323262,
+  "gz_src": 105128,
+  "gz_no_comment": 77398,
+  "gz_normalized": 77297,
+  "local_decls": 2554,
+  "local_unique": 580,
+  "names": {
+   "functions and methods": {
+    "unique": 551,
+    "checked": 483,
+    "in_binary": 471
+   },
+   "package-level variables and constants": {
+    "unique": 241,
+    "checked": 218,
+    "in_binary": 45
+   },
+   "struct fields and interface methods": {
+    "unique": 324,
+    "checked": 219,
+    "in_binary": 215
+   },
+   "types": {
+    "unique": 102,
+    "checked": 86,
+    "in_binary": 85
+   }
+  },
+  "control_local_names": {
+   "unique": 451,
+   "checked": 272,
+   "in_binary": 109
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.19528503,
+  "baseline_build_seconds": 6.845984639,
+  "total_seconds": 8.38158271
+ },
+ {
+  "repo": "BurntSushi/toml",
+  "package": "./cmd/tomlv",
+  "commit": "52534926c55b4cd85b05aee90569dd0668b8cf30",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 12,
+  "src_bytes": 117131,
+  "comment_bytes": 34666,
+  "binary_bytes": 2351230,
+  "gz_src": 33577,
+  "gz_no_comment": 20483,
+  "gz_normalized": 20592,
+  "local_decls": 688,
+  "local_unique": 168,
+  "names": {
+   "functions and methods": {
+    "unique": 188,
+    "checked": 167,
+    "in_binary": 140
+   },
+   "package-level variables and constants": {
+    "unique": 62,
+    "checked": 61,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 55,
+    "checked": 30,
+    "in_binary": 29
+   },
+   "types": {
+    "unique": 33,
+    "checked": 31,
+    "in_binary": 29
+   }
+  },
+  "control_local_names": {
+   "unique": 140,
+   "checked": 61,
+   "in_binary": 18
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.13259503,
+  "baseline_build_seconds": 4.854474884,
+  "total_seconds": 6.554416651
+ },
+ {
+  "repo": "caddyserver/caddy",
+  "package": "./cmd/caddy",
+  "commit": "0d98caea58f794f88e709b1bef2880996a471bca",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 203,
+  "src_bytes": 2275708,
+  "comment_bytes": 877242,
+  "binary_bytes": 58003582,
+  "gz_src": 595165,
+  "gz_no_comment": 311636,
+  "gz_normalized": 304934,
+  "local_decls": 9664,
+  "local_unique": 2514,
+  "names": {
+   "functions and methods": {
+    "unique": 1162,
+    "checked": 1101,
+    "in_binary": 1087
+   },
+   "package-level variables and constants": {
+    "unique": 338,
+    "checked": 332,
+    "in_binary": 46
+   },
+   "struct fields and interface methods": {
+    "unique": 1032,
+    "checked": 890,
+    "in_binary": 881
+   },
+   "types": {
+    "unique": 468,
+    "checked": 458,
+    "in_binary": 453
+   }
+  },
+  "control_local_names": {
+   "unique": 2293,
+   "checked": 1855,
+   "in_binary": 534
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.84109607,
+  "baseline_build_seconds": 29.965988117,
+  "total_seconds": 35.387362502
+ },
+ {
+  "repo": "charmbracelet/glow",
+  "package": ".",
+  "commit": "add5e7a1f63cf0b1de4dfb457c147986e1b1d1fb",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 21,
+  "src_bytes": 87128,
+  "comment_bytes": 13953,
+  "binary_bytes": 18772094,
+  "gz_src": 24792,
+  "gz_no_comment": 19166,
+  "gz_normalized": 18962,
+  "local_decls": 488,
+  "local_unique": 210,
+  "names": {
+   "functions and methods": {
+    "unique": 104,
+    "checked": 99,
+    "in_binary": 99
+   },
+   "package-level variables and constants": {
+    "unique": 60,
+    "checked": 59,
+    "in_binary": 14
+   },
+   "struct fields and interface methods": {
+    "unique": 91,
+    "checked": 81,
+    "in_binary": 80
+   },
+   "types": {
+    "unique": 30,
+    "checked": 30,
+    "in_binary": 29
+   }
+  },
+  "control_local_names": {
+   "unique": 195,
+   "checked": 118,
+   "in_binary": 52
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.035823545,
+  "baseline_build_seconds": 12.712140607,
+  "total_seconds": 14.327679819
+ },
+ {
+  "repo": "charmbracelet/gum",
+  "package": ".",
+  "commit": "879f048103adf0214b85943b52d8d65b08d772c5",
+  "go_version": "go1.26.7",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 58,
+  "src_bytes": 167476,
+  "comment_bytes": 25182,
+  "binary_bytes": 13975678,
+  "gz_src": 41029,
+  "gz_no_comment": 32656,
+  "gz_normalized": 32900,
+  "local_decls": 613,
+  "local_unique": 192,
+  "names": {
+   "functions and methods": {
+    "unique": 78,
+    "checked": 68,
+    "in_binary": 66
+   },
+   "package-level variables and constants": {
+    "unique": 38,
+    "checked": 37,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 260,
+    "checked": 230,
+    "in_binary": 230
+   },
+   "types": {
+    "unique": 22,
+    "checked": 16,
+    "in_binary": 16
+   }
+  },
+  "control_local_names": {
+   "unique": 165,
+   "checked": 89,
+   "in_binary": 48
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.053026016,
+  "baseline_build_seconds": 6.792887531,
+  "total_seconds": 13.475250184
+ },
+ {
+  "repo": "cheat/cheat",
+  "package": "./cmd/cheat",
+  "commit": "e2aa2d3611a02593a71cbf645050424228c0e8b0",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 52,
+  "src_bytes": 66041,
+  "comment_bytes": 21807,
+  "binary_bytes": 13381758,
+  "gz_src": 18008,
+  "gz_no_comment": 10581,
+  "gz_normalized": 10540,
+  "local_decls": 339,
+  "local_unique": 127,
+  "names": {
+   "functions and methods": {
+    "unique": 52,
+    "checked": 40,
+    "in_binary": 40
+   },
+   "package-level variables and constants": {
+    "unique": 5,
+    "checked": 5,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 14,
+    "checked": 10,
+    "in_binary": 10
+   },
+   "types": {
+    "unique": 4,
+    "checked": 3,
+    "in_binary": 3
+   }
+  },
+  "control_local_names": {
+   "unique": 126,
+   "checked": 74,
+   "in_binary": 38
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.082518907,
+  "baseline_build_seconds": 9.432455241,
+  "total_seconds": 14.92385695
+ },
+ {
+  "repo": "cli/cli",
+  "package": "./cmd/gh",
+  "commit": "3d5a9e355a837f2f5ee78d7484c118cc1342ad1a",
+  "go_version": "go1.27.4",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 544,
+  "src_bytes": 3597837,
+  "comment_bytes": 610102,
+  "binary_bytes": 40616060,
+  "gz_src": 827285,
+  "gz_no_comment": 622773,
+  "gz_normalized": 627772,
+  "local_decls": 19455,
+  "local_unique": 3139,
+  "names": {
+   "functions and methods": {
+    "unique": 2839,
+    "checked": 2766,
+    "in_binary": 2517
+   },
+   "package-level variables and constants": {
+    "unique": 775,
+    "checked": 763,
+    "in_binary": 86
+   },
+   "struct fields and interface methods": {
+    "unique": 2298,
+    "checked": 2115,
+    "in_binary": 1834
+   },
+   "types": {
+    "unique": 987,
+    "checked": 967,
+    "in_binary": 860
+   }
+  },
+  "control_local_names": {
+   "unique": 2750,
+   "checked": 2413,
+   "in_binary": 705
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 2.941074139,
+  "baseline_build_seconds": 19.545884959,
+  "total_seconds": 37.986052568
+ },
+ {
+  "repo": "cloudflare/cfssl",
+  "package": "./cmd/cfssl",
+  "commit": "ab47f0d984778865b3f5b5adf6ba336a15b96c31",
+  "go_version": "go1.27.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 94,
+  "src_bytes": 650789,
+  "comment_bytes": 150937,
+  "binary_bytes": 15704188,
+  "gz_src": 156734,
+  "gz_no_comment": 105751,
+  "gz_normalized": 105212,
+  "local_decls": 3258,
+  "local_unique": 838,
+  "names": {
+   "functions and methods": {
+    "unique": 517,
+    "checked": 491,
+    "in_binary": 462
+   },
+   "package-level variables and constants": {
+    "unique": 366,
+    "checked": 356,
+    "in_binary": 81
+   },
+   "struct fields and interface methods": {
+    "unique": 503,
+    "checked": 407,
+    "in_binary": 400
+   },
+   "types": {
+    "unique": 165,
+    "checked": 157,
+    "in_binary": 151
+   }
+  },
+  "control_local_names": {
+   "unique": 735,
+   "checked": 550,
+   "in_binary": 168
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.544311938,
+  "baseline_build_seconds": 8.906638865,
+  "total_seconds": 19.350508613
+ },
+ {
+  "repo": "coredns/coredns",
+  "package": ".",
+  "commit": "a6fde3fe339c6ec848447e11cc9796be8c97b4e0",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 345,
+  "src_bytes": 1185857,
+  "comment_bytes": 279935,
+  "binary_bytes": 78786686,
+  "gz_src": 309993,
+  "gz_no_comment": 206923,
+  "gz_normalized": 207995,
+  "local_decls": 7780,
+  "local_unique": 1362,
+  "names": {
+   "functions and methods": {
+    "unique": 1155,
+    "checked": 1051,
+    "in_binary": 1027
+   },
+   "package-level variables and constants": {
+    "unique": 387,
+    "checked": 341,
+    "in_binary": 88
+   },
+   "struct fields and interface methods": {
+    "unique": 777,
+    "checked": 630,
+    "in_binary": 625
+   },
+   "types": {
+    "unique": 319,
+    "checked": 271,
+    "in_binary": 265
+   }
+  },
+  "control_local_names": {
+   "unique": 1076,
+   "checked": 754,
+   "in_binary": 318
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 1.157911081,
+  "baseline_build_seconds": 38.03147356,
+  "total_seconds": 45.301500642
+ },
+ {
+  "repo": "direnv/direnv",
+  "package": ".",
+  "commit": "28a73d1df3f387e16f3c7fa888c2a049e0059e7a",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 55,
+  "src_bytes": 114993,
+  "comment_bytes": 20554,
+  "binary_bytes": 8544382,
+  "gz_src": 30681,
+  "gz_no_comment": 22462,
+  "gz_normalized": 22548,
+  "local_decls": 878,
+  "local_unique": 252,
+  "names": {
+   "functions and methods": {
+    "unique": 140,
+    "checked": 125,
+    "in_binary": 124
+   },
+   "package-level variables and constants": {
+    "unique": 102,
+    "checked": 85,
+    "in_binary": 19
+   },
+   "struct fields and interface methods": {
+    "unique": 50,
+    "checked": 34,
+    "in_binary": 34
+   },
+   "types": {
+    "unique": 34,
+    "checked": 22,
+    "in_binary": 22
+   }
+  },
+  "control_local_names": {
+   "unique": 236,
+   "checked": 172,
+   "in_binary": 59
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.039956926,
+  "baseline_build_seconds": 5.253966168,
+  "total_seconds": 6.233682752
+ },
+ {
+  "repo": "dominikh/go-tools",
+  "package": "./cmd/staticcheck",
+  "commit": "54455593555daf6bfcf3c480faaada7de3145357",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 318,
+  "src_bytes": 1554583,
+  "comment_bytes": 466048,
+  "binary_bytes": 11415678,
+  "gz_src": 410890,
+  "gz_no_comment": 246751,
+  "gz_normalized": 244758,
+  "local_decls": 7751,
+  "local_unique": 1386,
+  "names": {
+   "functions and methods": {
+    "unique": 970,
+    "checked": 872,
+    "in_binary": 798
+   },
+   "package-level variables and constants": {
+    "unique": 482,
+    "checked": 464,
+    "in_binary": 192
+   },
+   "struct fields and interface methods": {
+    "unique": 635,
+    "checked": 445,
+    "in_binary": 423
+   },
+   "types": {
+    "unique": 350,
+    "checked": 305,
+    "in_binary": 293
+   }
+  },
+  "control_local_names": {
+   "unique": 1157,
+   "checked": 675,
+   "in_binary": 241
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.87311271,
+  "baseline_build_seconds": 11.126825396,
+  "total_seconds": 16.874253088
+ },
+ {
+  "repo": "dundee/gdu",
+  "package": "./cmd/gdu",
+  "commit": "e09ee9a20d1d9351e90e84ec3f86ab7bbcddbeea",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 85,
+  "src_bytes": 442586,
+  "comment_bytes": 96833,
+  "binary_bytes": 22458494,
+  "gz_src": 113399,
+  "gz_no_comment": 77305,
+  "gz_normalized": 77919,
+  "local_decls": 2911,
+  "local_unique": 591,
+  "names": {
+   "functions and methods": {
+    "unique": 552,
+    "checked": 532,
+    "in_binary": 527
+   },
+   "package-level variables and constants": {
+    "unique": 140,
+    "checked": 120,
+    "in_binary": 7
+   },
+   "struct fields and interface methods": {
+    "unique": 458,
+    "checked": 406,
+    "in_binary": 398
+   },
+   "types": {
+    "unique": 103,
+    "checked": 95,
+    "in_binary": 90
+   }
+  },
+  "control_local_names": {
+   "unique": 514,
+   "checked": 379,
+   "in_binary": 165
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.307258383,
+  "baseline_build_seconds": 14.534923352,
+  "total_seconds": 16.857038343
+ },
+ {
+  "repo": "etcd-io/bbolt",
+  "package": "./cmd/bbolt",
+  "commit": "e7a8b2dd498494a3766ba24dd94d3509e5588485",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 52,
+  "src_bytes": 281458,
+  "comment_bytes": 83359,
+  "binary_bytes": 3846270,
+  "gz_src": 70862,
+  "gz_no_comment": 43569,
+  "gz_normalized": 44256,
+  "local_decls": 1970,
+  "local_unique": 370,
+  "names": {
+   "functions and methods": {
+    "unique": 426,
+    "checked": 372,
+    "in_binary": 360
+   },
+   "package-level variables and constants": {
+    "unique": 79,
+    "checked": 79,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 211,
+    "checked": 179,
+    "in_binary": 167
+   },
+   "types": {
+    "unique": 62,
+    "checked": 52,
+    "in_binary": 49
+   }
+  },
+  "control_local_names": {
+   "unique": 317,
+   "checked": 206,
+   "in_binary": 41
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.214237283,
+  "baseline_build_seconds": 4.457566791,
+  "total_seconds": 6.198009907
+ },
+ {
+  "repo": "ffuf/ffuf",
+  "package": ".",
+  "commit": "256c1b02499f5f8672af965d4ad7a321d606bc65",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 46,
+  "src_bytes": 230889,
+  "comment_bytes": 46051,
+  "binary_bytes": 9908350,
+  "gz_src": 60728,
+  "gz_no_comment": 42845,
+  "gz_normalized": 41982,
+  "local_decls": 1254,
+  "local_unique": 427,
+  "names": {
+   "functions and methods": {
+    "unique": 262,
+    "checked": 248,
+    "in_binary": 245
+   },
+   "package-level variables and constants": {
+    "unique": 31,
+    "checked": 31,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 258,
+    "checked": 218,
+    "in_binary": 218
+   },
+   "types": {
+    "unique": 66,
+    "checked": 65,
+    "in_binary": 64
+   }
+  },
+  "control_local_names": {
+   "unique": 410,
+   "checked": 275,
+   "in_binary": 103
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.09039269,
+  "baseline_build_seconds": 6.339700279,
+  "total_seconds": 7.477663576
+ },
+ {
+  "repo": "FiloSottile/age",
+  "package": "./cmd/age",
+  "commit": "b74dce4cdbe35b5e5f66c06d9612b72f89028758",
+  "go_version": "go1.27.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 23,
+  "src_bytes": 185503,
+  "comment_bytes": 42296,
+  "binary_bytes": 4661372,
+  "gz_src": 48395,
+  "gz_no_comment": 35179,
+  "gz_normalized": 36149,
+  "local_decls": 1090,
+  "local_unique": 238,
+  "names": {
+   "functions and methods": {
+    "unique": 180,
+    "checked": 171,
+    "in_binary": 131
+   },
+   "package-level variables and constants": {
+    "unique": 44,
+    "checked": 42,
+    "in_binary": 7
+   },
+   "struct fields and interface methods": {
+    "unique": 74,
+    "checked": 47,
+    "in_binary": 44
+   },
+   "types": {
+    "unique": 44,
+    "checked": 44,
+    "in_binary": 40
+   }
+  },
+  "control_local_names": {
+   "unique": 198,
+   "checked": 117,
+   "in_binary": 47
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.097559461,
+  "baseline_build_seconds": 4.094541169,
+  "total_seconds": 9.493697269
+ },
+ {
+  "repo": "FiloSottile/mkcert",
+  "package": ".",
+  "commit": "2a46726cebac0ff4e1f133d90b4e4c42f1edf44a",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 5,
+  "src_bytes": 33206,
+  "comment_bytes": 2938,
+  "binary_bytes": 4513918,
+  "gz_src": 9181,
+  "gz_no_comment": 8124,
+  "gz_normalized": 8201,
+  "local_decls": 178,
+  "local_unique": 83,
+  "names": {
+   "functions and methods": {
+    "unique": 34,
+    "checked": 31,
+    "in_binary": 31
+   },
+   "package-level variables and constants": {
+    "unique": 23,
+    "checked": 23,
+    "in_binary": 1
+   },
+   "struct fields and interface methods": {
+    "unique": 15,
+    "checked": 15,
+    "in_binary": 6
+   },
+   "types": {
+    "unique": 1,
+    "checked": 1,
+    "in_binary": 1
+   }
+  },
+  "control_local_names": {
+   "unique": 80,
+   "checked": 48,
+   "in_binary": 9
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.01615954,
+  "baseline_build_seconds": 7.853597904,
+  "total_seconds": 9.331363035
+ },
+ {
+  "repo": "gitleaks/gitleaks",
+  "package": ".",
+  "commit": "83d9cd684c87d95d656c1458ef04895a7f1cbd8e",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 47,
+  "src_bytes": 174020,
+  "comment_bytes": 38161,
+  "binary_bytes": 16265342,
+  "gz_src": 44913,
+  "gz_no_comment": 31891,
+  "gz_normalized": 30956,
+  "local_decls": 883,
+  "local_unique": 345,
+  "names": {
+   "functions and methods": {
+    "unique": 161,
+    "checked": 150,
+    "in_binary": 148
+   },
+   "package-level variables and constants": {
+    "unique": 62,
+    "checked": 60,
+    "in_binary": 7
+   },
+   "struct fields and interface methods": {
+    "unique": 160,
+    "checked": 136,
+    "in_binary": 133
+   },
+   "types": {
+    "unique": 61,
+    "checked": 56,
+    "in_binary": 55
+   }
+  },
+  "control_local_names": {
+   "unique": 319,
+   "checked": 241,
+   "in_binary": 83
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.115717023,
+  "baseline_build_seconds": 9.908847146,
+  "total_seconds": 11.479291539
+ },
+ {
+  "repo": "go-delve/delve",
+  "package": "./cmd/dlv",
+  "commit": "d116177dd925e085ba5dd340f8c644f4a1501a3b",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 178,
+  "src_bytes": 2149239,
+  "comment_bytes": 443925,
+  "binary_bytes": 16502910,
+  "gz_src": 538739,
+  "gz_no_comment": 379369,
+  "gz_normalized": 378430,
+  "local_decls": 12428,
+  "local_unique": 2365,
+  "names": {
+   "functions and methods": {
+    "unique": 1912,
+    "checked": 1799,
+    "in_binary": 1758
+   },
+   "package-level variables and constants": {
+    "unique": 1208,
+    "checked": 1196,
+    "in_binary": 287
+   },
+   "struct fields and interface methods": {
+    "unique": 1826,
+    "checked": 1383,
+    "in_binary": 1214
+   },
+   "types": {
+    "unique": 620,
+    "checked": 601,
+    "in_binary": 566
+   }
+  },
+  "control_local_names": {
+   "unique": 1990,
+   "checked": 1515,
+   "in_binary": 360
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 1.265290672,
+  "baseline_build_seconds": 9.104802282,
+  "total_seconds": 15.708688967
+ },
+ {
+  "repo": "go-task/task",
+  "package": "./cmd/task",
+  "commit": "b5aef1c287a9be8038347a17646bdf4bc7185bce",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 110,
+  "src_bytes": 362514,
+  "comment_bytes": 72553,
+  "binary_bytes": 53239934,
+  "gz_src": 90667,
+  "gz_no_comment": 66018,
+  "gz_normalized": 64823,
+  "local_decls": 2382,
+  "local_unique": 560,
+  "names": {
+   "functions and methods": {
+    "unique": 473,
+    "checked": 439,
+    "in_binary": 429
+   },
+   "package-level variables and constants": {
+    "unique": 166,
+    "checked": 159,
+    "in_binary": 52
+   },
+   "struct fields and interface methods": {
+    "unique": 291,
+    "checked": 232,
+    "in_binary": 228
+   },
+   "types": {
+    "unique": 188,
+    "checked": 178,
+    "in_binary": 158
+   }
+  },
+  "control_local_names": {
+   "unique": 479,
+   "checked": 353,
+   "in_binary": 150
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.253495727,
+  "baseline_build_seconds": 25.47512909,
+  "total_seconds": 28.562738519
+ },
+ {
+  "repo": "gohugoio/hugo",
+  "package": ".",
+  "commit": "f7aa05f0f521611aa960b2da56e1870ea04f57b2",
+  "go_version": "go1.27.0",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 489,
+  "src_bytes": 3350267,
+  "comment_bytes": 925773,
+  "binary_bytes": 61075580,
+  "gz_src": 811179,
+  "gz_no_comment": 558471,
+  "gz_normalized": 556221,
+  "local_decls": 21510,
+  "local_unique": 3288,
+  "names": {
+   "functions and methods": {
+    "unique": 3482,
+    "checked": 3269,
+    "in_binary": 3122
+   },
+   "package-level variables and constants": {
+    "unique": 1038,
+    "checked": 994,
+    "in_binary": 157
+   },
+   "struct fields and interface methods": {
+    "unique": 2628,
+    "checked": 2297,
+    "in_binary": 2227
+   },
+   "types": {
+    "unique": 1236,
+    "checked": 1191,
+    "in_binary": 1110
+   }
+  },
+  "control_local_names": {
+   "unique": 2758,
+   "checked": 2110,
+   "in_binary": 652
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 1.886924757,
+  "baseline_build_seconds": 30.840130156,
+  "total_seconds": 49.192937931
+ },
+ {
+  "repo": "gokcehan/lf",
+  "package": ".",
+  "commit": "5b6c393d547970a264bd4f0a78fd6513227f8e10",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 23,
+  "src_bytes": 275613,
+  "comment_bytes": 24289,
+  "binary_bytes": 5832830,
+  "gz_src": 68639,
+  "gz_no_comment": 58089,
+  "gz_normalized": 58934,
+  "local_decls": 1726,
+  "local_unique": 447,
+  "names": {
+   "functions and methods": {
+    "unique": 306,
+    "checked": 271,
+    "in_binary": 270
+   },
+   "package-level variables and constants": {
+    "unique": 96,
+    "checked": 96,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 285,
+    "checked": 225,
+    "in_binary": 225
+   },
+   "types": {
+    "unique": 46,
+    "checked": 38,
+    "in_binary": 35
+   }
+  },
+  "control_local_names": {
+   "unique": 357,
+   "checked": 218,
+   "in_binary": 81
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.101761514,
+  "baseline_build_seconds": 4.303021065,
+  "total_seconds": 5.398959075
+ },
+ {
+  "repo": "golang-migrate/migrate",
+  "package": "./cmd/migrate",
+  "commit": "504568a3cbd23b8754760f55a3d89aec1b0c4963",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 21,
+  "src_bytes": 67097,
+  "comment_bytes": 19559,
+  "binary_bytes": 2592894,
+  "gz_src": 17253,
+  "gz_no_comment": 11043,
+  "gz_normalized": 11145,
+  "local_decls": 437,
+  "local_unique": 147,
+  "names": {
+   "functions and methods": {
+    "unique": 83,
+    "checked": 65,
+    "in_binary": 57
+   },
+   "package-level variables and constants": {
+    "unique": 35,
+    "checked": 31,
+    "in_binary": 3
+   },
+   "struct fields and interface methods": {
+    "unique": 59,
+    "checked": 43,
+    "in_binary": 42
+   },
+   "types": {
+    "unique": 18,
+    "checked": 15,
+    "in_binary": 14
+   }
+  },
+  "control_local_names": {
+   "unique": 137,
+   "checked": 80,
+   "in_binary": 24
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.295274302,
+  "baseline_build_seconds": 5.879829827,
+  "total_seconds": 8.064441008
+ },
+ {
+  "repo": "google/go-containerregistry",
+  "package": "./cmd/crane",
+  "commit": "8a72a424fdecb4caa14f2d525e5d2503331442b5",
+  "go_version": "go1.26.6",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 165,
+  "src_bytes": 669624,
+  "comment_bytes": 242696,
+  "binary_bytes": 11870334,
+  "gz_src": 139546,
+  "gz_no_comment": 87628,
+  "gz_normalized": 89011,
+  "local_decls": 3951,
+  "local_unique": 695,
+  "names": {
+   "functions and methods": {
+    "unique": 529,
+    "checked": 482,
+    "in_binary": 440
+   },
+   "package-level variables and constants": {
+    "unique": 119,
+    "checked": 110,
+    "in_binary": 12
+   },
+   "struct fields and interface methods": {
+    "unique": 308,
+    "checked": 234,
+    "in_binary": 232
+   },
+   "types": {
+    "unique": 187,
+    "checked": 179,
+    "in_binary": 167
+   }
+  },
+  "control_local_names": {
+   "unique": 581,
+   "checked": 351,
+   "in_binary": 111
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.664682338,
+  "baseline_build_seconds": 9.748666116,
+  "total_seconds": 20.929863136
+ },
+ {
+  "repo": "google/gops",
+  "package": ".",
+  "commit": "a2d8f7790eac63a6668583a060cb45903410a91b",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 10,
+  "src_bytes": 22421,
+  "comment_bytes": 4925,
+  "binary_bytes": 3846270,
+  "gz_src": 6509,
+  "gz_no_comment": 5031,
+  "gz_normalized": 5016,
+  "local_decls": 173,
+  "local_unique": 72,
+  "names": {
+   "functions and methods": {
+    "unique": 39,
+    "checked": 32,
+    "in_binary": 32
+   },
+   "package-level variables and constants": {
+    "unique": 12,
+    "checked": 11,
+    "in_binary": 5
+   },
+   "struct fields and interface methods": {
+    "unique": 9,
+    "checked": 3,
+    "in_binary": 3
+   },
+   "types": {
+    "unique": 3,
+    "checked": 2,
+    "in_binary": 2
+   }
+  },
+  "control_local_names": {
+   "unique": 68,
+   "checked": 32,
+   "in_binary": 13
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.021528431,
+  "baseline_build_seconds": 5.49966017,
+  "total_seconds": 7.091116283
+ },
+ {
+  "repo": "google/pprof",
+  "package": ".",
+  "commit": "fac431ef4d268f11b8c69f8d20bfe6416761339d",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 49,
+  "src_bytes": 499385,
+  "comment_bytes": 154611,
+  "binary_bytes": 11227262,
+  "gz_src": 136434,
+  "gz_no_comment": 87372,
+  "gz_normalized": 86138,
+  "local_decls": 3413,
+  "local_unique": 879,
+  "names": {
+   "functions and methods": {
+    "unique": 503,
+    "checked": 476,
+    "in_binary": 471
+   },
+   "package-level variables and constants": {
+    "unique": 128,
+    "checked": 120,
+    "in_binary": 9
+   },
+   "struct fields and interface methods": {
+    "unique": 386,
+    "checked": 295,
+    "in_binary": 288
+   },
+   "types": {
+    "unique": 121,
+    "checked": 108,
+    "in_binary": 106
+   }
+  },
+  "control_local_names": {
+   "unique": 777,
+   "checked": 528,
+   "in_binary": 160
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.348604632,
+  "baseline_build_seconds": 8.491707283,
+  "total_seconds": 11.710568344
+ },
+ {
+  "repo": "grafana/k6",
+  "package": ".",
+  "commit": "dd9395906d48437a8d7ab53e309afa47ad8d67e0",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 520,
+  "src_bytes": 3249687,
+  "comment_bytes": 857253,
+  "binary_bytes": 47767678,
+  "gz_src": 776954,
+  "gz_no_comment": 498406,
+  "gz_normalized": 490826,
+  "local_decls": 18460,
+  "local_unique": 3312,
+  "names": {
+   "functions and methods": {
+    "unique": 3103,
+    "checked": 2928,
+    "in_binary": 2854
+   },
+   "package-level variables and constants": {
+    "unique": 1092,
+    "checked": 1074,
+    "in_binary": 132
+   },
+   "struct fields and interface methods": {
+    "unique": 1871,
+    "checked": 1630,
+    "in_binary": 1617
+   },
+   "types": {
+    "unique": 985,
+    "checked": 953,
+    "in_binary": 918
+   }
+  },
+  "control_local_names": {
+   "unique": 2796,
+   "checked": 2244,
+   "in_binary": 719
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 1.474398754,
+  "baseline_build_seconds": 8.832628347,
+  "total_seconds": 18.167446199
+ },
+ {
+  "repo": "hairyhenderson/gomplate",
+  "package": "./cmd/gomplate",
+  "commit": "6f33b7aa15255352e47771f535c6f258d266df24",
+  "go_version": "go1.27.3",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 94,
+  "src_bytes": 306954,
+  "comment_bytes": 67865,
+  "binary_bytes": 115736700,
+  "gz_src": 77609,
+  "gz_no_comment": 53315,
+  "gz_normalized": 52583,
+  "local_decls": 2698,
+  "local_unique": 476,
+  "names": {
+   "functions and methods": {
+    "unique": 554,
+    "checked": 479,
+    "in_binary": 465
+   },
+   "package-level variables and constants": {
+    "unique": 56,
+    "checked": 54,
+    "in_binary": 14
+   },
+   "struct fields and interface methods": {
+    "unique": 155,
+    "checked": 116,
+    "in_binary": 114
+   },
+   "types": {
+    "unique": 80,
+    "checked": 76,
+    "in_binary": 69
+   }
+  },
+  "control_local_names": {
+   "unique": 430,
+   "checked": 238,
+   "in_binary": 145
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.295632077,
+  "baseline_build_seconds": 57.994606351,
+  "total_seconds": 66.759086426
+ },
+ {
+  "repo": "helm/helm",
+  "package": "./cmd/helm",
+  "commit": "8346aaa55e7161f7c547212d0a87f01367976727",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 285,
+  "src_bytes": 1469399,
+  "comment_bytes": 487851,
+  "binary_bytes": 66785406,
+  "gz_src": 335796,
+  "gz_no_comment": 219306,
+  "gz_normalized": 217707,
+  "local_decls": 7124,
+  "local_unique": 1432,
+  "names": {
+   "functions and methods": {
+    "unique": 1063,
+    "checked": 1011,
+    "in_binary": 979
+   },
+   "package-level variables and constants": {
+    "unique": 340,
+    "checked": 334,
+    "in_binary": 30
+   },
+   "struct fields and interface methods": {
+    "unique": 596,
+    "checked": 507,
+    "in_binary": 488
+   },
+   "types": {
+    "unique": 344,
+    "checked": 329,
+    "in_binary": 306
+   }
+  },
+  "control_local_names": {
+   "unique": 1272,
+   "checked": 956,
+   "in_binary": 354
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.973304562,
+  "baseline_build_seconds": 21.693593352,
+  "total_seconds": 26.304972916
+ },
+ {
+  "repo": "jesseduffield/lazydocker",
+  "package": ".",
+  "commit": "7e7aadc2071d58031bf2daafca1fbd4093efc23f",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 71,
+  "src_bytes": 334820,
+  "comment_bytes": 47015,
+  "binary_bytes": 13156478,
+  "gz_src": 80081,
+  "gz_no_comment": 61181,
+  "gz_normalized": 59577,
+  "local_decls": 1770,
+  "local_unique": 477,
+  "names": {
+   "functions and methods": {
+    "unique": 444,
+    "checked": 432,
+    "in_binary": 424
+   },
+   "package-level variables and constants": {
+    "unique": 21,
+    "checked": 20,
+    "in_binary": 2
+   },
+   "struct fields and interface methods": {
+    "unique": 444,
+    "checked": 405,
+    "in_binary": 401
+   },
+   "types": {
+    "unique": 65,
+    "checked": 61,
+    "in_binary": 59
+   }
+  },
+  "control_local_names": {
+   "unique": 442,
+   "checked": 333,
+   "in_binary": 111
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.135623633,
+  "baseline_build_seconds": 10.729189933,
+  "total_seconds": 14.789854179
+ },
+ {
+  "repo": "jesseduffield/lazygit",
+  "package": ".",
+  "commit": "e0fbfd50c36e1ef88c52297ca34750e640b4f5f4",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 418,
+  "src_bytes": 2926860,
+  "comment_bytes": 716043,
+  "binary_bytes": 20574334,
+  "gz_src": 718462,
+  "gz_no_comment": 446159,
+  "gz_normalized": 429710,
+  "local_decls": 15612,
+  "local_unique": 3010,
+  "names": {
+   "functions and methods": {
+    "unique": 3725,
+    "checked": 3625,
+    "in_binary": 3397
+   },
+   "package-level variables and constants": {
+    "unique": 593,
+    "checked": 573,
+    "in_binary": 49
+   },
+   "struct fields and interface methods": {
+    "unique": 2956,
+    "checked": 2774,
+    "in_binary": 2714
+   },
+   "types": {
+    "unique": 703,
+    "checked": 680,
+    "in_binary": 622
+   }
+  },
+  "control_local_names": {
+   "unique": 2595,
+   "checked": 2390,
+   "in_binary": 492
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 1.364457552,
+  "baseline_build_seconds": 13.838018998999999,
+  "total_seconds": 22.357845558
+ },
+ {
+  "repo": "junegunn/fzf",
+  "package": ".",
+  "commit": "c7bf2b8eea25952dd257a466c0afa72faae206fb",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 47,
+  "src_bytes": 694862,
+  "comment_bytes": 111465,
+  "binary_bytes": 4952190,
+  "gz_src": 184734,
+  "gz_no_comment": 141675,
+  "gz_normalized": 138940,
+  "local_decls": 3831,
+  "local_unique": 1297,
+  "names": {
+   "functions and methods": {
+    "unique": 643,
+    "checked": 588,
+    "in_binary": 567
+   },
+   "package-level variables and constants": {
+    "unique": 695,
+    "checked": 663,
+    "in_binary": 326
+   },
+   "struct fields and interface methods": {
+    "unique": 661,
+    "checked": 549,
+    "in_binary": 539
+   },
+   "types": {
+    "unique": 112,
+    "checked": 105,
+    "in_binary": 98
+   }
+  },
+  "control_local_names": {
+   "unique": 1052,
+   "checked": 807,
+   "in_binary": 180
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.262249766,
+  "baseline_build_seconds": 3.954571899,
+  "total_seconds": 5.631286635
+ },
+ {
+  "repo": "kubernetes-sigs/kind",
+  "package": ".",
+  "commit": "407a9675e6d9af1200b5f57f9ca52ec6cdacce74",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 172,
+  "src_bytes": 580987,
+  "comment_bytes": 244630,
+  "binary_bytes": 10530942,
+  "gz_src": 125220,
+  "gz_no_comment": 64988,
+  "gz_normalized": 64846,
+  "local_decls": 2557,
+  "local_unique": 577,
+  "names": {
+   "functions and methods": {
+    "unique": 393,
+    "checked": 361,
+    "in_binary": 351
+   },
+   "package-level variables and constants": {
+    "unique": 79,
+    "checked": 79,
+    "in_binary": 9
+   },
+   "struct fields and interface methods": {
+    "unique": 225,
+    "checked": 195,
+    "in_binary": 195
+   },
+   "types": {
+    "unique": 89,
+    "checked": 84,
+    "in_binary": 82
+   }
+  },
+  "control_local_names": {
+   "unique": 537,
+   "checked": 405,
+   "in_binary": 130
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.254350885,
+  "baseline_build_seconds": 12.046451593,
+  "total_seconds": 15.122913456
+ },
+ {
+  "repo": "mikefarah/yq",
+  "package": ".",
+  "commit": "f2944b823f84906a127dbd29e4c2a3e60c4e550e",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 145,
+  "src_bytes": 534681,
+  "comment_bytes": 48695,
+  "binary_bytes": 15118462,
+  "gz_src": 114865,
+  "gz_no_comment": 94389,
+  "gz_normalized": 93582,
+  "local_decls": 3874,
+  "local_unique": 894,
+  "names": {
+   "functions and methods": {
+    "unique": 654,
+    "checked": 640,
+    "in_binary": 618
+   },
+   "package-level variables and constants": {
+    "unique": 227,
+    "checked": 225,
+    "in_binary": 31
+   },
+   "struct fields and interface methods": {
+    "unique": 212,
+    "checked": 194,
+    "in_binary": 185
+   },
+   "types": {
+    "unique": 112,
+    "checked": 111,
+    "in_binary": 103
+   }
+  },
+  "control_local_names": {
+   "unique": 837,
+   "checked": 707,
+   "in_binary": 208
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.26532033,
+  "baseline_build_seconds": 5.609707209,
+  "total_seconds": 7.344365763
+ },
+ {
+  "repo": "muesli/duf",
+  "package": ".",
+  "commit": "b2f01a1ecbfd1af63015b83296c50a95260f97b1",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 9,
+  "src_bytes": 52927,
+  "comment_bytes": 9432,
+  "binary_bytes": 3391614,
+  "gz_src": 14503,
+  "gz_no_comment": 11241,
+  "gz_normalized": 10557,
+  "local_decls": 245,
+  "local_unique": 153,
+  "names": {
+   "functions and methods": {
+    "unique": 41,
+    "checked": 39,
+    "in_binary": 37
+   },
+   "package-level variables and constants": {
+    "unique": 143,
+    "checked": 141,
+    "in_binary": 9
+   },
+   "struct fields and interface methods": {
+    "unique": 39,
+    "checked": 33,
+    "in_binary": 27
+   },
+   "types": {
+    "unique": 5,
+    "checked": 5,
+    "in_binary": 4
+   }
+  },
+  "control_local_names": {
+   "unique": 147,
+   "checked": 95,
+   "in_binary": 28
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.034320932,
+  "baseline_build_seconds": 5.764661882,
+  "total_seconds": 7.429062118
+ },
+ {
+  "repo": "mvdan/gofumpt",
+  "package": ".",
+  "commit": "3e07e7e70ac93761d8e79ca0083a19e3d59f753d",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 22,
+  "src_bytes": 269287,
+  "comment_bytes": 119732,
+  "binary_bytes": 3260542,
+  "gz_src": 81830,
+  "gz_no_comment": 38852,
+  "gz_normalized": 38414,
+  "local_decls": 1346,
+  "local_unique": 392,
+  "names": {
+   "functions and methods": {
+    "unique": 224,
+    "checked": 201,
+    "in_binary": 193
+   },
+   "package-level variables and constants": {
+    "unique": 67,
+    "checked": 65,
+    "in_binary": 11
+   },
+   "struct fields and interface methods": {
+    "unique": 95,
+    "checked": 68,
+    "in_binary": 56
+   },
+   "types": {
+    "unique": 43,
+    "checked": 35,
+    "in_binary": 30
+   }
+  },
+  "control_local_names": {
+   "unique": 348,
+   "checked": 195,
+   "in_binary": 44
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.079290421,
+  "baseline_build_seconds": 1.618402125,
+  "total_seconds": 2.5262566829999997
+ },
+ {
+  "repo": "mvdan/sh",
+  "package": "./cmd/shfmt",
+  "commit": "a3f0c75d21d918756fa38de8b5d3429efde7948b",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 16,
+  "src_bytes": 268722,
+  "comment_bytes": 65473,
+  "binary_bytes": 3166334,
+  "gz_src": 75210,
+  "gz_no_comment": 49685,
+  "gz_normalized": 50268,
+  "local_decls": 1242,
+  "local_unique": 271,
+  "names": {
+   "functions and methods": {
+    "unique": 287,
+    "checked": 265,
+    "in_binary": 258
+   },
+   "package-level variables and constants": {
+    "unique": 398,
+    "checked": 360,
+    "in_binary": 36
+   },
+   "struct fields and interface methods": {
+    "unique": 213,
+    "checked": 153,
+    "in_binary": 150
+   },
+   "types": {
+    "unique": 92,
+    "checked": 85,
+    "in_binary": 77
+   }
+  },
+  "control_local_names": {
+   "unique": 232,
+   "checked": 112,
+   "in_binary": 37
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.339397478,
+  "baseline_build_seconds": 4.560308585,
+  "total_seconds": 6.316941725
+ },
+ {
+  "repo": "nats-io/nats-server",
+  "package": ".",
+  "commit": "2a9066eb57ff4aa50d8e6a979bdfbd6a8b9db251",
+  "go_version": "go1.26.11",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 92,
+  "src_bytes": 4573373,
+  "comment_bytes": 1381961,
+  "binary_bytes": 17289342,
+  "gz_src": 1158720,
+  "gz_no_comment": 694255,
+  "gz_normalized": 711261,
+  "local_decls": 24921,
+  "local_unique": 4005,
+  "names": {
+   "functions and methods": {
+    "unique": 3636,
+    "checked": 3564,
+    "in_binary": 3522
+   },
+   "package-level variables and constants": {
+    "unique": 2137,
+    "checked": 2093,
+    "in_binary": 291
+   },
+   "struct fields and interface methods": {
+    "unique": 2199,
+    "checked": 1707,
+    "in_binary": 1695
+   },
+   "types": {
+    "unique": 738,
+    "checked": 716,
+    "in_binary": 686
+   }
+  },
+  "control_local_names": {
+   "unique": 3266,
+   "checked": 2395,
+   "in_binary": 490
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 3.420781049,
+  "baseline_build_seconds": 9.334713186,
+  "total_seconds": 24.137139119
+ },
+ {
+  "repo": "nektos/act",
+  "package": ".",
+  "commit": "2540ba6c49dfbafe167d655e4044921cd2ed19e7",
+  "go_version": "go1.26.10",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 83,
+  "src_bytes": 567713,
+  "comment_bytes": 59340,
+  "binary_bytes": 21880958,
+  "gz_src": 136061,
+  "gz_no_comment": 113647,
+  "gz_normalized": 112325,
+  "local_decls": 3916,
+  "local_unique": 999,
+  "names": {
+   "functions and methods": {
+    "unique": 635,
+    "checked": 605,
+    "in_binary": 603
+   },
+   "package-level variables and constants": {
+    "unique": 117,
+    "checked": 112,
+    "in_binary": 12
+   },
+   "struct fields and interface methods": {
+    "unique": 541,
+    "checked": 465,
+    "in_binary": 460
+   },
+   "types": {
+    "unique": 154,
+    "checked": 144,
+    "in_binary": 142
+   }
+  },
+  "control_local_names": {
+   "unique": 903,
+   "checked": 668,
+   "in_binary": 225
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.242953562,
+  "baseline_build_seconds": 10.42381534,
+  "total_seconds": 18.617372881
+ },
+ {
+  "repo": "OJ/gobuster",
+  "package": ".",
+  "commit": "e8410cad6cacf08b82e2f610055f636f0be61c40",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 45,
+  "src_bytes": 575597,
+  "comment_bytes": 14579,
+  "binary_bytes": 9826430,
+  "gz_src": 59080,
+  "gz_no_comment": 55340,
+  "gz_normalized": 55858,
+  "local_decls": 671,
+  "local_unique": 197,
+  "names": {
+   "functions and methods": {
+    "unique": 82,
+    "checked": 73,
+    "in_binary": 72
+   },
+   "package-level variables and constants": {
+    "unique": 22,
+    "checked": 19,
+    "in_binary": 3
+   },
+   "struct fields and interface methods": {
+    "unique": 155,
+    "checked": 137,
+    "in_binary": 137
+   },
+   "types": {
+    "unique": 38,
+    "checked": 37,
+    "in_binary": 34
+   }
+  },
+  "control_local_names": {
+   "unique": 183,
+   "checked": 108,
+   "in_binary": 45
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.065119378,
+  "baseline_build_seconds": 5.475128149,
+  "total_seconds": 6.495607639
+ },
+ {
+  "repo": "open-policy-agent/opa",
+  "package": ".",
+  "commit": "ba39415db4b3c90cd68942a74b3cc2223ec2b23c",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 415,
+  "src_bytes": 4348954,
+  "comment_bytes": 1025385,
+  "binary_bytes": 43118718,
+  "gz_src": 1052118,
+  "gz_no_comment": 703958,
+  "gz_normalized": 701663,
+  "local_decls": 28617,
+  "local_unique": 3696,
+  "names": {
+   "functions and methods": {
+    "unique": 4764,
+    "checked": 4581,
+    "in_binary": 4401
+   },
+   "package-level variables and constants": {
+    "unique": 1650,
+    "checked": 1553,
+    "in_binary": 312
+   },
+   "struct fields and interface methods": {
+    "unique": 2184,
+    "checked": 1857,
+    "in_binary": 1808
+   },
+   "types": {
+    "unique": 1255,
+    "checked": 1188,
+    "in_binary": 1103
+   }
+  },
+  "control_local_names": {
+   "unique": 2963,
+   "checked": 2269,
+   "in_binary": 609
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 2.6391139089999998,
+  "baseline_build_seconds": 11.630682932,
+  "total_seconds": 23.703400196
+ },
+ {
+  "repo": "peco/peco",
+  "package": "./cmd/peco",
+  "commit": "6ab3ff6d5d3e8b50e7b7439142ae7b90a9d0786e",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 49,
+  "src_bytes": 266204,
+  "comment_bytes": 76640,
+  "binary_bytes": 4698238,
+  "gz_src": 74241,
+  "gz_no_comment": 45809,
+  "gz_normalized": 45705,
+  "local_decls": 1815,
+  "local_unique": 426,
+  "names": {
+   "functions and methods": {
+    "unique": 411,
+    "checked": 368,
+    "in_binary": 360
+   },
+   "package-level variables and constants": {
+    "unique": 158,
+    "checked": 158,
+    "in_binary": 15
+   },
+   "struct fields and interface methods": {
+    "unique": 318,
+    "checked": 260,
+    "in_binary": 256
+   },
+   "types": {
+    "unique": 126,
+    "checked": 115,
+    "in_binary": 113
+   }
+  },
+  "control_local_names": {
+   "unique": 354,
+   "checked": 194,
+   "in_binary": 53
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.208922426,
+  "baseline_build_seconds": 7.787118189,
+  "total_seconds": 9.951297174
+ },
+ {
+  "repo": "pressly/goose",
+  "package": "./cmd/goose",
+  "commit": "ded3331f49ba36e8986082b8b74918571d420d0e",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 74,
+  "src_bytes": 244109,
+  "comment_bytes": 67729,
+  "binary_bytes": 43892862,
+  "gz_src": 56861,
+  "gz_no_comment": 35136,
+  "gz_normalized": 35593,
+  "local_decls": 1582,
+  "local_unique": 272,
+  "names": {
+   "functions and methods": {
+    "unique": 259,
+    "checked": 230,
+    "in_binary": 148
+   },
+   "package-level variables and constants": {
+    "unique": 100,
+    "checked": 96,
+    "in_binary": 19
+   },
+   "struct fields and interface methods": {
+    "unique": 145,
+    "checked": 125,
+    "in_binary": 83
+   },
+   "types": {
+    "unique": 85,
+    "checked": 81,
+    "in_binary": 52
+   }
+  },
+  "control_local_names": {
+   "unique": 227,
+   "checked": 150,
+   "in_binary": 80
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.169704862,
+  "baseline_build_seconds": 25.53146225,
+  "total_seconds": 27.753007383
+ },
+ {
+  "repo": "projectdiscovery/httpx",
+  "package": "./cmd/httpx",
+  "commit": "4b6a9a9d476f94a4f3a630f37051f5671ecfb1f8",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 72,
+  "src_bytes": 333961,
+  "comment_bytes": 36472,
+  "binary_bytes": 54415486,
+  "gz_src": 84454,
+  "gz_no_comment": 70012,
+  "gz_normalized": 68614,
+  "local_decls": 1741,
+  "local_unique": 673,
+  "names": {
+   "functions and methods": {
+    "unique": 280,
+    "checked": 262,
+    "in_binary": 255
+   },
+   "package-level variables and constants": {
+    "unique": 89,
+    "checked": 87,
+    "in_binary": 24
+   },
+   "struct fields and interface methods": {
+    "unique": 425,
+    "checked": 390,
+    "in_binary": 387
+   },
+   "types": {
+    "unique": 71,
+    "checked": 70,
+    "in_binary": 64
+   }
+  },
+  "control_local_names": {
+   "unique": 632,
+   "checked": 493,
+   "in_binary": 173
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.120050531,
+  "baseline_build_seconds": 13.204492498,
+  "total_seconds": 16.22730429
+ },
+ {
+  "repo": "prometheus/node_exporter",
+  "package": ".",
+  "commit": "6044da783597cc3b57aef7580ddcdcff58a4ee99",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 99,
+  "src_bytes": 632094,
+  "comment_bytes": 100477,
+  "binary_bytes": 16642174,
+  "gz_src": 112631,
+  "gz_no_comment": 95770,
+  "gz_normalized": 94288,
+  "local_decls": 2120,
+  "local_unique": 688,
+  "names": {
+   "functions and methods": {
+    "unique": 314,
+    "checked": 308,
+    "in_binary": 307
+   },
+   "package-level variables and constants": {
+    "unique": 419,
+    "checked": 418,
+    "in_binary": 13
+   },
+   "struct fields and interface methods": {
+    "unique": 409,
+    "checked": 365,
+    "in_binary": 356
+   },
+   "types": {
+    "unique": 124,
+    "checked": 122,
+    "in_binary": 122
+   }
+  },
+  "control_local_names": {
+   "unique": 612,
+   "checked": 494,
+   "in_binary": 167
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.180467853,
+  "baseline_build_seconds": 4.8400480550000005,
+  "total_seconds": 6.446680124
+ },
+ {
+  "repo": "rakyll/hey",
+  "package": ".",
+  "commit": "e64ec7a3ad1ef8bc828fe61e1fb324cc2e74c604",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 5,
+  "src_bytes": 27584,
+  "comment_bytes": 6099,
+  "binary_bytes": 8282238,
+  "gz_src": 8451,
+  "gz_no_comment": 6892,
+  "gz_normalized": 6809,
+  "local_decls": 117,
+  "local_unique": 76,
+  "names": {
+   "functions and methods": {
+    "unique": 28,
+    "checked": 22,
+    "in_binary": 22
+   },
+   "package-level variables and constants": {
+    "unique": 33,
+    "checked": 24,
+    "in_binary": 7
+   },
+   "struct fields and interface methods": {
+    "unique": 95,
+    "checked": 83,
+    "in_binary": 83
+   },
+   "types": {
+    "unique": 7,
+    "checked": 6,
+    "in_binary": 6
+   }
+  },
+  "control_local_names": {
+   "unique": 64,
+   "checked": 30,
+   "in_binary": 16
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.013343724,
+  "baseline_build_seconds": 9.10552907,
+  "total_seconds": 10.203759275
+ },
+ {
+  "repo": "restic/restic",
+  "package": "./cmd/restic",
+  "commit": "6aa3a516ce654808a1f28f9fa21e9b7c8e6e90bf",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 275,
+  "src_bytes": 1156287,
+  "comment_bytes": 230665,
+  "binary_bytes": 42999934,
+  "gz_src": 294488,
+  "gz_no_comment": 212166,
+  "gz_normalized": 213530,
+  "local_decls": 8169,
+  "local_unique": 1408,
+  "names": {
+   "functions and methods": {
+    "unique": 1115,
+    "checked": 1021,
+    "in_binary": 953
+   },
+   "package-level variables and constants": {
+    "unique": 258,
+    "checked": 251,
+    "in_binary": 28
+   },
+   "struct fields and interface methods": {
+    "unique": 922,
+    "checked": 755,
+    "in_binary": 743
+   },
+   "types": {
+    "unique": 384,
+    "checked": 366,
+    "in_binary": 337
+   }
+  },
+  "control_local_names": {
+   "unique": 1183,
+   "checked": 912,
+   "in_binary": 283
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.959644707,
+  "baseline_build_seconds": 27.363585568,
+  "total_seconds": 33.971370244
+ },
+ {
+  "repo": "schollz/croc",
+  "package": ".",
+  "commit": "b97d50e03ed0afd54226052365fe9f5d4f96f5ad",
+  "go_version": "go1.27.3",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 107,
+  "src_bytes": 873892,
+  "comment_bytes": 115204,
+  "binary_bytes": 23990396,
+  "gz_src": 216248,
+  "gz_no_comment": 173138,
+  "gz_normalized": 171368,
+  "local_decls": 6060,
+  "local_unique": 1354,
+  "names": {
+   "functions and methods": {
+    "unique": 1101,
+    "checked": 1041,
+    "in_binary": 958
+   },
+   "package-level variables and constants": {
+    "unique": 342,
+    "checked": 334,
+    "in_binary": 27
+   },
+   "struct fields and interface methods": {
+    "unique": 790,
+    "checked": 687,
+    "in_binary": 639
+   },
+   "types": {
+    "unique": 231,
+    "checked": 218,
+    "in_binary": 192
+   }
+  },
+  "control_local_names": {
+   "unique": 1130,
+   "checked": 955,
+   "in_binary": 371
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.497934226,
+  "baseline_build_seconds": 29.161694896,
+  "total_seconds": 37.446720403
+ },
+ {
+  "repo": "spf13/cobra-cli",
+  "package": ".",
+  "commit": "74762ac083f2c4deffef229c887ffc15beb6ce0d",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 16,
+  "src_bytes": 144725,
+  "comment_bytes": 10795,
+  "binary_bytes": 7483518,
+  "gz_src": 41145,
+  "gz_no_comment": 39492,
+  "gz_normalized": 39462,
+  "local_decls": 55,
+  "local_unique": 41,
+  "names": {
+   "functions and methods": {
+    "unique": 28,
+    "checked": 26,
+    "in_binary": 23
+   },
+   "package-level variables and constants": {
+    "unique": 9,
+    "checked": 9,
+    "in_binary": 3
+   },
+   "struct fields and interface methods": {
+    "unique": 15,
+    "checked": 11,
+    "in_binary": 11
+   },
+   "types": {
+    "unique": 5,
+    "checked": 4,
+    "in_binary": 4
+   }
+  },
+  "control_local_names": {
+   "unique": 41,
+   "checked": 21,
+   "in_binary": 6
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.009583615,
+  "baseline_build_seconds": 6.119981711,
+  "total_seconds": 6.804571062
+ },
+ {
+  "repo": "tomnomnom/gron",
+  "package": ".",
+  "commit": "badf401da553eb41b7ffde4be6a64809ed0ed846",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 6,
+  "src_bytes": 39910,
+  "comment_bytes": 11987,
+  "binary_bytes": 6541438,
+  "gz_src": 11873,
+  "gz_no_comment": 7436,
+  "gz_normalized": 7463,
+  "local_decls": 235,
+  "local_unique": 88,
+  "names": {
+   "functions and methods": {
+    "unique": 64,
+    "checked": 52,
+    "in_binary": 52
+   },
+   "package-level variables and constants": {
+    "unique": 36,
+    "checked": 36,
+    "in_binary": 0
+   },
+   "struct fields and interface methods": {
+    "unique": 9,
+    "checked": 3,
+    "in_binary": 3
+   },
+   "types": {
+    "unique": 12,
+    "checked": 12,
+    "in_binary": 7
+   }
+  },
+  "control_local_names": {
+   "unique": 87,
+   "checked": 33,
+   "in_binary": 12
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.017910744,
+  "baseline_build_seconds": 5.780682774,
+  "total_seconds": 7.329405225
+ },
+ {
+  "repo": "traefik/yaegi",
+  "package": "./cmd/yaegi",
+  "commit": "e622b4e3a12c394e0e784e0447a8bbfefb56b782",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 195,
+  "src_bytes": 1356160,
+  "comment_bytes": 129853,
+  "binary_bytes": 20242558,
+  "gz_src": 218833,
+  "gz_no_comment": 181121,
+  "gz_normalized": 179294,
+  "local_decls": 4322,
+  "local_unique": 616,
+  "names": {
+   "functions and methods": {
+    "unique": 783,
+    "checked": 674,
+    "in_binary": 668
+   },
+   "package-level variables and constants": {
+    "unique": 280,
+    "checked": 251,
+    "in_binary": 134
+   },
+   "struct fields and interface methods": {
+    "unique": 401,
+    "checked": 328,
+    "in_binary": 328
+   },
+   "types": {
+    "unique": 247,
+    "checked": 241,
+    "in_binary": 235
+   }
+  },
+  "control_local_names": {
+   "unique": 524,
+   "checked": 253,
+   "in_binary": 118
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 3.718781242,
+  "baseline_build_seconds": 9.250717493,
+  "total_seconds": 19.511777937
+ },
+ {
+  "repo": "tsenart/vegeta",
+  "package": ".",
+  "commit": "507c4f028fbad80168f3b734dab9530d3aabfefa",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 25,
+  "src_bytes": 109555,
+  "comment_bytes": 25205,
+  "binary_bytes": 12542078,
+  "gz_src": 32220,
+  "gz_no_comment": 23665,
+  "gz_normalized": 23731,
+  "local_decls": 736,
+  "local_unique": 235,
+  "names": {
+   "functions and methods": {
+    "unique": 131,
+    "checked": 102,
+    "in_binary": 99
+   },
+   "package-level variables and constants": {
+    "unique": 44,
+    "checked": 42,
+    "in_binary": 3
+   },
+   "struct fields and interface methods": {
+    "unique": 127,
+    "checked": 81,
+    "in_binary": 79
+   },
+   "types": {
+    "unique": 54,
+    "checked": 49,
+    "in_binary": 43
+   }
+  },
+  "control_local_names": {
+   "unique": 200,
+   "checked": 82,
+   "in_binary": 53
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.131664303,
+  "baseline_build_seconds": 6.94008045,
+  "total_seconds": 8.080495792
+ },
+ {
+  "repo": "wagoodman/dive",
+  "package": ".",
+  "commit": "fe98c8a2eb08c443a36e3cc7568078909e298433",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 71,
+  "src_bytes": 183183,
+  "comment_bytes": 32204,
+  "binary_bytes": 10240126,
+  "gz_src": 42605,
+  "gz_no_comment": 32005,
+  "gz_normalized": 31676,
+  "local_decls": 1264,
+  "local_unique": 384,
+  "names": {
+   "functions and methods": {
+    "unique": 216,
+    "checked": 200,
+    "in_binary": 195
+   },
+   "package-level variables and constants": {
+    "unique": 70,
+    "checked": 68,
+    "in_binary": 13
+   },
+   "struct fields and interface methods": {
+    "unique": 204,
+    "checked": 170,
+    "in_binary": 166
+   },
+   "types": {
+    "unique": 76,
+    "checked": 74,
+    "in_binary": 69
+   }
+  },
+  "control_local_names": {
+   "unique": 332,
+   "checked": 250,
+   "in_binary": 82
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.067248048,
+  "baseline_build_seconds": 5.302464051,
+  "total_seconds": 6.327267193
+ },
+ {
+  "repo": "yuin/gopher-lua",
+  "package": "./cmd/glua",
+  "commit": "b87eac29661715e48e1a2868d76b853e0e757c4c",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 32,
+  "src_bytes": 349285,
+  "comment_bytes": 44242,
+  "binary_bytes": 3317886,
+  "gz_src": 74988,
+  "gz_no_comment": 65697,
+  "gz_normalized": 66175,
+  "local_decls": 2783,
+  "local_unique": 539,
+  "names": {
+   "functions and methods": {
+    "unique": 593,
+    "checked": 559,
+    "in_binary": 555
+   },
+   "package-level variables and constants": {
+    "unique": 250,
+    "checked": 231,
+    "in_binary": 24
+   },
+   "struct fields and interface methods": {
+    "unique": 254,
+    "checked": 182,
+    "in_binary": 171
+   },
+   "types": {
+    "unique": 128,
+    "checked": 122,
+    "in_binary": 114
+   }
+  },
+  "control_local_names": {
+   "unique": 474,
+   "checked": 243,
+   "in_binary": 69
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.222077047,
+  "baseline_build_seconds": 4.6642501979999995,
+  "total_seconds": 6.5059045730000005
+ },
+ {
+  "repo": "zyedidia/micro",
+  "package": "./cmd/micro",
+  "commit": "6a62575bcfdf4965f187eedafceb3400316e612b",
+  "go_version": "go1.26.5",
+  "target": "linux/amd64",
+  "status": "ok",
+  "files": 73,
+  "src_bytes": 544027,
+  "comment_bytes": 109260,
+  "binary_bytes": 13488254,
+  "gz_src": 133418,
+  "gz_no_comment": 95945,
+  "gz_normalized": 97248,
+  "local_decls": 3967,
+  "local_unique": 804,
+  "names": {
+   "functions and methods": {
+    "unique": 838,
+    "checked": 785,
+    "in_binary": 779
+   },
+   "package-level variables and constants": {
+    "unique": 157,
+    "checked": 152,
+    "in_binary": 47
+   },
+   "struct fields and interface methods": {
+    "unique": 265,
+    "checked": 197,
+    "in_binary": 193
+   },
+   "types": {
+    "unique": 112,
+    "checked": 101,
+    "in_binary": 99
+   }
+  },
+  "control_local_names": {
+   "unique": 732,
+   "checked": 506,
+   "in_binary": 170
+  },
+  "normalize_failed_files": 0,
+  "x4_unstable_files": 0,
+  "variant_generation_seconds": 0.172143914,
+  "baseline_build_seconds": 7.216671613,
+  "total_seconds": 9.098237532
+ }
+]
