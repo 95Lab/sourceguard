@@ -28,3 +28,6 @@ eval/**/corpus/
 
 # Local test bed state (keys, ciphertext, artifacts)
 /run/
+
+__pycache__/
+*.pyc

@@ -80,7 +80,8 @@ A working **prototype for Go** implements the full pipeline and runs locally in 
 | 1 | Invariance validation of the transformations | **Done for Go:** T1–T3 bit-identical on 54 / 54 real projects, linux/arm64 and linux/amd64 ([results](docs/results/phase1-invariance.md)) |
 | 2 | Full pipeline: Variant Generator, build cells, gateway, release signer | Prototype (containers, not microVMs) |
 | 3 | Adversarial evaluation | Suite of 7 attacks; invariant information measured on the corpus ([results](docs/results/evaluation.md)); structural comparison with decompiled code outstanding |
-| 4 | C/C++/Rust, SEV-SNP/TDX attestation, diverse toolchains | Not started |
+| 4 | C/C++/Rust | Lexical variants (T1, T2) and generic build cells; bit-identical on 24–26 of 26 C/C++ projects (GCC, Clang) and 29 of 29 Rust projects ([results](docs/results/c-rust-invariance.md)); no renaming yet |
+| 4 | SEV-SNP/TDX attestation, microVM cells, diverse toolchains | Not started |
 
 ## Quick Start
 
@@ -92,6 +93,8 @@ make test         # unit tests
 make invariance   # are variants bit-identical after compilation?
 make demo         # honest build: ACCEPT + verified provenance
 make attacks      # malicious compiler in the build cells
+make demo-c       # the same pipeline for a C project
+make demo-rust    # and for a Rust project
 ```
 
 `make attacks` shows the mechanism at work: a compiler that embeds source in the artifact is rejected, while the documented limit (embedding fully normalized source, attack X4) passes. Details: [Local Testing with Docker](docs/local-testing.md).
@@ -123,6 +126,7 @@ make attacks      # malicious compiler in the build cells
 | [Local Testing with Docker](docs/local-testing.md) | Running the prototype, the attack suite, results and limitations |
 | [Phase 1 Results](docs/results/phase1-invariance.md) | Invariance study on 54 open-source Go projects: method, findings, limitations |
 | [Evaluation Results](docs/results/evaluation.md) | Dead code (T4), package-level renaming (T7), cgo, invariant information and structure (RQ2), cost |
+| [C, C++ and Rust Results](docs/results/c-rust-invariance.md) | Invariance with GCC, Clang and rustc; language rules; findings |
 | [Security Argument](docs/security-argument.md) | Model, assumptions, two theorems, and what is not protected |
 | [Related Work and Positioning](docs/related-work.md) | TightLip, Secure Multi-Execution, N-variant systems, reproducible and attested builds |
 | [Kiến trúc (Tiếng Việt)](docs/architecture.vi.md) | Original Vietnamese version |
