@@ -9,7 +9,9 @@ Date: 2026-11-15. This report extends the [Phase 1 invariance study](phase1-inva
 | T4, dead code (new) | Bit-identical on **54 / 54** projects, alone (270 variants) and combined with T1+T2+T3 (540 variants) |
 | T1+T2+T3 with cgo enabled | Bit-identical on **53 / 54**; the exception (`helm/helm`) exposed a new limitation, see [Finding 5](#finding-5-programs-that-link-plugin-embed-hashes-of-export-data) |
 | Invariant information (RQ2) | DSV hides **24.0%** of source bytes (comments) and **259,624** local names; of the names it cannot hide, about 95% of function, type and field names are already in the stripped binary, but package-level variable and constant names are not |
-| T7, package-level renaming (new) | Bit-identical on **54 / 54** projects, alone and with all other transformations; covers 94.5% of unexported package-level variables and constants |
+| T7, package-level renaming (new) | Bit-identical on **54 / 54** projects on two architectures, alone and with all other transformations; covers 90.5% of unexported package-level variables and constants |
+| Agreement with the unmodified build | T1, T2 and T7 variants equal the unmodified build in 54 / 54 projects; T3 variants in none; T4 variants in 26 (amd64) or 27 (arm64) |
+| Behaviour (new) | On 1,508 test packages of 52 projects, fully transformed programs pass exactly the tests the originals pass |
 | Structure in the binary (RQ2) | The honest binary shows 43.5% of the call edges and 46.2% of the integer constants that the attacker's normal form contains (disassembly, 54 projects). Ghidra on stripped binaries confirms it: 41.3% of call edges on 15 projects |
 | Attacker normal form (X4) | Identical across variants for all **6,606** compiled files: the adaptive attack always passes the gateway |
 | Variant generation cost (RQ4) | Median **2.5%** of a cold build |
@@ -27,14 +29,49 @@ The architecture document expected T4 to be the most fragile transformation. For
 
 ## T7: package-level variables and constants
 
-The first leakage measurement (below) showed that the names of package-level variables and constants are invariant across variants but absent from a stripped binary. T7 renames the unexported ones, with one order-preserving mapping per package. A package is skipped if anything outside the compiler could refer to its names: cgo, assembly files, or `go:linkname`. A name is skipped if it also occurs as a composite-literal key in its package, because the parser cannot tell a field from a variable there.
+The first leakage measurement (below) showed that the names of package-level variables and constants are invariant across variants but absent from a stripped binary. T7 renames the unexported ones, with one order-preserving mapping per package. It leaves alone:
 
-| Transformation set | Bit-identical projects | Variants built |
-|---|---|---|
-| T1 + T2 + T3 + T4 + T7 | 54 / 54 (100%) | 540 |
-| T7 | 54 / 54 (100%) | 270 |
+- packages where something outside the compiler could refer to names: cgo, assembly files, `go:linkname`;
+- **string variables**, because the linker flag `-X importpath.name=value` assigns to them by name and silently does nothing if the name does not exist;
+- names that also occur as a composite-literal key in their package, because the parser cannot tell a field from a variable there.
 
-No variant failed to compile. Coverage: of 8,840 distinct unexported package-level variable and constant names in the compiled first-party code, T7 renames 8,357 (94.5%). Exported names of this kind (about 7,100) are not renamed; other packages may refer to them.
+| Transformation set | linux/arm64 | linux/amd64 | Variants per target |
+|---|---|---|---|
+| T1 + T2 + T3 + T4 + T7 | 54 / 54 | 54 / 54 | 540 |
+| T4 | 54 / 54 | 54 / 54 | 270 |
+| T7 | 54 / 54 | 54 / 54 | 270 |
+
+No variant failed to compile. Coverage: of 8,840 distinct unexported package-level variable and constant names in the compiled first-party code, T7 renames 7,996 (90.5%).
+
+## Variants versus the unmodified build
+
+Bit-identity among variants is one property; equality with a conventional build of the unmodified source is another.
+
+| Transformation | Projects whose variants equal the unmodified build |
+|---|---|
+| T1 (comments) | 54 / 54 |
+| T2 (whitespace) | 54 / 54 |
+| T7 (package-level names) | 54 / 54 |
+| T4 (dead code) | 26 / 54 on amd64, 27 / 54 on arm64 |
+| T3 (local names) | 0 / 54 |
+| All five combined | 1 / 54 |
+
+With T3 or T4 the scrubbed build yields a consistent artifact that is a different file from the conventional one. Its correctness therefore rests on the transformations preserving behaviour, which the next section tests. See the [security argument](../security-argument.md) for how the two properties enter the guarantees.
+
+## Behaviour: test suites on original and variant
+
+For each of the 54 Go projects, `go test -short ./...` was run on the unmodified tree and on one variant with all five transformations. In the variant every non-test file is transformed; test files only receive the renamings they need to keep compiling, because the comments and layout of a test are part of the test. A package or test that failed only on the variant was rerun three times on each side and counted as a regression only if it failed every time on the variant and passed every time on the original.
+
+| Outcome per package | Packages |
+|---|---|
+| Pass on original and on variant | 1,508 (in 52 projects) |
+| Fail on both (environment: missing services and the like) | 75 |
+| Pass on original, fail on variant | 0 |
+| Individual tests failing only on the variant | 0 |
+
+This is the result for the final generator. The first run found regressions in two projects with one cause: `yaegi` and `delve` keep Go files in directories named `_test` and `_fixtures` and use them as inputs of their tests. The Go tool ignores directories whose names start with `_` or `.`; such files belong to no package and are data. The generator now leaves them alone, like `testdata`. Both projects were rerun and show no difference; the other 52 were not rerun, since the change only reduces what is transformed.
+
+The check covers what the short test suites exercise, on one variant per project. It is evidence for, not a proof of, behaviour preservation.
 
 T6 (reordering declarations) is not implemented. It moves tokens to other lines, and line numbers reach the binary, so it cannot be invariant under the line-preservation constraint.
 
@@ -92,6 +129,8 @@ Method, per project, over the first-party Go files that are compiled into the bi
 | Quantity | Pooled | Median project | Range |
 |---|---|---|---|
 | Comment bytes / source bytes | 24.0% | 21.9% | 2.5% – 44.5% |
+| Comment bytes that T1 replaces / source bytes | 23.0% | | |
+| Replaced bytes that are licence headers / documentation comments / other comments | 8.8% / 56.1% / 35.1% | | |
 | Compressed size without comments / original | 67.5% | 71.5% | |
 | Compressed size of normal form / original | 67.3% | 70.9% | 46.9% – 95.9% |
 
@@ -146,7 +185,7 @@ Limits of this check: 15 projects, all built with Go 1.26.11; the constant sampl
 
 ## Cost (RQ4)
 
-Generating one variant of a whole tree (all transformations) took a median of 0.22 s per project (maximum 3.7 s), against a median cold build of 8.9 s: a median of 2.5% of the build time. The dominant cost of the scheme is the `k` builds themselves, which run in parallel in separate cells; that cost was not measured end to end on the corpus.
+Generating one variant of a whole tree took a median of 0.17 s per project (maximum 4.4 s), a median of 2.5% of the project's cold build time. The dominant cost of the scheme is the `k` builds themselves, which run in parallel in separate cells; that cost was not measured end to end on the corpus.
 
 ## Limitations
 
@@ -162,63 +201,122 @@ Generating one variant of a whole tree (all transformations) took a median of 0.
 
 > The tools that produced these results are available as prebuilt programs, with instructions, in [`artifact/`](../../artifact/README.md). Their source code is not public.
 
-Raw data: [`eval-t7-linux-amd64.json`](eval-t7-linux-amd64.json), [`eval-t4-linux-amd64.json`](eval-t4-linux-amd64.json), [`eval-cgo-linux-amd64.json`](eval-cgo-linux-amd64.json) (final), [`eval-cgo-first-run-linux-amd64.json`](eval-cgo-first-run-linux-amd64.json), [`eval-leakage-linux-amd64.json`](eval-leakage-linux-amd64.json), [`eval-decompiler-linux-amd64.json`](eval-decompiler-linux-amd64.json).
+Raw data: [`eval-all-linux-amd64.json`](eval-all-linux-amd64.json), [`eval-all-linux-arm64.json`](eval-all-linux-arm64.json), [`eval-tests-linux-amd64.json`](eval-tests-linux-amd64.json), [`eval-t4-linux-amd64.json`](eval-t4-linux-amd64.json), [`eval-cgo-linux-amd64.json`](eval-cgo-linux-amd64.json) (final), [`eval-cgo-first-run-linux-amd64.json`](eval-cgo-first-run-linux-amd64.json), [`eval-leakage-linux-amd64.json`](eval-leakage-linux-amd64.json), [`eval-decompiler-linux-amd64.json`](eval-decompiler-linux-amd64.json).
 
 ## Leakage per project
 
 | Project | Files | Source KB | Comments | Normal form / original (compressed) | Local names | Non-local names in binary | VG s | Build s |
 |---|---|---|---|---|---|---|---|---|
-| antonmedv/fx | 68 | 376 | 20.3% | 73.5% | 2554 | 81.1% | 0.20 | 7 |
-| BurntSushi/toml | 12 | 117 | 29.6% | 61.3% | 688 | 68.9% | 0.07 | 3 |
-| caddyserver/caddy | 203 | 2275 | 38.5% | 51.2% | 9664 | 88.7% | 0.95 | 20 |
-| charmbracelet/glow | 21 | 87 | 16.0% | 76.5% | 488 | 82.5% | 0.04 | 10 |
-| charmbracelet/gum | 58 | 167 | 15.0% | 80.2% | 613 | 90.3% | 0.06 | 8 |
-| cheat/cheat | 52 | 66 | 33.0% | 58.5% | 339 | 93.1% | 0.08 | 9 |
-| cli/cli | 544 | 3597 | 17.0% | 75.9% | 19455 | 80.1% | 3.35 | 26 |
-| cloudflare/cfssl | 94 | 650 | 23.2% | 67.1% | 3258 | 77.5% | 0.71 | 15 |
-| coredns/coredns | 345 | 1185 | 23.6% | 67.1% | 7780 | 87.4% | 1.23 | 45 |
-| direnv/direnv | 55 | 114 | 17.9% | 73.5% | 878 | 74.8% | 0.06 | 12 |
-| dominikh/go-tools | 318 | 1554 | 30.0% | 59.6% | 7751 | 81.8% | 0.75 | 11 |
-| dundee/gdu | 85 | 442 | 21.9% | 68.7% | 2911 | 88.6% | 0.64 | 28 |
-| etcd-io/bbolt | 52 | 281 | 29.6% | 62.5% | 1970 | 85.2% | 0.18 | 4 |
-| ffuf/ffuf | 46 | 230 | 19.9% | 69.1% | 1254 | 94.0% | 0.09 | 6 |
-| FiloSottile/age | 23 | 185 | 22.8% | 74.7% | 1090 | 73.0% | 0.13 | 5 |
-| FiloSottile/mkcert | 5 | 33 | 8.8% | 89.3% | 178 | 55.7% | 0.01 | 7 |
-| gitleaks/gitleaks | 47 | 174 | 21.9% | 68.9% | 883 | 85.3% | 0.15 | 14 |
-| go-delve/delve | 178 | 2149 | 20.7% | 70.2% | 12428 | 76.8% | 0.75 | 13 |
-| go-task/task | 110 | 362 | 20.0% | 71.5% | 2382 | 86.0% | 0.16 | 27 |
-| gohugoio/hugo | 489 | 3350 | 27.6% | 68.6% | 21510 | 85.4% | 2.04 | 32 |
-| gokcehan/lf | 23 | 275 | 8.8% | 85.9% | 1726 | 84.9% | 0.17 | 7 |
-| golang-migrate/migrate | 21 | 67 | 29.2% | 64.6% | 437 | 75.3% | 0.16 | 3 |
-| google/go-containerregistry | 165 | 669 | 36.2% | 63.8% | 3951 | 84.7% | 0.56 | 12 |
-| google/gops | 10 | 22 | 22.0% | 77.1% | 173 | 87.5% | 0.02 | 5 |
-| google/pprof | 49 | 499 | 31.0% | 63.1% | 3413 | 87.5% | 0.22 | 5 |
-| grafana/k6 | 520 | 3249 | 26.4% | 63.2% | 18460 | 83.8% | 2.10 | 19 |
-| hairyhenderson/gomplate | 94 | 306 | 22.1% | 67.8% | 2698 | 91.3% | 0.28 | 51 |
-| helm/helm | 285 | 1469 | 33.2% | 64.8% | 7124 | 82.7% | 0.84 | 31 |
-| jesseduffield/lazydocker | 71 | 334 | 14.0% | 74.4% | 1770 | 96.5% | 0.12 | 12 |
-| jesseduffield/lazygit | 418 | 2926 | 24.5% | 59.8% | 15612 | 88.6% | 1.56 | 17 |
-| junegunn/fzf | 47 | 694 | 16.0% | 75.2% | 3831 | 80.3% | 0.43 | 7 |
-| kubernetes-sigs/kind | 172 | 580 | 42.1% | 51.8% | 2557 | 88.6% | 0.19 | 9 |
-| mikefarah/yq | 145 | 534 | 9.1% | 81.5% | 3874 | 80.1% | 0.46 | 12 |
-| muesli/duf | 9 | 52 | 17.8% | 72.8% | 245 | 35.3% | 0.03 | 6 |
-| mvdan/gofumpt | 22 | 269 | 44.5% | 46.9% | 1346 | 78.6% | 0.10 | 5 |
-| mvdan/sh | 16 | 268 | 24.4% | 66.8% | 1242 | 60.4% | 0.38 | 5 |
-| nats-io/nats-server | 92 | 4573 | 30.2% | 61.4% | 24921 | 76.7% | 5.64 | 19 |
-| nektos/act | 83 | 567 | 10.5% | 82.6% | 3916 | 91.8% | 0.40 | 15 |
-| OJ/gobuster | 45 | 575 | 2.5% | 94.5% | 671 | 92.5% | 0.11 | 9 |
-| open-policy-agent/opa | 415 | 4348 | 23.6% | 66.7% | 28617 | 83.1% | 4.43 | 28 |
-| peco/peco | 49 | 266 | 28.8% | 61.6% | 1815 | 82.6% | 0.19 | 7 |
-| pressly/goose | 74 | 244 | 27.7% | 62.6% | 1582 | 56.8% | 0.11 | 16 |
-| projectdiscovery/httpx | 72 | 333 | 10.9% | 81.2% | 1741 | 90.2% | 0.18 | 26 |
-| prometheus/node_exporter | 99 | 632 | 15.9% | 83.7% | 2120 | 65.8% | 0.31 | 13 |
-| rakyll/hey | 5 | 27 | 22.1% | 80.6% | 117 | 87.4% | 0.01 | 4 |
-| restic/restic | 275 | 1156 | 19.9% | 72.5% | 8169 | 86.1% | 0.98 | 26 |
-| schollz/croc | 107 | 873 | 13.2% | 79.2% | 6060 | 79.6% | 0.64 | 32 |
-| spf13/cobra-cli | 16 | 144 | 7.5% | 95.9% | 55 | 82.0% | 0.01 | 13 |
-| tomnomnom/gron | 6 | 39 | 30.0% | 62.9% | 235 | 60.2% | 0.03 | 9 |
-| traefik/yaegi | 195 | 1356 | 9.6% | 81.9% | 4322 | 91.4% | 3.63 | 8 |
-| tsenart/vegeta | 25 | 109 | 23.0% | 73.7% | 736 | 81.8% | 0.23 | 11 |
-| wagoodman/dive | 71 | 183 | 17.6% | 74.3% | 1264 | 86.5% | 0.07 | 5 |
-| yuin/gopher-lua | 32 | 349 | 12.7% | 88.2% | 2783 | 79.0% | 0.15 | 3 |
-| zyedidia/micro | 73 | 544 | 20.1% | 72.9% | 3967 | 90.5% | 0.16 | 4 |
+| antonmedv/fx | 68 | 376 | 20.3% | 73.5% | 2554 | 81.1% | 0.19 | 22 |
+| BurntSushi/toml | 12 | 117 | 29.6% | 61.3% | 688 | 68.9% | 0.05 | 0 |
+| caddyserver/caddy | 203 | 2275 | 38.5% | 51.2% | 9664 | 88.7% | 1.22 | 52 |
+| charmbracelet/glow | 21 | 87 | 16.0% | 76.5% | 488 | 82.5% | 0.02 | 22 |
+| charmbracelet/gum | 58 | 167 | 15.0% | 80.2% | 613 | 90.3% | 0.03 | 4 |
+| cheat/cheat | 52 | 66 | 33.0% | 58.5% | 339 | 93.1% | 0.10 | 6 |
+| cli/cli | 544 | 3597 | 17.0% | 75.9% | 19455 | 80.1% | 1.48 | 49 |
+| cloudflare/cfssl | 94 | 650 | 23.2% | 67.1% | 3258 | 77.5% | 0.26 | 16 |
+| coredns/coredns | 345 | 1185 | 23.6% | 67.1% | 7780 | 87.4% | 0.58 | 80 |
+| direnv/direnv | 55 | 114 | 17.9% | 73.5% | 878 | 74.8% | 0.03 | 1 |
+| dominikh/go-tools | 318 | 1554 | 30.0% | 59.6% | 7751 | 81.8% | 0.35 | 8 |
+| dundee/gdu | 85 | 442 | 21.9% | 68.7% | 2911 | 88.6% | 0.50 | 41 |
+| etcd-io/bbolt | 52 | 281 | 29.6% | 62.5% | 1970 | 85.2% | 0.31 | 2 |
+| ffuf/ffuf | 46 | 230 | 19.9% | 69.1% | 1254 | 94.0% | 0.20 | 4 |
+| FiloSottile/age | 23 | 185 | 22.8% | 74.7% | 1090 | 73.0% | 0.07 | 2 |
+| FiloSottile/mkcert | 5 | 33 | 8.8% | 89.3% | 178 | 55.7% | 0.01 | 1 |
+| gitleaks/gitleaks | 47 | 174 | 21.9% | 68.9% | 883 | 85.3% | 0.08 | 16 |
+| go-delve/delve | 178 | 2149 | 20.7% | 70.2% | 12428 | 76.8% | 0.40 | 4 |
+| go-task/task | 110 | 362 | 20.0% | 71.5% | 2382 | 86.0% | 0.13 | 68 |
+| gohugoio/hugo | 489 | 3350 | 27.6% | 68.6% | 21510 | 85.4% | 0.98 | 68 |
+| gokcehan/lf | 23 | 275 | 8.8% | 85.9% | 1726 | 84.9% | 0.07 | 2 |
+| golang-migrate/migrate | 21 | 67 | 29.2% | 64.6% | 437 | 75.3% | 0.12 | 0 |
+| google/go-containerregistry | 165 | 669 | 36.2% | 63.8% | 3951 | 84.7% | 0.26 | 2 |
+| google/gops | 10 | 22 | 22.0% | 77.1% | 173 | 87.5% | 0.01 | 1 |
+| google/pprof | 49 | 499 | 31.0% | 63.1% | 3413 | 87.5% | 0.16 | 1 |
+| grafana/k6 | 520 | 3249 | 26.4% | 63.2% | 18460 | 83.8% | 1.12 | 20 |
+| hairyhenderson/gomplate | 94 | 306 | 22.1% | 67.8% | 2698 | 91.3% | 0.17 | 149 |
+| helm/helm | 285 | 1469 | 33.2% | 64.8% | 7124 | 82.7% | 0.93 | 97 |
+| jesseduffield/lazydocker | 71 | 334 | 14.0% | 74.4% | 1770 | 96.5% | 0.07 | 6 |
+| jesseduffield/lazygit | 418 | 2926 | 24.5% | 59.8% | 15612 | 88.6% | 0.77 | 11 |
+| junegunn/fzf | 47 | 694 | 16.0% | 75.2% | 3831 | 80.3% | 0.18 | 2 |
+| kubernetes-sigs/kind | 172 | 580 | 42.1% | 51.8% | 2557 | 88.6% | 0.19 | 3 |
+| mikefarah/yq | 145 | 534 | 9.1% | 81.5% | 3874 | 80.1% | 0.20 | 8 |
+| muesli/duf | 9 | 52 | 17.8% | 72.8% | 245 | 35.3% | 0.02 | 1 |
+| mvdan/gofumpt | 22 | 269 | 44.5% | 46.9% | 1346 | 78.6% | 0.05 | 1 |
+| mvdan/sh | 16 | 268 | 24.4% | 66.8% | 1242 | 60.4% | 0.17 | 1 |
+| nats-io/nats-server | 92 | 4573 | 30.2% | 61.4% | 24921 | 76.7% | 2.73 | 12 |
+| nektos/act | 83 | 567 | 10.5% | 82.6% | 3916 | 91.8% | 0.18 | 12 |
+| OJ/gobuster | 45 | 575 | 2.5% | 94.5% | 671 | 92.5% | 0.05 | 2 |
+| open-policy-agent/opa | 415 | 4348 | 23.6% | 66.7% | 28617 | 83.1% | 4.43 | 37 |
+| peco/peco | 49 | 266 | 28.8% | 61.6% | 1815 | 82.6% | 0.10 | 2 |
+| pressly/goose | 74 | 244 | 27.7% | 62.6% | 1582 | 56.8% | 0.09 | 46 |
+| projectdiscovery/httpx | 72 | 333 | 10.9% | 81.2% | 1741 | 90.2% | 0.19 | 30 |
+| prometheus/node_exporter | 99 | 632 | 15.9% | 83.7% | 2120 | 65.8% | 0.14 | 6 |
+| rakyll/hey | 5 | 27 | 22.1% | 80.6% | 117 | 87.4% | 0.06 | 4 |
+| restic/restic | 275 | 1156 | 19.9% | 72.5% | 8169 | 86.1% | 0.98 | 37 |
+| schollz/croc | 107 | 873 | 13.2% | 79.2% | 6060 | 79.6% | 0.33 | 39 |
+| spf13/cobra-cli | 16 | 144 | 7.5% | 95.9% | 55 | 82.0% | 0.01 | 10 |
+| tomnomnom/gron | 6 | 39 | 30.0% | 62.9% | 235 | 60.2% | 0.01 | 1 |
+| traefik/yaegi | 195 | 1356 | 9.6% | 81.9% | 4322 | 91.4% | 3.33 | 3 |
+| tsenart/vegeta | 25 | 109 | 23.0% | 73.7% | 736 | 81.8% | 0.09 | 4 |
+| wagoodman/dive | 71 | 183 | 17.6% | 74.3% | 1264 | 86.5% | 0.05 | 13 |
+| yuin/gopher-lua | 32 | 349 | 12.7% | 88.2% | 2783 | 79.0% | 0.11 | 1 |
+| zyedidia/micro | 73 | 544 | 20.1% | 72.9% | 3967 | 90.5% | 0.12 | 4 |
+
+## Tests per project
+
+| Project | Packages with tests | Pass both | Fail both | Pass→fail | Tests failing only on the variant |
+|---|---|---|---|---|---|
+| antonmedv/fx | 19 | 19 | 0 | 0 |  |
+| BurntSushi/toml | 1 | 1 | 0 | 0 |  |
+| caddyserver/caddy | 31 | 31 | 0 | 0 |  |
+| charmbracelet/glow | 1 | 1 | 0 | 0 |  |
+| charmbracelet/gum | 1 | 1 | 0 | 0 |  |
+| cheat/cheat | 8 | 5 | 3 | 0 |  |
+| cli/cli | 259 | 258 | 1 | 0 |  |
+| cloudflare/cfssl | 67 | 54 | 13 | 0 |  |
+| coredns/coredns | 96 | 94 | 2 | 0 |  |
+| direnv/direnv | 3 | 3 | 0 | 0 |  |
+| dominikh/go-tools | 191 | 189 | 2 | 0 |  |
+| dundee/gdu | 19 | 13 | 6 | 0 |  |
+| etcd-io/bbolt | 9 | 8 | 1 | 0 |  |
+| ffuf/ffuf | 12 | 11 | 1 | 0 |  |
+| FiloSottile/age | 11 | 11 | 0 | 0 |  |
+| FiloSottile/mkcert | 0 | 0 | 0 | 0 |  |
+| gitleaks/gitleaks | 7 | 6 | 1 | 0 |  |
+| go-delve/delve | 29 | 24 | 5 | 0 |  |
+| go-task/task | 19 | 18 | 1 | 0 |  |
+| gohugoio/hugo | 145 | 145 | 0 | 0 |  |
+| gokcehan/lf | 1 | 1 | 0 | 0 |  |
+| golang-migrate/migrate | 41 | 25 | 16 | 0 |  |
+| google/go-containerregistry | 39 | 38 | 1 | 0 |  |
+| google/gops | 5 | 5 | 0 | 0 |  |
+| google/pprof | 13 | 12 | 1 | 0 |  |
+| grafana/k6 | 79 | 77 | 2 | 0 |  |
+| hairyhenderson/gomplate | 27 | 26 | 1 | 0 |  |
+| helm/helm | 59 | 55 | 4 | 0 |  |
+| jesseduffield/lazydocker | 6 | 6 | 0 | 0 |  |
+| jesseduffield/lazygit | 33 | 33 | 0 | 0 |  |
+| junegunn/fzf | 4 | 4 | 0 | 0 |  |
+| kubernetes-sigs/kind | 20 | 20 | 0 | 0 |  |
+| mikefarah/yq | 4 | 3 | 1 | 0 |  |
+| muesli/duf | 1 | 1 | 0 | 0 |  |
+| mvdan/gofumpt | 2 | 2 | 0 | 0 |  |
+| mvdan/sh | 9 | 8 | 1 | 0 |  |
+| nats-io/nats-server | 13 | 11 | 2 | 0 |  |
+| nektos/act | 14 | 13 | 1 | 0 |  |
+| OJ/gobuster | 5 | 5 | 0 | 0 |  |
+| open-policy-agent/opa | 127 | 126 | 1 | 0 |  |
+| peco/peco | 13 | 13 | 0 | 0 |  |
+| pressly/goose | 12 | 11 | 1 | 0 |  |
+| projectdiscovery/httpx | 7 | 7 | 0 | 0 |  |
+| prometheus/node_exporter | 3 | 2 | 1 | 0 |  |
+| rakyll/hey | 2 | 2 | 0 | 0 |  |
+| restic/restic | 51 | 49 | 2 | 0 |  |
+| schollz/croc | 34 | 33 | 1 | 0 |  |
+| spf13/cobra-cli | 1 | 0 | 1 | 0 |  |
+| tomnomnom/gron | 1 | 1 | 0 | 0 |  |
+| traefik/yaegi | 9 | 7 | 2 | 0 |  |
+| tsenart/vegeta | 6 | 6 | 0 | 0 |  |
+| wagoodman/dive | 7 | 7 | 0 | 0 |  |
+| yuin/gopher-lua | 1 | 1 | 0 | 0 |  |
+| zyedidia/micro | 6 | 6 | 0 | 0 |  |

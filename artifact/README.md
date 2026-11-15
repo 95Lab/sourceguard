@@ -12,13 +12,13 @@ The tools are distributed as binaries. Their source code, which includes the Var
 | `Dockerfile` | Image with the compilers and build tools the corpora need |
 | `SHA256SUMS` | Checksums of the binaries |
 
-Built from revision `917dcec` of the implementation.
+Built from revision `eb76e80` of the implementation.
 
 ## Setup
 
 ```sh
 git clone https://github.com/95Lab/sourceguard && cd sourceguard
-sha256sum -c artifact/SHA256SUMS
+(cd artifact && sha256sum -c SHA256SUMS)
 docker build -t sourceguard-artifact artifact
 run() { docker run --rm -v "$PWD/docs/results:/data:ro" -v "$PWD/out:/out" sourceguard-artifact "$@"; }
 ```
@@ -31,7 +31,7 @@ The experiments download the projects under study from GitHub and, for Go and Ru
 # one project, default sets (T1+T2+T3 with 10 variants; T1, T2, T3 with 5 each)
 run corpusrun -corpus /data/corpus-go.lock -only tomnomnom/gron -work /out/go
 
-# the whole corpus with all five transformations (several hours on 8 cores)
+# the whole corpus with all five transformations (about half an hour on 18 cores)
 run corpusrun -corpus /data/corpus-go.lock -work /out/go -j 3 -sets "T1,T2,T3,T4,T7=10;T4=5;T7=5"
 
 # with cgo enabled
@@ -49,6 +49,15 @@ To find the cause of a non-identical result:
 ```sh
 run corpusrun -corpus /data/corpus-go.lock -work /out/go -diag owner/repo -set T1,T2,T3
 ```
+
+## Go: behaviour
+
+```sh
+run corpusrun -corpus /data/corpus-go.lock -work /out/tests -tests T1,T2,T3,T4,T7 -only junegunn/fzf
+run corpusrun -test-report /out/tests
+```
+
+This runs the project's `go test -short ./...` on the unmodified source and on one variant, and compares the outcome per package and per failing test. Differences are rerun three times on each side before they count as regressions. It must run on the platform the binary was built for (no cross-compilation), since the tests are executed.
 
 ## Go: what remains exposed
 

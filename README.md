@@ -78,6 +78,7 @@ A prototype implements the full pipeline for Go, with lexical variants for C, C+
 | Variant Generator | Go: five transformations. C, C++, Rust: comments and whitespace |
 | Build cells, Artifact Gateway, Release Signer | Prototype; cells run as containers or Firecracker microVMs |
 | Invariance on real projects | Go: bit-identical on 54 / 54 projects, two architectures ([results](docs/results/phase1-invariance.md)). C/C++: 25–26 of 26 with GCC and Clang; Rust: 30 of 30 ([results](docs/results/c-rust-invariance.md)) |
+| Behaviour of transformed programs | Same test results as the originals on 1,508 test packages of 52 Go projects ([results](docs/results/evaluation.md#behaviour-test-suites-on-original-and-variant)) |
 | What remains exposed | Measured, including against a decompiler ([results](docs/results/evaluation.md)), and stated formally ([security argument](docs/security-argument.md)) |
 | Self-hosting with Forgejo, multi-module builds, microVM cells | Working end to end on one host ([overview](docs/self-hosting.md)) |
 | Dependencies between modules (interface-only, or scrubbed source for Go) | Working |
