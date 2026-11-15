@@ -40,7 +40,7 @@ For each project and compiler: build the unmodified source twice and require ide
 
 Variants per set: 4 for T1 + T2, 2 for T1 and for T2 (4 for T1 in the final rerun), 2 for T2X.
 
-Each project is built with the command in [`eval/polyrun/corpus.txt`](../../eval/polyrun/corpus.txt), at the tip of its default branch on the day of the run.
+Each project is built with the command in [`corpus-c-rust.txt`](corpus-c-rust.txt), at the tip of its default branch on the day of the run.
 
 ## Findings
 
@@ -79,13 +79,9 @@ GCC and Clang treat a backslash followed by blanks and a line break as a line co
 - **No renaming.** Only comment text is hidden for these languages. A compiler that strips comments and embeds the rest (attack X3) is not detected.
 - One optimization level and one platform per run; no LTO-specific or debug-info builds.
 
-## Reproducing
+## Data
 
-```sh
-go run ./eval/polyrun -only facebook/zstd -cc gcc -work run/poly     # needs the project's build tools
-modal run eval/modal/poly_app.py --out run/modal-poly                # whole corpus, GCC + Clang + rustc
-go run ./eval/polyrun -report run/modal-poly
-```
+> The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here; see the [README](../../README.md#availability).
 
 Consolidated data: [`eval-c-rust.json`](eval-c-rust.json).
 

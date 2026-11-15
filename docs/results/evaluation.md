@@ -73,7 +73,7 @@ Export data also contains parameter names and the bodies of inlinable functions,
 
 Consequence: for a program that links `plugin` with cgo enabled, only T1 is safe, because it preserves byte offsets. The Variant Generator now reduces such trees to T1 (it scans the tree including `vendor/`; the corpus runner asks the build graph, because the corpus projects do not vendor). With that reduction `helm` is bit-identical (10 of 10 variants).
 
-This is a real loss of protection for those programs: with T1 alone, a compiler can strip comments and embed the rest without being detected (attack X3 in the [local test suite](../local-testing.md#the-adversarial-suite)).
+This is a real loss of protection for those programs: with T1 alone, a compiler can strip comments and embed the rest without being detected (attack X3 of the adversarial suite).
 
 ## Invariant information (RQ2)
 
@@ -138,18 +138,9 @@ Generating one variant of a whole tree (all transformations) took a median of 0.
 - The structural comparison uses a disassembler and three features; it is not a similarity measure between source and decompiled code.
 - Limitations of [Phase 1](phase1-invariance.md#limitations) apply as well (debug information stripped, Go 1.26.5 to 1.27.4).
 
-## Reproducing
+## Data
 
-```sh
-modal run eval/modal/corpus_app.py --out run/modal-t4   --args "-sets T1,T2,T3,T4=10;T4=5"
-modal run eval/modal/corpus_app.py --out run/modal-cgo  --args "-cgo -sets T1,T2,T3=10"
-modal run eval/modal/corpus_app.py --out run/modal-t7   --args "-sets T7=5;T1,T2,T3,T4,T7=10"
-modal run eval/modal/corpus_app.py --out run/modal-leak --leak
-go run ./eval/corpusrun -report run/modal-t4
-go run ./eval/corpusrun -leak-report run/modal-leak
-```
-
-The same commands without Modal: `go run ./eval/corpusrun -corpus eval/corpusrun/corpus.lock -work run/x` plus the arguments shown.
+> The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here; see the [README](../../README.md#availability).
 
 Raw data: [`eval-t7-linux-amd64.json`](eval-t7-linux-amd64.json), [`eval-t4-linux-amd64.json`](eval-t4-linux-amd64.json), [`eval-cgo-linux-amd64.json`](eval-cgo-linux-amd64.json) (final), [`eval-cgo-first-run-linux-amd64.json`](eval-cgo-first-run-linux-amd64.json), [`eval-leakage-linux-amd64.json`](eval-leakage-linux-amd64.json).
 

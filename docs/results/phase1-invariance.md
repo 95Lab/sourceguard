@@ -22,11 +22,11 @@ No project was excluded: the unmodified source of all 54 built in both environme
 
 ## Method
 
-- **Corpus.** 54 projects with a `main` package, listed in [`eval/corpusrun/corpus.txt`](../../eval/corpusrun/corpus.txt) and pinned to the commit of their latest release in [`corpus.lock`](../../eval/corpusrun/corpus.lock). Of these, 25 use `//go:embed`, 48 import `reflect`, 27 import `unsafe`, 10 vendor their dependencies, 6 contain cgo files and 3 contain assembly.
+- **Corpus.** 54 projects with a `main` package, pinned to the commit of their latest release in [`corpus-go.lock`](corpus-go.lock). Of these, 25 use `//go:embed`, 48 import `reflect`, 27 import `unsafe`, 10 vendor their dependencies, 6 contain cgo files and 3 contain assembly.
 - **Build.** `go build -trimpath -buildvcs=false -ldflags="-s -w -buildid="` with `CGO_ENABLED=0`. Each project is compiled with the Go toolchain its `go.mod` requires: Go 1.26.5 for 44 projects, and 1.26.6 to 1.27.4 for the other 10.
 - **Procedure per project.** Build the unmodified source (the baseline). Then, for each transformation set, generate variants from a fresh random seed, build each one, and count distinct artifact hashes: 10 variants for the combined set, 5 for each single transformation. A set counts as bit-identical only if every variant builds and all hashes are equal.
 - **Environments.** linux/arm64 was cross-compiled on macOS (Apple silicon). linux/amd64 was compiled natively in containers on Modal. Both used the same pinned commits. Each environment performed 1,404 builds.
-- **Tooling.** [`eval/corpusrun`](../../eval/corpusrun): `-corpus` runs the study, `-report` renders tables, `-diag` reproduces a non-identical result from its recorded seed and bisects it to one file and one declaration.
+- **Tooling.** A corpus runner builds the variants and compares hashes; a diagnosis mode reproduces a non-identical result from its recorded seed and bisects it to one file and one declaration.
 
 ## Findings
 
@@ -72,20 +72,9 @@ Verification: replaying the seeds that had diverged, with the fixed generator, g
 - **T4 (dead code) is measured in the [follow-up evaluation](evaluation.md).** T6 (declaration order) is not implemented.
 - **This is invariance, not leakage.** Bit-identity shows that an honest compiler does not cause false alarms. How much invariant information a compromised compiler can still embed is RQ2 and remains open.
 
-## Reproducing
+## Data
 
-```sh
-# local, linux/arm64 or linux/amd64 depending on the host
-go run ./eval/corpusrun -corpus eval/corpusrun/corpus.lock -work run/corpus -j 3
-go run ./eval/corpusrun -report run/corpus
-
-# diagnose a non-identical result
-go run ./eval/corpusrun -work run/corpus -diag owner/repo -set T1,T2,T3
-
-# on Modal, linux/amd64 (requires a Modal account)
-modal run eval/modal/corpus_app.py --out run/modal
-go run ./eval/corpusrun -report run/modal
-```
+> The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here; see the [README](../../README.md#availability).
 
 Raw results, including the seed of every variant set: [`phase1-linux-arm64.json`](phase1-linux-arm64.json), [`phase1-linux-amd64.json`](phase1-linux-amd64.json).
 

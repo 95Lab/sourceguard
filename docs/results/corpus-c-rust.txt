@@ -1,0 +1,63 @@
+# C, C++ and Rust corpus. Format:  lang | owner/repo | artifact | build command
+# Projects are fetched at the tip of their default branch; the commit is
+# recorded in the results. The command runs with sh in the source directory.
+# Available variables: $CC $CXX (compiler under test), $SGFLAGS (flags required
+# for reproducibility), $N (parallel jobs).
+c   | lua/lua                 | lua              | make -j$N CC="$CC" MYCFLAGS="$SGFLAGS" lua
+c   | facebook/zstd           | programs/zstd    | make -j$N -C programs zstd CC="$CC" MOREFLAGS="$SGFLAGS"
+c   | lz4/lz4                 | programs/lz4     | make -j$N -C programs lz4 CC="$CC" MOREFLAGS="$SGFLAGS"
+c   | madler/zlib             | minigzip         | CC="$CC" CFLAGS="-O2 $SGFLAGS" ./configure --static && make -j$N minigzip
+c   | redis/redis             | src/redis-server | make -j$N CC="$CC" CXX="$CXX" MALLOC=libc DEBUG= CFLAGS="$SGFLAGS" CXXFLAGS="$SGFLAGS" BUILD_TLS=no
+c   | git/git                 | git              | make -j$N CC="$CC" CFLAGS="-O2 $SGFLAGS" NO_GETTEXT=1 NO_TCLTK=1 NO_PERL=1 NO_PYTHON=1 NO_CURL=1 NO_EXPAT=1 NO_OPENSSL=1 NO_RUST=1 git
+c   | curl/curl               | b/src/curl       | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DCURL_ENABLE_SSL=OFF -DBUILD_SHARED_LIBS=OFF -DCURL_USE_LIBPSL=OFF -DUSE_NGHTTP2=OFF -DCURL_ZLIB=OFF -DCURL_BROTLI=OFF -DCURL_ZSTD=OFF -DUSE_LIBIDN2=OFF -DCURL_DISABLE_LDAP=ON -DBUILD_TESTING=OFF -DCURL_USE_LIBSSH2=OFF && cmake --build b -j$N --target curl
+c   | nginx/nginx             | objs/nginx       | ./auto/configure --with-cc="$CC" --with-cc-opt="$SGFLAGS" --without-http_rewrite_module --without-http_gzip_module && make -j$N
+c   | jqlang/jq               | jq               | autoreconf -i && ./configure --without-oniguruma --disable-docs --disable-maintainer-mode CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
+c   | tmux/tmux               | tmux             | sh autogen.sh && ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
+c   | memcached/memcached     | memcached        | ./autogen.sh && ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N memcached
+c   | mirror/busybox          | busybox_unstripped | make defconfig && make -j$N CC="$CC" HOSTCC="$CC" EXTRA_CFLAGS="$SGFLAGS"
+c   | DaveGamble/cJSON        | b/libcjson.a     | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DBUILD_SHARED_LIBS=OFF -DENABLE_CJSON_TEST=OFF && cmake --build b -j$N
+c   | libuv/libuv             | b/libuv.a        | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DLIBUV_BUILD_TESTS=OFF -DLIBUV_BUILD_SHARED=OFF && cmake --build b -j$N
+c   | google/brotli           | b/brotli         | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER="$CC" -DCMAKE_C_FLAGS="$SGFLAGS" -DBUILD_SHARED_LIBS=OFF -DBUILD_TESTING=OFF && cmake --build b -j$N
+c   | antirez/kilo            | kilo             | $CC -O2 $SGFLAGS -o kilo kilo.c
+c   | TinyCC/tinycc           | tcc              | ./configure --cc="$CC" --extra-cflags="-O2 $SGFLAGS" && make -j$N tcc
+c   | sqlite/sqlite           | sqlite3          | ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N sqlite3
+c   | htop-dev/htop           | htop             | ./autogen.sh && ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
+c   | vim/vim                 | src/vim          | ./configure --with-features=normal --enable-gui=no --without-x CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
+c   | universal-ctags/ctags   | ctags            | ./autogen.sh && ./configure CC="$CC" CFLAGS="-O2 $SGFLAGS" && make -j$N
+c   | google/leveldb          | b/libleveldb.a   | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_C_COMPILER="$CC" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DLEVELDB_BUILD_TESTS=OFF -DLEVELDB_BUILD_BENCHMARKS=OFF && cmake --build b -j$N
+c   | fmtlib/fmt              | b/libfmt.a       | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DFMT_TEST=OFF -DFMT_DOC=OFF && cmake --build b -j$N
+c   | jbeder/yaml-cpp         | b/libyaml-cpp.a  | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DYAML_CPP_BUILD_TESTS=OFF -DYAML_CPP_BUILD_TOOLS=OFF && cmake --build b -j$N
+c   | ninja-build/ninja       | b/ninja          | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_C_COMPILER="$CC" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DBUILD_TESTING=OFF && cmake --build b -j$N --target ninja
+c   | simdjson/simdjson       | b/libsimdjson.a  | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_C_COMPILER="$CC" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DBUILD_SHARED_LIBS=OFF && cmake --build b -j$N
+c   | gabime/spdlog           | b/libspdlog.a    | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DSPDLOG_BUILD_EXAMPLE=OFF && cmake --build b -j$N
+c   | google/snappy           | b/libsnappy.a    | cmake -S . -B b -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER="$CXX" -DCMAKE_C_COMPILER="$CC" -DCMAKE_CXX_FLAGS="$SGFLAGS" -DSNAPPY_BUILD_TESTS=OFF -DSNAPPY_BUILD_BENCHMARKS=OFF && cmake --build b -j$N
+rust | BurntSushi/ripgrep     | target/release/rg         | cargo build --release
+rust | sharkdp/fd             | target/release/fd         | cargo build --release
+rust | sharkdp/hyperfine      | target/release/hyperfine  | cargo build --release
+rust | sharkdp/hexyl          | target/release/hexyl      | cargo build --release
+rust | sharkdp/pastel         | target/release/pastel     | cargo build --release
+rust | sharkdp/diskus         | target/release/diskus     | cargo build --release
+rust | sharkdp/bat            | target/release/bat        | cargo build --release
+rust | ajeetdsouza/zoxide     | target/release/zoxide     | cargo build --release
+rust | XAMPPRocky/tokei       | target/release/tokei      | cargo build --release
+rust | bootandy/dust          | target/release/dust       | cargo build --release
+rust | casey/just             | target/release/just       | cargo build --release
+rust | chmln/sd               | target/release/sd         | cargo build --release
+rust | eza-community/eza      | target/release/eza        | cargo build --release
+rust | Byron/dua-cli          | target/release/dua        | cargo build --release
+rust | ducaale/xh             | target/release/xh         | cargo build --release
+rust | dalance/procs          | target/release/procs      | cargo build --release
+rust | pemistahl/grex         | target/release/grex       | cargo build --release
+rust | theryangeary/choose    | target/release/choose     | cargo build --release
+rust | lsd-rs/lsd             | target/release/lsd        | cargo build --release
+rust | tealdeer-rs/tealdeer   | target/release/tldr       | cargo build --release
+rust | svenstaro/miniserve    | target/release/miniserve  | cargo build --release
+rust | Canop/broot            | target/release/broot      | cargo build --release
+rust | dandavison/delta       | target/release/delta      | cargo build --release
+rust | rust-lang/mdBook       | target/release/mdbook     | cargo build --release
+rust | PaulJuliusMartinez/jless | target/release/jless    | cargo build --release
+rust | orf/gping              | target/release/gping      | cargo build --release
+rust | ClementTsang/bottom    | target/release/btm        | cargo build --release
+rust | extrawurst/gitui       | target/release/gitui      | cargo build --release
+rust | ouch-org/ouch          | target/release/ouch       | cargo build --release
+rust | watchexec/watchexec    | target/release/watchexec  | cargo build --release -p watchexec-cli

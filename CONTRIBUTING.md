@@ -4,22 +4,15 @@ Thank you for your interest in SourceGuard, a project of **95LAB**, an independe
 
 ## Ways to contribute
 
-- **Design review:** challenge the threat model, propose new attacks, or point out flaws in the DSV security argument. Open an issue using the *Design discussion* template.
-- **Invariance data (Phase 1):** report transformations that do or do not yield bit-identical output for a given compiler and project.
-- **Code:** once implementation starts, pick an issue labelled `good first issue` or `help wanted`.
+This repository holds the architecture, the security argument and the results. The implementation is not public.
 
-## Workflow
-
-1. Fork the repository and create a branch from `main` (`feat/…`, `fix/…`, `docs/…`).
-2. Keep changes focused; one logical change per pull request.
-3. Use clear commit messages (Conventional Commits are welcome: `feat:`, `fix:`, `docs:`).
-4. For Go code: run `gofmt`, `go vet`, and `go test ./...` before submitting.
-5. Components in the TCB (`sg-variant`, `sg-gateway`, `sg-broker`) require extra scrutiny: keep them small and explain any added complexity.
-6. Open a pull request and fill in the template.
+- **Design review:** challenge the threat model, propose new attacks, or point out flaws in the security argument. Open an issue using the *Design discussion* template.
+- **Data:** report a compiler, flag or project for which a transformation does or does not give bit-identical output.
+- **Corrections** to the documents, by pull request.
 
 ## Licensing of contributions
 
-By submitting a contribution, you agree that it is licensed under the Apache License 2.0 (code) or CC BY 4.0 (documentation), consistent with this repository, and you certify the [Developer Certificate of Origin](https://developercertificate.org/). Please sign off your commits (`git commit -s`).
+By submitting a contribution, you agree that it is licensed under CC BY 4.0, consistent with this repository. Please sign off your commits (`git commit -s`).
 
 ## Attribution
 

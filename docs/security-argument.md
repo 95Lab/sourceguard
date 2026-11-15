@@ -33,7 +33,7 @@ The equivalence class `[P]` is the **core** of `P`. Everything that distinguishe
 - **A4, independence.** Seeds are uniform, secret, and independent across cells and across builds.
 - **A5, trusted base.** The Variant Generator, the Key Broker and the gateway behave as specified.
 
-A3 to A5 are engineering assumptions. The prototype does not meet A3 at the strength a deployment needs (containers instead of microVMs); see [prototype limitations](local-testing.md#prototype-limitations).
+A3 to A5 are engineering assumptions. The prototype does not meet A3 at the strength a deployment needs (containers instead of microVMs).
 
 ## 3. Theorem 1: the hidden part never reaches a cell
 

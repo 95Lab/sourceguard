@@ -5,8 +5,7 @@
 **Keeping source code confidential even when the compiler is compromised.**
 
 [![Status](https://img.shields.io/badge/status-research%20prototype-orange)](docs/architecture.md)
-[![Code License: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue)](LICENSE)
-[![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey)](LICENSE-docs)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/docs-CC%20BY%204.0-lightgrey)](LICENSE)
 [![Cite this work](https://img.shields.io/badge/cite-CITATION.cff-green)](CITATION.cff)
 
 A research project by **[95LAB](https://github.com/95Lab)**, an independent, non-profit research group
@@ -20,8 +19,7 @@ A research project by **[95LAB](https://github.com/95Lab)**, an independent, non
 - [Overview](#overview)
 - [How It Works](#how-it-works)
 - [Project Status](#project-status)
-- [Quick Start](#quick-start)
-- [Repository Layout](#repository-layout)
+- [Availability](#availability)
 - [Documentation](#documentation)
 - [Citation](#citation)
 - [About 95LAB](#about-95lab)
@@ -72,58 +70,28 @@ Developer ──► Forgejo (ciphertext only) ──► Orchestrator (untrusted)
 
 ## Project Status
 
-A working **prototype for Go** implements the full pipeline and runs locally in Docker. It is a research test bed, not a secure deployment; see the [prototype limitations](docs/local-testing.md#prototype-limitations).
+A prototype implements the full pipeline for Go, with lexical variants for C, C++ and Rust. It is a research test bed, not yet a product.
 
-| Phase | Scope | Status |
-|---|---|---|
-| 0 | `sg seal`, signed manifest, Key Broker; the store holds ciphertext only | Prototype |
-| 1 | Invariance validation of the transformations | **Done for Go:** T1–T3 bit-identical on 54 / 54 real projects, linux/arm64 and linux/amd64 ([results](docs/results/phase1-invariance.md)) |
-| 2 | Full pipeline: Variant Generator, build cells, gateway, release signer | Prototype (containers, not microVMs) |
-| 3 | Adversarial evaluation | Suite of 7 attacks; invariant information measured on the corpus ([results](docs/results/evaluation.md)); structural comparison with decompiled code outstanding |
-| 4 | C/C++/Rust | Lexical variants (T1, T2) and generic build cells; bit-identical on 24–26 of 26 C/C++ projects (GCC, Clang) and 29 of 29 Rust projects ([results](docs/results/c-rust-invariance.md)); no renaming yet |
-| 4 | SEV-SNP/TDX attestation, microVM cells, diverse toolchains | Not started |
-
-## Quick Start
-
-Requires Docker with Compose v2, and Go 1.26+ for the unit tests.
-
-```sh
-git clone https://github.com/95Lab/sourceguard.git && cd sourceguard
-make test         # unit tests
-make invariance   # are variants bit-identical after compilation?
-make demo         # honest build: ACCEPT + verified provenance
-make attacks      # malicious compiler in the build cells
-make demo-c       # the same pipeline for a C project
-make demo-rust    # and for a Rust project
-```
-
-`make attacks` shows the mechanism at work: a compiler that embeds source in the artifact is rejected, while the documented limit (embedding fully normalized source, attack X4) passes. Details: [Local Testing with Docker](docs/local-testing.md).
-
-## Repository Layout
-
-| Path | Content |
+| Area | Status |
 |---|---|
-| `cmd/sg` | Developer CLI: `init`, `seal`, `verify`, `open` |
-| `cmd/sg-broker` | Key Broker (TCB) |
-| `cmd/sg-variant` | Variant Generator (TCB) |
-| `cmd/sg-cell` | Agent inside a build cell |
-| `cmd/sg-gateway` | Artifact Gateway (TCB) |
-| `cmd/sg-sign` | Release Signer (TCB) |
-| `internal/variants/golang` | Go: T1 (comments), T2 (whitespace), T3/T5 (local names), T4 (dead code), T7 (package-level names) |
-| `internal/variants/textlang` | C, C++ and Rust: T1 and T2 at the lexical level |
-| `eval/polyrun` | Invariance runner for C/C++ (GCC, Clang) and Rust projects |
-| `attacks/evilgo` | Malicious compiler wrapper for the adversarial suite |
-| `eval/invariance` | Bit-identity check on the sample project |
-| `eval/corpusrun`, `eval/modal` | Phase 1 corpus study (RQ1): runner, report, divergence bisection, Modal app |
-| `examples/hello` | Sample project with planted secrets |
-| `compose.yaml`, `deploy/docker`, `scripts` | Local test bed |
+| Encrypted source store, signed manifest, Key Broker | Prototype |
+| Variant Generator | Go: five transformations. C, C++, Rust: comments and whitespace |
+| Build cells, Artifact Gateway, Release Signer | Prototype (containers) |
+| Invariance on real projects | Go: bit-identical on 54 / 54 projects, two architectures ([results](docs/results/phase1-invariance.md)). C/C++: 24–26 of 26 with GCC and Clang; Rust: 29 of 29 ([results](docs/results/c-rust-invariance.md)) |
+| What remains exposed | Measured ([results](docs/results/evaluation.md)) and stated formally ([security argument](docs/security-argument.md)) |
+| Integration with a self-hosted Git service (Forgejo) | In progress |
+| MicroVM build cells, multi-module builds | In progress |
+| Hardware attestation (SEV-SNP/TDX), diverse toolchains | Not started |
+
+## Availability
+
+This repository publishes the architecture, the security argument and the experimental results, including raw data and the lists of projects measured. The implementation (Variant Generator, pipeline components and evaluation tooling) is maintained privately by 95LAB. For access, collaboration or deployment, contact hillnguyen528@gmail.com.
 
 ## Documentation
 
 | Document | Description |
 |---|---|
 | [Architecture (English)](docs/architecture.md) | Full design: threat model, components, DSV, leakage analysis, roadmap |
-| [Local Testing with Docker](docs/local-testing.md) | Running the prototype, the attack suite, results and limitations |
 | [Phase 1 Results](docs/results/phase1-invariance.md) | Invariance study on 54 open-source Go projects: method, findings, limitations |
 | [Evaluation Results](docs/results/evaluation.md) | Dead code (T4), package-level renaming (T7), cgo, invariant information and structure (RQ2), cost |
 | [C, C++ and Rust Results](docs/results/c-rust-invariance.md) | Invariance with GCC, Clang and rustc; language rules; findings |
@@ -135,7 +103,7 @@ Key sections: [Threat Model](docs/architecture.md#2-threat-model) · [DSV Transf
 
 ## Citation
 
-If you use SourceGuard, the DSV technique, or any part of this repository (code, design, text, figures, or ideas) in software, research, publications, products, or derivative work, **you must cite it**:
+If you use SourceGuard, the DSV technique, or any part of this repository (design, text, figures, data, or ideas) in software, research, publications, products, or derivative work, **you must cite it**:
 
 > Dang-Hieu Nguyen. *SourceGuard: Differential Source Variants for Build Confidentiality under Compiler Compromise.* 95LAB, 2026. https://github.com/95Lab/sourceguard
 
@@ -166,8 +134,7 @@ The group is led and operated by **Dang-Hieu Nguyen**.
 
 | Scope | License |
 |---|---|
-| Source code | [Apache License 2.0](LICENSE). Redistributions must retain the [NOTICE](NOTICE) file. |
-| Documentation and design (`docs/`, README, figures) | [Creative Commons Attribution 4.0 International](LICENSE-docs). Attribution is required. |
+| Everything in this repository (documents, figures, data) | [Creative Commons Attribution 4.0 International](LICENSE). Attribution is required. |
 
 ## Contributing and Security
 
