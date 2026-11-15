@@ -75,6 +75,10 @@ Consequence: for a program that links `plugin` with cgo enabled, only T1 is safe
 
 This is a real loss of protection for those programs: with T1 alone, a compiler can strip comments and embed the rest without being detected (attack X3 of the adversarial suite).
 
+### Related observation: Go package archives
+
+The same export data makes a compiled Go *library* (a package archive, as opposed to a linked program) differ between variants: building a non-main package of a two-module sample project gave a different archive in each cell. Libraries therefore cannot be released as artifacts of their own; they are compiled as part of the programs that use them.
+
 ## Invariant information (RQ2)
 
 The question: what can a compromised compiler still embed without causing divergence, and how does that compare with what an honest binary already reveals?

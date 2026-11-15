@@ -80,7 +80,7 @@ A prototype implements the full pipeline for Go, with lexical variants for C, C+
 | Invariance on real projects | Go: bit-identical on 54 / 54 projects, two architectures ([results](docs/results/phase1-invariance.md)). C/C++: 25–26 of 26 with GCC and Clang; Rust: 30 of 30 ([results](docs/results/c-rust-invariance.md)) |
 | What remains exposed | Measured, including against a decompiler ([results](docs/results/evaluation.md)), and stated formally ([security argument](docs/security-argument.md)) |
 | Self-hosting with Forgejo, multi-module builds, microVM cells | Working end to end on one host ([overview](docs/self-hosting.md)) |
-| Imports between modules of one project | Not started |
+| Dependencies between modules (interface-only, or scrubbed source for Go) | Working |
 | Hardware attestation (SEV-SNP/TDX), diverse toolchains | Not started |
 
 ## Availability

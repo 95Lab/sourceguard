@@ -25,7 +25,7 @@ This page describes what a deployment looks like and what it changes for develop
 | Git service (database, repositories, backups) | An encrypted archive per module, a signed manifest, build statuses, released artifacts | Source, any key |
 | Orchestrator (CI) | The same ciphertext; verdicts | Source, any key |
 | Variant Generator | Plaintext, in memory, for the duration of one build | |
-| Build cell (compiler, dependencies) | One scrubbed variant of one module | Original comments and names; other modules; other cells' variants |
+| Build cell (compiler, dependencies) | One scrubbed variant of one module, plus what its declared dependencies expose | Original comments and names; undeclared modules; other cells' variants |
 | Artifact Gateway, Release Signer | Artifacts and statuses | Source |
 
 A compromise of the Git service or of the CI system therefore yields ciphertext. A compromise of the toolchain yields the code without what the Variant Generator removed; what exactly that covers is stated in the [security argument](security-argument.md).
@@ -57,7 +57,7 @@ SourceGuard is worth its cost when the source is the main asset and the hosting 
 
 ## Current limits
 
-- Modules of a project are built independently; one module cannot yet import another.
+- A module can depend on another module of the same project in two ways. By default its build cells receive only the dependency's published interface (for example its headers) and its accepted, signed artifact; the dependency's source stays sealed. For Go, whose toolchain cannot link a prebuilt package, the cells receive a scrubbed variant of the dependency's source instead.
 - Builds run one at a time.
 - The orchestrator starts the cells and is therefore part of the trusted base of the host.
 - Key release relies on a shared token, not on hardware attestation.
