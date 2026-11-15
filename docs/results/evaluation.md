@@ -160,7 +160,7 @@ Generating one variant of a whole tree (all transformations) took a median of 0.
 
 ## Data
 
-> The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here; see the [README](../../README.md#availability).
+> The tools that produced these results are available as prebuilt programs, with instructions, in [`artifact/`](../../artifact/README.md). Their source code is not public.
 
 Raw data: [`eval-t7-linux-amd64.json`](eval-t7-linux-amd64.json), [`eval-t4-linux-amd64.json`](eval-t4-linux-amd64.json), [`eval-cgo-linux-amd64.json`](eval-cgo-linux-amd64.json) (final), [`eval-cgo-first-run-linux-amd64.json`](eval-cgo-first-run-linux-amd64.json), [`eval-leakage-linux-amd64.json`](eval-leakage-linux-amd64.json), [`eval-decompiler-linux-amd64.json`](eval-decompiler-linux-amd64.json).
 

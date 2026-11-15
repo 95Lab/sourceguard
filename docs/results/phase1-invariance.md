@@ -74,7 +74,7 @@ Verification: replaying the seeds that had diverged, with the fixed generator, g
 
 ## Data
 
-> The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here; see the [README](../../README.md#availability).
+> The tools that produced these results are available as prebuilt programs, with instructions, in [`artifact/`](../../artifact/README.md). Their source code is not public.
 
 Raw results, including the seed of every variant set: [`phase1-linux-arm64.json`](phase1-linux-arm64.json), [`phase1-linux-amd64.json`](phase1-linux-amd64.json).
 

@@ -85,7 +85,7 @@ A prototype implements the full pipeline for Go, with lexical variants for C, C+
 
 ## Availability
 
-This repository publishes the architecture, the security argument and the experimental results, including raw data and the lists of projects measured. The implementation (Variant Generator, pipeline components and evaluation tooling) is maintained privately by 95LAB. For access, collaboration or deployment, contact hillnguyen528@gmail.com.
+This repository publishes the architecture, the security argument and the experimental results, including raw data and the lists of projects measured. The evaluation tools are provided as prebuilt programs in [`artifact/`](artifact/README.md), so that the experiments can be rerun. The source code of the implementation (Variant Generator, pipeline components and tooling) is maintained privately by 95LAB. For access, collaboration or deployment, contact hillnguyen528@gmail.com.
 
 ## Documentation
 
@@ -96,6 +96,7 @@ This repository publishes the architecture, the security argument and the experi
 | [Evaluation Results](docs/results/evaluation.md) | Dead code (T4), package-level renaming (T7), cgo, invariant information and structure (RQ2), cost |
 | [C, C++ and Rust Results](docs/results/c-rust-invariance.md) | Invariance with GCC, Clang and rustc; language rules; findings |
 | [Self-Hosting Overview](docs/self-hosting.md) | What a deployment looks like, who sees what, comparison with an ordinary Git service |
+| [Evaluation Artifact](artifact/README.md) | Prebuilt tools and instructions to rerun the experiments |
 | [Security Argument](docs/security-argument.md) | Model, assumptions, two theorems, and what is not protected |
 | [Related Work and Positioning](docs/related-work.md) | TightLip, Secure Multi-Execution, N-variant systems, reproducible and attested builds |
 | [Kiến trúc (Tiếng Việt)](docs/architecture.vi.md) | Original Vietnamese version |
@@ -135,7 +136,8 @@ The group is led and operated by **Dang-Hieu Nguyen**.
 
 | Scope | License |
 |---|---|
-| Everything in this repository (documents, figures, data) | [Creative Commons Attribution 4.0 International](LICENSE). Attribution is required. |
+| Documents, figures and data | [Creative Commons Attribution 4.0 International](LICENSE). Attribution is required. |
+| Programs in `artifact/bin` | Provided for evaluating and reproducing the results; all rights reserved. See [`artifact/README.md`](artifact/README.md#terms). |
 
 ## Contributing and Security
 

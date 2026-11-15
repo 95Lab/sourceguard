@@ -83,7 +83,7 @@ Found in earlier runs and fixed before the run reported here:
 
 ## Data
 
-> The tooling referred to in this report is part of the SourceGuard implementation, which is not public. The method, the corpus and the raw data are published here.
+> The tools that produced these results are available as prebuilt programs, with instructions, in [`artifact/`](../../artifact/README.md). Their source code is not public.
 
 Raw results: [`eval-c-rust.json`](eval-c-rust.json). Corpus and build commands: [`corpus-c-rust.txt`](corpus-c-rust.txt).
 
