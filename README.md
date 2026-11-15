@@ -62,7 +62,7 @@ Key sections: [Threat model](docs/architecture.md#2-threat-model) · [DSV transf
 
 If you use SourceGuard, the DSV technique, or any part of this repository (code, design, text, figures, or ideas) in software, research, papers, products, or derivative work, **you must cite it**:
 
-> Hieu Nguyen. *SourceGuard: Differential Source Variants for Build Confidentiality under Compiler Compromise.* 95LAB, 2026. https://github.com/hillnguyen528/sourceguard. Contact: hillnguyen528@gmail.com
+> Hieu Nguyen. *SourceGuard: Differential Source Variants for Build Confidentiality under Compiler Compromise.* 95LAB, 2026. https://github.com/95Lab/sourceguard. Contact: hillnguyen528@gmail.com
 
 BibTeX:
 
@@ -71,7 +71,7 @@ BibTeX:
   author       = {Nguyen, Hieu},
   title        = {{SourceGuard}: Differential Source Variants for Build Confidentiality under Compiler Compromise},
   year         = {2026},
-  howpublished = {\url{https://github.com/hillnguyen528/sourceguard}},
+  howpublished = {\url{https://github.com/95Lab/sourceguard}},
   note         = {95LAB. Contact: hillnguyen528@gmail.com}
 }
 ```

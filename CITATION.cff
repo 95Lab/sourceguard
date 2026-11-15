@@ -19,8 +19,8 @@ authors:
     affiliation: "95LAB"
   - name: "95LAB"
     email: hillnguyen528@gmail.com
-repository-code: "https://github.com/hillnguyen528/sourceguard"
-url: "https://github.com/hillnguyen528/sourceguard"
+repository-code: "https://github.com/95Lab/sourceguard"
+url: "https://github.com/95Lab/sourceguard"
 license: Apache-2.0
 version: "0.2"
 date-released: "2026-11-15"
