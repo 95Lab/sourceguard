@@ -149,6 +149,39 @@ Reading these numbers:
 - **Package-level variable and constant names were a residual leak.** Their hit rate (18.0%) is below the chance rate, so they are effectively absent from the binary, yet without T7 they are invariant across variants. [T7](#t7-package-level-variables-and-constants) now hides the unexported ones.
 - **The normal form is stable.** For all 6,606 files, the normal form of two random variants equals that of the original. The X4 attack therefore always passes the gateway, as the design predicts.
 
+### What the withheld comments contain
+
+Sizes do not say what is withheld. Every comment block that T1 replaces, outside licence headers, was labelled by keyword and pattern: 97,269 blocks, 9,640,137 bytes. A block can carry several labels. "Fit" is the number of blocks, out of a [sample of 20 per label](eval-labels-sample.md), that fit the label when read.
+
+| Label | Matched by | Projects | Blocks | Share of blocks | Share of bytes | Fit |
+|---|---|---:|---:|---:|---:|---:|
+| Task marker | `TODO`, `FIXME`, `XXX`, `HACK`, `BUG` | 45 | 1,824 | 1.9% | 3.0% | 20 / 20 |
+| Person | `TODO(name)`, e-mail address | 25 | 926 | 1.0% | 1.7% | 16 / 20 |
+| Tracker reference | `#1234`, `issues/123`, `ABC-123` | 41 | 666 | 0.7% | 1.9% | 17 / 20 |
+| URL | `http(s)://` | 47 | 1,558 | 1.6% | 4.5% | 20 / 20 |
+| Known defect or workaround | workaround, hack, deadlock, race condition, flaky, … | 45 | 356 | 0.4% | 1.1% | 16 / 20 |
+| Security | vulnerability, CVE, untrusted, attack, insecure, … | 33 | 489 | 0.5% | 1.8% | 16 / 20 |
+| Credential handling | password, secret, API key, private key, … | 24 | 748 | 0.8% | 1.5% | 18 / 20 |
+| Rationale or constraint | because, so that, must not, invariant, caller must, … | 53 | 9,531 | 9.8% | 21.7% | 14 / 20 |
+| Disabled code | text that parses as Go statements | 27 | 165 | 0.2% | 0.1% | 13 / 20 |
+| **Any label** | | 54 | 13,861 | 14.3% | 28.9% | |
+
+| Reference in withheld comments | Projects | Distinct values | Also verbatim in the stripped binary |
+|---|---:|---:|---:|
+| URL | 47 | 1,505 | 29 (1.9%) |
+| Tracker reference | 41 | 624 | 9 (1.4%) |
+| E-mail address | 7 | 12 | 1 |
+| Credential-shaped string (cloud keys, forge tokens, PEM private keys) | 0 | 0 | 0 |
+
+- **One block in seven carries a label**, and those blocks hold 29% of the withheld comment bytes.
+- **Most labelled content is rationale**: why the code is as it is, and what callers must respect. This label is also the least precise.
+- **The references are not in the artifact.** Under 2% of the URLs and tracker references occur in the binary; short tracker references match by chance, so that figure is an upper bound.
+- **No real credential was found in a comment.**
+
+Limits: the labels are keyword matches and several overcount, as the "Fit" column shows; the sample is 20 blocks per label; the corpus is open source, where comments are written for the public. The figures describe kinds of content, not its value.
+
+Data: [per-project results](eval-labels-linux-amd64.json).
+
 ### Structure: normal form versus disassembly
 
 The normal form contains the complete code structure. To estimate how much of that an honest binary also shows, three features that exist in both source and machine code were compared per function. The binary side comes from `go tool objdump` on the first-party functions.

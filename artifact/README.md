@@ -12,7 +12,7 @@ The tools are distributed as binaries. Their source code, which includes the Var
 | `Dockerfile` | Image with the compilers and build tools the corpora need |
 | `SHA256SUMS` | Checksums of the binaries |
 
-Built from revision `eb76e80` of the implementation.
+Built from revision `46a4656` of the implementation.
 
 ## Setup
 
@@ -64,6 +64,13 @@ This runs the project's `go test -short ./...` on the unmodified source and on o
 ```sh
 run corpusrun -corpus /data/corpus-go.lock -work /out/leak -leak -only junegunn/fzf
 run corpusrun -leak-report /out/leak
+```
+
+What the withheld comments contain (labels by keyword, and whether the references in them occur in the binary):
+
+```sh
+run corpusrun -corpus /data/corpus-go.lock -work /out/labels -labels -only junegunn/fzf
+run corpusrun -label-report /out/labels
 ```
 
 This measures comment and name coverage, the attacker's normal form, the names present in the stripped binary, and the structural comparison with a disassembly. For the comparison with a decompiler, install Ghidra 12.2 and JDK 25 in the image and add `-ghidra /path/to/ghidra/support/analyzeHeadless`.
